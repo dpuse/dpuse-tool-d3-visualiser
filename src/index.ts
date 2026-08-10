@@ -6,7 +6,7 @@ import type { Chart } from 'billboard.js';
 // ── DPUse Framework
 import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
 
-// ── API Framework
+// ── Local Framework
 import type { BarChartData } from '@/billboardJs';
 import type { ObservablePlotChartTypeId } from '@/observablePlot';
 import type { ChordDiagramData, ChordDiagramOptions } from '@/chordDiagram';
