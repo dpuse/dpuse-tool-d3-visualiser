@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "0.0.45",
+    "version": "0.0.46",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
@@ -57,7 +57,7 @@
     },
     "dependencies": {
         "@dagrejs/dagre": "^3.1.1",
-        "@dpuse/dpuse-shared": "^0.3.769",
+        "@dpuse/dpuse-shared": "^0.3.770",
         "@observablehq/plot": "^0.6.17",
         "@tanstack/charts": "^0.9.0",
         "@unovis/ts": "^1.6.7",
@@ -85,7 +85,6 @@
         "@types/d3-shape": "^3.1.8",
         "@types/d3-zoom": "^3.0.8",
         "@types/node": "^26.2.0",
-        "@types/trusted-types": "^2.0.7",
         "eslint": "^10.8.1",
         "happy-dom": "^20.11.2",
         "prettier": "^3.9.6",

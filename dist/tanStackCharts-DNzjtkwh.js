@@ -3410,13 +3410,11 @@ function _i(e, t, n) {
 }
 //#endregion
 //#region src/tanStackCharts.ts
-var vi = { patched: !1 };
-function yi(n, r, i) {
-	bi(i);
-	let a = {
+function vi(n, r) {
+	let i = {
 		ariaLabel: "Bar chart",
 		definition: lt({
-			marks: [fi(xi(n), {
+			marks: [fi(yi(n), {
 				color: "seriesName",
 				fill: "seriesName",
 				layout: _(),
@@ -3431,37 +3429,25 @@ function yi(n, r, i) {
 				scale: e
 			}
 		})
-	}, o = di(r, a);
-	function s() {
+	}, a = di(r, i);
+	function o() {
 		let e = r.querySelector("svg");
 		if (e == null) throw Error("Failed to create TanStack Charts SVG element.");
 		return e;
 	}
 	return {
 		destroy: () => {
-			o.destroy();
+			a.destroy();
 		},
 		resize: () => {
-			o.update(a);
+			a.update(i);
 		},
 		get svg() {
-			return s();
+			return o();
 		}
 	};
 }
-function bi(e) {
-	if (vi.sanitizeHTML = e, vi.patched) return;
-	vi.patched = !0;
-	let t = Object.getOwnPropertyDescriptor(Element.prototype, "innerHTML"), n = t?.set;
-	n != null && Object.defineProperty(HTMLTemplateElement.prototype, "innerHTML", {
-		...t,
-		set(e) {
-			let t = vi.sanitizeHTML ?? ((e) => e);
-			n.call(this, t(e));
-		}
-	});
-}
-function xi(e) {
+function yi(e) {
 	let t = [];
 	for (let n of e.series) for (let [r, i] of e.categories.entries()) t.push({
 		category: i,
@@ -3471,6 +3457,6 @@ function xi(e) {
 	return t;
 }
 //#endregion
-export { yi as renderTanStackCharts };
+export { vi as renderTanStackCharts };
 
-//# sourceMappingURL=tanStackCharts-DCMs4Y_D.js.map
+//# sourceMappingURL=tanStackCharts-DNzjtkwh.js.map

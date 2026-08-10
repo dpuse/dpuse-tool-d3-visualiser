@@ -1,4 +1,3 @@
-import { SanitizeHTML } from '@dpuse/dpuse-shared/component/module/presenter';
 import { BarChartData } from './billboardJs';
 export type { BarChartData, BarChartSeries } from './billboardJs';
 export interface TanStackChartsHandle {
@@ -6,4 +5,4 @@ export interface TanStackChartsHandle {
     resize: () => void;
     svg: SVGSVGElement;
 }
-export declare function renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, sanitizeHTML: SanitizeHTML): TanStackChartsHandle;
+export declare function renderTanStackCharts(data: BarChartData, renderTo: HTMLElement): TanStackChartsHandle;

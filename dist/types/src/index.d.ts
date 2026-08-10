@@ -1,6 +1,5 @@
 import { Chart } from 'billboard.js';
 import { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
-import { SanitizeHTML } from '@dpuse/dpuse-shared/component/module/presenter';
 import { BarChartData } from './billboardJs';
 import { ObservablePlotChartTypeId } from './observablePlot';
 import { ChordDiagramData, ChordDiagramOptions } from './chordDiagram';
@@ -33,7 +32,7 @@ export declare class D3Tool {
     renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView>;
     renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
     renderD3BarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
-    renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, sanitizeHTML: SanitizeHTML, callback?: () => void): Promise<D3TanStackChartsView>;
+    renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3TanStackChartsView>;
     renderChordDiagram(data: ChordDiagramData, renderTo: HTMLElement, options?: ChordDiagramOptions, callback?: () => void): Promise<D3View>;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): Promise<D3View>;
     renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): Promise<D3NetworkView>;

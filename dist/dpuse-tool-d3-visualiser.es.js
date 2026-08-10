@@ -29,13 +29,13 @@ var e = class {
 			vendorId: "d3"
 		};
 	}
-	async renderTanStackCharts(e, t, n, r) {
-		let { renderTanStackCharts: i } = await import("./tanStackCharts-DCMs4Y_D.js"), a = i(e, t, n);
-		return r?.(), {
-			destroy: a.destroy,
-			resize: a.resize,
+	async renderTanStackCharts(e, t, n) {
+		let { renderTanStackCharts: r } = await import("./tanStackCharts-DNzjtkwh.js"), i = r(e, t);
+		return n?.(), {
+			destroy: i.destroy,
+			resize: i.resize,
 			get svg() {
-				return a.svg;
+				return i.svg;
 			},
 			vendorId: "tanstack-charts"
 		};

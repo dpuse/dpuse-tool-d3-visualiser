@@ -5,7 +5,6 @@ import type { Chart } from 'billboard.js';
 
 // ── DPUse Framework
 import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
-import type { SanitizeHTML } from '@dpuse/dpuse-shared/component/module/presenter';
 
 // ── Local Framework
 import type { BarChartData } from '@/billboardJs';
@@ -93,11 +92,9 @@ export class D3Tool {
     }
 
     // Actions - Render bar chart using TanStack Charts (pre-alpha as of 0.6.4 - its vanilla-DOM mountChart() API is undocumented and may change).
-    // 'sanitizeHTML' is required because TanStack Charts has no Trusted Types awareness of its own - see the
-    // 'HTMLTemplateElement.prototype.innerHTML' patch in tanStackCharts.ts for why.
-    async renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, sanitizeHTML: SanitizeHTML, callback?: () => void): Promise<D3TanStackChartsView> {
+    async renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3TanStackChartsView> {
         const { renderTanStackCharts } = await import('@/tanStackCharts');
-        const handle = renderTanStackCharts(data, renderTo, sanitizeHTML);
+        const handle = renderTanStackCharts(data, renderTo);
         callback?.();
         return {
             destroy: handle.destroy,
