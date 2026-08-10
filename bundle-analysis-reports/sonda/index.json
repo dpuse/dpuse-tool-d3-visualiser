@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-07T14:21:38.077Z",
+    "generatedAt": "2026-08-10T12:20:21.295Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 337,
       "gzip": 0,
-      "brotli": 106,
+      "brotli": 105,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -101,10 +101,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 4065,
+      "uncompressed": 4155,
       "gzip": 0,
-      "brotli": 231,
-      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
+      "brotli": 215,
+      "parent": "dist/erdDiagram-Ds1hsQDD.js"
     },
     {
       "kind": "chunk",
@@ -321,10 +321,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 6399,
+      "uncompressed": 9250,
       "gzip": 0,
-      "brotli": 430,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 504,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "chunk",
@@ -388,9 +388,9 @@
       "kind": "asset",
       "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
-      "uncompressed": 2394,
+      "uncompressed": 2400,
       "gzip": 0,
-      "brotli": 544
+      "brotli": 539
     },
     {
       "kind": "asset",
@@ -402,11 +402,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-Ds-nrw7Q.js",
+      "name": "dist/erdDiagram-Ds1hsQDD.js",
       "type": "script",
-      "uncompressed": 63799,
+      "uncompressed": 64574,
       "gzip": 0,
-      "brotli": 16619
+      "brotli": 16784
     },
     {
       "kind": "asset",
@@ -578,11 +578,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/tanStackCharts-BJAX22lS.js",
+      "name": "dist/tanStackCharts-DCMs4Y_D.js",
       "type": "script",
-      "uncompressed": 71130,
+      "uncompressed": 107179,
       "gzip": 0,
-      "brotli": 19135
+      "brotli": 27575
     },
     {
       "kind": "asset",
@@ -597,17 +597,17 @@
       "name": "node_modules/@dagrejs/dagre/dist/dagre.esm.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 47924
+      "uncompressed": 48559
     },
     {
       "kind": "chunk",
       "name": "node_modules/@dagrejs/dagre/dist/dagre.esm.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 56261,
+      "uncompressed": 56946,
       "gzip": 0,
-      "brotli": 15089,
-      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
+      "brotli": 15268,
+      "parent": "dist/erdDiagram-Ds1hsQDD.js"
     },
     {
       "kind": "filesystem",
@@ -2209,35 +2209,45 @@
       "name": "node_modules/@tanstack/charts/dist/adapter-renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1613
+      "uncompressed": 1631
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/adapter-shared.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 466
+      "uncompressed": 682
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/adapter-shared.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 108,
+      "gzip": 0,
+      "brotli": 68,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/adapter.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1926
+      "uncompressed": 1944
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/area-x.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5809
+      "uncompressed": 5813
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/area.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5806
+      "uncompressed": 5810
     },
     {
       "kind": "filesystem",
@@ -2258,41 +2268,86 @@
       "name": "node_modules/@tanstack/charts/dist/band.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6085
+      "uncompressed": 5999
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/bar.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 12859
+      "uncompressed": 13767
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/bar.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3482,
+      "uncompressed": 3800,
       "gzip": 0,
-      "brotli": 1179,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 1243,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/box.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 6751
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/composite-motion-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1196
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/configured-scale.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1564
+      "uncompressed": 6317
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/configured-scale.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 841,
+      "uncompressed": 3594,
       "gzip": 0,
-      "brotli": 333,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 961,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/crosshair-resolver.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 11066
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/crosshair.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4483
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/cursor-host-contract.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 308
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/cursor-host-contract.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 175,
+      "gzip": 0,
+      "brotli": 94,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2310,51 +2365,79 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/difference.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 17101
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/dodge-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2321
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/dodge.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2618
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/dom-text.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4284
+      "uncompressed": 5179
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/dom-text.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2535,
+      "uncompressed": 3046,
       "gzip": 0,
-      "brotli": 751,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 839,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/dom.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1443
+      "uncompressed": 1504
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/dom.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 582,
+      "uncompressed": 642,
       "gzip": 0,
-      "brotli": 248,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 263,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/dot-layout.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 100
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/dot.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3472
+      "uncompressed": 7255
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/facet.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 18005
+      "uncompressed": 16955
     },
     {
       "kind": "filesystem",
@@ -2370,25 +2453,25 @@
       "format": "esm",
       "uncompressed": 71,
       "gzip": 0,
-      "brotli": 55,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 50,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/focus-layer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3084
+      "uncompressed": 9412
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/focus-layer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1210,
+      "uncompressed": 4079,
       "gzip": 0,
-      "brotli": 355,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 1035,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2399,20 +2482,27 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/focus-presentation.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 142
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/focus.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2372
+      "uncompressed": 2462
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/focus.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1079,
+      "uncompressed": 1132,
       "gzip": 0,
-      "brotli": 371,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 385,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2436,52 +2526,76 @@
       "uncompressed": 55,
       "gzip": 0,
       "brotli": 46,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/guide-layout.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4562
+      "uncompressed": 5701
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/guide-layout.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1612,
+      "uncompressed": 2236,
       "gzip": 0,
-      "brotli": 545,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 680,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/hexagon.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3781
+      "uncompressed": 3785
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2767
+      "uncompressed": 4112
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/@tanstack/charts/dist/legend.js",
+      "name": "node_modules/@tanstack/charts/dist/interaction.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8277
+      "uncompressed": 4923
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/interaction.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2409,
+      "gzip": 0,
+      "brotli": 643,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/legend-layout-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 616
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/legend-static.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 8561
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/line.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4835
+      "uncompressed": 5824
     },
     {
       "kind": "filesystem",
@@ -2492,126 +2606,199 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/mapped-spacing-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1020
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/mark-composite-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 11325
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/mark-composite.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 365
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/mark-state-transition.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 414
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/mark-state-transition.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 220,
+      "gzip": 0,
+      "brotli": 109,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/mark-state.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6926
+      "uncompressed": 6698
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/mark-state.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3441,
+      "uncompressed": 3164,
       "gzip": 0,
-      "brotli": 1032,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 929,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/mark-with-scale-values.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 169
+      "uncompressed": 501
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/mark.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3678
+      "uncompressed": 4363
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/mark.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1739,
+      "uncompressed": 2117,
       "gzip": 0,
-      "brotli": 535,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 629,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/nearest.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 13095
+      "uncompressed": 15008
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/nearest.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6655,
+      "uncompressed": 7567,
       "gzip": 0,
-      "brotli": 1593,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 1784,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/proportional-interval-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2694
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/reconcile.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7002
+      "uncompressed": 7955
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/reconcile.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3921,
+      "uncompressed": 4435,
       "gzip": 0,
-      "brotli": 1109,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 1165,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/rect.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5148
+      "uncompressed": 5168
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/regression.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 14699
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 19967
+      "uncompressed": 32297
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9565,
+      "uncompressed": 14080,
       "gzip": 0,
-      "brotli": 2331,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 3280,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/resolved-layout-child.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 964
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/resolved-layout-position.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1025
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/ridgeline.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 8770
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/rule.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3964
+      "uncompressed": 4490
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/runtime.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 763
+      "uncompressed": 1037
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/runtime.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 278,
+      "uncompressed": 424,
       "gzip": 0,
-      "brotli": 134,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 162,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2627,25 +2814,73 @@
       "format": "esm",
       "uncompressed": 2287,
       "gzip": 0,
-      "brotli": 633,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 626,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/scales.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4936
+      "uncompressed": 5370
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/scales.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2827,
+      "uncompressed": 2947,
       "gzip": 0,
       "brotli": 821,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/scene-child-id-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 174
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/scene-embed-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4707
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/scene-point-map.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1119
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/scene-point-map.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 599,
+      "gzip": 0,
+      "brotli": 180,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/scene-point-ownership-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2820
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/scene-point-ownership-internal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1593,
+      "gzip": 0,
+      "brotli": 469,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2661,42 +2896,42 @@
       "format": "esm",
       "uncompressed": 55,
       "gzip": 0,
-      "brotli": 47,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 46,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/scene.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 23962
+      "uncompressed": 32967
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/scene.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 12428,
+      "uncompressed": 17241,
       "gzip": 0,
-      "brotli": 3081,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 4066,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/stack-internal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4321
+      "uncompressed": 6655
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/stack-internal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2213,
+      "uncompressed": 3420,
       "gzip": 0,
-      "brotli": 697,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 992,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -2707,68 +2942,119 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/svg-coordinates.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 715
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/svg-coordinates.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 412,
+      "gzip": 0,
+      "brotli": 170,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/svg-focus-guide-layer.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2073
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/svg-focus-guide-layer.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1165,
+      "gzip": 0,
+      "brotli": 359,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/svg-focus-guide-serializer.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4702
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/dist/svg-focus-guide-serializer.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2750,
+      "gzip": 0,
+      "brotli": 797,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/svg-renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4918
+      "uncompressed": 6822
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/svg-renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3211,
+      "uncompressed": 4465,
       "gzip": 0,
-      "brotli": 901,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 1251,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/svg-surface.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3990
+      "uncompressed": 6595
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/svg-surface.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1633,
+      "uncompressed": 2072,
       "gzip": 0,
-      "brotli": 576,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 671,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/svg.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 184
+      "uncompressed": 2601
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/svg.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 39,
+      "uncompressed": 1684,
       "gzip": 0,
-      "brotli": 34,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 563,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/text.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4428
+      "uncompressed": 4432
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/tick.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3361
+      "uncompressed": 4306
     },
     {
       "kind": "filesystem",
@@ -2800,6 +3086,13 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/transform-fold.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1051
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/transform-group.js",
       "type": "script",
       "format": "esm",
@@ -2814,6 +3107,13 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/transform-mosaic.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 7294
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/transform-normalize.js",
       "type": "script",
       "format": "esm",
@@ -2824,7 +3124,7 @@
       "name": "node_modules/@tanstack/charts/dist/transform-rank.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1692
+      "uncompressed": 1677
     },
     {
       "kind": "filesystem",
@@ -2838,7 +3138,14 @@
       "name": "node_modules/@tanstack/charts/dist/transform-reduce.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1417
+      "uncompressed": 1237
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/transform-rolling-window.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1887
     },
     {
       "kind": "filesystem",
@@ -2856,10 +3163,17 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/@tanstack/charts/dist/transform-window.js",
+      "name": "node_modules/@tanstack/charts/dist/transform-statistics-internal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1859
+      "uncompressed": 373
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/transform-waterfall.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2059
     },
     {
       "kind": "filesystem",
@@ -2874,6 +3188,20 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3983
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/violin.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 8060
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/dist/waffle.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 9691
     },
     {
       "kind": "filesystem",
@@ -14269,8 +14597,8 @@
       "format": "esm",
       "uncompressed": 271,
       "gzip": 0,
-      "brotli": 130,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 128,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14286,8 +14614,8 @@
       "format": "esm",
       "uncompressed": 209,
       "gzip": 0,
-      "brotli": 109,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 108,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14303,8 +14631,8 @@
       "format": "esm",
       "uncompressed": 210,
       "gzip": 0,
-      "brotli": 114,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 113,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14320,8 +14648,8 @@
       "format": "esm",
       "uncompressed": 201,
       "gzip": 0,
-      "brotli": 113,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 112,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14337,8 +14665,8 @@
       "format": "esm",
       "uncompressed": 459,
       "gzip": 0,
-      "brotli": 184,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 182,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14348,11 +14676,31 @@
       "uncompressed": 339
     },
     {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/order/appearance.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 226,
+      "gzip": 0,
+      "brotli": 125,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/order/ascending.js",
       "type": "script",
       "format": "esm",
       "uncompressed": 308
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/order/ascending.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 107,
+      "gzip": 0,
+      "brotli": 64,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14369,6 +14717,16 @@
       "uncompressed": 518
     },
     {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/order/insideOut.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 217,
+      "gzip": 0,
+      "brotli": 117,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
+    },
+    {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/order/none.js",
       "type": "script",
@@ -14382,8 +14740,8 @@
       "format": "esm",
       "uncompressed": 86,
       "gzip": 0,
-      "brotli": 69,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 68,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -14464,8 +14822,8 @@
       "format": "esm",
       "uncompressed": 831,
       "gzip": 0,
-      "brotli": 272,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 269,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -19424,24 +19782,24 @@
       "format": "esm",
       "uncompressed": 3473,
       "gzip": 0,
-      "brotli": 1300,
-      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
+      "brotli": 1302,
+      "parent": "dist/erdDiagram-Ds1hsQDD.js"
     },
     {
       "kind": "filesystem",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2966
+      "uncompressed": 2994
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2057,
+      "uncompressed": 2063,
       "gzip": 0,
-      "brotli": 438,
+      "brotli": 434,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -19517,17 +19875,17 @@
       "name": "src/tanStackCharts.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1263
+      "uncompressed": 1921
     },
     {
       "kind": "chunk",
       "name": "src/tanStackCharts.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 705,
+      "uncompressed": 1068,
       "gzip": 0,
-      "brotli": 309,
-      "parent": "dist/tanStackCharts-BJAX22lS.js"
+      "brotli": 411,
+      "parent": "dist/tanStackCharts-DCMs4Y_D.js"
     },
     {
       "kind": "filesystem",
@@ -19676,7 +20034,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-Ds-nrw7Q.js",
+      "source": "dist/erdDiagram-Ds1hsQDD.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },
@@ -19700,7 +20058,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/tanStackCharts-BJAX22lS.js",
+      "source": "dist/tanStackCharts-DCMs4Y_D.js",
       "target": "src/tanStackCharts.ts",
       "original": null
     },

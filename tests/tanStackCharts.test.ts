@@ -17,6 +17,9 @@ const data: BarChartData = {
     ]
 };
 
+// No sanitization needed for this test - the content isn't user-supplied.
+const sanitizeHTML = (html: string): string => html;
+
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 describe('D3Tool.renderTanStackCharts', () => {
@@ -24,7 +27,7 @@ describe('D3Tool.renderTanStackCharts', () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = await new D3Tool().renderTanStackCharts(data, renderTo);
+        const view = await new D3Tool().renderTanStackCharts(data, renderTo, sanitizeHTML);
 
         expect(view.vendorId).toBe('tanstack-charts');
         expect(view.svg.tagName.toLowerCase()).toBe('svg');
@@ -37,7 +40,7 @@ describe('D3Tool.renderTanStackCharts', () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        await new D3Tool().renderTanStackCharts(data, renderTo, () => {
+        await new D3Tool().renderTanStackCharts(data, renderTo, sanitizeHTML, () => {
             called = true;
         });
 
@@ -46,7 +49,7 @@ describe('D3Tool.renderTanStackCharts', () => {
 
     it('resize() and destroy() run without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = await new D3Tool().renderTanStackCharts(data, renderTo);
+        const view = await new D3Tool().renderTanStackCharts(data, renderTo, sanitizeHTML);
 
         expect(() => {
             view.resize();

@@ -29,13 +29,13 @@ var e = class {
 			vendorId: "d3"
 		};
 	}
-	async renderTanStackCharts(e, t, n) {
-		let { renderTanStackCharts: r } = await import("./tanStackCharts-BJAX22lS.js"), i = r(e, t);
-		return n?.(), {
-			destroy: i.destroy,
-			resize: i.resize,
+	async renderTanStackCharts(e, t, n, r) {
+		let { renderTanStackCharts: i } = await import("./tanStackCharts-DCMs4Y_D.js"), a = i(e, t, n);
+		return r?.(), {
+			destroy: a.destroy,
+			resize: a.resize,
 			get svg() {
-				return i.svg;
+				return a.svg;
 			},
 			vendorId: "tanstack-charts"
 		};
@@ -51,7 +51,7 @@ var e = class {
 		};
 	}
 	async renderErdDiagram(e, t, n, r) {
-		let { renderErdDiagram: i } = await import("./erdDiagram-Ds-nrw7Q.js"), a = i(e, t, n);
+		let { renderErdDiagram: i } = await import("./erdDiagram-Ds1hsQDD.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
