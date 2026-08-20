@@ -170,5 +170,3 @@ function h() {
 }
 //#endregion
 export { h as t };
-
-//# sourceMappingURL=drag-DfL4uwqz.js.map

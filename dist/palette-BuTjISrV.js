@@ -60,5 +60,3 @@ function r(t, n) {
 }
 //#endregion
 export { n, r, t };
-
-//# sourceMappingURL=palette-BuTjISrV.js.map

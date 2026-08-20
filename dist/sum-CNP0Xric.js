@@ -21,5 +21,3 @@ function t(e, t) {
 }
 //#endregion
 export { e as n, t };
-
-//# sourceMappingURL=sum-CNP0Xric.js.map

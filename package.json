@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "0.0.46",
+    "version": "0.0.47",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
@@ -37,7 +37,7 @@
         "maplibre-gl@2.4.0": true,
         "sharp@0.34.5": true,
         "unrs-resolver@1.12.2": true,
-        "workerd@1.20260801.1": true
+        "workerd@1.20260815.1": true
     },
     "scripts": {
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
@@ -57,9 +57,9 @@
     },
     "dependencies": {
         "@dagrejs/dagre": "^3.1.1",
-        "@dpuse/dpuse-shared": "^0.3.770",
+        "@dpuse/dpuse-shared": "^0.3.777",
         "@observablehq/plot": "^0.6.17",
-        "@tanstack/charts": "^0.9.0",
+        "@tanstack/charts": "^0.14.0",
         "@unovis/ts": "^1.6.7",
         "billboard.js": "^4.0.3",
         "d3-axis": "^3.0.0",
@@ -73,8 +73,8 @@
         "d3-zoom": "^3.0.0"
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^0.3.703",
-        "@dpuse/eslint-config-dpuse": "^1.0.113",
+        "@dpuse/dpuse-development": "^0.3.706",
+        "@dpuse/eslint-config-dpuse": "^1.0.116",
         "@types/d3-axis": "^3.0.6",
         "@types/d3-drag": "^3.0.7",
         "@types/d3-force": "^3.0.10",
@@ -86,14 +86,14 @@
         "@types/d3-zoom": "^3.0.8",
         "@types/node": "^26.2.0",
         "eslint": "^10.8.1",
-        "happy-dom": "^20.11.2",
+        "happy-dom": "^20.11.6",
         "prettier": "^3.9.6",
         "sonda": "^0.14.0",
         "typescript": "^6.0.3",
-        "vite": "^8.2.1",
+        "vite": "^8.2.2",
         "vite-plugin-dts": "^5.0.3",
-        "vitest": "^4.1.10",
-        "wrangler": "^4.120.0"
+        "vitest": "^4.1.11",
+        "wrangler": "^4.124.0"
     },
     "overrides": {
         "d3-array": "^3.2.4",

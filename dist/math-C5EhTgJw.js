@@ -8,5 +8,3 @@ function f(e) {
 }
 //#endregion
 export { n as a, r as c, a as d, o as f, t as i, i as l, d as n, s as o, u as p, f as r, l as s, e as t, c as u };
-
-//# sourceMappingURL=math-C5EhTgJw.js.map

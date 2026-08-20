@@ -10,5 +10,3 @@ function e(e, t) {
 }
 //#endregion
 export { e as t };
-
-//# sourceMappingURL=max-CPVNm4tn.js.map

@@ -71,5 +71,3 @@ function d(e) {
 }
 //#endregion
 export { c as i, d as n, l as r, u as t };
-
-//# sourceMappingURL=axis-DjmZ9QYe.js.map
