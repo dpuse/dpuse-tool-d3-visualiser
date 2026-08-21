@@ -94,4 +94,4 @@ var e = class {
 	}
 };
 //#endregion
-export { e as D3Tool };
+export { e as Tool };

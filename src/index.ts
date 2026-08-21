@@ -49,7 +49,7 @@ const D3_ID = 'd3';
 
 // ── Tools ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export class D3Tool {
+export class Tool {
     // Actions - Render chart (Billboard.js, SVG only - see the `billboard.js/canvas` entry point for canvas rendering, unused here).
     async renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView> {
         const { renderBillboardJS } = await import('@/billboardJs');

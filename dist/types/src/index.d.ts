@@ -28,7 +28,7 @@ export interface D3BarChartView extends PresentationView {
 export interface D3TanStackChartsView extends D3View {
     destroy: () => void;
 }
-export declare class D3Tool {
+export declare class Tool {
     renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView>;
     renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
     renderD3BarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;

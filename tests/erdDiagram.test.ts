@@ -4,7 +4,7 @@
 import { describe, expect, it } from 'vitest';
 
 // ── Local
-import { D3Tool } from '@/index';
+import { Tool as D3Tool } from '@/index';
 import type { ErdDiagramData } from '@/index';
 
 // ── Data ─────────────────────────────────────────────────────────────────────────────────────────────────────────────

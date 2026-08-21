@@ -652,16 +652,16 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 |Chunk/Module/File|Composition|
 |:------ |:-----------|
-| dist/billboardJs-DS82ViEw.js | 250.5 kB · brotli 64.7 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;billboard.js | `█████░░░░░░░░░░░░░░░` 26.1% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
+| dist/billboardJs-oaee80Fh.js | 250.6 kB · brotli 64.7 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;billboard.js | `█████░░░░░░░░░░░░░░░` 25.1% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 1.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → billboardJs.ts | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-selection → src/selectAll.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/observablePlot-C7764aFq.js | 223.5 kB · brotli 56.1 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;@observablehq/plot | `███░░░░░░░░░░░░░░░░░` 15.1% |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-geo | `█░░░░░░░░░░░░░░░░░░░` 3.6% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 2.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale-chromatic | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
+| dist/observablePlot-BE2I-5e2.js | 223.5 kB · brotli 56.1 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;@observablehq/plot | `███░░░░░░░░░░░░░░░░░` 14.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-geo | `█░░░░░░░░░░░░░░░░░░░` 3.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 2.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale-chromatic | `░░░░░░░░░░░░░░░░░░░░` 1.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-color | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
@@ -669,16 +669,21 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;isoformat | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → observablePlot.ts | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/chordDiagram-Cz0sVVgD.js | 96.5 kB · brotli 25.5 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts | `█░░░░░░░░░░░░░░░░░░░` 3.8% |
+| dist/tanStackCharts-CqP0qIAr.js | 105.2 kB · brotli 27.0 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts | `██░░░░░░░░░░░░░░░░░░` 10.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 1.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
+| dist/chordDiagram-CTDXv74T.js | 96.5 kB · brotli 25.5 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts | `█░░░░░░░░░░░░░░░░░░░` 3.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
-| &nbsp;&nbsp;&nbsp;&nbsp;@juggle/resize-observer | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
+| &nbsp;&nbsp;&nbsp;&nbsp;@juggle/resize-observer | `░░░░░░░░░░░░░░░░░░░░` 1.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate-path → build/d3-interpolate-path.mjs | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/cache → dist/emotion-cache.browser.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;stylis | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-chord | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/serialize → dist/emotion-serialize.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/serialize → dist/emotion-serialize.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;striptags → src/striptags.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/css | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/sheet → dist/emotion-sheet.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
@@ -689,16 +694,11 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/utils → dist/emotion-utils.browser.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/memoize → dist/emotion-memoize.esm.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/tanStackCharts-BJAX22lS.js | 69.5 kB · brotli 18.7 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts | `█░░░░░░░░░░░░░░░░░░░` 6.8% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/erdDiagram-Ds-nrw7Q.js | 62.3 kB · brotli 16.2 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js | `█░░░░░░░░░░░░░░░░░░░` 6.2% |
+| dist/erdDiagram-C_Hobpls.js | 63.0 kB · brotli 16.4 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js | `█░░░░░░░░░░░░░░░░░░░` 6.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → erdDiagram.ts | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| dist/src-Xlr4CcSw.js | 23.3 kB · brotli 5.6 kB |
+| dist/src-Dl4_vNYa.js | 23.2 kB · brotli 5.5 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-time-format | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-time | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
@@ -711,94 +711,94 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-dispatch → src/dispatch.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-timer | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-ease → src/cubic.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/step-DgCcZZ3W.js | 19.2 kB · brotli 2.5 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 1.9% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| dist/step-C2rRFtYO.js | 19.2 kB · brotli 2.4 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 1.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | dist/select-BIuoFcZG.js | 17.9 kB · brotli 3.9 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection | `░░░░░░░░░░░░░░░░░░░░` 1.6% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| dist/networkDiagram-yraPhqxN.js | 17.7 kB · brotli 5.0 kB |
+| dist/networkDiagram-CcQxxJMB.js | 17.6 kB · brotli 4.9 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-force | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
-| dist/linear-BnhqTvdX.js | 17.2 kB · brotli 4.9 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-format | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| dist/linear-C-jur735.js | 17.2 kB · brotli 4.9 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-format | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;internmap → src/index.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/src-WDualLFV.js | 12.8 kB · brotli 3.6 kB |
+| dist/src-WDualLFV.js | 12.8 kB · brotli 3.5 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/string-CnCj7THX.js | 11.6 kB · brotli 3.7 kB |
+| dist/string-CnCj7THX.js | 11.6 kB · brotli 3.6 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-color | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/sankeyDiagram-BT2RCRpi.js | 10.2 kB · brotli 2.9 kB |
+| dist/sankeyDiagram-DOF6arSJ.js | 10.2 kB · brotli 2.8 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-sankey | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → sankeyDiagram.ts | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/treeDiagram-DsHUD8ou.js | 4.9 kB · brotli 1.8 kB |
+| dist/treeDiagram-FUVkkblR.js | 4.9 kB · brotli 1.8 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/tree.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/drag-DfL4uwqz.js | 4.4 kB · brotli 1.4 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
+| dist/drag-DfL4uwqz.js | 4.3 kB · brotli 1.3 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-drag | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | dist/hierarchy-CDFAetye.js | 4.0 kB · brotli 1.1 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | dist/axis-DjmZ9QYe.js | 3.5 kB · brotli 1.1 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-axis | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-axis | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/path-6kmCrmEz.js | 2.8 kB · brotli 1021 B |
+| dist/path-BoJ8LMXE.js | 2.7 kB · brotli 1005 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-path → src/path.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/pow-BFDPqS3s.js | 2.4 kB · brotli 997 B |
+| dist/pow-CxQV96gC.js | 2.4 kB · brotli 962 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/pow.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
-| dist/dpuse-tool-d3-visualiser.es.js | 2.3 kB · brotli 544 B |
+| dist/dpuse-tool-d3-visualiser.es.js | 2.3 kB · brotli 512 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/band-C1twWuW2.js | 2.1 kB · brotli 765 B |
+| dist/band-BFcwtSdG.js | 2.1 kB · brotli 740 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/range.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/link-D-9z7kEr.js | 2.0 kB · brotli 697 B |
+| dist/link-DRDgTeij.js | 1.9 kB · brotli 665 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/d3BarChart-DIN2KQsU.js | 1.9 kB · brotli 860 B |
+| dist/d3BarChart-BQCPo1ub.js | 1.8 kB · brotli 824 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → d3BarChart.ts | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/nodrag-Dq2tlBbe.js | 1.6 kB · brotli 623 B |
+| dist/nodrag-Dq2tlBbe.js | 1.6 kB · brotli 596 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-drag | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-selection | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/palette-BuTjISrV.js | 956 B · brotli 420 B |
+| dist/palette-BuTjISrV.js | 911 B · brotli 388 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → palette.ts | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/ordinal-uZdoVxAx.js | 841 B · brotli 399 B |
+| dist/ordinal-CDNZetSD.js | 796 B · brotli 384 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/ordinal.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/sum-CNP0Xric.js | 609 B · brotli 257 B |
+| dist/sum-CNP0Xric.js | 568 B · brotli 225 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/point-6cHftmvM.js | 568 B · brotli 297 B |
+| dist/point-GXxVI808.js | 525 B · brotli 275 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/math-C5EhTgJw.js | 498 B · brotli 261 B |
+| dist/math-C5EhTgJw.js | 456 B · brotli 231 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/math.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/max-CPVNm4tn.js | 371 B · brotli 222 B |
+| dist/max-CPVNm4tn.js | 330 B · brotli 189 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/max.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| dist/array-Cv4-2llb.js | 368 B · brotli 215 B |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
+| dist/array-Cv4-2llb.js | 325 B · brotli 163 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 
 (unassigned) = bytes Sonda can't trace to a specific source line (whitespace, stray keywords, bundler-injected region markers) — not actual missing/unknown code.
 
