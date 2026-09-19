@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "0.0.50",
+    "version": "0.0.51",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
@@ -37,7 +37,7 @@
         "maplibre-gl@2.4.0": true,
         "sharp@0.34.5": true,
         "unrs-resolver@1.12.2": true,
-        "workerd@1.20260815.1": true
+        "workerd@1.20260918.1": true
     },
     "scripts": {
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
@@ -57,11 +57,11 @@
     },
     "dependencies": {
         "@dagrejs/dagre": "^3.1.1",
-        "@dpuse/dpuse-shared": "^0.3.777",
+        "@dpuse/dpuse-shared": "^0.3.809",
         "@observablehq/plot": "^0.6.17",
-        "@tanstack/charts": "^0.14.0",
-        "@unovis/ts": "^1.6.7",
-        "billboard.js": "^4.0.3",
+        "@tanstack/charts": "^0.18.0",
+        "@unovis/ts": "^1.7.0",
+        "billboard.js": "^4.1.0",
         "d3-axis": "^3.0.0",
         "d3-drag": "^3.0.0",
         "d3-force": "^3.0.0",
@@ -81,19 +81,19 @@
         "@types/d3-hierarchy": "^3.1.7",
         "@types/d3-sankey": "^0.12.5",
         "@types/d3-scale": "^4.0.9",
-        "@types/d3-selection": "^3.0.11",
-        "@types/d3-shape": "^3.1.8",
+        "@types/d3-selection": "^3.0.12",
+        "@types/d3-shape": "^3.2.0",
         "@types/d3-zoom": "^3.0.8",
-        "@types/node": "^26.2.0",
-        "eslint": "^10.8.1",
-        "happy-dom": "^20.11.6",
-        "prettier": "^3.9.6",
+        "@types/node": "^26.6.2",
+        "eslint": "^10.11.0",
+        "happy-dom": "^20.14.5",
+        "prettier": "^3.9.8",
         "sonda": "^0.14.0",
         "typescript": "^6.0.3",
-        "vite": "^8.2.2",
-        "vite-plugin-dts": "^5.0.3",
+        "vite": "^8.3.0",
+        "vite-plugin-dts": "^5.1.0",
         "vitest": "^4.1.11",
-        "wrangler": "^4.125.0"
+        "wrangler": "^4.135.0"
     },
     "overrides": {
         "d3-array": "^3.2.4",
