@@ -4,8 +4,8 @@
 import { describe, expect, it } from 'vitest';
 
 // ── Local
-import { Tool as D3Tool } from '@/index';
 import type { BarChartData } from '@/index';
+import { Tool as D3Tool } from '@/index';
 
 // ── Data ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -35,13 +35,13 @@ describe('D3Tool.renderObservablePlot', () => {
 
     it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
-        let called = false;
+        let isCalled = false;
 
         await new D3Tool().renderObservablePlot('bar', data, renderTo, () => {
-            called = true;
+            isCalled = true;
         });
 
-        expect(called).toBe(true);
+        expect(isCalled).toBe(true);
     });
 
     it('resize() redraws into the same container without throwing', async () => {

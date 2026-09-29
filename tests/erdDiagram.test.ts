@@ -45,19 +45,19 @@ describe('D3Tool.renderErdDiagram', () => {
         const view = await new D3Tool().renderErdDiagram(data, renderTo);
 
         // The arrowhead marker (in <defs>) is also a <path>, so edge paths are counted separately from it.
-        const edgePaths = Array.from(view.svg.querySelectorAll('path')).filter((path) => path.closest('defs') == null);
+        const edgePaths = [...view.svg.querySelectorAll('path')].filter((path) => path.closest('defs') == null);
         expect(edgePaths).toHaveLength(data.edges.length);
     });
 
     it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
-        let called = false;
+        let isCalled = false;
 
         await new D3Tool().renderErdDiagram(data, renderTo, undefined, () => {
-            called = true;
+            isCalled = true;
         });
 
-        expect(called).toBe(true);
+        expect(isCalled).toBe(true);
     });
 
     it('resize() redraws into the same container without throwing', async () => {

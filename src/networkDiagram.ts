@@ -108,13 +108,11 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         node.selectAll<SVGCircleElement, LaidOutNode>('circle')
             .attr('fill', (laidOutNode) => {
                 if (laidOutNode.id === selectedNodeId) return COLOR.nodeFillSelected;
-                if (laidOutNode.id === hoveredNodeId) return COLOR.nodeFillHovered;
-                return COLOR.nodeFill;
+                return laidOutNode.id === hoveredNodeId ? COLOR.nodeFillHovered : COLOR.nodeFill;
             })
             .attr('stroke', (laidOutNode) => {
                 if (laidOutNode.id === selectedNodeId) return COLOR.nodeStrokeSelected;
-                if (laidOutNode.id === hoveredNodeId) return COLOR.nodeStrokeHovered;
-                return COLOR.nodeStroke;
+                return laidOutNode.id === hoveredNodeId ? COLOR.nodeStrokeHovered : COLOR.nodeStroke;
             })
             .attr('stroke-width', (laidOutNode) => (laidOutNode.id === selectedNodeId ? 3 : 2))
             .attr('r', (laidOutNode) => (laidOutNode.id === selectedNodeId || laidOutNode.id === hoveredNodeId ? NODE_RADIUS_ACTIVE : NODE_RADIUS));
@@ -148,8 +146,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     svgSelection.call(zoomBehavior).on('dblclick.zoom', null);
 
     const getNodePosition = (value: LaidOutNode | string | number, axis: 'x' | 'y'): number => {
-        if (typeof value === 'object') return value[axis] ?? 0;
-        return 0;
+        return typeof value === 'object' ? (value[axis] ?? 0) : 0;
     };
 
     const renderGraph = (): void => {
@@ -198,7 +195,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         resize: () => {
             const newWidth = renderTo.clientWidth || DEFAULT_WIDTH;
             const newHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
-            svgSelection.attr('width', newWidth).attr('height', newHeight).attr('viewBox', `0 0 ${String(newWidth)} ${String(newHeight)}`);
+            svgSelection
+                .attr('width', newWidth)
+                .attr('height', newHeight)
+                .attr('viewBox', `0 0 ${String(newWidth)} ${String(newHeight)}`);
             simulation.force('center', forceCenter(newWidth / 2, newHeight / 2));
         },
         svg: svgNode,

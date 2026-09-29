@@ -76,29 +76,36 @@
         "path": "node_modules/@babel/types",
         "licenseFile": "downloads/@babel/types@7.29.8-LICENSE.txt"
     },
-    "@dagrejs/dagre@3.1.0": {
+    "@borewit/text-codec@0.2.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Borewit/text-codec",
+        "publisher": "Borewit",
+        "path": "node_modules/@borewit/text-codec",
+        "licenseFile": "downloads/@borewit/text-codec@0.2.2-LICENSE.txt"
+    },
+    "@dagrejs/dagre@3.1.1": {
         "licenses": "MIT",
         "repository": "https://github.com/dagrejs/dagre",
         "publisher": "Chris Pettitt",
         "email": "cpettitt@gmail.com",
         "path": "node_modules/@dagrejs/dagre",
-        "licenseFile": "downloads/@dagrejs/dagre@3.1.0-LICENSE.txt"
+        "licenseFile": "downloads/@dagrejs/dagre@3.1.1-LICENSE.txt"
     },
-    "@dagrejs/graphlib@4.0.3": {
+    "@dagrejs/graphlib@4.0.5": {
         "licenses": "MIT",
         "repository": "https://github.com/dagrejs/graphlib",
         "publisher": "Chris Pettitt",
         "email": "cpettitt@gmail.com",
         "path": "node_modules/@dagrejs/graphlib",
-        "licenseFile": "downloads/@dagrejs/graphlib@4.0.3-LICENSE.txt"
+        "licenseFile": "downloads/@dagrejs/graphlib@4.0.5-LICENSE.txt"
     },
-    "@dpuse/dpuse-shared@0.3.760": {
+    "@dpuse/dpuse-shared@0.3.865": {
         "licenses": "MIT",
         "repository": "https://github.com/dpuse/dpuse-shared",
         "publisher": "Jonathan Terrell",
         "email": "terrell.jm@gmail.com",
         "path": "node_modules/@dpuse/dpuse-shared",
-        "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.760-LICENSE.txt"
+        "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.865-LICENSE.txt"
     },
     "@emotion/babel-plugin@11.13.5": {
         "licenses": "MIT",
@@ -178,13 +185,13 @@
         "path": "node_modules/@jridgewell/resolve-uri",
         "licenseFile": "downloads/@jridgewell/resolve-uri@3.1.2-LICENSE.txt"
     },
-    "@jridgewell/sourcemap-codec@1.5.5": {
+    "@jridgewell/sourcemap-codec@1.6.0": {
         "licenses": "MIT",
         "repository": "https://github.com/jridgewell/sourcemaps",
         "publisher": "Justin Ridgewell",
         "email": "justin@ridgewell.name",
         "path": "node_modules/@jridgewell/sourcemap-codec",
-        "licenseFile": "downloads/@jridgewell/sourcemap-codec@1.5.5-LICENSE.txt"
+        "licenseFile": "downloads/@jridgewell/sourcemap-codec@1.6.0-LICENSE.txt"
     },
     "@jridgewell/trace-mapping@0.3.31": {
         "licenses": "MIT",
@@ -201,13 +208,6 @@
         "path": "node_modules/@juggle/resize-observer",
         "licenseFile": "downloads/@juggle/resize-observer@3.4.0-LICENSE.txt"
     },
-    "@mapbox/geojson-rewind@0.5.2": {
-        "licenses": "ISC",
-        "repository": "https://github.com/mapbox/geojson-rewind",
-        "publisher": "Tom MacWright",
-        "path": "node_modules/@mapbox/geojson-rewind",
-        "licenseFile": "downloads/@mapbox/geojson-rewind@0.5.2-LICENSE.txt"
-    },
     "@mapbox/jsonlint-lines-primitives@2.0.3": {
         "licenses": "MIT",
         "repository": "https://github.com/mapbox/jsonlint",
@@ -216,18 +216,12 @@
         "path": "node_modules/@mapbox/jsonlint-lines-primitives",
         "licenseFile": "downloads/@mapbox/jsonlint-lines-primitives@2.0.3-LICENSE.txt"
     },
-    "@mapbox/mapbox-gl-supported@2.0.1": {
-        "licenses": "BSD-3-Clause",
-        "repository": "https://github.com/mapbox/mapbox-gl-supported",
-        "path": "node_modules/@mapbox/mapbox-gl-supported",
-        "licenseFile": "downloads/@mapbox/mapbox-gl-supported@2.0.1-LICENSE.txt"
-    },
-    "@mapbox/point-geometry@0.1.0": {
+    "@mapbox/point-geometry@1.1.0": {
         "licenses": "ISC",
         "repository": "https://github.com/mapbox/point-geometry",
         "publisher": "Tom MacWright",
         "path": "node_modules/@mapbox/point-geometry",
-        "licenseFile": "downloads/@mapbox/point-geometry@0.1.0-LICENSE.txt"
+        "licenseFile": "downloads/@mapbox/point-geometry@1.1.0-LICENSE.txt"
     },
     "@mapbox/tiny-sdf@2.2.0": {
         "licenses": "BSD-2-Clause",
@@ -236,25 +230,45 @@
         "path": "node_modules/@mapbox/tiny-sdf",
         "licenseFile": "downloads/@mapbox/tiny-sdf@2.2.0-LICENSE.txt"
     },
-    "@mapbox/unitbezier@0.0.1": {
+    "@mapbox/unitbezier@1.0.0": {
         "licenses": "BSD-2-Clause",
         "repository": "https://github.com/mapbox/unitbezier",
         "path": "node_modules/@mapbox/unitbezier",
-        "licenseFile": "downloads/@mapbox/unitbezier@0.0.1-LICENSE.txt"
+        "licenseFile": "downloads/@mapbox/unitbezier@1.0.0-LICENSE.txt"
     },
-    "@mapbox/vector-tile@1.3.1": {
+    "@mapbox/vector-tile@3.0.0": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/mapbox/vector-tile-js",
         "path": "node_modules/@mapbox/vector-tile",
-        "licenseFile": "downloads/@mapbox/vector-tile@1.3.1-LICENSE.txt"
+        "licenseFile": "downloads/@mapbox/vector-tile@3.0.0-LICENSE.txt"
     },
-    "@mapbox/whoots-js@3.1.0": {
+    "@maplibre/geojson-vt@6.1.1": {
         "licenses": "ISC",
-        "repository": "https://github.com/mapbox/whoots-js",
-        "publisher": "Bryan Housel",
-        "email": "bryan@mapbox.com",
-        "path": "node_modules/@mapbox/whoots-js",
-        "licenseFile": "downloads/@mapbox/whoots-js@3.1.0-LICENSE.txt"
+        "repository": "https://github.com/maplibre/geojson-vt",
+        "publisher": "Vladimir Agafonkin",
+        "path": "node_modules/@maplibre/geojson-vt",
+        "licenseFile": "downloads/@maplibre/geojson-vt@6.1.1-LICENSE.txt"
+    },
+    "@maplibre/maplibre-gl-style-spec@26.4.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/maplibre/maplibre-style-spec",
+        "publisher": "MapLibre",
+        "path": "node_modules/@maplibre/maplibre-gl-style-spec",
+        "licenseFile": "downloads/@maplibre/maplibre-gl-style-spec@26.4.1-LICENSE.txt"
+    },
+    "@maplibre/mlt@1.3.0": {
+        "licenses": "(MIT OR Apache-2.0)",
+        "repository": "https://github.com/maplibre/maplibre-tile-spec",
+        "path": "node_modules/@maplibre/mlt",
+        "licenseFile": "downloads/@maplibre/mlt@1.3.0-LICENSE.txt"
+    },
+    "@maplibre/vt-pbf@4.3.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/maplibre/vt-pbf",
+        "publisher": "Anand Thakker",
+        "email": "vestibule@anandthakker.net",
+        "path": "node_modules/@maplibre/vt-pbf",
+        "licenseFile": "downloads/@maplibre/vt-pbf@4.3.2-LICENSE.txt"
     },
     "@observablehq/plot@0.6.17": {
         "licenses": "ISC",
@@ -263,11 +277,25 @@
         "path": "node_modules/@observablehq/plot",
         "licenseFile": "downloads/@observablehq/plot@0.6.17-LICENSE.txt"
     },
-    "@tanstack/charts@0.6.5": {
+    "@tanstack/charts@0.18.0": {
         "licenses": "MIT",
         "repository": "https://github.com/TanStack/charts",
         "path": "node_modules/@tanstack/charts",
-        "licenseFile": "downloads/@tanstack/charts@0.6.5-LICENSE.txt"
+        "licenseFile": "downloads/@tanstack/charts@0.18.0-LICENSE.txt"
+    },
+    "@tokenizer/inflate@0.4.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Borewit/tokenizer-inflate",
+        "publisher": "Borewit",
+        "path": "node_modules/@tokenizer/inflate",
+        "licenseFile": "downloads/@tokenizer/inflate@0.4.1-LICENSE.txt"
+    },
+    "@tokenizer/token@0.3.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Borewit/tokenizer-token",
+        "publisher": "Borewit",
+        "path": "node_modules/@tokenizer/token",
+        "licenseFile": "downloads/@tokenizer/token@0.3.0-LICENSE.txt"
     },
     "@types/d3-array@3.2.2": {
         "licenses": "MIT",
@@ -425,11 +453,11 @@
         "path": "node_modules/@types/d3-scale",
         "licenseFile": "downloads/@types/d3-scale@4.0.9-LICENSE.txt"
     },
-    "@types/d3-selection@3.0.11": {
+    "@types/d3-selection@3.0.12": {
         "licenses": "MIT",
         "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
         "path": "node_modules/@types/d3-selection",
-        "licenseFile": "downloads/@types/d3-selection@3.0.11-LICENSE.txt"
+        "licenseFile": "downloads/@types/d3-selection@3.0.12-LICENSE.txt"
     },
     "@types/d3-shape@1.3.12": {
         "licenses": "MIT",
@@ -440,8 +468,14 @@
     "@types/d3-shape@3.1.8": {
         "licenses": "MIT",
         "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "path": "node_modules/@types/d3-shape",
+        "path": "node_modules/@unovis/ts/node_modules/@types/d3-shape",
         "licenseFile": "downloads/@types/d3-shape@3.1.8-LICENSE.txt"
+    },
+    "@types/d3-shape@3.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "path": "node_modules/@types/d3-shape",
+        "licenseFile": "downloads/@types/d3-shape@3.2.0-LICENSE.txt"
     },
     "@types/d3-time-format@4.0.3": {
         "licenses": "MIT",
@@ -467,11 +501,11 @@
         "path": "node_modules/@types/d3-transition",
         "licenseFile": "downloads/@types/d3-transition@3.0.9-LICENSE.txt"
     },
-    "@types/d3-zoom@3.0.8": {
+    "@types/d3-zoom@3.0.9": {
         "licenses": "MIT",
         "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
         "path": "node_modules/@types/d3-zoom",
-        "licenseFile": "downloads/@types/d3-zoom@3.0.8-LICENSE.txt"
+        "licenseFile": "downloads/@types/d3-zoom@3.0.9-LICENSE.txt"
     },
     "@types/d3@7.4.3": {
         "licenses": "MIT",
@@ -497,29 +531,11 @@
         "path": "node_modules/@types/leaflet",
         "licenseFile": "downloads/@types/leaflet@1.7.6-LICENSE.txt"
     },
-    "@types/mapbox__point-geometry@0.1.4": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "path": "node_modules/@types/mapbox__point-geometry",
-        "licenseFile": "downloads/@types/mapbox__point-geometry@0.1.4-LICENSE.txt"
-    },
-    "@types/mapbox__vector-tile@1.3.4": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "path": "node_modules/@types/mapbox__vector-tile",
-        "licenseFile": "downloads/@types/mapbox__vector-tile@1.3.4-LICENSE.txt"
-    },
     "@types/parse-json@4.0.2": {
         "licenses": "MIT",
         "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
         "path": "node_modules/@types/parse-json",
         "licenseFile": "downloads/@types/parse-json@4.0.2-LICENSE.txt"
-    },
-    "@types/pbf@3.0.5": {
-        "licenses": "MIT",
-        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-        "path": "node_modules/@types/pbf",
-        "licenseFile": "downloads/@types/pbf@3.0.5-LICENSE.txt"
     },
     "@types/supercluster@5.0.3": {
         "licenses": "MIT",
@@ -569,27 +585,27 @@
         "path": "node_modules/@types/topojson",
         "licenseFile": "downloads/@types/topojson@3.2.6-LICENSE.txt"
     },
-    "@unovis/dagre-layout@0.8.8-2": {
+    "@unovis/dagre-layout@0.8.8-3": {
         "licenses": "MIT",
         "repository": "https://github.com/unovis/dagre-layout",
         "publisher": "Nikita Rokotyan",
         "path": "node_modules/@unovis/dagre-layout",
-        "licenseFile": "downloads/@unovis/dagre-layout@0.8.8-2-LICENSE.txt"
+        "licenseFile": "downloads/@unovis/dagre-layout@0.8.8-3-LICENSE.txt"
     },
-    "@unovis/graphlibrary@2.2.0-2": {
+    "@unovis/graphlibrary@2.2.0-3": {
         "licenses": "MIT",
         "repository": "https://github.com/unovis/graphlibrary",
         "publisher": "Nikita Rokotyan",
         "path": "node_modules/@unovis/graphlibrary",
-        "licenseFile": "downloads/@unovis/graphlibrary@2.2.0-2-LICENSE.txt"
+        "licenseFile": "downloads/@unovis/graphlibrary@2.2.0-3-LICENSE.txt"
     },
-    "@unovis/ts@1.6.7": {
+    "@unovis/ts@1.7.1": {
         "licenses": "Apache-2.0",
         "repository": "https://github.com/f5/unovis",
         "publisher": "Nikita Rokotyan, F5 Inc.",
         "email": "nikita@f5.com",
         "path": "node_modules/@unovis/ts",
-        "licenseFile": "downloads/@unovis/ts@1.6.7-LICENSE.txt"
+        "licenseFile": "downloads/@unovis/ts@1.7.1-LICENSE.txt"
     },
     "babel-plugin-macros@3.1.0": {
         "licenses": "MIT",
@@ -599,12 +615,12 @@
         "path": "node_modules/babel-plugin-macros",
         "licenseFile": "downloads/babel-plugin-macros@3.1.0-LICENSE.txt"
     },
-    "billboard.js@4.0.3": {
+    "billboard.js@4.1.0": {
         "licenses": "MIT",
         "repository": "https://github.com/naver/billboard.js",
         "publisher": "NAVER Corp.",
         "path": "node_modules/billboard.js",
-        "licenseFile": "downloads/billboard.js@4.0.3-LICENSE.txt"
+        "licenseFile": "downloads/billboard.js@4.1.0-LICENSE.txt"
     },
     "binary-search-bounds@2.0.5": {
         "licenses": "MIT",
@@ -652,14 +668,6 @@
         "email": "david.dave.clark@gmail.com",
         "path": "node_modules/cosmiconfig",
         "licenseFile": "downloads/cosmiconfig@7.1.0-LICENSE.txt"
-    },
-    "csscolorparser@1.0.3": {
-        "licenses": "MIT",
-        "repository": "https://github.com/deanm/css-color-parser-js",
-        "publisher": "Dean McNamee",
-        "email": "dean@gmail.com",
-        "path": "node_modules/csscolorparser",
-        "licenseFile": "downloads/csscolorparser@1.0.3-LICENSE.txt"
     },
     "csstype@3.2.3": {
         "licenses": "MIT",
@@ -787,6 +795,13 @@
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-geo",
         "licenseFile": "downloads/d3-geo@3.1.1-LICENSE.txt"
+    },
+    "d3-hexbin@0.2.2": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-hexbin",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-hexbin",
+        "licenseFile": "downloads/d3-hexbin@0.2.2-LICENSE.txt"
     },
     "d3-hierarchy@3.1.2": {
         "licenses": "ISC",
@@ -929,12 +944,12 @@
         "path": "node_modules/delaunator",
         "licenseFile": "downloads/delaunator@5.1.0-LICENSE.txt"
     },
-    "earcut@2.2.4": {
+    "earcut@3.2.3": {
         "licenses": "ISC",
         "repository": "https://github.com/mapbox/earcut",
-        "publisher": "Vladimir Agafonkin",
+        "publisher": "Volodymyr Agafonkin",
         "path": "node_modules/earcut",
-        "licenseFile": "downloads/earcut@2.2.4-LICENSE.txt"
+        "licenseFile": "downloads/earcut@3.2.3-LICENSE.txt"
     },
     "elkjs@0.10.2": {
         "licenses": "EPL-2.0",
@@ -966,6 +981,14 @@
         "path": "node_modules/escape-string-regexp",
         "licenseFile": "downloads/escape-string-regexp@4.0.0-LICENSE.txt"
     },
+    "file-type@22.1.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/sindresorhus/file-type",
+        "publisher": "Sindre Sorhus",
+        "email": "sindresorhus@gmail.com",
+        "path": "node_modules/file-type",
+        "licenseFile": "downloads/file-type@22.1.1-LICENSE.txt"
+    },
     "find-root@1.1.0": {
         "licenses": "MIT",
         "repository": "https://github.com/js-n/find-root",
@@ -981,13 +1004,6 @@
         "path": "node_modules/function-bind",
         "licenseFile": "downloads/function-bind@1.1.2-LICENSE.txt"
     },
-    "geojson-vt@3.2.1": {
-        "licenses": "ISC",
-        "repository": "https://github.com/mapbox/geojson-vt",
-        "publisher": "Vladimir Agafonkin",
-        "path": "node_modules/geojson-vt",
-        "licenseFile": "downloads/geojson-vt@3.2.1-LICENSE.txt"
-    },
     "geojson@0.5.0": {
         "licenses": "MIT",
         "repository": "https://github.com/caseycesari/geojson.js",
@@ -995,26 +1011,11 @@
         "path": "node_modules/geojson",
         "licenseFile": "downloads/geojson@0.5.0-LICENSE.txt"
     },
-    "get-stream@6.0.1": {
-        "licenses": "MIT",
-        "repository": "https://github.com/sindresorhus/get-stream",
-        "publisher": "Sindre Sorhus",
-        "email": "sindresorhus@gmail.com",
-        "path": "node_modules/get-stream",
-        "licenseFile": "downloads/get-stream@6.0.1-LICENSE.txt"
-    },
     "gl-matrix@3.4.4": {
         "licenses": "MIT",
         "repository": "https://github.com/toji/gl-matrix",
         "path": "node_modules/gl-matrix",
         "licenseFile": "downloads/gl-matrix@3.4.4-LICENSE.txt"
-    },
-    "global-prefix@3.0.0": {
-        "licenses": "MIT",
-        "repository": "https://github.com/jonschlinkert/global-prefix",
-        "publisher": "Jon Schlinkert",
-        "path": "node_modules/global-prefix",
-        "licenseFile": "downloads/global-prefix@3.0.0-LICENSE.txt"
     },
     "hasown@2.0.4": {
         "licenses": "MIT",
@@ -1048,14 +1049,6 @@
         "path": "node_modules/import-fresh",
         "licenseFile": "downloads/import-fresh@3.3.1-LICENSE.txt"
     },
-    "ini@1.3.8": {
-        "licenses": "ISC",
-        "repository": "https://github.com/isaacs/ini",
-        "publisher": "Isaac Z. Schlueter",
-        "email": "i@izs.me",
-        "path": "node_modules/global-prefix/node_modules/ini",
-        "licenseFile": "downloads/ini@1.3.8-LICENSE.txt"
-    },
     "internmap@2.0.3": {
         "licenses": "ISC",
         "repository": "https://github.com/mbostock/internmap",
@@ -1084,14 +1077,6 @@
         "email": "ljharb@gmail.com",
         "path": "node_modules/is-core-module",
         "licenseFile": "downloads/is-core-module@2.16.2-LICENSE.txt"
-    },
-    "isexe@2.0.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/isaacs/isexe",
-        "publisher": "Isaac Z. Schlueter",
-        "email": "i@izs.me",
-        "path": "node_modules/isexe",
-        "licenseFile": "downloads/isexe@2.0.0-LICENSE.txt"
     },
     "isoformat@0.2.1": {
         "licenses": "ISC",
@@ -1122,19 +1107,26 @@
         "path": "node_modules/parse-json/node_modules/json-parse-even-better-errors",
         "licenseFile": "downloads/json-parse-even-better-errors@2.3.1-LICENSE.txt"
     },
+    "json-stringify-pretty-compact@4.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/lydell/json-stringify-pretty-compact",
+        "publisher": "Simon Lydell",
+        "path": "node_modules/json-stringify-pretty-compact",
+        "licenseFile": "downloads/json-stringify-pretty-compact@4.0.0-LICENSE.txt"
+    },
     "kdbush@3.0.0": {
         "licenses": "ISC",
         "repository": "https://github.com/mourner/kdbush",
         "publisher": "Vladimir Agafonkin",
-        "path": "node_modules/kdbush",
+        "path": "node_modules/supercluster/node_modules/kdbush",
         "licenseFile": "downloads/kdbush@3.0.0-LICENSE.txt"
     },
-    "kind-of@6.0.3": {
-        "licenses": "MIT",
-        "repository": "https://github.com/jonschlinkert/kind-of",
-        "publisher": "Jon Schlinkert",
-        "path": "node_modules/kind-of",
-        "licenseFile": "downloads/kind-of@6.0.3-LICENSE.txt"
+    "kdbush@4.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/mourner/kdbush",
+        "publisher": "Vladimir Agafonkin",
+        "path": "node_modules/kdbush",
+        "licenseFile": "downloads/kdbush@4.1.0-LICENSE.txt"
     },
     "leaflet@1.7.1": {
         "licenses": "BSD-2-Clause",
@@ -1158,11 +1150,11 @@
         "path": "node_modules/lodash-es",
         "licenseFile": "downloads/lodash-es@4.18.1-LICENSE.txt"
     },
-    "maplibre-gl@2.4.0": {
+    "maplibre-gl@6.7.0": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/maplibre/maplibre-gl-js",
         "path": "node_modules/maplibre-gl",
-        "licenseFile": "downloads/maplibre-gl@2.4.0-LICENSE.txt"
+        "licenseFile": "downloads/maplibre-gl@6.7.0-LICENSE.txt"
     },
     "minimist@1.2.8": {
         "licenses": "MIT",
@@ -1217,12 +1209,12 @@
         "path": "node_modules/path-type",
         "licenseFile": "downloads/path-type@4.0.0-LICENSE.txt"
     },
-    "pbf@3.3.0": {
+    "pbf@5.1.2": {
         "licenses": "BSD-3-Clause",
         "repository": "https://github.com/mapbox/pbf",
         "publisher": "Konstantin Kaefer",
         "path": "node_modules/pbf",
-        "licenseFile": "downloads/pbf@3.3.0-LICENSE.txt"
+        "licenseFile": "downloads/pbf@5.1.2-LICENSE.txt"
     },
     "picocolors@1.1.1": {
         "licenses": "ISC",
@@ -1231,12 +1223,12 @@
         "path": "node_modules/picocolors",
         "licenseFile": "downloads/picocolors@1.1.1-LICENSE.txt"
     },
-    "potpack@1.0.2": {
+    "potpack@2.1.0": {
         "licenses": "ISC",
         "repository": "https://github.com/mapbox/potpack",
         "publisher": "Vladimir Agafonkin",
         "path": "node_modules/potpack",
-        "licenseFile": "downloads/potpack@1.0.2-LICENSE.txt"
+        "licenseFile": "downloads/potpack@2.1.0-LICENSE.txt"
     },
     "protocol-buffers-schema@3.6.1": {
         "licenses": "MIT",
@@ -1245,11 +1237,12 @@
         "path": "node_modules/protocol-buffers-schema",
         "licenseFile": "downloads/protocol-buffers-schema@3.6.1-LICENSE.txt"
     },
-    "quickselect@2.0.0": {
+    "quickselect@3.0.0": {
         "licenses": "ISC",
+        "repository": "https://github.com/mourner/quickselect",
         "publisher": "Vladimir Agafonkin",
         "path": "node_modules/quickselect",
-        "licenseFile": "downloads/quickselect@2.0.0-LICENSE.txt"
+        "licenseFile": "downloads/quickselect@3.0.0-LICENSE.txt"
     },
     "resolve-from@4.0.0": {
         "licenses": "MIT",
@@ -1311,6 +1304,13 @@
         "path": "node_modules/striptags",
         "licenseFile": "downloads/striptags@3.2.0-LICENSE.txt"
     },
+    "strtok3@10.3.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Borewit/strtok3",
+        "publisher": "Borewit",
+        "path": "node_modules/strtok3",
+        "licenseFile": "downloads/strtok3@10.3.5-LICENSE.txt"
+    },
     "stylis@4.2.0": {
         "licenses": "MIT",
         "repository": "https://github.com/thysultan/stylis.js",
@@ -1349,11 +1349,18 @@
         "path": "node_modules/throttle-debounce",
         "licenseFile": "downloads/throttle-debounce@5.0.2-LICENSE.txt"
     },
-    "tinyqueue@2.0.3": {
+    "tinyqueue@3.0.0": {
         "licenses": "ISC",
         "repository": "https://github.com/mourner/tinyqueue",
         "path": "node_modules/tinyqueue",
-        "licenseFile": "downloads/tinyqueue@2.0.3-LICENSE.txt"
+        "licenseFile": "downloads/tinyqueue@3.0.0-LICENSE.txt"
+    },
+    "token-types@6.1.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/Borewit/token-types",
+        "publisher": "Borewit",
+        "path": "node_modules/token-types",
+        "licenseFile": "downloads/token-types@6.1.2-LICENSE.txt"
     },
     "topojson-client@3.1.0": {
         "licenses": "ISC",
@@ -1369,21 +1376,20 @@
         "path": "node_modules/tslib",
         "licenseFile": "downloads/tslib@2.8.1-LICENSE.txt"
     },
-    "vt-pbf@3.1.3": {
+    "uint8array-extras@1.6.0": {
         "licenses": "MIT",
-        "repository": "https://github.com/mapbox/vt-pbf",
-        "publisher": "Anand Thakker",
-        "email": "vestibule@anandthakker.net",
-        "path": "node_modules/vt-pbf",
-        "licenseFile": "downloads/vt-pbf@3.1.3-LICENSE.txt"
+        "repository": "https://github.com/sindresorhus/uint8array-extras",
+        "publisher": "Sindre Sorhus",
+        "email": "sindresorhus@gmail.com",
+        "path": "node_modules/uint8array-extras",
+        "licenseFile": "downloads/uint8array-extras@1.6.0-LICENSE.txt"
     },
-    "which@1.3.1": {
-        "licenses": "ISC",
-        "repository": "https://github.com/isaacs/node-which",
-        "publisher": "Isaac Z. Schlueter",
-        "email": "i@izs.me",
-        "path": "node_modules/global-prefix/node_modules/which",
-        "licenseFile": "downloads/which@1.3.1-LICENSE.txt"
+    "valibot@1.5.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/open-circle/valibot",
+        "publisher": "Fabian Hiller",
+        "path": "node_modules/valibot",
+        "licenseFile": "downloads/valibot@1.5.0-LICENSE.txt"
     },
     "yaml@1.10.3": {
         "licenses": "ISC",

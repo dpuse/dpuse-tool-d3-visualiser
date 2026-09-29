@@ -1,11 +1,11 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-09-22T10:02:46.096Z",
+    "generatedAt": "2026-09-29T14:33:56.639Z",
     "integration": "vite",
     "sources": false,
-    "gzip": false,
-    "brotli": true
+    "gzip": true,
+    "brotli": false
   },
   "resources": [
     {
@@ -22,8 +22,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 279,
-      "gzip": 0,
-      "brotli": 69,
+      "gzip": 74,
+      "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -32,8 +32,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 159,
-      "gzip": 0,
-      "brotli": 66,
+      "gzip": 85,
+      "brotli": 0,
       "parent": "dist/array-Cv4-2llb.js"
     },
     {
@@ -42,8 +42,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 212,
-      "gzip": 0,
-      "brotli": 89,
+      "gzip": 107,
+      "brotli": 0,
       "parent": "dist/axis-EpX3kBPs.js"
     },
     {
@@ -52,8 +52,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 305,
-      "gzip": 0,
-      "brotli": 137,
+      "gzip": 158,
+      "brotli": 0,
       "parent": "dist/band-p1VbTxZM.js"
     },
     {
@@ -62,8 +62,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 18346,
-      "gzip": 0,
-      "brotli": 690,
+      "gzip": 870,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -72,8 +72,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 12284,
-      "gzip": 0,
-      "brotli": 1480,
+      "gzip": 1652,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -82,8 +82,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 365,
-      "gzip": 0,
-      "brotli": 176,
+      "gzip": 203,
+      "brotli": 0,
       "parent": "dist/d3BarChart-BC05DvRv.js"
     },
     {
@@ -92,8 +92,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 706,
-      "gzip": 0,
-      "brotli": 174,
+      "gzip": 202,
+      "brotli": 0,
       "parent": "dist/drag-Ieen6R0z.js"
     },
     {
@@ -102,8 +102,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 4091,
-      "gzip": 0,
-      "brotli": 192,
+      "gzip": 223,
+      "brotli": 0,
       "parent": "dist/erdDiagram-CtPeCq0f.js"
     },
     {
@@ -112,8 +112,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 1159,
-      "gzip": 0,
-      "brotli": 115,
+      "gzip": 119,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -122,8 +122,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 2977,
-      "gzip": 0,
-      "brotli": 304,
+      "gzip": 361,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -132,8 +132,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 317,
-      "gzip": 0,
-      "brotli": 135,
+      "gzip": 157,
+      "brotli": 0,
       "parent": "dist/link-DRDgTeij.js"
     },
     {
@@ -142,8 +142,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 174,
-      "gzip": 0,
-      "brotli": 107,
+      "gzip": 121,
+      "brotli": 0,
       "parent": "dist/math-C5EhTgJw.js"
     },
     {
@@ -152,8 +152,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 89,
-      "gzip": 0,
-      "brotli": 71,
+      "gzip": 86,
+      "brotli": 0,
       "parent": "dist/max-CPVNm4tn.js"
     },
     {
@@ -162,8 +162,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 2302,
-      "gzip": 0,
-      "brotli": 267,
+      "gzip": 305,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -172,8 +172,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 402,
-      "gzip": 0,
-      "brotli": 122,
+      "gzip": 145,
+      "brotli": 0,
       "parent": "dist/nodrag-Dq2tlBbe.js"
     },
     {
@@ -181,10 +181,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 20818,
-      "gzip": 0,
-      "brotli": 1473,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "uncompressed": 20806,
+      "gzip": 1841,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "chunk",
@@ -192,8 +192,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 304,
-      "gzip": 0,
-      "brotli": 130,
+      "gzip": 144,
+      "brotli": 0,
       "parent": "dist/ordinal-BtWaYSDN.js"
     },
     {
@@ -202,8 +202,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 137,
-      "gzip": 0,
-      "brotli": 73,
+      "gzip": 72,
+      "brotli": 0,
       "parent": "dist/palette-BuTjISrV.js"
     },
     {
@@ -212,8 +212,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 190,
-      "gzip": 0,
-      "brotli": 102,
+      "gzip": 119,
+      "brotli": 0,
       "parent": "dist/path-BoJ8LMXE.js"
     },
     {
@@ -222,8 +222,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 224,
-      "gzip": 0,
-      "brotli": 111,
+      "gzip": 123,
+      "brotli": 0,
       "parent": "dist/point-GXxVI808.js"
     },
     {
@@ -232,8 +232,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 640,
-      "gzip": 0,
-      "brotli": 276,
+      "gzip": 306,
+      "brotli": 0,
       "parent": "dist/pow-Bp6eSqVs.js"
     },
     {
@@ -242,8 +242,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 1119,
-      "gzip": 0,
-      "brotli": 220,
+      "gzip": 259,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -252,8 +252,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 3780,
-      "gzip": 0,
-      "brotli": 216,
+      "gzip": 234,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -262,8 +262,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 1117,
-      "gzip": 0,
-      "brotli": 226,
+      "gzip": 238,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -272,8 +272,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 3351,
-      "gzip": 0,
-      "brotli": 257,
+      "gzip": 295,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -282,8 +282,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 2341,
-      "gzip": 0,
-      "brotli": 118,
+      "gzip": 141,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -292,8 +292,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 975,
-      "gzip": 0,
-      "brotli": 165,
+      "gzip": 214,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -302,8 +302,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 162,
-      "gzip": 0,
-      "brotli": 64,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/sum-CNP0Xric.js"
     },
     {
@@ -312,8 +312,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 11047,
-      "gzip": 0,
-      "brotli": 553,
+      "gzip": 645,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -322,8 +322,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 455,
-      "gzip": 0,
-      "brotli": 177,
+      "gzip": 189,
+      "brotli": 0,
       "parent": "dist/treeDiagram-FUVkkblR.js"
     },
     {
@@ -332,8 +332,8 @@
       "type": "other",
       "format": "other",
       "uncompressed": 2692,
-      "gzip": 0,
-      "brotli": 349,
+      "gzip": 414,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -341,256 +341,256 @@
       "name": "dist/array-Cv4-2llb.js",
       "type": "script",
       "uncompressed": 325,
-      "gzip": 0,
-      "brotli": 163
+      "gzip": 210,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/axis-EpX3kBPs.js",
       "type": "script",
       "uncompressed": 3452,
-      "gzip": 0,
-      "brotli": 1113
+      "gzip": 1280,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/band-p1VbTxZM.js",
       "type": "script",
       "uncompressed": 2106,
-      "gzip": 0,
-      "brotli": 734
+      "gzip": 813,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/billboardJs-PR7IsnhE.js",
       "type": "script",
       "uncompressed": 269838,
-      "gzip": 0,
-      "brotli": 69583
+      "gzip": 82238,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/chordDiagram-B1_nfC1m.js",
       "type": "script",
       "uncompressed": 99516,
-      "gzip": 0,
-      "brotli": 26478
+      "gzip": 29893,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/d3BarChart-BC05DvRv.js",
       "type": "script",
       "uncompressed": 1873,
-      "gzip": 0,
-      "brotli": 832
+      "gzip": 938,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
       "uncompressed": 2336,
-      "gzip": 0,
-      "brotli": 510
+      "gzip": 567,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/drag-Ieen6R0z.js",
       "type": "script",
       "uncompressed": 4394,
-      "gzip": 0,
-      "brotli": 1368
+      "gzip": 1579,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/erdDiagram-CtPeCq0f.js",
       "type": "script",
       "uncompressed": 64463,
-      "gzip": 0,
-      "brotli": 16745
+      "gzip": 18675,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/hierarchy-CDFAetye.js",
       "type": "script",
       "uncompressed": 4048,
-      "gzip": 0,
-      "brotli": 1121
+      "gzip": 1257,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/linear-q6e-7JBm.js",
       "type": "script",
       "uncompressed": 16363,
-      "gzip": 0,
-      "brotli": 4696
+      "gzip": 5251,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/link-DRDgTeij.js",
       "type": "script",
       "uncompressed": 1990,
-      "gzip": 0,
-      "brotli": 665
+      "gzip": 755,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/math-C5EhTgJw.js",
       "type": "script",
       "uncompressed": 456,
-      "gzip": 0,
-      "brotli": 231
+      "gzip": 277,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/max-CPVNm4tn.js",
       "type": "script",
       "uncompressed": 330,
-      "gzip": 0,
-      "brotli": 189
+      "gzip": 220,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/networkDiagram-DZwLfY_R.js",
       "type": "script",
       "uncompressed": 18058,
-      "gzip": 0,
-      "brotli": 5054
+      "gzip": 5723,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/nodrag-Dq2tlBbe.js",
       "type": "script",
       "uncompressed": 1609,
-      "gzip": 0,
-      "brotli": 596
+      "gzip": 699,
+      "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/observablePlot-CGF3S2mL.js",
+      "name": "dist/observablePlot-B_JYDIbq.js",
       "type": "script",
-      "uncompressed": 228845,
-      "gzip": 0,
-      "brotli": 57465
+      "uncompressed": 228879,
+      "gzip": 68851,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/ordinal-BtWaYSDN.js",
       "type": "script",
       "uncompressed": 2028,
-      "gzip": 0,
-      "brotli": 669
+      "gzip": 762,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/palette-BuTjISrV.js",
       "type": "script",
       "uncompressed": 911,
-      "gzip": 0,
-      "brotli": 388
+      "gzip": 434,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/path-BoJ8LMXE.js",
       "type": "script",
       "uncompressed": 2802,
-      "gzip": 0,
-      "brotli": 1005
+      "gzip": 1105,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/point-GXxVI808.js",
       "type": "script",
       "uncompressed": 525,
-      "gzip": 0,
-      "brotli": 275
+      "gzip": 318,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/pow-Bp6eSqVs.js",
       "type": "script",
       "uncompressed": 1764,
-      "gzip": 0,
-      "brotli": 739
+      "gzip": 808,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/sankeyDiagram-DOF6arSJ.js",
       "type": "script",
       "uncompressed": 10406,
-      "gzip": 0,
-      "brotli": 2918
+      "gzip": 3346,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/select-BIuoFcZG.js",
       "type": "script",
       "uncompressed": 18311,
-      "gzip": 0,
-      "brotli": 4006
+      "gzip": 4568,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/src-Clugeype.js",
       "type": "script",
       "uncompressed": 13095,
-      "gzip": 0,
-      "brotli": 3632
+      "gzip": 4117,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/src-kLpf-6r0.js",
       "type": "script",
       "uncompressed": 22378,
-      "gzip": 0,
-      "brotli": 5582
+      "gzip": 6350,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/step-C2rRFtYO.js",
       "type": "script",
       "uncompressed": 19663,
-      "gzip": 0,
-      "brotli": 2506
+      "gzip": 2875,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/string-BOhFwaZD.js",
       "type": "script",
       "uncompressed": 11875,
-      "gzip": 0,
-      "brotli": 3728
+      "gzip": 4327,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/sum-CNP0Xric.js",
       "type": "script",
       "uncompressed": 568,
-      "gzip": 0,
-      "brotli": 225
+      "gzip": 255,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/tanStackCharts-D-ip-ZV-.js",
       "type": "script",
       "uncompressed": 128412,
-      "gzip": 0,
-      "brotli": 32556
+      "gzip": 37303,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/treeDiagram-FUVkkblR.js",
       "type": "script",
       "uncompressed": 4994,
-      "gzip": 0,
-      "brotli": 1847
+      "gzip": 2050,
+      "brotli": 0
     },
     {
       "kind": "asset",
       "name": "dist/utcTime-DLfrQXna.js",
       "type": "script",
       "uncompressed": 23809,
-      "gzip": 0,
-      "brotli": 5697
+      "gzip": 6525,
+      "brotli": 0
     },
     {
       "kind": "filesystem",
@@ -605,8 +605,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 56899,
-      "gzip": 0,
-      "brotli": 15252,
+      "gzip": 16998,
+      "brotli": 0,
       "parent": "dist/erdDiagram-CtPeCq0f.js"
     },
     {
@@ -622,8 +622,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5392,
-      "gzip": 0,
-      "brotli": 1426,
+      "gzip": 1598,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -639,8 +639,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1388,
-      "gzip": 0,
-      "brotli": 444,
+      "gzip": 491,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -656,8 +656,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 186,
-      "gzip": 0,
-      "brotli": 97,
+      "gzip": 112,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -673,8 +673,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 720,
-      "gzip": 0,
-      "brotli": 182,
+      "gzip": 203,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -690,8 +690,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 119,
-      "gzip": 0,
-      "brotli": 74,
+      "gzip": 86,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -707,8 +707,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2311,
-      "gzip": 0,
-      "brotli": 651,
+      "gzip": 721,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -724,8 +724,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1484,
-      "gzip": 0,
-      "brotli": 418,
+      "gzip": 475,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -741,8 +741,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 767,
-      "gzip": 0,
-      "brotli": 215,
+      "gzip": 238,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -758,8 +758,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 481,
-      "gzip": 0,
-      "brotli": 177,
+      "gzip": 201,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -782,8 +782,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 481,
-      "gzip": 0,
-      "brotli": 180,
+      "gzip": 207,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -799,8 +799,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1837,
-      "gzip": 0,
-      "brotli": 530,
+      "gzip": 623,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -816,8 +816,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 124,
-      "gzip": 0,
-      "brotli": 67,
+      "gzip": 87,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -833,8 +833,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 287,
-      "gzip": 0,
-      "brotli": 117,
+      "gzip": 156,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -850,8 +850,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 291,
-      "gzip": 0,
-      "brotli": 108,
+      "gzip": 123,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -867,8 +867,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 89,
-      "gzip": 0,
-      "brotli": 53,
+      "gzip": 69,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -884,8 +884,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 90,
-      "gzip": 0,
-      "brotli": 55,
+      "gzip": 70,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -901,8 +901,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 493,
-      "gzip": 0,
-      "brotli": 162,
+      "gzip": 191,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -925,8 +925,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 502,
-      "gzip": 0,
-      "brotli": 169,
+      "gzip": 201,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -942,8 +942,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1133,
-      "gzip": 0,
-      "brotli": 218,
+      "gzip": 271,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -959,8 +959,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 150,
-      "gzip": 0,
-      "brotli": 80,
+      "gzip": 100,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -976,8 +976,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 893,
-      "gzip": 0,
-      "brotli": 265,
+      "gzip": 301,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -993,8 +993,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 173,
-      "gzip": 0,
-      "brotli": 72,
+      "gzip": 98,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1010,8 +1010,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 275,
-      "gzip": 0,
-      "brotli": 89,
+      "gzip": 115,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1027,8 +1027,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 105,
-      "gzip": 0,
-      "brotli": 63,
+      "gzip": 76,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1044,8 +1044,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 620,
-      "gzip": 0,
-      "brotli": 219,
+      "gzip": 259,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1061,8 +1061,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 51,
-      "gzip": 0,
-      "brotli": 41,
+      "gzip": 53,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1078,8 +1078,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 40,
-      "gzip": 0,
-      "brotli": 33,
+      "gzip": 40,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1095,8 +1095,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 96,
-      "gzip": 0,
-      "brotli": 65,
+      "gzip": 75,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1112,8 +1112,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 331,
-      "gzip": 0,
-      "brotli": 153,
+      "gzip": 173,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1129,8 +1129,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 68,
-      "gzip": 0,
-      "brotli": 49,
+      "gzip": 55,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1146,8 +1146,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 13,
-      "gzip": 0,
-      "brotli": 13,
+      "gzip": 25,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1163,8 +1163,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1558,
-      "gzip": 0,
-      "brotli": 409,
+      "gzip": 472,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -1180,9 +1180,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 84,
-      "gzip": 0,
-      "brotli": 59,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 72,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1197,9 +1197,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3262,
-      "gzip": 0,
-      "brotli": 862,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1025,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1214,9 +1214,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 221,
-      "gzip": 0,
-      "brotli": 96,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 124,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1238,9 +1238,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 387,
-      "gzip": 0,
-      "brotli": 93,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1255,9 +1255,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2392,
-      "gzip": 0,
-      "brotli": 648,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 770,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1272,9 +1272,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3420,
-      "gzip": 0,
-      "brotli": 744,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 903,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1289,9 +1289,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 505,
-      "gzip": 0,
-      "brotli": 178,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 218,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1306,9 +1306,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 0,
-      "brotli": 61,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 84,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1323,9 +1323,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3379,
-      "gzip": 0,
-      "brotli": 909,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1340,9 +1340,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1356,
-      "gzip": 0,
-      "brotli": 425,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 518,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1357,9 +1357,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2581,
-      "gzip": 0,
-      "brotli": 754,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 907,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1374,9 +1374,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2477,
-      "gzip": 0,
-      "brotli": 667,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 804,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1391,9 +1391,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3477,
-      "gzip": 0,
-      "brotli": 883,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1042,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1408,9 +1408,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3242,
-      "gzip": 0,
-      "brotli": 698,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 821,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1446,9 +1446,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 12123,
-      "gzip": 0,
-      "brotli": 2144,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2601,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1463,9 +1463,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2263,
-      "gzip": 0,
-      "brotli": 559,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 659,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1543,9 +1543,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1422,
-      "gzip": 0,
-      "brotli": 405,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 478,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1609,9 +1609,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1709,
-      "gzip": 0,
-      "brotli": 457,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 540,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1626,9 +1626,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2621,
-      "gzip": 0,
-      "brotli": 530,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 662,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1643,9 +1643,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7531,
-      "gzip": 0,
-      "brotli": 1925,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2322,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1667,9 +1667,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8479,
-      "gzip": 0,
-      "brotli": 2118,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2511,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1691,9 +1691,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2145,
-      "gzip": 0,
-      "brotli": 635,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 754,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1715,9 +1715,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 24,
-      "gzip": 0,
-      "brotli": 20,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 33,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1732,9 +1732,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 316,
-      "gzip": 0,
-      "brotli": 133,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 155,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1749,9 +1749,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 10380,
-      "gzip": 0,
-      "brotli": 2274,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2643,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1766,9 +1766,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 93,
-      "gzip": 0,
-      "brotli": 57,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 78,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1783,9 +1783,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 11759,
-      "gzip": 0,
-      "brotli": 2793,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 3389,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1800,9 +1800,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4412,
-      "gzip": 0,
-      "brotli": 1132,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1363,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1817,9 +1817,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 9719,
-      "gzip": 0,
-      "brotli": 1941,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2346,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1834,9 +1834,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1933,
-      "gzip": 0,
-      "brotli": 548,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 648,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1851,9 +1851,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 465,
-      "gzip": 0,
-      "brotli": 146,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 180,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1868,9 +1868,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2241,
-      "gzip": 0,
-      "brotli": 627,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 734,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1885,9 +1885,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4870,
-      "gzip": 0,
-      "brotli": 1237,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1435,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1902,9 +1902,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3287,
-      "gzip": 0,
-      "brotli": 757,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 924,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1919,9 +1919,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 153,
-      "gzip": 0,
-      "brotli": 53,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 65,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1943,9 +1943,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 6195,
-      "gzip": 0,
-      "brotli": 1492,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1785,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1960,9 +1960,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 768,
-      "gzip": 0,
-      "brotli": 278,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 332,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1977,9 +1977,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 299,
-      "gzip": 0,
-      "brotli": 133,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 161,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -1994,9 +1994,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4454,
-      "gzip": 0,
-      "brotli": 1016,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1203,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2011,9 +2011,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2312,
-      "gzip": 0,
-      "brotli": 540,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 652,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2049,9 +2049,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 506,
-      "gzip": 0,
-      "brotli": 183,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 217,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2066,9 +2066,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1834,
-      "gzip": 0,
-      "brotli": 438,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 520,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2090,9 +2090,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 70,
-      "gzip": 0,
-      "brotli": 53,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 69,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2107,9 +2107,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 408,
-      "gzip": 0,
-      "brotli": 123,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 147,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2124,9 +2124,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1425,
-      "gzip": 0,
-      "brotli": 371,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 434,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2169,9 +2169,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4515,
-      "gzip": 0,
-      "brotli": 1140,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 1369,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2200,9 +2200,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 141,
-      "gzip": 0,
-      "brotli": 80,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 97,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -2224,8 +2224,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 108,
-      "gzip": 0,
-      "brotli": 68,
+      "gzip": 88,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2283,8 +2283,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5423,
-      "gzip": 0,
-      "brotli": 1655,
+      "gzip": 1878,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2314,8 +2314,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3595,
-      "gzip": 0,
-      "brotli": 957,
+      "gzip": 1113,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2345,8 +2345,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 175,
-      "gzip": 0,
-      "brotli": 93,
+      "gzip": 120,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2376,8 +2376,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 178,
-      "gzip": 0,
-      "brotli": 112,
+      "gzip": 126,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2414,8 +2414,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3014,
-      "gzip": 0,
-      "brotli": 837,
+      "gzip": 955,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2431,8 +2431,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 674,
-      "gzip": 0,
-      "brotli": 267,
+      "gzip": 308,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2469,8 +2469,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 175,
-      "gzip": 0,
-      "brotli": 105,
+      "gzip": 122,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2486,8 +2486,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 71,
-      "gzip": 0,
-      "brotli": 51,
+      "gzip": 59,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2503,8 +2503,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4079,
-      "gzip": 0,
-      "brotli": 1031,
+      "gzip": 1164,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2534,8 +2534,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1075,
-      "gzip": 0,
-      "brotli": 376,
+      "gzip": 428,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2558,8 +2558,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 55,
-      "gzip": 0,
-      "brotli": 46,
+      "gzip": 60,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2575,8 +2575,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3484,
-      "gzip": 0,
-      "brotli": 995,
+      "gzip": 1127,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2606,8 +2606,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2409,
-      "gzip": 0,
-      "brotli": 645,
+      "gzip": 738,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2672,8 +2672,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 220,
-      "gzip": 0,
-      "brotli": 108,
+      "gzip": 147,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2689,8 +2689,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3367,
-      "gzip": 0,
-      "brotli": 984,
+      "gzip": 1101,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2713,8 +2713,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2560,
-      "gzip": 0,
-      "brotli": 734,
+      "gzip": 846,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2730,8 +2730,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 357,
-      "gzip": 0,
-      "brotli": 161,
+      "gzip": 189,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2747,8 +2747,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 100,
-      "gzip": 0,
-      "brotli": 71,
+      "gzip": 91,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2764,8 +2764,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7739,
-      "gzip": 0,
-      "brotli": 1801,
+      "gzip": 2038,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2788,8 +2788,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4907,
-      "gzip": 0,
-      "brotli": 1310,
+      "gzip": 1489,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2805,8 +2805,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1804,
-      "gzip": 0,
-      "brotli": 473,
+      "gzip": 517,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2822,8 +2822,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 317,
-      "gzip": 0,
-      "brotli": 139,
+      "gzip": 164,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2853,8 +2853,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1112,
-      "gzip": 0,
-      "brotli": 359,
+      "gzip": 407,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2870,8 +2870,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 16417,
-      "gzip": 0,
-      "brotli": 3806,
+      "gzip": 4350,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2915,8 +2915,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 424,
-      "gzip": 0,
-      "brotli": 168,
+      "gzip": 197,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2932,8 +2932,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2346,
-      "gzip": 0,
-      "brotli": 627,
+      "gzip": 732,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2949,8 +2949,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2951,
-      "gzip": 0,
-      "brotli": 821,
+      "gzip": 938,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2980,8 +2980,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 54,
-      "gzip": 0,
-      "brotli": 46,
+      "gzip": 59,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -2997,8 +2997,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 599,
-      "gzip": 0,
-      "brotli": 187,
+      "gzip": 227,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3014,8 +3014,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1593,
-      "gzip": 0,
-      "brotli": 467,
+      "gzip": 540,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3031,8 +3031,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 55,
-      "gzip": 0,
-      "brotli": 46,
+      "gzip": 60,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3048,8 +3048,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 22886,
-      "gzip": 0,
-      "brotli": 5095,
+      "gzip": 5813,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3065,8 +3065,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2807,
-      "gzip": 0,
-      "brotli": 796,
+      "gzip": 887,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3082,8 +3082,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3872,
-      "gzip": 0,
-      "brotli": 1100,
+      "gzip": 1255,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3106,8 +3106,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 412,
-      "gzip": 0,
-      "brotli": 170,
+      "gzip": 205,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3123,8 +3123,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1165,
-      "gzip": 0,
-      "brotli": 359,
+      "gzip": 432,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3140,8 +3140,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2853,
-      "gzip": 0,
-      "brotli": 807,
+      "gzip": 955,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3157,8 +3157,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 200,
-      "gzip": 0,
-      "brotli": 100,
+      "gzip": 126,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3174,8 +3174,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4440,
-      "gzip": 0,
-      "brotli": 1259,
+      "gzip": 1462,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3191,8 +3191,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2677,
-      "gzip": 0,
-      "brotli": 856,
+      "gzip": 952,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3208,8 +3208,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1374,
-      "gzip": 0,
-      "brotli": 468,
+      "gzip": 528,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -3862,8 +3862,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 403,
-      "gzip": 0,
-      "brotli": 173,
+      "gzip": 194,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3879,8 +3879,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5525,
-      "gzip": 0,
-      "brotli": 1220,
+      "gzip": 1389,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3896,8 +3896,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2055,
-      "gzip": 0,
-      "brotli": 565,
+      "gzip": 597,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3913,8 +3913,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1846,
-      "gzip": 0,
-      "brotli": 580,
+      "gzip": 615,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3930,8 +3930,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1085,
-      "gzip": 0,
-      "brotli": 356,
+      "gzip": 387,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3947,8 +3947,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 750,
-      "gzip": 0,
-      "brotli": 280,
+      "gzip": 292,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3964,8 +3964,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 189,
-      "gzip": 0,
-      "brotli": 76,
+      "gzip": 82,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -3981,8 +3981,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 101,
-      "gzip": 0,
-      "brotli": 66,
+      "gzip": 78,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -4375,7 +4375,14 @@
       "name": "node_modules/@unovis/ts/components/leaflet-map/modules/map.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 687604
+      "uncompressed": 6288
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/leaflet-map/modules/maplibre-worker-source.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 486372
     },
     {
       "kind": "filesystem",
@@ -5027,8 +5034,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 58,
-      "gzip": 0,
-      "brotli": 46,
+      "gzip": 54,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5044,8 +5051,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2787,
-      "gzip": 0,
-      "brotli": 655,
+      "gzip": 738,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5075,8 +5082,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 52,
-      "gzip": 0,
-      "brotli": 42,
+      "gzip": 51,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5092,8 +5099,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2375,
-      "gzip": 0,
-      "brotli": 616,
+      "gzip": 694,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5116,8 +5123,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 233,
-      "gzip": 0,
-      "brotli": 91,
+      "gzip": 112,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5133,8 +5140,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3426,
-      "gzip": 0,
-      "brotli": 749,
+      "gzip": 851,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5164,8 +5171,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 116,
-      "gzip": 0,
-      "brotli": 65,
+      "gzip": 72,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5181,8 +5188,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3227,
-      "gzip": 0,
-      "brotli": 748,
+      "gzip": 836,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5233,8 +5240,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 449,
-      "gzip": 0,
-      "brotli": 186,
+      "gzip": 209,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5250,8 +5257,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 151,
-      "gzip": 0,
-      "brotli": 103,
+      "gzip": 116,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5267,8 +5274,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1026,
-      "gzip": 0,
-      "brotli": 344,
+      "gzip": 382,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5284,8 +5291,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2176,
-      "gzip": 0,
-      "brotli": 629,
+      "gzip": 706,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5322,8 +5329,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 200,
-      "gzip": 0,
-      "brotli": 96,
+      "gzip": 114,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5339,8 +5346,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 285,
-      "gzip": 0,
-      "brotli": 122,
+      "gzip": 131,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5440,8 +5447,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 104,
-      "gzip": 0,
-      "brotli": 75,
+      "gzip": 80,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5464,8 +5471,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 143,
-      "gzip": 0,
-      "brotli": 88,
+      "gzip": 102,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5481,8 +5488,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 741,
-      "gzip": 0,
-      "brotli": 284,
+      "gzip": 311,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5498,8 +5505,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 140,
-      "gzip": 0,
-      "brotli": 82,
+      "gzip": 95,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5515,8 +5522,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2179,
-      "gzip": 0,
-      "brotli": 533,
+      "gzip": 584,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5553,8 +5560,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 603,
-      "gzip": 0,
-      "brotli": 253,
+      "gzip": 275,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5570,8 +5577,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 137,
-      "gzip": 0,
-      "brotli": 78,
+      "gzip": 100,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5587,8 +5594,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 179,
-      "gzip": 0,
-      "brotli": 103,
+      "gzip": 113,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5604,8 +5611,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 38,
-      "gzip": 0,
-      "brotli": 31,
+      "gzip": 43,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5642,8 +5649,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1342,
-      "gzip": 0,
-      "brotli": 469,
+      "gzip": 535,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5666,8 +5673,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 988,
-      "gzip": 0,
-      "brotli": 323,
+      "gzip": 354,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5683,8 +5690,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 98,
-      "gzip": 0,
-      "brotli": 49,
+      "gzip": 58,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5700,8 +5707,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1856,
-      "gzip": 0,
-      "brotli": 480,
+      "gzip": 553,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -5724,8 +5731,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1230,
-      "gzip": 0,
-      "brotli": 405,
+      "gzip": 482,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5748,8 +5755,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2323,
-      "gzip": 0,
-      "brotli": 707,
+      "gzip": 851,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5765,8 +5772,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 54,
-      "gzip": 0,
-      "brotli": 45,
+      "gzip": 56,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5782,8 +5789,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 857,
-      "gzip": 0,
-      "brotli": 246,
+      "gzip": 301,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5813,8 +5820,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2285,
-      "gzip": 0,
-      "brotli": 466,
+      "gzip": 561,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5830,8 +5837,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1095,
-      "gzip": 0,
-      "brotli": 343,
+      "gzip": 399,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5847,8 +5854,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 169,
-      "gzip": 0,
-      "brotli": 90,
+      "gzip": 114,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5864,8 +5871,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 261,
-      "gzip": 0,
-      "brotli": 95,
+      "gzip": 126,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5881,8 +5888,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1477,
-      "gzip": 0,
-      "brotli": 425,
+      "gzip": 504,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5912,8 +5919,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1448,
-      "gzip": 0,
-      "brotli": 434,
+      "gzip": 516,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5943,8 +5950,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1874,
-      "gzip": 0,
-      "brotli": 639,
+      "gzip": 755,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5960,8 +5967,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 488,
-      "gzip": 0,
-      "brotli": 165,
+      "gzip": 202,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -5984,8 +5991,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 455,
-      "gzip": 0,
-      "brotli": 205,
+      "gzip": 257,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6001,8 +6008,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 22142,
-      "gzip": 0,
-      "brotli": 5348,
+      "gzip": 6294,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6018,8 +6025,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8878,
-      "gzip": 0,
-      "brotli": 2403,
+      "gzip": 2798,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6035,8 +6042,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1953,
-      "gzip": 0,
-      "brotli": 664,
+      "gzip": 754,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6052,8 +6059,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 12327,
-      "gzip": 0,
-      "brotli": 3264,
+      "gzip": 3887,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6069,8 +6076,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1842,
-      "gzip": 0,
-      "brotli": 536,
+      "gzip": 681,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6086,8 +6093,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3556,
-      "gzip": 0,
-      "brotli": 1104,
+      "gzip": 1281,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6103,8 +6110,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 17777,
-      "gzip": 0,
-      "brotli": 4153,
+      "gzip": 4849,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6120,8 +6127,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2967,
-      "gzip": 0,
-      "brotli": 834,
+      "gzip": 973,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6144,8 +6151,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 10300,
-      "gzip": 0,
-      "brotli": 2456,
+      "gzip": 2874,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6168,8 +6175,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3749,
-      "gzip": 0,
-      "brotli": 1175,
+      "gzip": 1375,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6199,8 +6206,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 94,
-      "gzip": 0,
-      "brotli": 63,
+      "gzip": 88,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6216,8 +6223,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1844,
-      "gzip": 0,
-      "brotli": 553,
+      "gzip": 638,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6233,8 +6240,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2349,
-      "gzip": 0,
-      "brotli": 610,
+      "gzip": 711,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6250,8 +6257,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4360,
-      "gzip": 0,
-      "brotli": 1388,
+      "gzip": 1616,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6267,8 +6274,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8431,
-      "gzip": 0,
-      "brotli": 2330,
+      "gzip": 2750,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6284,8 +6291,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 992,
-      "gzip": 0,
-      "brotli": 348,
+      "gzip": 402,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6301,8 +6308,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8928,
-      "gzip": 0,
-      "brotli": 2123,
+      "gzip": 2513,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6318,8 +6325,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 14725,
-      "gzip": 0,
-      "brotli": 3308,
+      "gzip": 3894,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6335,8 +6342,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5400,
-      "gzip": 0,
-      "brotli": 1466,
+      "gzip": 1729,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6359,8 +6366,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3546,
-      "gzip": 0,
-      "brotli": 967,
+      "gzip": 1152,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6383,8 +6390,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2558,
-      "gzip": 0,
-      "brotli": 743,
+      "gzip": 848,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6400,8 +6407,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7910,
-      "gzip": 0,
-      "brotli": 2065,
+      "gzip": 2389,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6417,8 +6424,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 544,
-      "gzip": 0,
-      "brotli": 263,
+      "gzip": 302,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6448,8 +6455,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8299,
-      "gzip": 0,
-      "brotli": 2285,
+      "gzip": 2685,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6465,8 +6472,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3499,
-      "gzip": 0,
-      "brotli": 1091,
+      "gzip": 1271,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6482,8 +6489,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1747,
-      "gzip": 0,
-      "brotli": 533,
+      "gzip": 675,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6499,8 +6506,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 9645,
-      "gzip": 0,
-      "brotli": 2789,
+      "gzip": 3315,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6516,8 +6523,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1778,
-      "gzip": 0,
-      "brotli": 503,
+      "gzip": 577,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6533,8 +6540,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4674,
-      "gzip": 0,
-      "brotli": 1014,
+      "gzip": 1185,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6564,8 +6571,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4889,
-      "gzip": 0,
-      "brotli": 1498,
+      "gzip": 1777,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6595,8 +6602,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2820,
-      "gzip": 0,
-      "brotli": 952,
+      "gzip": 1090,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6647,8 +6654,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1754,
-      "gzip": 0,
-      "brotli": 587,
+      "gzip": 704,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6713,8 +6720,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 12988,
-      "gzip": 0,
-      "brotli": 3405,
+      "gzip": 3968,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6737,8 +6744,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3852,
-      "gzip": 0,
-      "brotli": 804,
+      "gzip": 970,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6754,8 +6761,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 283,
-      "gzip": 0,
-      "brotli": 142,
+      "gzip": 175,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6771,8 +6778,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1359,
-      "gzip": 0,
-      "brotli": 316,
+      "gzip": 358,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6788,8 +6795,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 89,
-      "gzip": 0,
-      "brotli": 63,
+      "gzip": 72,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6805,8 +6812,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 844,
-      "gzip": 0,
-      "brotli": 208,
+      "gzip": 251,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6822,8 +6829,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 671,
-      "gzip": 0,
-      "brotli": 181,
+      "gzip": 214,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6839,8 +6846,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 643,
-      "gzip": 0,
-      "brotli": 174,
+      "gzip": 202,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6856,8 +6863,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 77,
-      "gzip": 0,
-      "brotli": 62,
+      "gzip": 61,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6873,8 +6880,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 92,
-      "gzip": 0,
-      "brotli": 62,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6890,8 +6897,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 220,
-      "gzip": 0,
-      "brotli": 92,
+      "gzip": 102,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6907,8 +6914,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 667,
-      "gzip": 0,
-      "brotli": 193,
+      "gzip": 254,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6924,8 +6931,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 564,
-      "gzip": 0,
-      "brotli": 174,
+      "gzip": 220,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6941,8 +6948,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 260,
-      "gzip": 0,
-      "brotli": 108,
+      "gzip": 134,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6958,8 +6965,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 112,
-      "gzip": 0,
-      "brotli": 62,
+      "gzip": 86,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6975,8 +6982,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 454,
-      "gzip": 0,
-      "brotli": 125,
+      "gzip": 152,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -6992,8 +6999,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 144,
-      "gzip": 0,
-      "brotli": 89,
+      "gzip": 93,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7009,8 +7016,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 722,
-      "gzip": 0,
-      "brotli": 195,
+      "gzip": 234,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7033,8 +7040,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 149,
-      "gzip": 0,
-      "brotli": 61,
+      "gzip": 84,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7064,8 +7071,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 197,
-      "gzip": 0,
-      "brotli": 105,
+      "gzip": 133,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7095,8 +7102,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 302,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 147,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7196,8 +7203,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 182,
-      "gzip": 0,
-      "brotli": 101,
+      "gzip": 126,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7213,8 +7220,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 118,
-      "gzip": 0,
-      "brotli": 79,
+      "gzip": 97,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7251,8 +7258,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 143,
-      "gzip": 0,
-      "brotli": 69,
+      "gzip": 92,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7310,8 +7317,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 42,
-      "gzip": 0,
-      "brotli": 35,
+      "gzip": 48,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7327,8 +7334,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 59,
-      "gzip": 0,
-      "brotli": 48,
+      "gzip": 58,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7421,8 +7428,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 568,
-      "gzip": 0,
-      "brotli": 156,
+      "gzip": 189,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7438,8 +7445,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2866,
-      "gzip": 0,
-      "brotli": 714,
+      "gzip": 866,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7455,8 +7462,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 164,
-      "gzip": 0,
-      "brotli": 88,
+      "gzip": 120,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7472,8 +7479,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 258,
-      "gzip": 0,
-      "brotli": 118,
+      "gzip": 161,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7496,8 +7503,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 700,
-      "gzip": 0,
-      "brotli": 199,
+      "gzip": 253,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7513,8 +7520,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1548,
-      "gzip": 0,
-      "brotli": 487,
+      "gzip": 579,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7530,8 +7537,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1330,
-      "gzip": 0,
-      "brotli": 423,
+      "gzip": 477,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7547,8 +7554,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 761,
-      "gzip": 0,
-      "brotli": 316,
+      "gzip": 409,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7564,8 +7571,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 916,
-      "gzip": 0,
-      "brotli": 316,
+      "gzip": 375,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7581,8 +7588,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4039,
-      "gzip": 0,
-      "brotli": 1238,
+      "gzip": 1503,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7598,8 +7605,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 254,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 151,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7615,8 +7622,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3537,
-      "gzip": 0,
-      "brotli": 1156,
+      "gzip": 1360,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7632,8 +7639,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3503,
-      "gzip": 0,
-      "brotli": 1035,
+      "gzip": 1212,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7649,8 +7656,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 654,
-      "gzip": 0,
-      "brotli": 227,
+      "gzip": 275,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7666,8 +7673,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4438,
-      "gzip": 0,
-      "brotli": 1325,
+      "gzip": 1549,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -7704,8 +7711,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 102,
-      "gzip": 0,
-      "brotli": 49,
+      "gzip": 64,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -7728,8 +7735,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 48,
-      "gzip": 0,
-      "brotli": 35,
+      "gzip": 45,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -7745,8 +7752,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 702,
-      "gzip": 0,
-      "brotli": 184,
+      "gzip": 199,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -7783,9 +7790,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 544,
-      "gzip": 0,
-      "brotli": 195,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 231,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7800,9 +7807,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 138,
-      "gzip": 0,
-      "brotli": 75,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 98,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7817,8 +7824,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 102,
-      "gzip": 0,
-      "brotli": 53,
+      "gzip": 64,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -7834,9 +7841,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 66,
-      "gzip": 0,
-      "brotli": 50,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 62,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7872,9 +7879,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 316,
-      "gzip": 0,
-      "brotli": 115,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 137,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7896,9 +7903,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 627,
-      "gzip": 0,
-      "brotli": 245,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 270,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7913,9 +7920,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 254,
-      "gzip": 0,
-      "brotli": 105,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 128,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7937,8 +7944,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 555,
-      "gzip": 0,
-      "brotli": 224,
+      "gzip": 238,
+      "brotli": 0,
       "parent": "dist/pow-Bp6eSqVs.js"
     },
     {
@@ -7954,9 +7961,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 181,
-      "gzip": 0,
-      "brotli": 83,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 106,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -7971,8 +7978,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 28,
-      "gzip": 0,
-      "brotli": 28,
+      "gzip": 40,
+      "brotli": 0,
       "parent": "dist/pow-Bp6eSqVs.js"
     },
     {
@@ -8023,8 +8030,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 241,
-      "gzip": 0,
-      "brotli": 118,
+      "gzip": 134,
+      "brotli": 0,
       "parent": "dist/max-CPVNm4tn.js"
     },
     {
@@ -8040,9 +8047,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 261,
-      "gzip": 0,
-      "brotli": 97,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 123,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8057,9 +8064,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 236,
-      "gzip": 0,
-      "brotli": 103,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 125,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8074,9 +8081,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 43,
-      "gzip": 0,
-      "brotli": 34,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 43,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8091,9 +8098,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 92,
-      "gzip": 0,
-      "brotli": 50,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 74,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8108,8 +8115,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 241,
-      "gzip": 0,
-      "brotli": 89,
+      "gzip": 100,
+      "brotli": 0,
       "parent": "dist/sum-CNP0Xric.js"
     },
     {
@@ -8125,9 +8132,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 261,
-      "gzip": 0,
-      "brotli": 97,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 123,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8142,9 +8149,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 303,
-      "gzip": 0,
-      "brotli": 130,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 146,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8166,8 +8173,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 237,
-      "gzip": 0,
-      "brotli": 111,
+      "gzip": 110,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -8183,9 +8190,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 151,
-      "gzip": 0,
-      "brotli": 78,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 99,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8200,9 +8207,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 57,
-      "gzip": 0,
-      "brotli": 44,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 59,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8217,9 +8224,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 550,
-      "gzip": 0,
-      "brotli": 184,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 219,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8234,9 +8241,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 853,
-      "gzip": 0,
-      "brotli": 291,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 335,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8251,8 +8258,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 223,
-      "gzip": 0,
-      "brotli": 144,
+      "gzip": 160,
+      "brotli": 0,
       "parent": "dist/band-p1VbTxZM.js"
     },
     {
@@ -8282,9 +8289,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 139,
-      "gzip": 0,
-      "brotli": 78,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 105,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8320,9 +8327,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 782,
-      "gzip": 0,
-      "brotli": 263,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 308,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8344,8 +8351,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 165,
-      "gzip": 0,
-      "brotli": 72,
+      "gzip": 84,
+      "brotli": 0,
       "parent": "dist/sum-CNP0Xric.js"
     },
     {
@@ -8389,8 +8396,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1172,
-      "gzip": 0,
-      "brotli": 300,
+      "gzip": 318,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -8420,9 +8427,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 316,
-      "gzip": 0,
-      "brotli": 121,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 145,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8444,8 +8451,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3212,
-      "gzip": 0,
-      "brotli": 996,
+      "gzip": 1127,
+      "brotli": 0,
       "parent": "dist/axis-EpX3kBPs.js"
     },
     {
@@ -8461,8 +8468,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 28,
-      "gzip": 0,
-      "brotli": 28,
+      "gzip": 46,
+      "brotli": 0,
       "parent": "dist/axis-EpX3kBPs.js"
     },
     {
@@ -8485,8 +8492,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 252,
-      "gzip": 0,
-      "brotli": 131,
+      "gzip": 144,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -8530,8 +8537,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 32,
-      "gzip": 0,
-      "brotli": 27,
+      "gzip": 39,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -8554,8 +8561,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 52,
-      "gzip": 0,
-      "brotli": 36,
+      "gzip": 43,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -8578,8 +8585,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 84,
-      "gzip": 0,
-      "brotli": 58,
+      "gzip": 58,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -8595,8 +8602,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2305,
-      "gzip": 0,
-      "brotli": 458,
+      "gzip": 530,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -8612,8 +8619,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8298,
-      "gzip": 0,
-      "brotli": 2402,
+      "gzip": 2780,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -8629,9 +8636,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1216,
-      "gzip": 0,
-      "brotli": 367,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 429,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8646,8 +8653,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 171,
-      "gzip": 0,
-      "brotli": 99,
+      "gzip": 123,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -8670,9 +8677,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2511,
-      "gzip": 0,
-      "brotli": 616,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 756,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8687,9 +8694,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 44,
-      "gzip": 0,
-      "brotli": 34,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 42,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -8802,8 +8809,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1852,
-      "gzip": 0,
-      "brotli": 428,
+      "gzip": 480,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -8826,8 +8833,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 24,
-      "gzip": 0,
-      "brotli": 27,
+      "gzip": 37,
+      "brotli": 0,
       "parent": "dist/drag-Ieen6R0z.js"
     },
     {
@@ -8843,8 +8850,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2827,
-      "gzip": 0,
-      "brotli": 937,
+      "gzip": 1057,
+      "brotli": 0,
       "parent": "dist/drag-Ieen6R0z.js"
     },
     {
@@ -8860,8 +8867,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 837,
-      "gzip": 0,
-      "brotli": 230,
+      "gzip": 283,
+      "brotli": 0,
       "parent": "dist/drag-Ieen6R0z.js"
     },
     {
@@ -8884,8 +8891,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 520,
-      "gzip": 0,
-      "brotli": 157,
+      "gzip": 184,
+      "brotli": 0,
       "parent": "dist/nodrag-Dq2tlBbe.js"
     },
     {
@@ -8901,8 +8908,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 175,
-      "gzip": 0,
-      "brotli": 88,
+      "gzip": 100,
+      "brotli": 0,
       "parent": "dist/nodrag-Dq2tlBbe.js"
     },
     {
@@ -8974,8 +8981,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 82,
-      "gzip": 0,
-      "brotli": 40,
+      "gzip": 52,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -9103,8 +9110,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 512,
-      "gzip": 0,
-      "brotli": 150,
+      "gzip": 177,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9127,8 +9134,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 51,
-      "gzip": 0,
-      "brotli": 35,
+      "gzip": 41,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9151,8 +9158,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 44,
-      "gzip": 0,
-      "brotli": 33,
+      "gzip": 46,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9168,8 +9175,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 117,
-      "gzip": 0,
-      "brotli": 77,
+      "gzip": 90,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9185,8 +9192,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1885,
-      "gzip": 0,
-      "brotli": 478,
+      "gzip": 533,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9202,8 +9209,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1653,
-      "gzip": 0,
-      "brotli": 446,
+      "gzip": 501,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9226,8 +9233,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2113,
-      "gzip": 0,
-      "brotli": 563,
+      "gzip": 617,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -9257,8 +9264,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 147,
-      "gzip": 0,
-      "brotli": 77,
+      "gzip": 93,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9274,8 +9281,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 61,
-      "gzip": 0,
-      "brotli": 44,
+      "gzip": 53,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9291,8 +9298,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 344,
-      "gzip": 0,
-      "brotli": 139,
+      "gzip": 163,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9308,8 +9315,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 283,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 138,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9325,8 +9332,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 101,
-      "gzip": 0,
-      "brotli": 52,
+      "gzip": 57,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9342,8 +9349,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 366,
-      "gzip": 0,
-      "brotli": 156,
+      "gzip": 167,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9359,8 +9366,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 234,
-      "gzip": 0,
-      "brotli": 104,
+      "gzip": 113,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9376,8 +9383,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1149,
-      "gzip": 0,
-      "brotli": 306,
+      "gzip": 338,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9393,8 +9400,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 268,
-      "gzip": 0,
-      "brotli": 109,
+      "gzip": 127,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9410,8 +9417,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 369,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 132,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9427,8 +9434,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 28,
-      "gzip": 0,
-      "brotli": 22,
+      "gzip": 32,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9451,8 +9458,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2517,
-      "gzip": 0,
-      "brotli": 701,
+      "gzip": 768,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9468,8 +9475,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 56,
-      "gzip": 0,
-      "brotli": 41,
+      "gzip": 47,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9485,8 +9492,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 112,
-      "gzip": 0,
-      "brotli": 70,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -9502,8 +9509,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 0,
-      "brotli": 52,
+      "gzip": 64,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -10296,9 +10303,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 559,
-      "gzip": 0,
-      "brotli": 145,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 182,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10320,9 +10327,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 417,
-      "gzip": 0,
-      "brotli": 185,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 212,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10337,9 +10344,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1182,
-      "gzip": 0,
-      "brotli": 339,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 386,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10354,9 +10361,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 289,
-      "gzip": 0,
-      "brotli": 115,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 146,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10371,9 +10378,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1960,
-      "gzip": 0,
-      "brotli": 601,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 697,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10395,9 +10402,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1475,
-      "gzip": 0,
-      "brotli": 413,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 473,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10412,9 +10419,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 811,
-      "gzip": 0,
-      "brotli": 178,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 212,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10429,9 +10436,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2186,
-      "gzip": 0,
-      "brotli": 631,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 720,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10446,9 +10453,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1217,
-      "gzip": 0,
-      "brotli": 359,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 427,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10463,9 +10470,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 199,
-      "gzip": 0,
-      "brotli": 75,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 91,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10508,9 +10515,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 19,
-      "gzip": 0,
-      "brotli": 17,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 30,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10546,9 +10553,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 435,
-      "gzip": 0,
-      "brotli": 147,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 180,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10563,9 +10570,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 17,
-      "gzip": 0,
-      "brotli": 15,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 28,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10580,9 +10587,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 515,
-      "gzip": 0,
-      "brotli": 159,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 190,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10597,9 +10604,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 328,
-      "gzip": 0,
-      "brotli": 132,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 160,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10614,9 +10621,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1136,
-      "gzip": 0,
-      "brotli": 266,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 329,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10631,9 +10638,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 624,
-      "gzip": 0,
-      "brotli": 166,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 214,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10648,9 +10655,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1090,
-      "gzip": 0,
-      "brotli": 279,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 343,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10665,9 +10672,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 448,
-      "gzip": 0,
-      "brotli": 161,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 190,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10682,9 +10689,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1263,
-      "gzip": 0,
-      "brotli": 364,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 428,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10699,9 +10706,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 77,
-      "gzip": 0,
-      "brotli": 44,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 62,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10716,9 +10723,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 889,
-      "gzip": 0,
-      "brotli": 336,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 397,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10733,9 +10740,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 125,
-      "gzip": 0,
-      "brotli": 77,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 100,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10750,9 +10757,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2243,
-      "gzip": 0,
-      "brotli": 504,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 597,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10767,9 +10774,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 292,
-      "gzip": 0,
-      "brotli": 119,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 139,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10784,9 +10791,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 174,
-      "gzip": 0,
-      "brotli": 89,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10801,9 +10808,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 172,
-      "gzip": 0,
-      "brotli": 87,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 109,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10818,9 +10825,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 180,
-      "gzip": 0,
-      "brotli": 89,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 117,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10835,9 +10842,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 598,
-      "gzip": 0,
-      "brotli": 235,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 266,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10852,9 +10859,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 472,
-      "gzip": 0,
-      "brotli": 192,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 217,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10869,9 +10876,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 437,
-      "gzip": 0,
-      "brotli": 179,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 205,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10886,9 +10893,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 148,
-      "gzip": 0,
-      "brotli": 78,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 91,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10903,9 +10910,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 667,
-      "gzip": 0,
-      "brotli": 222,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 250,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10920,9 +10927,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 100,
-      "gzip": 0,
-      "brotli": 62,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 77,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10937,9 +10944,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 957,
-      "gzip": 0,
-      "brotli": 207,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 257,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10954,9 +10961,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 165,
-      "gzip": 0,
-      "brotli": 97,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 115,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10978,9 +10985,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3024,
-      "gzip": 0,
-      "brotli": 680,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 802,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -10995,9 +11002,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 980,
-      "gzip": 0,
-      "brotli": 281,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 325,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11019,9 +11026,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 134,
-      "gzip": 0,
-      "brotli": 85,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 104,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11036,9 +11043,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1528,
-      "gzip": 0,
-      "brotli": 461,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 536,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11053,9 +11060,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 197,
-      "gzip": 0,
-      "brotli": 103,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 126,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11070,9 +11077,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 463,
-      "gzip": 0,
-      "brotli": 173,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 197,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11087,9 +11094,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1031,
-      "gzip": 0,
-      "brotli": 262,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 313,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11104,9 +11111,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1279,
-      "gzip": 0,
-      "brotli": 268,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 321,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11121,9 +11128,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 523,
-      "gzip": 0,
-      "brotli": 142,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 177,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11166,8 +11173,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 81,
-      "gzip": 0,
-      "brotli": 41,
+      "gzip": 49,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11183,8 +11190,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 170,
-      "gzip": 0,
-      "brotli": 65,
+      "gzip": 78,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11200,8 +11207,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 42,
-      "gzip": 0,
-      "brotli": 24,
+      "gzip": 32,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11217,8 +11224,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 91,
-      "gzip": 0,
-      "brotli": 45,
+      "gzip": 50,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11234,8 +11241,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 230,
-      "gzip": 0,
-      "brotli": 87,
+      "gzip": 93,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11251,8 +11258,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 185,
-      "gzip": 0,
-      "brotli": 74,
+      "gzip": 82,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11268,8 +11275,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 92,
-      "gzip": 0,
-      "brotli": 44,
+      "gzip": 51,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11285,8 +11292,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 975,
-      "gzip": 0,
-      "brotli": 253,
+      "gzip": 267,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11302,8 +11309,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 192,
-      "gzip": 0,
-      "brotli": 79,
+      "gzip": 83,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11319,8 +11326,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 98,
-      "gzip": 0,
-      "brotli": 40,
+      "gzip": 56,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11336,8 +11343,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 126,
-      "gzip": 0,
-      "brotli": 54,
+      "gzip": 64,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11353,8 +11360,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 350,
-      "gzip": 0,
-      "brotli": 97,
+      "gzip": 108,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11370,8 +11377,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 93,
-      "gzip": 0,
-      "brotli": 39,
+      "gzip": 49,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11387,8 +11394,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 164,
-      "gzip": 0,
-      "brotli": 63,
+      "gzip": 76,
+      "brotli": 0,
       "parent": "dist/hierarchy-CDFAetye.js"
     },
     {
@@ -11439,8 +11446,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 709,
-      "gzip": 0,
-      "brotli": 233,
+      "gzip": 269,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -11463,8 +11470,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2570,
-      "gzip": 0,
-      "brotli": 889,
+      "gzip": 974,
+      "brotli": 0,
       "parent": "dist/treeDiagram-FUVkkblR.js"
     },
     {
@@ -11487,8 +11494,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 190,
-      "gzip": 0,
-      "brotli": 107,
+      "gzip": 117,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -11518,8 +11525,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 119,
-      "gzip": 0,
-      "brotli": 52,
+      "gzip": 63,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -11556,8 +11563,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7399,
-      "gzip": 0,
-      "brotli": 1788,
+      "gzip": 1967,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -11573,8 +11580,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 262,
-      "gzip": 0,
-      "brotli": 103,
+      "gzip": 116,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11590,8 +11597,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 435,
-      "gzip": 0,
-      "brotli": 189,
+      "gzip": 232,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11614,8 +11621,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 499,
-      "gzip": 0,
-      "brotli": 197,
+      "gzip": 215,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11631,8 +11638,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 24,
-      "gzip": 0,
-      "brotli": 25,
+      "gzip": 36,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11648,9 +11655,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 329,
-      "gzip": 0,
-      "brotli": 136,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 158,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11665,8 +11672,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 139,
-      "gzip": 0,
-      "brotli": 68,
+      "gzip": 86,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11689,9 +11696,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 260,
-      "gzip": 0,
-      "brotli": 105,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 127,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11706,9 +11713,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 260,
-      "gzip": 0,
-      "brotli": 105,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 126,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11737,9 +11744,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 219,
-      "gzip": 0,
-      "brotli": 93,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 115,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11754,8 +11761,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 89,
-      "gzip": 0,
-      "brotli": 58,
+      "gzip": 79,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11771,8 +11778,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 263,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 134,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11788,8 +11795,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 249,
-      "gzip": 0,
-      "brotli": 96,
+      "gzip": 111,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11805,9 +11812,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 259,
-      "gzip": 0,
-      "brotli": 121,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 151,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11822,9 +11829,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 0,
-      "brotli": 55,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 80,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -11839,8 +11846,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 612,
-      "gzip": 0,
-      "brotli": 251,
+      "gzip": 279,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11856,8 +11863,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 101,
-      "gzip": 0,
-      "brotli": 50,
+      "gzip": 67,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11873,8 +11880,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 772,
-      "gzip": 0,
-      "brotli": 340,
+      "gzip": 370,
+      "brotli": 0,
       "parent": "dist/string-BOhFwaZD.js"
     },
     {
@@ -11890,8 +11897,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 480,
-      "gzip": 0,
-      "brotli": 154,
+      "gzip": 164,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -11907,8 +11914,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1325,
-      "gzip": 0,
-      "brotli": 314,
+      "gzip": 340,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -11924,8 +11931,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 404,
-      "gzip": 0,
-      "brotli": 135,
+      "gzip": 179,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -11941,8 +11948,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 329,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 146,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -11958,8 +11965,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 997,
-      "gzip": 0,
-      "brotli": 394,
+      "gzip": 430,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -11982,8 +11989,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2612,
-      "gzip": 0,
-      "brotli": 903,
+      "gzip": 986,
+      "brotli": 0,
       "parent": "dist/path-BoJ8LMXE.js"
     },
     {
@@ -12048,8 +12055,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1286,
-      "gzip": 0,
-      "brotli": 372,
+      "gzip": 401,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12065,8 +12072,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 628,
-      "gzip": 0,
-      "brotli": 222,
+      "gzip": 233,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12082,8 +12089,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 115,
-      "gzip": 0,
-      "brotli": 72,
+      "gzip": 85,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12099,8 +12106,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 176,
-      "gzip": 0,
-      "brotli": 78,
+      "gzip": 102,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12116,8 +12123,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 852,
-      "gzip": 0,
-      "brotli": 288,
+      "gzip": 320,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12140,8 +12147,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 0,
-      "brotli": 53,
+      "gzip": 65,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12157,8 +12164,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 957,
-      "gzip": 0,
-      "brotli": 313,
+      "gzip": 341,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12174,8 +12181,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 922,
-      "gzip": 0,
-      "brotli": 290,
+      "gzip": 319,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12191,8 +12198,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 36,
-      "gzip": 0,
-      "brotli": 29,
+      "gzip": 40,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12208,8 +12215,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 103,
-      "gzip": 0,
-      "brotli": 55,
+      "gzip": 79,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12225,8 +12232,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 449,
-      "gzip": 0,
-      "brotli": 153,
+      "gzip": 174,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12242,8 +12249,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 516,
-      "gzip": 0,
-      "brotli": 159,
+      "gzip": 186,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12259,8 +12266,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 0,
-      "brotli": 59,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12276,8 +12283,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 0,
-      "brotli": 59,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -12433,8 +12440,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 68,
-      "gzip": 0,
-      "brotli": 60,
+      "gzip": 82,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -12450,8 +12457,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 51,
-      "gzip": 0,
-      "brotli": 45,
+      "gzip": 53,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -12474,8 +12481,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5971,
-      "gzip": 0,
-      "brotli": 1480,
+      "gzip": 1671,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -12491,8 +12498,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 141,
-      "gzip": 0,
-      "brotli": 73,
+      "gzip": 97,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -12508,9 +12515,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 60,
-      "gzip": 0,
-      "brotli": 46,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 58,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12525,9 +12532,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 76,
-      "gzip": 0,
-      "brotli": 57,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 69,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12542,9 +12549,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 60,
-      "gzip": 0,
-      "brotli": 44,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 58,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12559,9 +12566,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 72,
-      "gzip": 0,
-      "brotli": 52,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 67,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12576,9 +12583,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 84,
-      "gzip": 0,
-      "brotli": 56,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 70,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12593,9 +12600,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 66,
-      "gzip": 0,
-      "brotli": 47,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 61,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12610,9 +12617,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 60,
-      "gzip": 0,
-      "brotli": 42,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 56,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12627,9 +12634,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 66,
-      "gzip": 0,
-      "brotli": 48,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 62,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12644,9 +12651,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 60,
-      "gzip": 0,
-      "brotli": 46,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 59,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12661,9 +12668,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 84,
-      "gzip": 0,
-      "brotli": 55,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 70,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12678,9 +12685,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 72,
-      "gzip": 0,
-      "brotli": 52,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 66,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12695,9 +12702,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 126,
-      "gzip": 0,
-      "brotli": 71,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 97,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12712,9 +12719,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 118,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12729,9 +12736,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 120,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 130,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12746,9 +12753,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 121,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12763,9 +12770,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 118,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 130,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12780,9 +12787,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 120,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 130,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12797,9 +12804,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 111,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 121,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12814,9 +12821,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 117,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12831,9 +12838,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 121,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12848,9 +12855,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 442,
-      "gzip": 0,
-      "brotli": 118,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 129,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12872,9 +12879,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 32,
-      "gzip": 0,
-      "brotli": 26,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 40,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12889,9 +12896,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 99,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 113,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12906,9 +12913,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 98,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12923,9 +12930,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 454,
-      "gzip": 0,
-      "brotli": 133,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 167,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12940,9 +12947,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 46,
-      "gzip": 0,
-      "brotli": 36,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 46,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12957,9 +12964,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 98,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12974,9 +12981,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 96,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 107,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -12991,9 +12998,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 100,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 113,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13008,9 +13015,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 99,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13025,9 +13032,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 101,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 112,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13042,9 +13049,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 269,
-      "gzip": 0,
-      "brotli": 123,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 147,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13059,9 +13066,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 95,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 109,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13076,9 +13083,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 239,
-      "gzip": 0,
-      "brotli": 105,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 116,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13093,9 +13100,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 465,
-      "gzip": 0,
-      "brotli": 145,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 169,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13110,9 +13117,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 6332,
-      "gzip": 0,
-      "brotli": 1831,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 2394,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13127,9 +13134,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 99,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 111,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13144,9 +13151,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 98,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 110,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13161,9 +13168,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 98,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 109,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13178,9 +13185,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 95,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 105,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13195,9 +13202,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 100,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 110,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13212,9 +13219,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 103,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 113,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13229,9 +13236,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 85,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 84,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13246,9 +13253,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 102,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 114,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13263,9 +13270,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 100,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 112,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13280,9 +13287,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 97,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 110,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13297,8 +13304,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1578,
-      "gzip": 0,
-      "brotli": 453,
+      "gzip": 496,
+      "brotli": 0,
       "parent": "dist/band-p1VbTxZM.js"
     },
     {
@@ -13314,8 +13321,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 52,
-      "gzip": 0,
-      "brotli": 33,
+      "gzip": 38,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13331,8 +13338,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1835,
-      "gzip": 0,
-      "brotli": 447,
+      "gzip": 469,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13348,9 +13355,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1532,
-      "gzip": 0,
-      "brotli": 358,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 427,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13365,9 +13372,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 388,
-      "gzip": 0,
-      "brotli": 127,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 169,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13389,8 +13396,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 389,
-      "gzip": 0,
-      "brotli": 101,
+      "gzip": 120,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13406,8 +13413,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 725,
-      "gzip": 0,
-      "brotli": 223,
+      "gzip": 242,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13423,8 +13430,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1999,
-      "gzip": 0,
-      "brotli": 636,
+      "gzip": 676,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -13440,8 +13447,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 188,
-      "gzip": 0,
-      "brotli": 104,
+      "gzip": 115,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -13457,8 +13464,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 29,
-      "gzip": 0,
-      "brotli": 22,
+      "gzip": 32,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13474,8 +13481,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 618,
-      "gzip": 0,
-      "brotli": 245,
+      "gzip": 284,
+      "brotli": 0,
       "parent": "dist/ordinal-BtWaYSDN.js"
     },
     {
@@ -13491,8 +13498,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 541,
-      "gzip": 0,
-      "brotli": 212,
+      "gzip": 224,
+      "brotli": 0,
       "parent": "dist/pow-Bp6eSqVs.js"
     },
     {
@@ -13508,9 +13515,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 859,
-      "gzip": 0,
-      "brotli": 271,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 327,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13539,9 +13546,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 120,
-      "gzip": 0,
-      "brotli": 60,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 79,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13563,8 +13570,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 466,
-      "gzip": 0,
-      "brotli": 156,
+      "gzip": 175,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -13580,9 +13587,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 628,
-      "gzip": 0,
-      "brotli": 177,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 231,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -13597,8 +13604,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 518,
-      "gzip": 0,
-      "brotli": 147,
+      "gzip": 164,
+      "brotli": 0,
       "parent": "dist/linear-q6e-7JBm.js"
     },
     {
@@ -13614,8 +13621,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1121,
-      "gzip": 0,
-      "brotli": 358,
+      "gzip": 407,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -13631,8 +13638,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 135,
-      "gzip": 0,
-      "brotli": 79,
+      "gzip": 104,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -13648,8 +13655,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 80,
-      "gzip": 0,
-      "brotli": 39,
+      "gzip": 43,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13665,8 +13672,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 52,
-      "gzip": 0,
-      "brotli": 26,
+      "gzip": 29,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13689,8 +13696,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 416,
-      "gzip": 0,
-      "brotli": 84,
+      "gzip": 112,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13720,8 +13727,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 128,
-      "gzip": 0,
-      "brotli": 38,
+      "gzip": 41,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13737,8 +13744,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 182,
-      "gzip": 0,
-      "brotli": 79,
+      "gzip": 81,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13754,8 +13761,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 210,
-      "gzip": 0,
-      "brotli": 57,
+      "gzip": 62,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13771,8 +13778,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 443,
-      "gzip": 0,
-      "brotli": 184,
+      "gzip": 206,
+      "brotli": 0,
       "parent": "dist/nodrag-Dq2tlBbe.js"
     },
     {
@@ -13795,8 +13802,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 133,
-      "gzip": 0,
-      "brotli": 50,
+      "gzip": 63,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13812,8 +13819,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 135,
-      "gzip": 0,
-      "brotli": 73,
+      "gzip": 105,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -13829,8 +13836,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 149,
-      "gzip": 0,
-      "brotli": 48,
+      "gzip": 66,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13846,8 +13853,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 895,
-      "gzip": 0,
-      "brotli": 131,
+      "gzip": 147,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13863,8 +13870,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 99,
-      "gzip": 0,
-      "brotli": 36,
+      "gzip": 48,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13880,8 +13887,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1164,
-      "gzip": 0,
-      "brotli": 218,
+      "gzip": 236,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13897,8 +13904,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 290,
-      "gzip": 0,
-      "brotli": 66,
+      "gzip": 77,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13914,8 +13921,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1405,
-      "gzip": 0,
-      "brotli": 322,
+      "gzip": 333,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13931,8 +13938,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 98,
-      "gzip": 0,
-      "brotli": 42,
+      "gzip": 53,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13948,8 +13955,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 491,
-      "gzip": 0,
-      "brotli": 122,
+      "gzip": 130,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13965,8 +13972,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 189,
-      "gzip": 0,
-      "brotli": 70,
+      "gzip": 79,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13982,8 +13989,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 38,
-      "gzip": 0,
-      "brotli": 18,
+      "gzip": 29,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -13999,8 +14006,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 567,
-      "gzip": 0,
-      "brotli": 109,
+      "gzip": 129,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14016,8 +14023,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 82,
-      "gzip": 0,
-      "brotli": 40,
+      "gzip": 46,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14033,8 +14040,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 288,
-      "gzip": 0,
-      "brotli": 94,
+      "gzip": 109,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14050,8 +14057,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 339,
-      "gzip": 0,
-      "brotli": 74,
+      "gzip": 96,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14067,8 +14074,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 622,
-      "gzip": 0,
-      "brotli": 174,
+      "gzip": 198,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14084,8 +14091,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 274,
-      "gzip": 0,
-      "brotli": 72,
+      "gzip": 87,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14101,8 +14108,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 159,
-      "gzip": 0,
-      "brotli": 65,
+      "gzip": 69,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14118,8 +14125,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 272,
-      "gzip": 0,
-      "brotli": 84,
+      "gzip": 95,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14135,8 +14142,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 146,
-      "gzip": 0,
-      "brotli": 42,
+      "gzip": 63,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14152,8 +14159,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 363,
-      "gzip": 0,
-      "brotli": 109,
+      "gzip": 119,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14169,8 +14176,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 177,
-      "gzip": 0,
-      "brotli": 69,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14186,8 +14193,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 42,
-      "gzip": 0,
-      "brotli": 23,
+      "gzip": 31,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14203,8 +14210,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1378,
-      "gzip": 0,
-      "brotli": 293,
+      "gzip": 307,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14220,8 +14227,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 247,
-      "gzip": 0,
-      "brotli": 79,
+      "gzip": 100,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14237,8 +14244,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 376,
-      "gzip": 0,
-      "brotli": 85,
+      "gzip": 97,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14254,8 +14261,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 113,
-      "gzip": 0,
-      "brotli": 42,
+      "gzip": 55,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14271,8 +14278,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 109,
-      "gzip": 0,
-      "brotli": 43,
+      "gzip": 54,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14288,8 +14295,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 350,
-      "gzip": 0,
-      "brotli": 108,
+      "gzip": 118,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14305,8 +14312,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 352,
-      "gzip": 0,
-      "brotli": 105,
+      "gzip": 120,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14322,8 +14329,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 244,
-      "gzip": 0,
-      "brotli": 68,
+      "gzip": 84,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14339,8 +14346,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 255,
-      "gzip": 0,
-      "brotli": 70,
+      "gzip": 81,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14356,8 +14363,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 63,
-      "gzip": 0,
-      "brotli": 36,
+      "gzip": 40,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14373,8 +14380,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 403,
-      "gzip": 0,
-      "brotli": 123,
+      "gzip": 134,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14390,8 +14397,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 42,
-      "gzip": 0,
-      "brotli": 23,
+      "gzip": 31,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14407,8 +14414,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 572,
-      "gzip": 0,
-      "brotli": 115,
+      "gzip": 130,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14424,8 +14431,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 347,
-      "gzip": 0,
-      "brotli": 78,
+      "gzip": 94,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14441,8 +14448,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 103,
-      "gzip": 0,
-      "brotli": 40,
+      "gzip": 50,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14458,8 +14465,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 118,
-      "gzip": 0,
-      "brotli": 42,
+      "gzip": 52,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14475,8 +14482,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 69,
-      "gzip": 0,
-      "brotli": 45,
+      "gzip": 65,
+      "brotli": 0,
       "parent": "dist/nodrag-Dq2tlBbe.js"
     },
     {
@@ -14492,8 +14499,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 109,
-      "gzip": 0,
-      "brotli": 38,
+      "gzip": 46,
+      "brotli": 0,
       "parent": "dist/select-BIuoFcZG.js"
     },
     {
@@ -14509,8 +14516,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4541,
-      "gzip": 0,
-      "brotli": 1031,
+      "gzip": 1166,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14526,8 +14533,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1942,
-      "gzip": 0,
-      "brotli": 429,
+      "gzip": 479,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14543,8 +14550,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 660,
-      "gzip": 0,
-      "brotli": 176,
+      "gzip": 204,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14560,8 +14567,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 115,
-      "gzip": 0,
-      "brotli": 64,
+      "gzip": 85,
+      "brotli": 0,
       "parent": "dist/array-Cv4-2llb.js"
     },
     {
@@ -14577,8 +14584,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 51,
-      "gzip": 0,
-      "brotli": 33,
+      "gzip": 41,
+      "brotli": 0,
       "parent": "dist/array-Cv4-2llb.js"
     },
     {
@@ -14594,8 +14601,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1132,
-      "gzip": 0,
-      "brotli": 152,
+      "gzip": 178,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14611,8 +14618,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1157,
-      "gzip": 0,
-      "brotli": 139,
+      "gzip": 167,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14628,8 +14635,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 842,
-      "gzip": 0,
-      "brotli": 125,
+      "gzip": 146,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14645,8 +14652,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 746,
-      "gzip": 0,
-      "brotli": 256,
+      "gzip": 287,
+      "brotli": 0,
       "parent": "dist/link-DRDgTeij.js"
     },
     {
@@ -14662,8 +14669,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 711,
-      "gzip": 0,
-      "brotli": 126,
+      "gzip": 144,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14679,8 +14686,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1237,
-      "gzip": 0,
-      "brotli": 171,
+      "gzip": 196,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14696,8 +14703,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1139,
-      "gzip": 0,
-      "brotli": 144,
+      "gzip": 169,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14713,8 +14720,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 966,
-      "gzip": 0,
-      "brotli": 147,
+      "gzip": 158,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14730,8 +14737,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1974,
-      "gzip": 0,
-      "brotli": 253,
+      "gzip": 280,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14747,8 +14754,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1483,
-      "gzip": 0,
-      "brotli": 180,
+      "gzip": 207,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14764,8 +14771,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1310,
-      "gzip": 0,
-      "brotli": 174,
+      "gzip": 196,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14781,8 +14788,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 590,
-      "gzip": 0,
-      "brotli": 92,
+      "gzip": 112,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14798,8 +14805,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 360,
-      "gzip": 0,
-      "brotli": 70,
+      "gzip": 82,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14815,8 +14822,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2046,
-      "gzip": 0,
-      "brotli": 265,
+      "gzip": 295,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14832,8 +14839,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1322,
-      "gzip": 0,
-      "brotli": 203,
+      "gzip": 226,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14849,8 +14856,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 435,
-      "gzip": 0,
-      "brotli": 132,
+      "gzip": 152,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14866,8 +14873,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1037,
-      "gzip": 0,
-      "brotli": 139,
+      "gzip": 161,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -14883,8 +14890,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 72,
-      "gzip": 0,
-      "brotli": 50,
+      "gzip": 60,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14900,8 +14907,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 29,
-      "gzip": 0,
-      "brotli": 25,
+      "gzip": 37,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14924,8 +14931,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 972,
-      "gzip": 0,
-      "brotli": 270,
+      "gzip": 310,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14941,8 +14948,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 177,
-      "gzip": 0,
-      "brotli": 87,
+      "gzip": 105,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -14958,8 +14965,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 927,
-      "gzip": 0,
-      "brotli": 274,
+      "gzip": 311,
+      "brotli": 0,
       "parent": "dist/link-DRDgTeij.js"
     },
     {
@@ -14975,8 +14982,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 282,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 156,
+      "brotli": 0,
       "parent": "dist/math-C5EhTgJw.js"
     },
     {
@@ -14992,8 +14999,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 16,
-      "gzip": 0,
-      "brotli": 8,
+      "gzip": 15,
+      "brotli": 0,
       "parent": "dist/step-C2rRFtYO.js"
     },
     {
@@ -15016,8 +15023,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 209,
-      "gzip": 0,
-      "brotli": 108,
+      "gzip": 122,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15033,8 +15040,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 210,
-      "gzip": 0,
-      "brotli": 113,
+      "gzip": 125,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15050,8 +15057,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 201,
-      "gzip": 0,
-      "brotli": 112,
+      "gzip": 127,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15067,8 +15074,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 450,
-      "gzip": 0,
-      "brotli": 176,
+      "gzip": 200,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15084,8 +15091,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 226,
-      "gzip": 0,
-      "brotli": 121,
+      "gzip": 137,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15101,8 +15108,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 107,
-      "gzip": 0,
-      "brotli": 64,
+      "gzip": 90,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15125,8 +15132,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 217,
-      "gzip": 0,
-      "brotli": 114,
+      "gzip": 137,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15142,8 +15149,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 86,
-      "gzip": 0,
-      "brotli": 68,
+      "gzip": 79,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15166,8 +15173,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 239,
-      "gzip": 0,
-      "brotli": 124,
+      "gzip": 148,
+      "brotli": 0,
       "parent": "dist/point-GXxVI808.js"
     },
     {
@@ -15183,8 +15190,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1348,
-      "gzip": 0,
-      "brotli": 370,
+      "gzip": 410,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -15200,8 +15207,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 62,
-      "gzip": 0,
-      "brotli": 39,
+      "gzip": 47,
+      "brotli": 0,
       "parent": "dist/point-GXxVI808.js"
     },
     {
@@ -15224,8 +15231,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 831,
-      "gzip": 0,
-      "brotli": 268,
+      "gzip": 301,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -15241,9 +15248,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 74,
-      "gzip": 0,
-      "brotli": 41,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 62,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15258,9 +15265,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 205,
-      "gzip": 0,
-      "brotli": 101,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 113,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15275,9 +15282,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 83,
-      "gzip": 0,
-      "brotli": 62,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 72,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15292,9 +15299,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 298,
-      "gzip": 0,
-      "brotli": 79,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 102,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15309,9 +15316,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 165,
-      "gzip": 0,
-      "brotli": 91,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 103,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15326,9 +15333,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 129,
-      "gzip": 0,
-      "brotli": 76,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 88,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15343,9 +15350,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 129,
-      "gzip": 0,
-      "brotli": 78,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 91,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15360,9 +15367,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 71,
-      "gzip": 0,
-      "brotli": 52,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 66,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15377,9 +15384,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 130,
-      "gzip": 0,
-      "brotli": 75,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 82,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15394,9 +15401,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 362,
-      "gzip": 0,
-      "brotli": 175,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 183,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15411,9 +15418,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 132,
-      "gzip": 0,
-      "brotli": 71,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 91,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15428,9 +15435,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 142,
-      "gzip": 0,
-      "brotli": 81,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 96,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15445,9 +15452,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 150,
-      "gzip": 0,
-      "brotli": 93,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 101,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15462,9 +15469,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 496,
-      "gzip": 0,
-      "brotli": 159,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 184,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -15479,8 +15486,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 607,
-      "gzip": 0,
-      "brotli": 227,
+      "gzip": 262,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15517,8 +15524,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 10496,
-      "gzip": 0,
-      "brotli": 1817,
+      "gzip": 2122,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15534,8 +15541,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 509,
-      "gzip": 0,
-      "brotli": 138,
+      "gzip": 158,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15551,8 +15558,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 86,
-      "gzip": 0,
-      "brotli": 50,
+      "gzip": 66,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15568,8 +15575,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 335,
-      "gzip": 0,
-      "brotli": 110,
+      "gzip": 132,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15592,8 +15599,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1213,
-      "gzip": 0,
-      "brotli": 378,
+      "gzip": 423,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15609,8 +15616,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 275,
-      "gzip": 0,
-      "brotli": 130,
+      "gzip": 141,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15626,8 +15633,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 315,
-      "gzip": 0,
-      "brotli": 104,
+      "gzip": 125,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15643,8 +15650,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 465,
-      "gzip": 0,
-      "brotli": 138,
+      "gzip": 148,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15660,8 +15667,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 151,
-      "gzip": 0,
-      "brotli": 83,
+      "gzip": 95,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15677,8 +15684,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 883,
-      "gzip": 0,
-      "brotli": 327,
+      "gzip": 356,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15694,8 +15701,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 732,
-      "gzip": 0,
-      "brotli": 201,
+      "gzip": 244,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15711,8 +15718,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 889,
-      "gzip": 0,
-      "brotli": 184,
+      "gzip": 219,
+      "brotli": 0,
       "parent": "dist/utcTime-DLfrQXna.js"
     },
     {
@@ -15742,8 +15749,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 124,
-      "gzip": 0,
-      "brotli": 62,
+      "gzip": 75,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15759,8 +15766,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1572,
-      "gzip": 0,
-      "brotli": 395,
+      "gzip": 445,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15790,8 +15797,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 339,
-      "gzip": 0,
-      "brotli": 130,
+      "gzip": 145,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15807,8 +15814,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 56,
-      "gzip": 0,
-      "brotli": 37,
+      "gzip": 41,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15824,8 +15831,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 64,
-      "gzip": 0,
-      "brotli": 37,
+      "gzip": 44,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15841,8 +15848,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 546,
-      "gzip": 0,
-      "brotli": 198,
+      "gzip": 215,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15858,8 +15865,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1235,
-      "gzip": 0,
-      "brotli": 204,
+      "gzip": 221,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15875,8 +15882,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 755,
-      "gzip": 0,
-      "brotli": 163,
+      "gzip": 190,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15892,8 +15899,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 308,
-      "gzip": 0,
-      "brotli": 92,
+      "gzip": 115,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15909,8 +15916,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 317,
-      "gzip": 0,
-      "brotli": 96,
+      "gzip": 117,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15926,8 +15933,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 218,
-      "gzip": 0,
-      "brotli": 92,
+      "gzip": 105,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15943,8 +15950,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 240,
-      "gzip": 0,
-      "brotli": 87,
+      "gzip": 102,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15960,8 +15967,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 347,
-      "gzip": 0,
-      "brotli": 119,
+      "gzip": 136,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15977,8 +15984,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 311,
-      "gzip": 0,
-      "brotli": 117,
+      "gzip": 140,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -15994,8 +16001,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 687,
-      "gzip": 0,
-      "brotli": 198,
+      "gzip": 233,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16011,8 +16018,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 120,
-      "gzip": 0,
-      "brotli": 53,
+      "gzip": 71,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16028,8 +16035,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 387,
-      "gzip": 0,
-      "brotli": 128,
+      "gzip": 153,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16045,8 +16052,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 446,
-      "gzip": 0,
-      "brotli": 155,
+      "gzip": 178,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16062,8 +16069,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 210,
-      "gzip": 0,
-      "brotli": 86,
+      "gzip": 99,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16079,8 +16086,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1903,
-      "gzip": 0,
-      "brotli": 431,
+      "gzip": 466,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16096,8 +16103,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 421,
-      "gzip": 0,
-      "brotli": 145,
+      "gzip": 166,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16113,8 +16120,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 414,
-      "gzip": 0,
-      "brotli": 151,
+      "gzip": 166,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16130,8 +16137,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 96,
-      "gzip": 0,
-      "brotli": 49,
+      "gzip": 64,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16147,8 +16154,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1204,
-      "gzip": 0,
-      "brotli": 270,
+      "gzip": 293,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16164,8 +16171,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 505,
-      "gzip": 0,
-      "brotli": 147,
+      "gzip": 170,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16181,8 +16188,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 274,
-      "gzip": 0,
-      "brotli": 89,
+      "gzip": 101,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16198,8 +16205,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 444,
-      "gzip": 0,
-      "brotli": 127,
+      "gzip": 151,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16215,8 +16222,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 350,
-      "gzip": 0,
-      "brotli": 130,
+      "gzip": 142,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16232,8 +16239,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 991,
-      "gzip": 0,
-      "brotli": 264,
+      "gzip": 299,
+      "brotli": 0,
       "parent": "dist/src-kLpf-6r0.js"
     },
     {
@@ -16249,8 +16256,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 20,
-      "gzip": 0,
-      "brotli": 22,
+      "gzip": 33,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -16266,8 +16273,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 358,
-      "gzip": 0,
-      "brotli": 129,
+      "gzip": 169,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -16290,8 +16297,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 116,
-      "gzip": 0,
-      "brotli": 72,
+      "gzip": 85,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -16307,8 +16314,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1129,
-      "gzip": 0,
-      "brotli": 325,
+      "gzip": 384,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -16324,8 +16331,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 9358,
-      "gzip": 0,
-      "brotli": 2464,
+      "gzip": 2778,
+      "brotli": 0,
       "parent": "dist/src-Clugeype.js"
     },
     {
@@ -16362,8 +16369,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1106,
-      "gzip": 0,
-      "brotli": 294,
+      "gzip": 334,
+      "brotli": 0,
       "parent": "dist/ordinal-BtWaYSDN.js"
     },
     {
@@ -16386,9 +16393,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 583,
-      "gzip": 0,
-      "brotli": 220,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 258,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -16410,9 +16417,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 216,
-      "gzip": 0,
-      "brotli": 100,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "gzip": 126,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -18429,8 +18436,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 131,
-      "gzip": 0,
-      "brotli": 70,
+      "gzip": 82,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -18446,8 +18453,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 219,
-      "gzip": 0,
-      "brotli": 100,
+      "gzip": 113,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -18463,8 +18470,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2204,
-      "gzip": 0,
-      "brotli": 676,
+      "gzip": 735,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -18487,8 +18494,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 453,
-      "gzip": 0,
-      "brotli": 164,
+      "gzip": 192,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -18504,8 +18511,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1743,
-      "gzip": 0,
-      "brotli": 475,
+      "gzip": 526,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -18521,8 +18528,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 620,
-      "gzip": 0,
-      "brotli": 171,
+      "gzip": 207,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -20015,8 +20022,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 688,
-      "gzip": 0,
-      "brotli": 245,
+      "gzip": 271,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -20123,8 +20130,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 295,
-      "gzip": 0,
-      "brotli": 139,
+      "gzip": 178,
+      "brotli": 0,
       "parent": "dist/billboardJs-PR7IsnhE.js"
     },
     {
@@ -20140,8 +20147,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 497,
-      "gzip": 0,
-      "brotli": 218,
+      "gzip": 241,
+      "brotli": 0,
       "parent": "dist/chordDiagram-B1_nfC1m.js"
     },
     {
@@ -20157,8 +20164,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1508,
-      "gzip": 0,
-      "brotli": 656,
+      "gzip": 735,
+      "brotli": 0,
       "parent": "dist/d3BarChart-BC05DvRv.js"
     },
     {
@@ -20174,8 +20181,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3473,
-      "gzip": 0,
-      "brotli": 1301,
+      "gzip": 1454,
+      "brotli": 0,
       "parent": "dist/erdDiagram-CtPeCq0f.js"
     },
     {
@@ -20191,8 +20198,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2057,
-      "gzip": 0,
-      "brotli": 441,
+      "gzip": 493,
+      "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -20200,7 +20207,7 @@
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5421
+      "uncompressed": 5386
     },
     {
       "kind": "chunk",
@@ -20208,8 +20215,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3032,
-      "gzip": 0,
-      "brotli": 804,
+      "gzip": 925,
+      "brotli": 0,
       "parent": "dist/networkDiagram-DZwLfY_R.js"
     },
     {
@@ -20217,17 +20224,17 @@
       "name": "src/observablePlot.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1258
+      "uncompressed": 1281
     },
     {
       "kind": "chunk",
       "name": "src/observablePlot.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 739,
-      "gzip": 0,
-      "brotli": 298,
-      "parent": "dist/observablePlot-CGF3S2mL.js"
+      "uncompressed": 785,
+      "gzip": 365,
+      "brotli": 0,
+      "parent": "dist/observablePlot-B_JYDIbq.js"
     },
     {
       "kind": "filesystem",
@@ -20242,8 +20249,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 774,
-      "gzip": 0,
-      "brotli": 315,
+      "gzip": 362,
+      "brotli": 0,
       "parent": "dist/palette-BuTjISrV.js"
     },
     {
@@ -20259,8 +20266,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3056,
-      "gzip": 0,
-      "brotli": 1041,
+      "gzip": 1184,
+      "brotli": 0,
       "parent": "dist/sankeyDiagram-DOF6arSJ.js"
     },
     {
@@ -20276,8 +20283,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 705,
-      "gzip": 0,
-      "brotli": 307,
+      "gzip": 349,
+      "brotli": 0,
       "parent": "dist/tanStackCharts-D-ip-ZV-.js"
     },
     {
@@ -20293,8 +20300,8 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1969,
-      "gzip": 0,
-      "brotli": 781,
+      "gzip": 887,
+      "brotli": 0,
       "parent": "dist/treeDiagram-FUVkkblR.js"
     }
   ],
@@ -20380,6 +20387,12 @@
     {
       "kind": "dynamic-import",
       "source": "node_modules/@unovis/ts/components/leaflet-map/modules/map.js",
+      "target": "node_modules/@unovis/ts/components/leaflet-map/modules/maplibre-worker-source.js",
+      "original": null
+    },
+    {
+      "kind": "dynamic-import",
+      "source": "node_modules/@unovis/ts/components/leaflet-map/modules/map.js",
       "target": "node_modules/leaflet/dist/leaflet-src.js",
       "original": null
     },
@@ -20439,7 +20452,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/observablePlot-CGF3S2mL.js",
+      "source": "dist/observablePlot-B_JYDIbq.js",
       "target": "src/observablePlot.ts",
       "original": null
     },

@@ -4,7 +4,7 @@
 import type { Chart } from 'billboard.js';
 
 // ── DPUse Framework
-import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
+import type { PresentationView } from '@dpuse/dpuse-shared';
 
 // ── Local Framework
 import type { BarChartData } from '@/billboardJs';

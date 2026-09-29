@@ -26,6 +26,11 @@ interface ObservablePlotBarRow {
 const DEFAULT_WIDTH = 640;
 const DEFAULT_HEIGHT = 400;
 
+// A table rather than a switch, so each chart type added to 'ObservablePlotChartTypeId' must be given a renderer here.
+const CHART_RENDERERS: Record<ObservablePlotChartTypeId, (data: BarChartData, width: number, height: number) => HTMLElement | SVGSVGElement> = {
+    bar: renderBarChart
+};
+
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export function renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement): ObservablePlotHandle {
@@ -35,22 +40,7 @@ export function renderObservablePlot(typeId: ObservablePlotChartTypeId, data: Ba
         const width = renderTo.clientWidth || DEFAULT_WIDTH;
         const height = renderTo.clientHeight || DEFAULT_HEIGHT;
 
-        let figure: HTMLElement | SVGSVGElement;
-        switch (typeId) {
-            case 'bar': {
-                const rows = toBarRows(data);
-                figure = plot({
-                    fx: { label: null },
-                    height,
-                    marks: [barY(rows, { fx: 'category', tip: true, x: 'seriesName', y: 'value', fill: 'seriesName' }), ruleY([0])],
-                    width,
-                    x: { axis: null },
-                    y: { grid: true }
-                });
-                break;
-            }
-        }
-
+        const figure = CHART_RENDERERS[typeId](data, width, height);
         renderTo.append(figure);
 
         if (!(figure instanceof SVGSVGElement)) throw new Error('Expected Observable Plot to render an SVG element.');
@@ -70,6 +60,17 @@ export function renderObservablePlot(typeId: ObservablePlotChartTypeId, data: Ba
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+function renderBarChart(data: BarChartData, width: number, height: number): HTMLElement | SVGSVGElement {
+    return plot({
+        fx: { label: null },
+        height,
+        marks: [barY(toBarRows(data), { fill: 'seriesName', fx: 'category', tip: true, x: 'seriesName', y: 'value' }), ruleY([0])],
+        width,
+        x: { axis: null },
+        y: { grid: true }
+    });
+}
 
 function toBarRows(data: BarChartData): ObservablePlotBarRow[] {
     const rows: ObservablePlotBarRow[] = [];

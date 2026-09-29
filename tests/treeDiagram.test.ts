@@ -48,13 +48,13 @@ describe('D3Tool.renderTreeDiagram', () => {
 
     it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
-        let called = false;
+        let isCalled = false;
 
         await new D3Tool().renderTreeDiagram(data, renderTo, undefined, () => {
-            called = true;
+            isCalled = true;
         });
 
-        expect(called).toBe(true);
+        expect(isCalled).toBe(true);
     });
 
     it('resize() redraws into the same container without throwing', async () => {

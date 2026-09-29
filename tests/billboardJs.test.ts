@@ -4,8 +4,8 @@
 import { describe, expect, it } from 'vitest';
 
 // ── Local
-import { Tool as D3Tool } from '@/index';
 import type { BarChartData } from '@/index';
+import { Tool as D3Tool } from '@/index';
 
 // ── Data ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -34,13 +34,13 @@ describe('D3Tool.renderBillboardJS', () => {
 
     it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
-        let called = false;
+        let isCalled = false;
 
         await new D3Tool().renderBillboardJS(data, renderTo, () => {
-            called = true;
+            isCalled = true;
         });
 
-        expect(called).toBe(true);
+        expect(isCalled).toBe(true);
     });
 
     it('resize() and destroy() run without throwing', async () => {

@@ -37,13 +37,13 @@ describe('D3Tool.renderNetworkDiagram', () => {
 
     it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
-        let called = false;
+        let isCalled = false;
 
         await new D3Tool().renderNetworkDiagram(data, renderTo, undefined, () => {
-            called = true;
+            isCalled = true;
         });
 
-        expect(called).toBe(true);
+        expect(isCalled).toBe(true);
     });
 
     it('triggerAutoLayout() and resize() run without throwing', async () => {
