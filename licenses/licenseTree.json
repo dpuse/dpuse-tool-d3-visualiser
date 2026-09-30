@@ -1,5 +1,5 @@
 {
-  "version": "0.0.54",
+  "version": "0.0.57",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
