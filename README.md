@@ -149,7 +149,7 @@ License data is updated each time `npm run document` is run, using [license-chec
 | [@unovis/graphlibrary](https://github.com/unovis/graphlibrary)                                        |  2.2.0-3  | MIT                 | [LICENSE](licenses/downloads/@unovis/graphlibrary@2.2.0-3-LICENSE.txt)              |
 | [@unovis/ts](https://github.com/f5/unovis)                                                            |   1.7.1   | Apache-2.0          | [LICENSE](licenses/downloads/@unovis/ts@1.7.1-LICENSE.txt)                          |
 | [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros)                              |   3.1.0   | MIT                 | [LICENSE](licenses/downloads/babel-plugin-macros@3.1.0-LICENSE.txt)                 |
-| [billboard.js](https://github.com/naver/billboard.js)                                                 |   4.1.0   | MIT                 | [LICENSE](licenses/downloads/billboard.js@4.1.0-LICENSE.txt)                        |
+| [billboard.js](https://github.com/naver/billboard.js)                                                 |   4.1.1   | MIT                 | [LICENSE](licenses/downloads/billboard.js@4.1.1-LICENSE.txt)                        |
 | [binary-search-bounds](https://github.com/mikolalysenko/binary-search-bounds)                         |   2.0.5   | MIT                 | [LICENSE](licenses/downloads/binary-search-bounds@2.0.5-LICENSE.txt)                |
 | [callsites](https://github.com/sindresorhus/callsites)                                                |   3.1.0   | MIT                 | [LICENSE](licenses/downloads/callsites@3.1.0-LICENSE.txt)                           |
 | [commander](https://github.com/tj/commander.js)                                                       |  2.20.3   | MIT                 | [LICENSE](licenses/downloads/commander@2.20.3-LICENSE.txt)                          |
@@ -617,7 +617,7 @@ The dependency tree below lists every package in this project — direct and tra
     - **[topojson-client](https://github.com/topojson/topojson-client)** 3.1.0 — **82 months** ago: 2019-11-06 ⚠️
         - **[commander](https://github.com/tj/commander.js)** 2.20.3 — **83 months** ago: 2019-10-11 ⚠️ → **latest**: 15.0.0 — **4 months** ago: 2026-05-29 ❗
     - **[tslib](https://github.com/Microsoft/tslib)** 2.8.1 — **22 months** ago: 2024-10-31 ⚠️
-- **[billboard.js](https://github.com/naver/billboard.js)** 4.1.0 — this month: 2026-09-16 → **latest**: 4.1.1 — this month: 2026-09-30 ❗
+- **[billboard.js](https://github.com/naver/billboard.js)** 4.1.1 — this month: 2026-09-30
     - **[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.12 — this month: 2026-09-14
     - **[@types/d3-transition](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.9 — **23 months** ago: 2024-10-07 ⚠️
     - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
@@ -698,7 +698,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 | Chunk/Module/File                                                           | Composition                  |
 | :-------------------------------------------------------------------------- | :--------------------------- |
-| dist/billboardJs-PR7IsnhE.js                                                | 263.5 kB · gzip 80.3 kB      |
+| dist/billboardJs-CIT1-a2_.js                                                | 263.5 kB · gzip 80.3 kB      |
 | &nbsp;&nbsp;&nbsp;&nbsp;billboard.js                                        | `█████░░░░░░░░░░░░░░░` 25.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `░░░░░░░░░░░░░░░░░░░░` 1.9%  |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → billboardJs.ts                                | `░░░░░░░░░░░░░░░░░░░░` 0.0%  |

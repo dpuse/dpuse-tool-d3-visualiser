@@ -1,5 +1,5 @@
 {
-  "version": "0.0.57",
+  "version": "0.0.58",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -1589,8 +1589,8 @@
       }
     },
     "billboard.js": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/billboard.js/-/billboard.js-4.1.0.tgz",
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/billboard.js/-/billboard.js-4.1.1.tgz",
       "overridden": false,
       "dependencies": {
         "@types/d3-selection": {

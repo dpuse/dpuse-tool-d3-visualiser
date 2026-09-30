@@ -615,12 +615,12 @@
         "path": "node_modules/babel-plugin-macros",
         "licenseFile": "downloads/babel-plugin-macros@3.1.0-LICENSE.txt"
     },
-    "billboard.js@4.1.0": {
+    "billboard.js@4.1.1": {
         "licenses": "MIT",
         "repository": "https://github.com/naver/billboard.js",
         "publisher": "NAVER Corp.",
         "path": "node_modules/billboard.js",
-        "licenseFile": "downloads/billboard.js@4.1.0-LICENSE.txt"
+        "licenseFile": "downloads/billboard.js@4.1.1-LICENSE.txt"
     },
     "binary-search-bounds@2.0.5": {
         "licenses": "MIT",

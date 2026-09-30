@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-09-30T08:17:47.165Z",
+    "generatedAt": "2026-09-30T08:28:17.378Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -64,7 +64,7 @@
       "uncompressed": 18346,
       "gzip": 870,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "chunk",
@@ -362,10 +362,10 @@
     },
     {
       "kind": "asset",
-      "name": "dist/billboardJs-PR7IsnhE.js",
+      "name": "dist/billboardJs-CIT1-a2_.js",
       "type": "script",
-      "uncompressed": 269838,
-      "gzip": 82238,
+      "uncompressed": 269856,
+      "gzip": 82258,
       "brotli": 0
     },
     {
@@ -5733,7 +5733,7 @@
       "uncompressed": 1230,
       "gzip": 482,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5757,7 +5757,7 @@
       "uncompressed": 2323,
       "gzip": 851,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5774,7 +5774,7 @@
       "uncompressed": 54,
       "gzip": 56,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5791,7 +5791,7 @@
       "uncompressed": 857,
       "gzip": 301,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5822,7 +5822,7 @@
       "uncompressed": 2285,
       "gzip": 561,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5839,7 +5839,7 @@
       "uncompressed": 1095,
       "gzip": 399,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5856,7 +5856,7 @@
       "uncompressed": 169,
       "gzip": 114,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5873,7 +5873,7 @@
       "uncompressed": 261,
       "gzip": 126,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5890,7 +5890,7 @@
       "uncompressed": 1477,
       "gzip": 504,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5921,7 +5921,7 @@
       "uncompressed": 1448,
       "gzip": 516,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5952,7 +5952,7 @@
       "uncompressed": 1874,
       "gzip": 755,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5969,7 +5969,7 @@
       "uncompressed": 488,
       "gzip": 202,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -5993,7 +5993,7 @@
       "uncompressed": 455,
       "gzip": 257,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6008,9 +6008,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 22142,
-      "gzip": 6294,
+      "gzip": 6295,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6027,7 +6027,7 @@
       "uncompressed": 8878,
       "gzip": 2798,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6044,7 +6044,7 @@
       "uncompressed": 1953,
       "gzip": 754,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6059,9 +6059,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 12327,
-      "gzip": 3887,
+      "gzip": 3888,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6078,7 +6078,7 @@
       "uncompressed": 1842,
       "gzip": 681,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6095,7 +6095,7 @@
       "uncompressed": 3556,
       "gzip": 1281,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6110,9 +6110,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 17777,
-      "gzip": 4849,
+      "gzip": 4850,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6129,7 +6129,7 @@
       "uncompressed": 2967,
       "gzip": 973,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6153,7 +6153,7 @@
       "uncompressed": 10300,
       "gzip": 2874,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6175,9 +6175,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3749,
-      "gzip": 1375,
+      "gzip": 1376,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6208,7 +6208,7 @@
       "uncompressed": 94,
       "gzip": 88,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6225,7 +6225,7 @@
       "uncompressed": 1844,
       "gzip": 638,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6240,9 +6240,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2349,
-      "gzip": 711,
+      "gzip": 712,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6257,9 +6257,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4360,
-      "gzip": 1616,
+      "gzip": 1617,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6274,9 +6274,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 8431,
-      "gzip": 2750,
+      "gzip": 2751,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6291,26 +6291,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 992,
-      "gzip": 402,
+      "gzip": 403,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/billboard.js/dist-esm/ChartInternal/internals/grid.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 13714
+      "uncompressed": 13764
     },
     {
       "kind": "chunk",
       "name": "node_modules/billboard.js/dist-esm/ChartInternal/internals/grid.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8928,
-      "gzip": 2513,
+      "uncompressed": 8946,
+      "gzip": 2520,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6325,9 +6325,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 14725,
-      "gzip": 3894,
+      "gzip": 3895,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6344,7 +6344,7 @@
       "uncompressed": 5400,
       "gzip": 1729,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6368,7 +6368,7 @@
       "uncompressed": 3546,
       "gzip": 1152,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6390,9 +6390,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2558,
-      "gzip": 848,
+      "gzip": 849,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6407,9 +6407,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7910,
-      "gzip": 2389,
+      "gzip": 2390,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6424,9 +6424,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 544,
-      "gzip": 302,
+      "gzip": 303,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6457,7 +6457,7 @@
       "uncompressed": 8299,
       "gzip": 2685,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6472,9 +6472,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3499,
-      "gzip": 1271,
+      "gzip": 1272,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6489,9 +6489,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1747,
-      "gzip": 675,
+      "gzip": 676,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6508,7 +6508,7 @@
       "uncompressed": 9645,
       "gzip": 3315,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6525,7 +6525,7 @@
       "uncompressed": 1778,
       "gzip": 577,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6542,7 +6542,7 @@
       "uncompressed": 4674,
       "gzip": 1185,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6573,7 +6573,7 @@
       "uncompressed": 4889,
       "gzip": 1777,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6604,7 +6604,7 @@
       "uncompressed": 2820,
       "gzip": 1090,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6656,7 +6656,7 @@
       "uncompressed": 1754,
       "gzip": 704,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6705,7 +6705,7 @@
       "name": "node_modules/billboard.js/dist-esm/ChartInternal/shape/radar.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9882
+      "uncompressed": 9870
     },
     {
       "kind": "filesystem",
@@ -6720,9 +6720,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 12988,
-      "gzip": 3968,
+      "gzip": 3969,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6746,7 +6746,7 @@
       "uncompressed": 3852,
       "gzip": 970,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6763,7 +6763,7 @@
       "uncompressed": 283,
       "gzip": 175,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6780,7 +6780,7 @@
       "uncompressed": 1359,
       "gzip": 358,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6797,7 +6797,7 @@
       "uncompressed": 89,
       "gzip": 72,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6814,7 +6814,7 @@
       "uncompressed": 844,
       "gzip": 251,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6831,7 +6831,7 @@
       "uncompressed": 671,
       "gzip": 214,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6846,9 +6846,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 643,
-      "gzip": 202,
+      "gzip": 203,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6865,7 +6865,7 @@
       "uncompressed": 77,
       "gzip": 61,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6882,7 +6882,7 @@
       "uncompressed": 92,
       "gzip": 71,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6899,7 +6899,7 @@
       "uncompressed": 220,
       "gzip": 102,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6916,7 +6916,7 @@
       "uncompressed": 667,
       "gzip": 254,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6931,9 +6931,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 564,
-      "gzip": 220,
+      "gzip": 221,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6950,7 +6950,7 @@
       "uncompressed": 260,
       "gzip": 134,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6967,7 +6967,7 @@
       "uncompressed": 112,
       "gzip": 86,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -6984,7 +6984,7 @@
       "uncompressed": 454,
       "gzip": 152,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7001,7 +7001,7 @@
       "uncompressed": 144,
       "gzip": 93,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7018,7 +7018,7 @@
       "uncompressed": 722,
       "gzip": 234,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7042,7 +7042,7 @@
       "uncompressed": 149,
       "gzip": 84,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7073,7 +7073,7 @@
       "uncompressed": 197,
       "gzip": 133,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7104,7 +7104,7 @@
       "uncompressed": 302,
       "gzip": 147,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7205,7 +7205,7 @@
       "uncompressed": 182,
       "gzip": 126,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7222,7 +7222,7 @@
       "uncompressed": 118,
       "gzip": 97,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7260,7 +7260,7 @@
       "uncompressed": 143,
       "gzip": 92,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7319,7 +7319,7 @@
       "uncompressed": 42,
       "gzip": 48,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7336,7 +7336,7 @@
       "uncompressed": 59,
       "gzip": 58,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7430,7 +7430,7 @@
       "uncompressed": 568,
       "gzip": 189,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7445,9 +7445,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2866,
-      "gzip": 866,
+      "gzip": 867,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7464,7 +7464,7 @@
       "uncompressed": 164,
       "gzip": 120,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7481,7 +7481,7 @@
       "uncompressed": 258,
       "gzip": 161,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7505,7 +7505,7 @@
       "uncompressed": 700,
       "gzip": 253,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7522,7 +7522,7 @@
       "uncompressed": 1548,
       "gzip": 579,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7539,7 +7539,7 @@
       "uncompressed": 1330,
       "gzip": 477,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7556,7 +7556,7 @@
       "uncompressed": 761,
       "gzip": 409,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7573,7 +7573,7 @@
       "uncompressed": 916,
       "gzip": 375,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7590,7 +7590,7 @@
       "uncompressed": 4039,
       "gzip": 1503,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7607,7 +7607,7 @@
       "uncompressed": 254,
       "gzip": 151,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7624,7 +7624,7 @@
       "uncompressed": 3537,
       "gzip": 1360,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7639,9 +7639,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3503,
-      "gzip": 1212,
+      "gzip": 1213,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7658,7 +7658,7 @@
       "uncompressed": 654,
       "gzip": 275,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -7673,9 +7673,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4438,
-      "gzip": 1549,
+      "gzip": 1550,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -13821,7 +13821,7 @@
       "uncompressed": 135,
       "gzip": 105,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -20132,7 +20132,7 @@
       "uncompressed": 295,
       "gzip": 178,
       "brotli": 0,
-      "parent": "dist/billboardJs-PR7IsnhE.js"
+      "parent": "dist/billboardJs-CIT1-a2_.js"
     },
     {
       "kind": "filesystem",
@@ -20422,7 +20422,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/billboardJs-PR7IsnhE.js",
+      "source": "dist/billboardJs-CIT1-a2_.js",
       "target": "src/billboardJs.ts",
       "original": null
     },
