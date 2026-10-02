@@ -15,12 +15,12 @@
       }
     },
     "@dpuse/dpuse-development": {
-      "version": "0.3.815",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-0.3.815.tgz",
+      "version": "0.3.816",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-0.3.816.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "0.3.868"
+          "version": "0.3.869"
         },
         "license-checker-rseidelsohn": {
           "version": "5.0.1",
@@ -1121,37 +1121,34 @@
               }
             },
             "spdx-satisfies": {
-              "version": "6.0.0",
-              "resolved": "https://registry.npmjs.org/spdx-satisfies/-/spdx-satisfies-6.0.0.tgz",
+              "version": "6.0.0"
+            },
+            "treeify": {
+              "version": "1.1.0",
+              "resolved": "https://registry.npmjs.org/treeify/-/treeify-1.1.0.tgz",
+              "overridden": false
+            }
+          }
+        },
+        "npm-check-updates": {
+          "version": "23.1.0",
+          "resolved": "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-23.1.0.tgz",
+          "overridden": false
+        },
+        "spdx-satisfies": {
+          "version": "6.0.0",
+          "resolved": "https://registry.npmjs.org/spdx-satisfies/-/spdx-satisfies-6.0.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "spdx-compare": {
+              "version": "1.0.0",
+              "resolved": "https://registry.npmjs.org/spdx-compare/-/spdx-compare-1.0.0.tgz",
               "overridden": false,
               "dependencies": {
-                "spdx-compare": {
-                  "version": "1.0.0",
-                  "resolved": "https://registry.npmjs.org/spdx-compare/-/spdx-compare-1.0.0.tgz",
-                  "overridden": false,
-                  "dependencies": {
-                    "array-find-index": {
-                      "version": "1.0.2",
-                      "resolved": "https://registry.npmjs.org/array-find-index/-/array-find-index-1.0.2.tgz",
-                      "overridden": false
-                    },
-                    "spdx-expression-parse": {
-                      "version": "3.0.1",
-                      "resolved": "https://registry.npmjs.org/spdx-expression-parse/-/spdx-expression-parse-3.0.1.tgz",
-                      "overridden": false,
-                      "dependencies": {
-                        "spdx-exceptions": {
-                          "version": "2.5.0"
-                        },
-                        "spdx-license-ids": {
-                          "version": "3.0.23"
-                        }
-                      }
-                    },
-                    "spdx-ranges": {
-                      "version": "2.1.1"
-                    }
-                  }
+                "array-find-index": {
+                  "version": "1.0.2",
+                  "resolved": "https://registry.npmjs.org/array-find-index/-/array-find-index-1.0.2.tgz",
+                  "overridden": false
                 },
                 "spdx-expression-parse": {
                   "version": "3.0.1",
@@ -1167,23 +1164,29 @@
                   }
                 },
                 "spdx-ranges": {
-                  "version": "2.1.1",
-                  "resolved": "https://registry.npmjs.org/spdx-ranges/-/spdx-ranges-2.1.1.tgz",
-                  "overridden": false
+                  "version": "2.1.1"
                 }
               }
             },
-            "treeify": {
-              "version": "1.1.0",
-              "resolved": "https://registry.npmjs.org/treeify/-/treeify-1.1.0.tgz",
+            "spdx-expression-parse": {
+              "version": "3.0.1",
+              "resolved": "https://registry.npmjs.org/spdx-expression-parse/-/spdx-expression-parse-3.0.1.tgz",
+              "overridden": false,
+              "dependencies": {
+                "spdx-exceptions": {
+                  "version": "2.5.0"
+                },
+                "spdx-license-ids": {
+                  "version": "3.0.23"
+                }
+              }
+            },
+            "spdx-ranges": {
+              "version": "2.1.1",
+              "resolved": "https://registry.npmjs.org/spdx-ranges/-/spdx-ranges-2.1.1.tgz",
               "overridden": false
             }
           }
-        },
-        "npm-check-updates": {
-          "version": "23.1.0",
-          "resolved": "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-23.1.0.tgz",
-          "overridden": false
         },
         "typescript": {
           "version": "6.0.3"
@@ -1201,8 +1204,8 @@
       }
     },
     "@dpuse/dpuse-shared": {
-      "version": "0.3.868",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.868.tgz",
+      "version": "0.3.869",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.869.tgz",
       "overridden": false,
       "dependencies": {
         "file-type": {
@@ -1600,7 +1603,7 @@
                   "version": "1.0.9"
                 },
                 "@types/node": {
-                  "version": "26.6.3"
+                  "version": "26.6.4"
                 }
               }
             },
@@ -2508,8 +2511,8 @@
       }
     },
     "@types/node": {
-      "version": "26.6.3",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-26.6.3.tgz",
+      "version": "26.6.4",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-26.6.4.tgz",
       "overridden": false,
       "dependencies": {
         "undici-types": {
@@ -4326,7 +4329,7 @@
       "overridden": false,
       "dependencies": {
         "@types/node": {
-          "version": "26.6.3"
+          "version": "26.6.4"
         },
         "@types/whatwg-mimetype": {
           "version": "3.0.2",
@@ -4339,7 +4342,7 @@
           "overridden": false,
           "dependencies": {
             "@types/node": {
-              "version": "26.6.3"
+              "version": "26.6.4"
             }
           }
         },
@@ -4349,7 +4352,7 @@
           "overridden": false,
           "dependencies": {
             "@types/node": {
-              "version": "26.6.3"
+              "version": "26.6.4"
             }
           }
         },
@@ -4638,7 +4641,7 @@
       "overridden": false,
       "dependencies": {
         "@types/node": {
-          "version": "26.6.3"
+          "version": "26.6.4"
         },
         "@vitejs/devtools": {},
         "esbuild": {
@@ -4833,7 +4836,7 @@
           }
         },
         "@types/node": {
-          "version": "26.6.3"
+          "version": "26.6.4"
         },
         "@vitest/browser-playwright": {},
         "@vitest/browser-preview": {},
@@ -4948,8 +4951,8 @@
       }
     },
     "wrangler": {
-      "version": "4.145.0",
-      "resolved": "https://registry.npmjs.org/wrangler/-/wrangler-4.145.0.tgz",
+      "version": "4.147.0",
+      "resolved": "https://registry.npmjs.org/wrangler/-/wrangler-4.147.0.tgz",
       "overridden": false,
       "dependencies": {
         "@cloudflare/kv-asset-handler": {
@@ -4966,7 +4969,7 @@
               "version": "2.0.0-rc.24"
             },
             "workerd": {
-              "version": "1.20260930.2"
+              "version": "1.20261001.1"
             }
           }
         },
@@ -4983,8 +4986,8 @@
           "version": "2.3.3"
         },
         "miniflare": {
-          "version": "5.20260930.0-alpha",
-          "resolved": "https://registry.npmjs.org/miniflare/-/miniflare-5.20260930.0-alpha.tgz",
+          "version": "5.20261001.0-alpha",
+          "resolved": "https://registry.npmjs.org/miniflare/-/miniflare-5.20261001.0-alpha.tgz",
           "overridden": false,
           "dependencies": {
             "@cspotcode/source-map-support": {
@@ -5069,7 +5072,7 @@
               "overridden": false
             },
             "workerd": {
-              "version": "1.20260930.2"
+              "version": "1.20261001.1"
             },
             "ws": {
               "version": "8.21.0",
@@ -5166,14 +5169,14 @@
           }
         },
         "workerd": {
-          "version": "1.20260930.2",
-          "resolved": "https://registry.npmjs.org/workerd/-/workerd-1.20260930.2.tgz",
+          "version": "1.20261001.1",
+          "resolved": "https://registry.npmjs.org/workerd/-/workerd-1.20261001.1.tgz",
           "overridden": false,
           "dependencies": {
             "@cloudflare/workerd-darwin-64": {},
             "@cloudflare/workerd-darwin-arm64": {
-              "version": "1.20260930.2",
-              "resolved": "https://registry.npmjs.org/@cloudflare/workerd-darwin-arm64/-/workerd-darwin-arm64-1.20260930.2.tgz",
+              "version": "1.20261001.1",
+              "resolved": "https://registry.npmjs.org/@cloudflare/workerd-darwin-arm64/-/workerd-darwin-arm64-1.20261001.1.tgz",
               "overridden": false
             },
             "@cloudflare/workerd-linux-64": {},

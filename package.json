@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "0.0.58",
+    "version": "0.0.59",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
@@ -47,7 +47,7 @@
         "esbuild@0.28.1": true,
         "fsevents@2.3.3": true,
         "unrs-resolver@1.12.2": true,
-        "workerd@1.20260930.2": true
+        "workerd@1.20261001.1": true
     },
     "scripts": {
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
@@ -62,7 +62,7 @@
     },
     "dependencies": {
         "@dagrejs/dagre": "^3.1.1",
-        "@dpuse/dpuse-shared": "^0.3.868",
+        "@dpuse/dpuse-shared": "^0.3.869",
         "@observablehq/plot": "^0.6.17",
         "@tanstack/charts": "^0.18.0",
         "@unovis/ts": "^1.7.1",
@@ -89,7 +89,7 @@
         "@types/d3-selection": "^3.0.12",
         "@types/d3-shape": "^3.2.0",
         "@types/d3-zoom": "^3.0.9",
-        "@types/node": "^26.6.3",
+        "@types/node": "^26.6.4",
         "eslint": "^10.11.0",
         "happy-dom": "^20.14.5",
         "prettier": "^3.9.9",
@@ -98,7 +98,7 @@
         "vite": "^8.3.2",
         "vite-plugin-dts": "^5.1.1",
         "vitest": "^5.0.3",
-        "wrangler": "^4.145.0"
+        "wrangler": "^4.147.0"
     },
     "overrides": {
         "d3-array": "^3.2.4",
