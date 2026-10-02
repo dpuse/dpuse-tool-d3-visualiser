@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-09-30T08:28:17.378Z",
+    "generatedAt": "2026-10-02T10:28:17.680Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -311,10 +311,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 11047,
+      "uncompressed": 11059,
       "gzip": 645,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "chunk",
@@ -389,7 +389,7 @@
       "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
       "uncompressed": 2336,
-      "gzip": 567,
+      "gzip": 568,
       "brotli": 0
     },
     {
@@ -570,10 +570,10 @@
     },
     {
       "kind": "asset",
-      "name": "dist/tanStackCharts-D-ip-ZV-.js",
+      "name": "dist/tanStackCharts-NvzPwGs_.js",
       "type": "script",
-      "uncompressed": 128412,
-      "gzip": 37303,
+      "uncompressed": 128436,
+      "gzip": 37306,
       "brotli": 0
     },
     {
@@ -2226,7 +2226,7 @@
       "uncompressed": 108,
       "gzip": 88,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2285,7 +2285,7 @@
       "uncompressed": 5423,
       "gzip": 1878,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2316,7 +2316,7 @@
       "uncompressed": 3595,
       "gzip": 1113,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2347,7 +2347,7 @@
       "uncompressed": 175,
       "gzip": 120,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2378,7 +2378,7 @@
       "uncompressed": 178,
       "gzip": 126,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2416,7 +2416,7 @@
       "uncompressed": 3014,
       "gzip": 955,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2433,7 +2433,7 @@
       "uncompressed": 674,
       "gzip": 308,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2471,7 +2471,7 @@
       "uncompressed": 175,
       "gzip": 122,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2488,7 +2488,7 @@
       "uncompressed": 71,
       "gzip": 59,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2505,7 +2505,7 @@
       "uncompressed": 4079,
       "gzip": 1164,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2536,7 +2536,7 @@
       "uncompressed": 1075,
       "gzip": 428,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2560,7 +2560,7 @@
       "uncompressed": 55,
       "gzip": 60,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2577,7 +2577,7 @@
       "uncompressed": 3484,
       "gzip": 1127,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2608,7 +2608,7 @@
       "uncompressed": 2409,
       "gzip": 738,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2674,7 +2674,7 @@
       "uncompressed": 220,
       "gzip": 147,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2691,7 +2691,7 @@
       "uncompressed": 3367,
       "gzip": 1101,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2715,7 +2715,7 @@
       "uncompressed": 2560,
       "gzip": 846,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2732,7 +2732,7 @@
       "uncompressed": 357,
       "gzip": 189,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2749,7 +2749,7 @@
       "uncompressed": 100,
       "gzip": 91,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2766,7 +2766,7 @@
       "uncompressed": 7739,
       "gzip": 2038,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2790,7 +2790,7 @@
       "uncompressed": 4907,
       "gzip": 1489,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2807,7 +2807,7 @@
       "uncompressed": 1804,
       "gzip": 517,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2824,7 +2824,7 @@
       "uncompressed": 317,
       "gzip": 164,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2855,7 +2855,7 @@
       "uncompressed": 1112,
       "gzip": 407,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2872,7 +2872,7 @@
       "uncompressed": 16417,
       "gzip": 4350,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2917,7 +2917,7 @@
       "uncompressed": 424,
       "gzip": 197,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2932,9 +2932,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2346,
-      "gzip": 732,
+      "gzip": 731,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2951,7 +2951,7 @@
       "uncompressed": 2951,
       "gzip": 938,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2982,7 +2982,7 @@
       "uncompressed": 54,
       "gzip": 59,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -2999,7 +2999,7 @@
       "uncompressed": 599,
       "gzip": 227,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3016,7 +3016,7 @@
       "uncompressed": 1593,
       "gzip": 540,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3033,7 +3033,7 @@
       "uncompressed": 55,
       "gzip": 60,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3050,7 +3050,7 @@
       "uncompressed": 22886,
       "gzip": 5813,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3067,7 +3067,7 @@
       "uncompressed": 2807,
       "gzip": 887,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3082,9 +3082,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3872,
-      "gzip": 1255,
+      "gzip": 1254,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3108,7 +3108,7 @@
       "uncompressed": 412,
       "gzip": 205,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3125,7 +3125,7 @@
       "uncompressed": 1165,
       "gzip": 432,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3140,9 +3140,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2853,
-      "gzip": 955,
+      "gzip": 954,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3159,7 +3159,7 @@
       "uncompressed": 200,
       "gzip": 126,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3176,7 +3176,7 @@
       "uncompressed": 4440,
       "gzip": 1462,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3193,7 +3193,7 @@
       "uncompressed": 2677,
       "gzip": 952,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -3210,7 +3210,7 @@
       "uncompressed": 1374,
       "gzip": 528,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15025,7 +15025,7 @@
       "uncompressed": 209,
       "gzip": 122,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15042,7 +15042,7 @@
       "uncompressed": 210,
       "gzip": 125,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15059,7 +15059,7 @@
       "uncompressed": 201,
       "gzip": 127,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15076,7 +15076,7 @@
       "uncompressed": 450,
       "gzip": 200,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15093,7 +15093,7 @@
       "uncompressed": 226,
       "gzip": 137,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15110,7 +15110,7 @@
       "uncompressed": 107,
       "gzip": 90,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15134,7 +15134,7 @@
       "uncompressed": 217,
       "gzip": 137,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15151,7 +15151,7 @@
       "uncompressed": 86,
       "gzip": 79,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -15233,7 +15233,7 @@
       "uncompressed": 831,
       "gzip": 301,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -20198,7 +20198,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2057,
-      "gzip": 493,
+      "gzip": 494,
       "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
@@ -20275,17 +20275,17 @@
       "name": "src/tanStackCharts.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1263
+      "uncompressed": 1324
     },
     {
       "kind": "chunk",
       "name": "src/tanStackCharts.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 705,
-      "gzip": 349,
+      "uncompressed": 717,
+      "gzip": 355,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-D-ip-ZV-.js"
+      "parent": "dist/tanStackCharts-NvzPwGs_.js"
     },
     {
       "kind": "filesystem",
@@ -20464,7 +20464,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/tanStackCharts-D-ip-ZV-.js",
+      "source": "dist/tanStackCharts-NvzPwGs_.js",
       "target": "src/tanStackCharts.ts",
       "original": null
     },

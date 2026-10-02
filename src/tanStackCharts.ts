@@ -1,6 +1,7 @@
 // ── External Dependencies & Registrations
 import { group } from '@tanstack/charts/group';
-import { barY, defineChart, mountChart } from '@tanstack/charts';
+import { barY, defineChart } from '@tanstack/charts';
+import { mountChart } from '@tanstack/charts/dom';
 import { scaleBand, scaleLinear } from 'd3-scale';
 
 // ── Local
@@ -24,14 +25,17 @@ interface TanStackBarRow {
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-// TanStack Charts is pre-alpha (0.6.4) - its vanilla-DOM API (mountChart) is undocumented and may change between releases.
+// TanStack Charts is pre-1.0 (0.18) and its API still changes between releases: 0.18 moved the axes under 'scales' and
+// 'mountChart' to '@tanstack/charts/dom'.
 export function renderTanStackCharts(data: BarChartData, renderTo: HTMLElement): TanStackChartsHandle {
     const rows = toBarRows(data);
 
     const definition = defineChart({
         marks: [barY(rows, { color: 'seriesName', fill: 'seriesName', layout: group(), x: 'category', y: 'value', z: 'seriesName' })],
-        x: { scale: () => scaleBand().padding(0.2) },
-        y: { grid: true, nice: true, scale: scaleLinear }
+        scales: {
+            x: { scale: () => scaleBand().padding(0.2) },
+            y: { grid: true, nice: true, scale: scaleLinear }
+        }
     });
 
     const hostOptions = { ariaLabel: 'Bar chart', definition };
