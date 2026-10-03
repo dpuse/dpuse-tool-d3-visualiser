@@ -7,13 +7,13 @@
 [![npm version](https://img.shields.io/npm/v/@dpuse/dpuse-tool-d3-visualiser?color=cb3837&label=npm)](https://www.npmjs.com/package/@dpuse/dpuse-tool-d3-visualiser)
 [![CI](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml/badge.svg)](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml)
 
-[DPUse](https://www.dpuse.app) · [Report a Vulnerability](https://github.com/dpuse/dpuse-tool-d3-visualiser/security/advisories/new) · [Open an Issue](https://github.com/dpuse/dpuse-tool-d3-visualiser/issues)
-
 A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.
+
+[Report a Vulnerability](https://github.com/dpuse/dpuse-tool-d3-visualiser/security/advisories/new) · [Open an Issue](https://github.com/dpuse/dpuse-tool-d3-visualiser/issues)
 
 ## About DPUse
 
-DPUse (Data Positioning & Use) is an in-browser application that positions your data for use through three core activities: sourcing, contextualising, and publishing.
+[DPUse](https://www.dpuse.app) (Data Positioning & Use) is an in-browser application that positions your data for use through three core activities: sourcing, contextualising, and publishing.
 
 **Sourcing** uses a library of [Connectors](https://www.dpuse.app/connectors) to establish [Connections](https://www.dpuse.app) to applications, databases, file stores, and curated datasets; these connections are subsequently used to configure structured [Data Views](https://www.dpuse.app) from the underlying sources.
 
@@ -28,6 +28,8 @@ In addition, DPUse provides [Tools](https://www.dpuse.app) used by the applicati
 ...
 
 Consider adding support for Plotly.js, Unovis, Vega and Vega-Lite.
+
+Consider and Echarts visualiser, maybe Plotly.js.
 
 <!-- OPENING_END -->
 
@@ -319,7 +321,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;src → billboardJs.ts                                | `░░░░░░░░░░░░░░░░░░░░` 0.1% · 295 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-selection → src/selectAll.js                     | `░░░░░░░░░░░░░░░░░░░░` 0.1% · 135 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `█░░░░░░░░░░░░░░░░░░░` 6.8% · 17.9 kB        |
-| **dist/observablePlot-B_JYDIbq.js**                                         | 223.5 kB · gzip 67.2 kB · 23.3% of the build |
+| **dist/observablePlot-Bk7j7AUD.js**                                         | 223.5 kB · gzip 67.2 kB · 23.3% of the build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@observablehq/plot                                  | `████████████░░░░░░░░` 60.2% · 134.5 kB      |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-geo                                              | `███░░░░░░░░░░░░░░░░░` 14.4% · 32.3 kB       |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale-chromatic                                  | `██░░░░░░░░░░░░░░░░░░` 8.0% · 17.8 kB        |
@@ -329,9 +331,9 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `░░░░░░░░░░░░░░░░░░░░` 1.1% · 2.5 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate                                      | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 1.4 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;isoformat                                           | `░░░░░░░░░░░░░░░░░░░░` 0.3% · 799 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → observablePlot.ts                             | `░░░░░░░░░░░░░░░░░░░░` 0.3% · 785 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → observablePlot.ts                             | `░░░░░░░░░░░░░░░░░░░░` 0.3% · 789 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 9.1% · 20.3 kB        |
-| **dist/tanStackCharts-NvzPwGs\_.js**                                        | 125.4 kB · gzip 36.4 kB · 13.1% of the build |
+| **dist/tanStackCharts-DuJwwUCO.js**                                         | 125.4 kB · gzip 36.3 kB · 13.1% of the build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts                                    | `██████████████████░░` 88.9% · 111.4 kB      |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `░░░░░░░░░░░░░░░░░░░░` 2.0% · 2.5 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                             | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 717 B          |
@@ -417,7 +419,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | **dist/path-BoJ8LMXE.js**                                                   | 2.7 kB · gzip 1.1 kB · 0.3% of the build     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-path → src/path.js                               | `███████████████████░` 93.2% · 2.6 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `█░░░░░░░░░░░░░░░░░░░` 6.8% · 190 B          |
-| **dist/dpuse-tool-d3-visualiser.es.js**                                     | 2.3 kB · gzip 568 B · 0.2% of the build      |
+| **dist/dpuse-tool-d3-visualiser.es.js**                                     | 2.3 kB · gzip 569 B · 0.2% of the build      |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                      | `██████████████████░░` 88.1% · 2.0 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 11.9% · 279 B         |
 | **dist/band-p1VbTxZM.js**                                                   | 2.1 kB · gzip 813 B · 0.2% of the build      |

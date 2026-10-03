@@ -43,7 +43,7 @@ export function renderObservablePlot(typeId: ObservablePlotChartTypeId, data: Ba
         const figure = CHART_RENDERERS[typeId](data, width, height);
         renderTo.append(figure);
 
-        if (!(figure instanceof SVGSVGElement)) throw new Error('Expected Observable Plot to render an SVG element.');
+        if (!(figure instanceof SVGSVGElement)) throw new TypeError('Expected Observable Plot to render an SVG element.');
         return figure;
     }
 

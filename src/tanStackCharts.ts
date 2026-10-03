@@ -1,7 +1,7 @@
 // ── External Dependencies & Registrations
 import { group } from '@tanstack/charts/group';
-import { barY, defineChart } from '@tanstack/charts';
 import { mountChart } from '@tanstack/charts/dom';
+import { barY, defineChart } from '@tanstack/charts';
 import { scaleBand, scaleLinear } from 'd3-scale';
 
 // ── Local

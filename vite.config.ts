@@ -12,7 +12,7 @@ import config from './config.json' with { type: 'json' };
 
 // ── Vite Configuration ───────────────────────────────────────────────────────────────────────────────────────────────
 
-export default defineConfig({
+const viteConfig = defineConfig({
     build: {
         cssTarget: 'esnext', // TODO: Need to check this is required, only difference. Claude say no, but may be a 'esnext' vs 'ESNext' thing?
         lib: {
@@ -38,3 +38,5 @@ export default defineConfig({
         }
     }
 });
+
+export default viteConfig;
