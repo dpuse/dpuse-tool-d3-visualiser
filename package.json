@@ -1,8 +1,8 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "1.0.106",
+    "version": "1.0.107",
     "private": false,
-    "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
+    "description": "A TypeScript wrapper for D3, TanStack Charts, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (TanStack Charts) renderers.",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "type": "module",
@@ -62,12 +62,9 @@
     },
     "dependencies": {
         "@dagrejs/dagre": "^3.1.1",
-        "@dpuse/dpuse-shared": "^1.0.2",
-        "@observablehq/plot": "^0.6.17",
-        "@tanstack/charts": "^0.18.0",
+        "@dpuse/dpuse-shared": "^1.0.116",
+        "@tanstack/charts": "^1.0.0",
         "@unovis/ts": "^1.7.1",
-        "billboard.js": "^4.1.1",
-        "d3-axis": "^3.0.0",
         "d3-drag": "^3.0.0",
         "d3-force": "^3.0.0",
         "d3-hierarchy": "^3.1.2",
@@ -78,9 +75,8 @@
         "d3-zoom": "^3.0.0"
     },
     "devDependencies": {
-        "@dpuse/dpuse-development": "^1.0.113",
-        "@dpuse/eslint-config-dpuse": "^1.0.131",
-        "@types/d3-axis": "^3.0.6",
+        "@dpuse/dpuse-development": "^1.0.117",
+        "@dpuse/eslint-config-dpuse": "^1.0.132",
         "@types/d3-drag": "^3.0.7",
         "@types/d3-force": "^3.0.10",
         "@types/d3-hierarchy": "^3.1.7",
@@ -95,7 +91,7 @@
         "prettier": "^3.9.9",
         "sonda": "^0.14.0",
         "typescript": "^6.0.3",
-        "vite": "^8.3.2",
+        "vite": "^8.3.3",
         "vite-plugin-dts": "^5.1.2",
         "vitest": "^5.0.3",
         "wrangler": "^4.147.0"

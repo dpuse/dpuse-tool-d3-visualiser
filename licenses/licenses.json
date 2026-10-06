@@ -63,18 +63,11 @@
         "path": "node_modules/@juggle/resize-observer",
         "licenseFile": "downloads/@juggle/resize-observer@3.4.0-LICENSE.txt"
     },
-    "@observablehq/plot@0.6.17": {
-        "licenses": "ISC",
-        "repository": "https://github.com/observablehq/plot",
-        "publisher": "Observable, Inc.",
-        "path": "node_modules/@observablehq/plot",
-        "licenseFile": "downloads/@observablehq/plot@0.6.17-LICENSE.txt"
-    },
-    "@tanstack/charts@0.18.0": {
+    "@tanstack/charts@1.0.0": {
         "licenses": "MIT",
         "repository": "https://github.com/TanStack/charts",
         "path": "node_modules/@tanstack/charts",
-        "licenseFile": "downloads/@tanstack/charts@0.18.0-LICENSE.txt"
+        "licenseFile": "downloads/@tanstack/charts@1.0.0-LICENSE.txt"
     },
     "@unovis/ts@1.7.1": {
         "licenses": "Apache-2.0",
@@ -84,33 +77,12 @@
         "path": "node_modules/@unovis/ts",
         "licenseFile": "downloads/@unovis/ts@1.7.1-LICENSE.txt"
     },
-    "billboard.js@4.1.1": {
-        "licenses": "MIT",
-        "repository": "https://github.com/naver/billboard.js",
-        "publisher": "NAVER Corp.",
-        "path": "node_modules/billboard.js",
-        "licenseFile": "downloads/billboard.js@4.1.1-LICENSE.txt"
-    },
     "d3-array@3.2.4": {
         "licenses": "ISC",
         "repository": "https://github.com/d3/d3-array",
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-array",
         "licenseFile": "downloads/d3-array@3.2.4-LICENSE.txt"
-    },
-    "d3-axis@3.0.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-axis",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-axis",
-        "licenseFile": "downloads/d3-axis@3.0.0-LICENSE.txt"
-    },
-    "d3-brush@3.0.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-brush",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-brush",
-        "licenseFile": "downloads/d3-brush@3.0.0-LICENSE.txt"
     },
     "d3-chord@3.0.1": {
         "licenses": "ISC",
@@ -161,13 +133,6 @@
         "path": "node_modules/d3-format",
         "licenseFile": "downloads/d3-format@3.1.2-LICENSE.txt"
     },
-    "d3-geo@3.1.1": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-geo",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-geo",
-        "licenseFile": "downloads/d3-geo@3.1.1-LICENSE.txt"
-    },
     "d3-hierarchy@3.1.2": {
         "licenses": "ISC",
         "repository": "https://github.com/d3/d3-hierarchy",
@@ -211,13 +176,6 @@
         "path": "node_modules/d3-sankey",
         "licenseFile": "downloads/d3-sankey@0.12.3-LICENSE.txt"
     },
-    "d3-scale-chromatic@3.1.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-scale-chromatic",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-scale-chromatic",
-        "licenseFile": "downloads/d3-scale-chromatic@3.1.0-LICENSE.txt"
-    },
     "d3-scale@4.0.2": {
         "licenses": "ISC",
         "repository": "https://github.com/d3/d3-scale",
@@ -238,20 +196,6 @@
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-shape",
         "licenseFile": "downloads/d3-shape@3.2.0-LICENSE.txt"
-    },
-    "d3-time-format@4.1.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-time-format",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-time-format",
-        "licenseFile": "downloads/d3-time-format@4.1.0-LICENSE.txt"
-    },
-    "d3-time@3.1.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3-time",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3-time",
-        "licenseFile": "downloads/d3-time@3.1.0-LICENSE.txt"
     },
     "d3-timer@3.0.1": {
         "licenses": "ISC",
@@ -274,26 +218,12 @@
         "path": "node_modules/d3-zoom",
         "licenseFile": "downloads/d3-zoom@3.0.0-LICENSE.txt"
     },
-    "d3@7.9.0": {
-        "licenses": "ISC",
-        "repository": "https://github.com/d3/d3",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/d3",
-        "licenseFile": "downloads/d3@7.9.0-LICENSE.txt"
-    },
     "internmap@2.0.3": {
         "licenses": "ISC",
         "repository": "https://github.com/mbostock/internmap",
         "publisher": "Mike Bostock",
         "path": "node_modules/internmap",
         "licenseFile": "downloads/internmap@2.0.3-LICENSE.txt"
-    },
-    "isoformat@0.2.1": {
-        "licenses": "ISC",
-        "repository": "https://github.com/mbostock/isoformat",
-        "publisher": "Mike Bostock",
-        "path": "node_modules/isoformat",
-        "licenseFile": "downloads/isoformat@0.2.1-LICENSE.txt"
     },
     "stylis@4.2.0": {
         "licenses": "MIT",

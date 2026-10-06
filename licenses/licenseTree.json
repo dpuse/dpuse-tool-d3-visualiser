@@ -1,5 +1,5 @@
 {
-  "version": "1.0.105",
+  "version": "1.0.106",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -15,12 +15,12 @@
       }
     },
     "@dpuse/dpuse-development": {
-      "version": "1.0.113",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-1.0.113.tgz",
+      "version": "1.0.117",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-1.0.117.tgz",
       "overridden": false,
       "dependencies": {
         "@dpuse/dpuse-shared": {
-          "version": "1.0.113"
+          "version": "1.0.116"
         },
         "license-checker-rseidelsohn": {
           "version": "5.0.1",
@@ -1204,8 +1204,8 @@
       }
     },
     "@dpuse/dpuse-shared": {
-      "version": "1.0.113",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.113.tgz",
+      "version": "1.0.116",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.116.tgz",
       "overridden": false,
       "dependencies": {
         "file-type": {
@@ -1271,8 +1271,8 @@
       }
     },
     "@dpuse/eslint-config-dpuse": {
-      "version": "1.0.131",
-      "resolved": "https://registry.npmjs.org/@dpuse/eslint-config-dpuse/-/eslint-config-dpuse-1.0.131.tgz",
+      "version": "1.0.132",
+      "resolved": "https://registry.npmjs.org/@dpuse/eslint-config-dpuse/-/eslint-config-dpuse-1.0.132.tgz",
       "overridden": false,
       "dependencies": {
         "@eslint-community/eslint-plugin-eslint-comments": {
@@ -2102,175 +2102,9 @@
         }
       }
     },
-    "@observablehq/plot": {
-      "version": "0.6.17",
-      "resolved": "https://registry.npmjs.org/@observablehq/plot/-/plot-0.6.17.tgz",
-      "overridden": false,
-      "dependencies": {
-        "d3": {
-          "version": "7.9.0",
-          "resolved": "https://registry.npmjs.org/d3/-/d3-7.9.0.tgz",
-          "overridden": false,
-          "dependencies": {
-            "d3-array": {
-              "version": "3.2.4"
-            },
-            "d3-axis": {
-              "version": "3.0.0"
-            },
-            "d3-brush": {
-              "version": "3.0.0"
-            },
-            "d3-chord": {
-              "version": "3.0.1"
-            },
-            "d3-color": {
-              "version": "3.1.0"
-            },
-            "d3-contour": {
-              "version": "4.0.2"
-            },
-            "d3-delaunay": {
-              "version": "6.0.4"
-            },
-            "d3-dispatch": {
-              "version": "3.0.1"
-            },
-            "d3-drag": {
-              "version": "3.0.0"
-            },
-            "d3-dsv": {
-              "version": "3.0.1",
-              "resolved": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz",
-              "overridden": false,
-              "dependencies": {
-                "commander": {
-                  "version": "7.2.0"
-                },
-                "iconv-lite": {
-                  "version": "0.6.3",
-                  "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz",
-                  "overridden": false,
-                  "dependencies": {
-                    "safer-buffer": {
-                      "version": "2.1.2",
-                      "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
-                      "overridden": false
-                    }
-                  }
-                },
-                "rw": {
-                  "version": "1.3.3",
-                  "resolved": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz",
-                  "overridden": false
-                }
-              }
-            },
-            "d3-ease": {
-              "version": "3.0.1"
-            },
-            "d3-fetch": {
-              "version": "3.0.1",
-              "resolved": "https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz",
-              "overridden": false,
-              "dependencies": {
-                "d3-dsv": {
-                  "version": "3.0.1"
-                }
-              }
-            },
-            "d3-force": {
-              "version": "3.0.0"
-            },
-            "d3-format": {
-              "version": "3.1.2"
-            },
-            "d3-geo": {
-              "version": "3.1.1"
-            },
-            "d3-hierarchy": {
-              "version": "3.1.2"
-            },
-            "d3-interpolate": {
-              "version": "3.0.1"
-            },
-            "d3-path": {
-              "version": "3.1.0"
-            },
-            "d3-polygon": {
-              "version": "3.0.1",
-              "resolved": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz",
-              "overridden": false
-            },
-            "d3-quadtree": {
-              "version": "3.0.1"
-            },
-            "d3-random": {
-              "version": "3.0.1",
-              "resolved": "https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz",
-              "overridden": false
-            },
-            "d3-scale-chromatic": {
-              "version": "3.1.0",
-              "resolved": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.1.0.tgz",
-              "overridden": false,
-              "dependencies": {
-                "d3-color": {
-                  "version": "3.1.0"
-                },
-                "d3-interpolate": {
-                  "version": "3.0.1"
-                }
-              }
-            },
-            "d3-scale": {
-              "version": "4.0.2"
-            },
-            "d3-selection": {
-              "version": "3.0.0"
-            },
-            "d3-shape": {
-              "version": "3.2.0"
-            },
-            "d3-time-format": {
-              "version": "4.1.0"
-            },
-            "d3-time": {
-              "version": "3.1.0"
-            },
-            "d3-timer": {
-              "version": "3.0.1"
-            },
-            "d3-transition": {
-              "version": "3.0.1"
-            },
-            "d3-zoom": {
-              "version": "3.0.0"
-            }
-          }
-        },
-        "interval-tree-1d": {
-          "version": "1.0.4",
-          "resolved": "https://registry.npmjs.org/interval-tree-1d/-/interval-tree-1d-1.0.4.tgz",
-          "overridden": false,
-          "dependencies": {
-            "binary-search-bounds": {
-              "version": "2.0.5",
-              "resolved": "https://registry.npmjs.org/binary-search-bounds/-/binary-search-bounds-2.0.5.tgz",
-              "overridden": false
-            }
-          }
-        },
-        "isoformat": {
-          "version": "0.2.1",
-          "resolved": "https://registry.npmjs.org/isoformat/-/isoformat-0.2.1.tgz",
-          "overridden": false
-        }
-      }
-    },
     "@tanstack/charts": {
-      "version": "0.18.0",
-      "resolved": "https://registry.npmjs.org/@tanstack/charts/-/charts-0.18.0.tgz",
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/@tanstack/charts/-/charts-1.0.0.tgz",
       "overridden": false,
       "dependencies": {
         "@angular/core": {},
@@ -2412,16 +2246,6 @@
           "overridden": false
         },
         "vue": {}
-      }
-    },
-    "@types/d3-axis": {
-      "version": "3.0.6",
-      "resolved": "https://registry.npmjs.org/@types/d3-axis/-/d3-axis-3.0.6.tgz",
-      "overridden": false,
-      "dependencies": {
-        "@types/d3-selection": {
-          "version": "3.0.12"
-        }
       }
     },
     "@types/d3-drag": {
@@ -2925,7 +2749,14 @@
           "overridden": false
         },
         "@types/d3-axis": {
-          "version": "3.0.6"
+          "version": "3.0.6",
+          "resolved": "https://registry.npmjs.org/@types/d3-axis/-/d3-axis-3.0.6.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@types/d3-selection": {
+              "version": "3.0.12"
+            }
+          }
         },
         "@types/d3-brush": {
           "version": "3.0.6",
@@ -3285,7 +3116,9 @@
           "version": "3.2.4"
         },
         "d3-axis": {
-          "version": "3.0.0"
+          "version": "3.0.0",
+          "resolved": "https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz",
+          "overridden": false
         },
         "d3-brush": {
           "version": "3.0.0"
@@ -3411,7 +3244,146 @@
           "version": "3.0.0"
         },
         "d3": {
-          "version": "7.9.0"
+          "version": "7.9.0",
+          "resolved": "https://registry.npmjs.org/d3/-/d3-7.9.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "d3-array": {
+              "version": "3.2.4"
+            },
+            "d3-axis": {
+              "version": "3.0.0"
+            },
+            "d3-brush": {
+              "version": "3.0.0"
+            },
+            "d3-chord": {
+              "version": "3.0.1"
+            },
+            "d3-color": {
+              "version": "3.1.0"
+            },
+            "d3-contour": {
+              "version": "4.0.2"
+            },
+            "d3-delaunay": {
+              "version": "6.0.4"
+            },
+            "d3-dispatch": {
+              "version": "3.0.1"
+            },
+            "d3-drag": {
+              "version": "3.0.0"
+            },
+            "d3-dsv": {
+              "version": "3.0.1",
+              "resolved": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-3.0.1.tgz",
+              "overridden": false,
+              "dependencies": {
+                "commander": {
+                  "version": "7.2.0"
+                },
+                "iconv-lite": {
+                  "version": "0.6.3",
+                  "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "safer-buffer": {
+                      "version": "2.1.2",
+                      "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
+                      "overridden": false
+                    }
+                  }
+                },
+                "rw": {
+                  "version": "1.3.3",
+                  "resolved": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz",
+                  "overridden": false
+                }
+              }
+            },
+            "d3-ease": {
+              "version": "3.0.1"
+            },
+            "d3-fetch": {
+              "version": "3.0.1",
+              "resolved": "https://registry.npmjs.org/d3-fetch/-/d3-fetch-3.0.1.tgz",
+              "overridden": false,
+              "dependencies": {
+                "d3-dsv": {
+                  "version": "3.0.1"
+                }
+              }
+            },
+            "d3-force": {
+              "version": "3.0.0"
+            },
+            "d3-format": {
+              "version": "3.1.2"
+            },
+            "d3-geo": {
+              "version": "3.1.1"
+            },
+            "d3-hierarchy": {
+              "version": "3.1.2"
+            },
+            "d3-interpolate": {
+              "version": "3.0.1"
+            },
+            "d3-path": {
+              "version": "3.1.0"
+            },
+            "d3-polygon": {
+              "version": "3.0.1",
+              "resolved": "https://registry.npmjs.org/d3-polygon/-/d3-polygon-3.0.1.tgz",
+              "overridden": false
+            },
+            "d3-quadtree": {
+              "version": "3.0.1"
+            },
+            "d3-random": {
+              "version": "3.0.1",
+              "resolved": "https://registry.npmjs.org/d3-random/-/d3-random-3.0.1.tgz",
+              "overridden": false
+            },
+            "d3-scale-chromatic": {
+              "version": "3.1.0",
+              "resolved": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.1.0.tgz",
+              "overridden": false,
+              "dependencies": {
+                "d3-color": {
+                  "version": "3.1.0"
+                },
+                "d3-interpolate": {
+                  "version": "3.0.1"
+                }
+              }
+            },
+            "d3-scale": {
+              "version": "4.0.2"
+            },
+            "d3-selection": {
+              "version": "3.0.0"
+            },
+            "d3-shape": {
+              "version": "3.2.0"
+            },
+            "d3-time-format": {
+              "version": "4.1.0"
+            },
+            "d3-time": {
+              "version": "3.1.0"
+            },
+            "d3-timer": {
+              "version": "3.0.1"
+            },
+            "d3-transition": {
+              "version": "3.0.1"
+            },
+            "d3-zoom": {
+              "version": "3.0.0"
+            }
+          }
         },
         "elkjs": {
           "version": "0.10.2",
@@ -3600,65 +3572,6 @@
         }
       }
     },
-    "billboard.js": {
-      "version": "4.1.1",
-      "resolved": "https://registry.npmjs.org/billboard.js/-/billboard.js-4.1.1.tgz",
-      "overridden": false,
-      "dependencies": {
-        "@types/d3-selection": {
-          "version": "3.0.12"
-        },
-        "@types/d3-transition": {
-          "version": "3.0.9"
-        },
-        "d3-axis": {
-          "version": "3.0.0"
-        },
-        "d3-brush": {
-          "version": "3.0.0"
-        },
-        "d3-drag": {
-          "version": "3.0.0"
-        },
-        "d3-hierarchy": {
-          "version": "3.1.2"
-        },
-        "d3-interpolate": {
-          "version": "3.0.1"
-        },
-        "d3-scale": {
-          "version": "4.0.2"
-        },
-        "d3-selection": {
-          "version": "3.0.0"
-        },
-        "d3-shape": {
-          "version": "3.2.0"
-        },
-        "d3-time-format": {
-          "version": "4.1.0",
-          "resolved": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz",
-          "overridden": false,
-          "dependencies": {
-            "d3-time": {
-              "version": "3.1.0"
-            }
-          }
-        },
-        "d3-transition": {
-          "version": "3.0.1"
-        },
-        "d3-zoom": {
-          "version": "3.0.0"
-        },
-        "react": {}
-      }
-    },
-    "d3-axis": {
-      "version": "3.0.0",
-      "resolved": "https://registry.npmjs.org/d3-axis/-/d3-axis-3.0.0.tgz",
-      "overridden": false
-    },
     "d3-drag": {
       "version": "3.0.0",
       "resolved": "https://registry.npmjs.org/d3-drag/-/d3-drag-3.0.0.tgz",
@@ -3727,7 +3640,14 @@
           "version": "3.0.1"
         },
         "d3-time-format": {
-          "version": "4.1.0"
+          "version": "4.1.0",
+          "resolved": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "d3-time": {
+              "version": "3.1.0"
+            }
+          }
         },
         "d3-time": {
           "version": "3.1.0",
@@ -4625,19 +4545,19 @@
               }
             },
             "vite": {
-              "version": "8.3.2"
+              "version": "8.3.3"
             },
             "webpack": {}
           }
         },
         "vite": {
-          "version": "8.3.2"
+          "version": "8.3.3"
         }
       }
     },
     "vite": {
-      "version": "8.3.2",
-      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.2.tgz",
+      "version": "8.3.3",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.3.tgz",
       "overridden": false,
       "dependencies": {
         "@types/node": {
@@ -4878,7 +4798,7 @@
             },
             "msw": {},
             "vite": {
-              "version": "8.3.2"
+              "version": "8.3.3"
             }
           }
         },
@@ -4941,7 +4861,7 @@
           "version": "0.2.17"
         },
         "vite": {
-          "version": "8.3.2"
+          "version": "8.3.3"
         },
         "why-is-node-running": {
           "version": "3.2.1",

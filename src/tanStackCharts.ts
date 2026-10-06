@@ -4,12 +4,17 @@ import { mountChart } from '@tanstack/charts/dom';
 import { barY, defineChart } from '@tanstack/charts';
 import { scaleBand, scaleLinear } from 'd3-scale';
 
-// ── Local
-import type { BarChartData } from '@/billboardJs';
-
-export type { BarChartData, BarChartSeries } from '@/billboardJs';
-
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+export interface BarChartSeries {
+    name: string;
+    values: number[];
+}
+
+export interface BarChartData {
+    categories: string[];
+    series: BarChartSeries[];
+}
 
 export interface TanStackChartsHandle {
     destroy: () => void;
