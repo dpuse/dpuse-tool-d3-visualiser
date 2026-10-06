@@ -16,7 +16,7 @@ Also consider an **eCharts** visualiser along with existing **Highcharts** (come
 <!-- OPENING_START -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![DPUse version](https://img.shields.io/github/v/release/dpuse/dpuse-tool-d3-visualiser?color=f6821f&label=DPUse)](https://github.com/dpuse/dpuse-tool-d3-visualiser/releases/latest)
+[![DPUse version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.dpuse.app%2Fconfigs%2Fdpuse-tool-d3-visualiser&query=%24.data.version&prefix=v&label=DPUse&color=f6821f)](https://github.com/dpuse/dpuse-tool-d3-visualiser/releases/latest)
 [![npm version](https://img.shields.io/npm/v/@dpuse/dpuse-tool-d3-visualiser?color=cb3837&label=npm)](https://www.npmjs.com/package/@dpuse/dpuse-tool-d3-visualiser)
 [![CI](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml/badge.svg)](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml)
 
@@ -178,144 +178,144 @@ License data is updated each time `npm run document` is run, using [license-chec
 
 The dependency tree below shows how each package in the table above is reached — direct and transitive — along with its installed version, release date, and update status. A package that does not ship itself, such as one whose parts are bundled separately, is left out and what ships beneath it is shown in its place. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are mature and stable (have limited or no dependencies), so they require no active development.
 
-- **[@dagrejs/dagre](https://github.com/dagrejs/dagre)** 3.1.1 — **1 month** ago: 2026-08-08
-- **[@observablehq/plot](https://github.com/observablehq/plot)** 0.6.17 — **19 months** ago: 2025-02-14 ⚠️
-    - **[d3](https://github.com/d3/d3)** 7.9.0 — **30 months** ago: 2024-03-12 ⚠️
-        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-        - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-        - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-        - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **54 months** ago: 2022-03-28 ⚠️
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **8 months** ago: 2026-01-14 ⚠️
-        - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — **30 months** ago: 2024-03-12 ⚠️
-        - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **54 months** ago: 2022-04-02 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **45 months** ago: 2022-12-19 ⚠️
-        - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)** 3.1.0 — **30 months** ago: 2024-03-12 ⚠️
-            - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **54 months** ago: 2022-03-28 ⚠️
-            - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **60 months** ago: 2021-09-24 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-        - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-        - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **57 months** ago: 2021-12-04 ⚠️
-        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **46 months** ago: 2022-12-02 ⚠️
-        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **63 months** ago: 2021-06-09 ⚠️
-        - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-    - **[isoformat](https://github.com/mbostock/isoformat)** 0.2.1 — **60 months** ago: 2021-09-24 ⚠️
-- **[@tanstack/charts](https://github.com/TanStack/charts)** 0.18.0 — this month: 2026-09-10
-    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-        - **[internmap](https://github.com/mbostock/internmap)** 2.0.3 — **60 months** ago: 2021-09-20 ⚠️
-    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — **30 months** ago: 2024-03-12 ⚠️
-        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **54 months** ago: 2022-04-02 ⚠️
-    - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — **85 months** ago: 2019-09-02 ⚠️
-    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **60 months** ago: 2021-09-24 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
+- **[@dagrejs/dagre](https://github.com/dagrejs/dagre)** 3.1.1 — 1 mth ago: 2026-08-08
+- **[@observablehq/plot](https://github.com/observablehq/plot)** 0.6.17 — 19 mths ago: 2025-02-14 ⚠️
+    - **[d3](https://github.com/d3/d3)** 7.9.0 — 30 mths ago: 2024-03-12 ⚠️
+        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+        - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+        - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+        - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — 54 mths ago: 2022-03-28 ⚠️
+        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — 8 mths ago: 2026-01-14 ⚠️
+        - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — 30 mths ago: 2024-03-12 ⚠️
+        - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
+        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
+        - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)** 3.1.0 — 30 mths ago: 2024-03-12 ⚠️
+            - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — 54 mths ago: 2022-03-28 ⚠️
+            - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
+        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+        - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+        - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — 58 mths ago: 2021-12-04 ⚠️
+        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — 46 mths ago: 2022-12-02 ⚠️
+        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
+        - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+    - **[isoformat](https://github.com/mbostock/isoformat)** 0.2.1 — 60 mths ago: 2021-09-24 ⚠️
+- **[@tanstack/charts](https://github.com/TanStack/charts)** 0.18.0 — this month: 2026-09-10 → latest: 1.0.0 — this month: 2026-10-03 ❗
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+        - **[internmap](https://github.com/mbostock/internmap)** 2.0.3 — 60 mths ago: 2021-09-20 ⚠️
+    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — 30 mths ago: 2024-03-12 ⚠️
+        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
+    - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — 85 mths ago: 2019-09-02 ⚠️
+    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
 - **[@unovis/ts](https://github.com/f5/unovis)** 1.7.1 — this month: 2026-09-29
-    - **[@emotion/css](https://github.com/emotion-js/emotion.git#main)** 11.13.5 — **22 months** ago: 2024-11-20 ⚠️
-        - **[@emotion/hash](https://github.com/emotion-js/emotion.git#main)** 0.9.2 — **26 months** ago: 2024-07-19 ⚠️
-        - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — **26 months** ago: 2024-07-19 ⚠️
-        - **[@emotion/serialize](https://github.com/emotion-js/emotion.git#main)** 1.3.3 — **22 months** ago: 2024-11-20 ⚠️
-        - **[stylis](https://github.com/thysultan/stylis.js)** 4.2.0 — **40 months** ago: 2023-05-05 ⚠️ → **latest**: 4.4.0 — **5 months** ago: 2026-04-19 ❗
-        - **[@emotion/cache](https://github.com/emotion-js/emotion.git#main)** 11.14.0 — **21 months** ago: 2024-12-09 ⚠️
-            - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — **26 months** ago: 2024-07-19 ⚠️
-            - **[@emotion/sheet](https://github.com/emotion-js/emotion.git#main)** 1.4.0 — **26 months** ago: 2024-07-20 ⚠️
-            - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — **22 months** ago: 2024-11-20 ⚠️
-            - **[stylis](https://github.com/thysultan/stylis.js)** 4.2.0 — **40 months** ago: 2023-05-05 ⚠️ → **latest**: 4.4.0 — **5 months** ago: 2026-04-19 ❗
-        - **[@emotion/serialize](https://github.com/emotion-js/emotion.git#main)** 1.3.3 — **22 months** ago: 2024-11-20 ⚠️
-            - **[@emotion/hash](https://github.com/emotion-js/emotion.git#main)** 0.9.2 — **26 months** ago: 2024-07-19 ⚠️
-            - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — **26 months** ago: 2024-07-19 ⚠️
-            - **[@emotion/unitless](https://github.com/emotion-js/emotion.git#main)** 0.10.0 — **25 months** ago: 2024-08-21 ⚠️
-            - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — **22 months** ago: 2024-11-20 ⚠️
-        - **[@emotion/sheet](https://github.com/emotion-js/emotion.git#main)** 1.4.0 — **26 months** ago: 2024-07-20 ⚠️
-        - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — **22 months** ago: 2024-11-20 ⚠️
-    - **[@juggle/resize-observer](https://github.com/juggle/resize-observer)** 3.4.0 — **49 months** ago: 2022-08-18 ⚠️
-    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-    - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-    - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **45 months** ago: 2022-12-19 ⚠️
-    - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **54 months** ago: 2022-03-28 ⚠️
-    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — **30 months** ago: 2024-03-12 ⚠️
-    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **54 months** ago: 2022-04-02 ⚠️
-    - **[d3-interpolate-path](https://github.com/pbeshai/d3-interpolate-path)** 2.3.0 — **49 months** ago: 2022-08-31 ⚠️
-    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **54 months** ago: 2022-03-28 ⚠️
-    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **45 months** ago: 2022-12-19 ⚠️
-    - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — **85 months** ago: 2019-09-02 ⚠️
-    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **60 months** ago: 2021-09-24 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-    - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **63 months** ago: 2021-06-09 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **54 months** ago: 2022-03-28 ⚠️
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-    - **[d3](https://github.com/d3/d3)** 7.9.0 — **30 months** ago: 2024-03-12 ⚠️
-    - **[throttle-debounce](https://github.com/niksy/throttle-debounce)** 5.0.2 — **27 months** ago: 2024-06-24 ⚠️
+    - **[@emotion/css](https://github.com/emotion-js/emotion.git#main)** 11.13.5 — 22 mths ago: 2024-11-20 ⚠️
+        - **[@emotion/hash](https://github.com/emotion-js/emotion.git#main)** 0.9.2 — 26 mths ago: 2024-07-19 ⚠️
+        - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — 26 mths ago: 2024-07-19 ⚠️
+        - **[@emotion/serialize](https://github.com/emotion-js/emotion.git#main)** 1.3.3 — 22 mths ago: 2024-11-20 ⚠️
+        - **[stylis](https://github.com/thysultan/stylis.js)** 4.2.0 — 41 mths ago: 2023-05-05 ⚠️ → latest: 4.4.0 — 5 mths ago: 2026-04-19 ❗
+        - **[@emotion/cache](https://github.com/emotion-js/emotion.git#main)** 11.14.0 — 21 mths ago: 2024-12-09 ⚠️
+            - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — 26 mths ago: 2024-07-19 ⚠️
+            - **[@emotion/sheet](https://github.com/emotion-js/emotion.git#main)** 1.4.0 — 26 mths ago: 2024-07-20 ⚠️
+            - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — 22 mths ago: 2024-11-20 ⚠️
+            - **[stylis](https://github.com/thysultan/stylis.js)** 4.2.0 — 41 mths ago: 2023-05-05 ⚠️ → latest: 4.4.0 — 5 mths ago: 2026-04-19 ❗
+        - **[@emotion/serialize](https://github.com/emotion-js/emotion.git#main)** 1.3.3 — 22 mths ago: 2024-11-20 ⚠️
+            - **[@emotion/hash](https://github.com/emotion-js/emotion.git#main)** 0.9.2 — 26 mths ago: 2024-07-19 ⚠️
+            - **[@emotion/memoize](https://github.com/emotion-js/emotion.git#main)** 0.9.0 — 26 mths ago: 2024-07-19 ⚠️
+            - **[@emotion/unitless](https://github.com/emotion-js/emotion.git#main)** 0.10.0 — 25 mths ago: 2024-08-21 ⚠️
+            - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — 22 mths ago: 2024-11-20 ⚠️
+        - **[@emotion/sheet](https://github.com/emotion-js/emotion.git#main)** 1.4.0 — 26 mths ago: 2024-07-20 ⚠️
+        - **[@emotion/utils](https://github.com/emotion-js/emotion.git#main)** 1.4.2 — 22 mths ago: 2024-11-20 ⚠️
+    - **[@juggle/resize-observer](https://github.com/juggle/resize-observer)** 3.4.0 — 49 mths ago: 2022-08-18 ⚠️
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+    - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+    - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
+    - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — 54 mths ago: 2022-03-28 ⚠️
+    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — 30 mths ago: 2024-03-12 ⚠️
+    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
+    - **[d3-interpolate-path](https://github.com/pbeshai/d3-interpolate-path)** 2.3.0 — 49 mths ago: 2022-08-31 ⚠️
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — 54 mths ago: 2022-03-28 ⚠️
+    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
+    - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — 85 mths ago: 2019-09-02 ⚠️
+    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+    - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
+        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — 54 mths ago: 2022-03-28 ⚠️
+        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+    - **[d3](https://github.com/d3/d3)** 7.9.0 — 30 mths ago: 2024-03-12 ⚠️
+    - **[throttle-debounce](https://github.com/niksy/throttle-debounce)** 5.0.2 — 27 mths ago: 2024-06-24 ⚠️
 - **[billboard.js](https://github.com/naver/billboard.js)** 4.1.1 — this month: 2026-09-30
-    - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **54 months** ago: 2022-04-02 ⚠️
-    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **60 months** ago: 2021-09-24 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-    - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **57 months** ago: 2021-12-04 ⚠️
-        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **46 months** ago: 2022-12-02 ⚠️
-    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-- **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-- **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-- **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-- **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **54 months** ago: 2022-04-02 ⚠️
-- **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — **85 months** ago: 2019-09-02 ⚠️
-    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-- **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **60 months** ago: 2021-09-24 ⚠️
-    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-    - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **8 months** ago: 2026-01-14 ⚠️
-    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **57 months** ago: 2021-12-04 ⚠️
-    - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **46 months** ago: 2022-12-02 ⚠️
-        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **40 months** ago: 2023-05-30 ⚠️
-- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-- **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **45 months** ago: 2022-12-20 ⚠️
-    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **45 months** ago: 2022-12-19 ⚠️
-- **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **63 months** ago: 2021-06-10 ⚠️
-    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **63 months** ago: 2021-06-09 ⚠️
-    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **63 months** ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **63 months** ago: 2021-06-07 ⚠️
-    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **63 months** ago: 2021-06-09 ⚠️
+    - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+    - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — 58 mths ago: 2021-12-04 ⚠️
+        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — 46 mths ago: 2022-12-02 ⚠️
+    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+- **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+- **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+- **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+- **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
+- **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — 85 mths ago: 2019-09-02 ⚠️
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+- **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+    - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — 8 mths ago: 2026-01-14 ⚠️
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — 58 mths ago: 2021-12-04 ⚠️
+    - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — 46 mths ago: 2022-12-02 ⚠️
+        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
+- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+- **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
+    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
+- **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
+    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
 
 <!-- DEPENDENCY_LICENSES_END -->
 
