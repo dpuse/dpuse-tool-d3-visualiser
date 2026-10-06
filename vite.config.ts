@@ -14,7 +14,6 @@ import config from './config.json' with { type: 'json' };
 
 const viteConfig = defineConfig({
     build: {
-        cssTarget: 'esnext', // TODO: Need to check this is required, only difference. Claude say no, but may be a 'esnext' vs 'ESNext' thing?
         lib: {
             entry: fileURLToPath(new URL('src/index.ts', import.meta.url)),
             fileName: (format) => `${config.id}.${format}.js`,
@@ -25,7 +24,7 @@ const viteConfig = defineConfig({
             plugins: [Sonda({ filename: 'index', format: 'json', brotli: false, gzip: true, open: false, outputDir: './bundle-analysis-reports/sonda' })]
         },
         sourcemap: 'hidden',
-        target: 'ESNext'
+        target: 'esnext'
     },
     // Tests and config files sit in the tsconfig so they get type-checked, but their declarations must not reach the
     // published package. 'entryRoot' keeps the types under 'dist/types/src', where package.json points.

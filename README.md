@@ -1,5 +1,18 @@
 # DPUse D3 Visualiser Tool
 
+There are a number of charting options:
+
+- Apexcharts - costs with uncertain licensing and minimal benefits.
+- Billboard.js - low usage, old design.
+- D3 - very stable but complex. Maybe with existing D3-Network, D3-Hierarchy, D3-Chord, D3-Sankey...
+- Observable - proven, but the project appears to have stalled.
+- TanStack Charts: active, but unproven.
+- Univos - maybe best d3 charting library for quick results, usage below average and small team, but comprehensive chart types and features.
+
+**Proposal**: Do not use ApexCharts. Drop Billboard.js, drop Observable Plot (maybe include in Observable Cookbook), focus on D3 and Tanstack Charts, with Univos as a dynamically loaded backup.
+
+Also consider an **eCharts** visualiser along with existing **Highcharts** (comercial).
+
 <!-- OPENING_START -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
