@@ -5,8 +5,8 @@ Consider an **eCharts** visualiser along with existing **Highcharts** (comercial
 <!-- OPENING_START -->
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![DPUse version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.dpuse.app%2Fconfigs%2Fdpuse-tool-d3-visualiser&query=%24.data.version&prefix=v&label=DPUse&color=f6821f)](https://github.com/dpuse/dpuse-tool-d3-visualiser/releases/latest)
-[![npm version](https://img.shields.io/npm/v/@dpuse/dpuse-tool-d3-visualiser?color=cb3837&label=npm)](https://www.npmjs.com/package/@dpuse/dpuse-tool-d3-visualiser)
+[![DPUse version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.dpuse.app%2Fconfigs%2Fdpuse-tool-d3-visualiser&query=%24.data.version&prefix=v&label=DPUse&color=blue)](https://github.com/dpuse/dpuse-tool-d3-visualiser/releases/latest)
+[![npm version](https://img.shields.io/npm/v/@dpuse/dpuse-tool-d3-visualiser?label=npm)](https://www.npmjs.com/package/@dpuse/dpuse-tool-d3-visualiser)
 [![CI](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml/badge.svg)](https://github.com/dpuse/dpuse-tool-d3-visualiser/actions/workflows/ci.yml)
 
 A TypeScript wrapper for D3, TanStack Charts, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (TanStack Charts) renderers.
@@ -28,10 +28,6 @@ In addition, DPUse provides [Tools](https://www.dpuse.app) used by the applicati
 ## Introduction
 
 ...
-
-Consider adding support for Plotly.js, Unovis, Vega and Vega-Lite.
-
-Consider and Echarts visualiser, maybe Plotly.js.
 
 <!-- OPENING_END -->
 
@@ -164,13 +160,13 @@ The dependency tree below shows how each package in the table above is reached �
     - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
     - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
     - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
     - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — 54 mths ago: 2022-04-02 ⚠️
     - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — 85 mths ago: 2019-09-02 ⚠️
     - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
     - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
     - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
 - **[@unovis/ts](https://github.com/f5/unovis)** 1.7.1 — this month: 2026-09-29
@@ -206,7 +202,7 @@ The dependency tree below shows how each package in the table above is reached �
     - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
     - **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — 85 mths ago: 2019-09-02 ⚠️
     - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — 60 mths ago: 2021-09-24 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
     - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
     - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
@@ -214,7 +210,7 @@ The dependency tree below shows how each package in the table above is reached �
         - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
         - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
         - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
         - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
     - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — 8 mths ago: 2026-01-14 ⚠️
@@ -222,7 +218,7 @@ The dependency tree below shows how each package in the table above is reached �
     - **[throttle-debounce](https://github.com/niksy/throttle-debounce)** 5.0.2 — 27 mths ago: 2024-06-24 ⚠️
 - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
     - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
 - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
@@ -235,14 +231,14 @@ The dependency tree below shows how each package in the table above is reached �
     - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 40 mths ago: 2023-05-30 ⚠️
     - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — 8 mths ago: 2026-01-14 ⚠️
     - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
-- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
 - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — 45 mths ago: 2022-12-20 ⚠️
     - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — 45 mths ago: 2022-12-19 ⚠️
 - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — 63 mths ago: 2021-06-10 ⚠️
     - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
     - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — 63 mths ago: 2021-06-09 ⚠️
     - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — 64 mths ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 63 mths ago: 2021-06-07 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — 64 mths ago: 2021-06-07 ⚠️
     - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — 63 mths ago: 2021-06-09 ⚠️
 
 <!-- DEPENDENCY_LICENSES_END -->
@@ -259,14 +255,14 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | :-------------------------------------------------------------------------- | :------------------------------------------- |
 | **dist/tanStackCharts-LPqRQGD9.js**                                         | 127.9 kB · gzip 37.1 kB · 29.1% of the build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts                                    | `██████████████████░░` 87.8% · 112.2 kB      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.5 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 9 files)                          | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.5 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js                              | `░░░░░░░░░░░░░░░░░░░░` 1.0% · 1.3 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                             | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 717 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/range.js                             | `░░░░░░░░░░░░░░░░░░░░` 0.2% · 223 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 8.6% · 11.0 kB        |
 | **dist/chordDiagram-BG0jW2g9.js**                                           | 117.6 kB · gzip 32.4 kB · 26.8% of the build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts                                          | `██████░░░░░░░░░░░░░░` 30.8% · 36.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `█████░░░░░░░░░░░░░░░` 23.1% · 27.2 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 26 files)                         | `█████░░░░░░░░░░░░░░░` 23.1% · 27.2 kB       |
 | &nbsp;&nbsp;&nbsp;&nbsp;@juggle/resize-observer                             | `██░░░░░░░░░░░░░░░░░░` 8.1% · 9.5 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate-path → build/d3-interpolate-path.mjs | `█░░░░░░░░░░░░░░░░░░░` 6.1% · 7.2 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/cache → dist/emotion-cache.browser.esm.js  | `█░░░░░░░░░░░░░░░░░░░` 4.5% · 5.3 kB         |
@@ -275,13 +271,13 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/serialize → dist/emotion-serialize.esm.js  | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.3 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/css                                        | `░░░░░░░░░░░░░░░░░░░░` 1.3% · 1.5 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/sheet → dist/emotion-sheet.esm.js          | `░░░░░░░░░░░░░░░░░░░░` 1.2% · 1.4 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy                                        | `░░░░░░░░░░░░░░░░░░░░` 0.8% · 1018 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy (split · 3 files)                      | `░░░░░░░░░░░░░░░░░░░░` 0.8% · 1018 B         |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/unitless → dist/emotion-unitless.esm.js    | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 767 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/hash → dist/emotion-hash.esm.js            | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 720 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;throttle-debounce → esm/index.js                    | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 688 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/pow.js                               | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 552 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                               | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 494 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array                                            | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 487 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 2 files)                          | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 487 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/utils → dist/emotion-utils.browser.esm.js  | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 481 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;@emotion/memoize → dist/emotion-memoize.esm.js      | `░░░░░░░░░░░░░░░░░░░░` 0.1% · 119 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 12.0% · 14.2 kB       |
@@ -296,47 +292,47 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-drag                                             | `██░░░░░░░░░░░░░░░░░░` 12.0% · 4.3 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                             | `██░░░░░░░░░░░░░░░░░░` 8.3% · 3.0 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                        | `█░░░░░░░░░░░░░░░░░░░` 2.7% · 1004 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection                                        | `░░░░░░░░░░░░░░░░░░░░` 1.4% · 514 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection (split · 2 files)                      | `░░░░░░░░░░░░░░░░░░░░` 1.4% · 514 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.8% · 3.9 kB        |
 | **dist/src-Bo8my4B8.js**                                                    | 21.8 kB · gzip 6.2 kB · 5.0% of the build    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-transition                                       | `████████████░░░░░░░░` 58.9% · 12.8 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate                                      | `██░░░░░░░░░░░░░░░░░░` 9.9% · 2.2 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 3 files)                    | `██░░░░░░░░░░░░░░░░░░` 9.9% · 2.2 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-dispatch → src/dispatch.js                       | `██░░░░░░░░░░░░░░░░░░` 8.3% · 1.8 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-timer                                            | `██░░░░░░░░░░░░░░░░░░` 7.6% · 1.7 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-ease → src/cubic.js                              | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 82 B           |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 15.0% · 3.3 kB        |
 | **dist/select-Bs4oiNEZ.js**                                                 | 17.8 kB · gzip 4.4 kB · 4.1% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection                                        | `████████████████░░░░` 79.5% · 14.2 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection (split · 46 files)                     | `████████████████░░░░` 79.5% · 14.2 kB       |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `████░░░░░░░░░░░░░░░░` 20.5% · 3.7 kB        |
 | **dist/linear-DytAYqu2.js**                                                 | 17.0 kB · gzip 5.4 kB · 3.9% of the build    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-format                                           | `███████░░░░░░░░░░░░░` 35.3% · 6.0 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale                                            | `█████░░░░░░░░░░░░░░░` 22.6% · 3.8 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array                                            | `███░░░░░░░░░░░░░░░░░` 12.5% · 2.1 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate                                      | `██░░░░░░░░░░░░░░░░░░` 7.8% · 1.3 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale (split · 7 files)                          | `█████░░░░░░░░░░░░░░░` 22.6% · 3.8 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 6 files)                          | `███░░░░░░░░░░░░░░░░░` 12.5% · 2.1 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 6 files)                    | `██░░░░░░░░░░░░░░░░░░` 7.8% · 1.3 kB         |
 | &nbsp;&nbsp;&nbsp;&nbsp;internmap → src/index.js                            | `█░░░░░░░░░░░░░░░░░░░` 4.4% · 768 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 17.5% · 3.0 kB        |
 | **dist/sankeyDiagram-w2TGSqb7.js**                                          | 10.6 kB · gzip 3.3 kB · 2.4% of the build    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-sankey                                           | `███████████░░░░░░░░░` 57.4% · 6.1 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → sankeyDiagram.ts                              | `██████░░░░░░░░░░░░░░` 28.1% · 3.0 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array                                            | `█░░░░░░░░░░░░░░░░░░░` 3.7% · 406 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 2 files)                          | `█░░░░░░░░░░░░░░░░░░░` 3.7% · 406 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.8% · 1.1 kB        |
 | **dist/string-iJh48M7Y.js**                                                 | 10.5 kB · gzip 3.9 kB · 2.4% of the build    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-color                                            | `████████████████░░░░` 78.4% · 8.3 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate                                      | `███░░░░░░░░░░░░░░░░░` 14.2% · 1.5 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 5 files)                    | `███░░░░░░░░░░░░░░░░░` 14.2% · 1.5 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `█░░░░░░░░░░░░░░░░░░░` 7.4% · 800 B          |
 | **dist/treeDiagram-C798R8hL.js**                                            | 4.9 kB · gzip 2.0 kB · 1.1% of the build     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/tree.js                          | `██████████░░░░░░░░░░` 51.5% · 2.5 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts                                | `████████░░░░░░░░░░░░` 39.4% · 1.9 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 9.1% · 455 B          |
 | **dist/hierarchy-CDFAetye.js**                                              | 4.0 kB · gzip 1.2 kB · 0.9% of the build     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy                                        | `██████████████░░░░░░` 71.4% · 2.8 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy (split · 14 files)                     | `██████████████░░░░░░` 71.4% · 2.8 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██████░░░░░░░░░░░░░░` 28.6% · 1.1 kB        |
 | **dist/point-DSPrfIZi.js**                                                  | 3.1 kB · gzip 1.2 kB · 0.7% of the build     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-path → src/path.js                               | `████████████████░░░░` 80.0% · 2.5 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `██░░░░░░░░░░░░░░░░░░` 9.4% · 301 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `██░░░░░░░░░░░░░░░░░░` 9.4% · 301 B          |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.6% · 341 B         |
 | **dist/link-BfoIl3p5.js**                                                   | 1.9 kB · gzip 749 B · 0.4% of the build      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `█████████████████░░░` 84.1% · 1.6 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `█████████████████░░░` 84.1% · 1.6 kB        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 15.9% · 317 B         |
 | **dist/dpuse-tool-d3-visualiser.es.js**                                     | 1.6 kB · gzip 448 B · 0.4% of the build      |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                      | `█████████████████░░░` 86.9% · 1.4 kB        |
@@ -346,10 +342,12 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/max.js                               | `████░░░░░░░░░░░░░░░░` 19.4% · 241 B         |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `████░░░░░░░░░░░░░░░░` 18.5% · 230 B         |
 | **dist/array-Cv4-2llb.js**                                                  | 325 B · gzip 210 B · 0.1% of the build       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape                                            | `██████████░░░░░░░░░░` 51.1% · 166 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `██████████░░░░░░░░░░` 51.1% · 166 B         |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██████████░░░░░░░░░░` 48.9% · 159 B         |
 
 Bars show each row's share of its output file.
+
+(split · n files) = a package whose files are divided across output files; each row lists only the files in that output file, and no file appears in more than one.
 
 (bundler output, whitespace & JSON) = bytes Sonda can't trace to a source file: whitespace (indentation and line breaks), code the bundler generates (region comments, the combined import/export lines, its small runtime helper and wrappers), and imported JSON such as `config.json`, which the bundler doesn't map. The JSON and the generated code are real bytes that ship; the whitespace mostly disappears once compressed.
 
