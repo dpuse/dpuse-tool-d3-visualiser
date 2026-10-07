@@ -251,103 +251,103 @@ This report is updated with each release, from the bundle the release builds, us
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                           | Composition                                  |
-| :-------------------------------------------------------------------------- | :------------------------------------------- |
-| **dist/tanStackCharts-LPqRQGD9.js**                                         | 127.9 kB · gzip 37.1 kB · 29.1% of the build |
-| &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts                                    | `██████████████████░░` 87.8% · 112.2 kB      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 9 files)                          | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.5 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js                              | `░░░░░░░░░░░░░░░░░░░░` 1.0% · 1.3 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                             | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 717 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/range.js                             | `░░░░░░░░░░░░░░░░░░░░` 0.2% · 223 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 8.6% · 11.0 kB        |
-| **dist/chordDiagram-BG0jW2g9.js**                                           | 117.6 kB · gzip 32.4 kB · 26.8% of the build |
-| &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts                                          | `██████░░░░░░░░░░░░░░` 30.8% · 36.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 26 files)                         | `█████░░░░░░░░░░░░░░░` 23.1% · 27.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;@juggle/resize-observer                             | `██░░░░░░░░░░░░░░░░░░` 8.1% · 9.5 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate-path → build/d3-interpolate-path.mjs | `█░░░░░░░░░░░░░░░░░░░` 6.1% · 7.2 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/cache → dist/emotion-cache.browser.esm.js  | `█░░░░░░░░░░░░░░░░░░░` 4.5% · 5.3 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;stylis                                              | `█░░░░░░░░░░░░░░░░░░░` 4.4% · 5.2 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-chord                                            | `░░░░░░░░░░░░░░░░░░░░` 2.1% · 2.4 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/serialize → dist/emotion-serialize.esm.js  | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.3 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/css                                        | `░░░░░░░░░░░░░░░░░░░░` 1.3% · 1.5 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/sheet → dist/emotion-sheet.esm.js          | `░░░░░░░░░░░░░░░░░░░░` 1.2% · 1.4 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy (split · 3 files)                      | `░░░░░░░░░░░░░░░░░░░░` 0.8% · 1018 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/unitless → dist/emotion-unitless.esm.js    | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 767 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/hash → dist/emotion-hash.esm.js            | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 720 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;throttle-debounce → esm/index.js                    | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 688 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/pow.js                               | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 552 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                               | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 494 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 2 files)                          | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 487 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/utils → dist/emotion-utils.browser.esm.js  | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 481 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/memoize → dist/emotion-memoize.esm.js      | `░░░░░░░░░░░░░░░░░░░░` 0.1% · 119 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 12.0% · 14.2 kB       |
-| **dist/erdDiagram-CHPY-zaP.js**                                             | 63.0 kB · gzip 18.2 kB · 14.3% of the build  |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js                  | `██████████████████░░` 88.3% · 55.6 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → erdDiagram.ts                                 | `█░░░░░░░░░░░░░░░░░░░` 5.4% · 3.4 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `█░░░░░░░░░░░░░░░░░░░` 6.3% · 4.0 kB         |
-| **dist/networkDiagram-XI0c9kJR.js**                                         | 35.8 kB · gzip 10.4 kB · 8.2% of the build   |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom                                             | `██████░░░░░░░░░░░░░░` 30.0% · 10.7 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-force                                            | `███░░░░░░░░░░░░░░░░░` 17.4% · 6.2 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree                                         | `███░░░░░░░░░░░░░░░░░` 17.3% · 6.2 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag                                             | `██░░░░░░░░░░░░░░░░░░` 12.0% · 4.3 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                             | `██░░░░░░░░░░░░░░░░░░` 8.3% · 3.0 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                        | `█░░░░░░░░░░░░░░░░░░░` 2.7% · 1004 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection (split · 2 files)                      | `░░░░░░░░░░░░░░░░░░░░` 1.4% · 514 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.8% · 3.9 kB        |
-| **dist/src-Bo8my4B8.js**                                                    | 21.8 kB · gzip 6.2 kB · 5.0% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-transition                                       | `████████████░░░░░░░░` 58.9% · 12.8 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 3 files)                    | `██░░░░░░░░░░░░░░░░░░` 9.9% · 2.2 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-dispatch → src/dispatch.js                       | `██░░░░░░░░░░░░░░░░░░` 8.3% · 1.8 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-timer                                            | `██░░░░░░░░░░░░░░░░░░` 7.6% · 1.7 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-ease → src/cubic.js                              | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 82 B           |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 15.0% · 3.3 kB        |
-| **dist/select-Bs4oiNEZ.js**                                                 | 17.8 kB · gzip 4.4 kB · 4.1% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection (split · 46 files)                     | `████████████████░░░░` 79.5% · 14.2 kB       |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `████░░░░░░░░░░░░░░░░` 20.5% · 3.7 kB        |
-| **dist/linear-DytAYqu2.js**                                                 | 17.0 kB · gzip 5.4 kB · 3.9% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-format                                           | `███████░░░░░░░░░░░░░` 35.3% · 6.0 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale (split · 7 files)                          | `█████░░░░░░░░░░░░░░░` 22.6% · 3.8 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 6 files)                          | `███░░░░░░░░░░░░░░░░░` 12.5% · 2.1 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 6 files)                    | `██░░░░░░░░░░░░░░░░░░` 7.8% · 1.3 kB         |
-| &nbsp;&nbsp;&nbsp;&nbsp;internmap → src/index.js                            | `█░░░░░░░░░░░░░░░░░░░` 4.4% · 768 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 17.5% · 3.0 kB        |
-| **dist/sankeyDiagram-w2TGSqb7.js**                                          | 10.6 kB · gzip 3.3 kB · 2.4% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-sankey                                           | `███████████░░░░░░░░░` 57.4% · 6.1 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → sankeyDiagram.ts                              | `██████░░░░░░░░░░░░░░` 28.1% · 3.0 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array (split · 2 files)                          | `█░░░░░░░░░░░░░░░░░░░` 3.7% · 406 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.8% · 1.1 kB        |
-| **dist/string-iJh48M7Y.js**                                                 | 10.5 kB · gzip 3.9 kB · 2.4% of the build    |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-color                                            | `████████████████░░░░` 78.4% · 8.3 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate (split · 5 files)                    | `███░░░░░░░░░░░░░░░░░` 14.2% · 1.5 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `█░░░░░░░░░░░░░░░░░░░` 7.4% · 800 B          |
-| **dist/treeDiagram-C798R8hL.js**                                            | 4.9 kB · gzip 2.0 kB · 1.1% of the build     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/tree.js                          | `██████████░░░░░░░░░░` 51.5% · 2.5 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts                                | `████████░░░░░░░░░░░░` 39.4% · 1.9 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 9.1% · 455 B          |
-| **dist/hierarchy-CDFAetye.js**                                              | 4.0 kB · gzip 1.2 kB · 0.9% of the build     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy (split · 14 files)                     | `██████████████░░░░░░` 71.4% · 2.8 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██████░░░░░░░░░░░░░░` 28.6% · 1.1 kB        |
-| **dist/point-DSPrfIZi.js**                                                  | 3.1 kB · gzip 1.2 kB · 0.7% of the build     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-path → src/path.js                               | `████████████████░░░░` 80.0% · 2.5 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `██░░░░░░░░░░░░░░░░░░` 9.4% · 301 B          |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██░░░░░░░░░░░░░░░░░░` 10.6% · 341 B         |
-| **dist/link-BfoIl3p5.js**                                                   | 1.9 kB · gzip 749 B · 0.4% of the build      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `█████████████████░░░` 84.1% · 1.6 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 15.9% · 317 B         |
-| **dist/dpuse-tool-d3-visualiser.es.js**                                     | 1.6 kB · gzip 448 B · 0.4% of the build      |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                      | `█████████████████░░░` 86.9% · 1.4 kB        |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `███░░░░░░░░░░░░░░░░░` 13.1% · 211 B         |
-| **dist/palette-Ca7C6aNE.js**                                                | 1.2 kB · gzip 581 B · 0.3% of the build      |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → palette.ts                                    | `████████████░░░░░░░░` 62.2% · 774 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/max.js                               | `████░░░░░░░░░░░░░░░░` 19.4% · 241 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `████░░░░░░░░░░░░░░░░` 18.5% · 230 B         |
-| **dist/array-Cv4-2llb.js**                                                  | 325 B · gzip 210 B · 0.1% of the build       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape (split · 2 files)                          | `██████████░░░░░░░░░░` 51.1% · 166 B         |
-| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                 | `██████████░░░░░░░░░░` 48.9% · 159 B         |
+| Chunk/Module/File                                                                                       | Composition                                  |
+| :------------------------------------------------------------------------------------------------------ | :------------------------------------------- |
+| **dist/tanStackCharts-LPqRQGD9.js**                                                                     | 127.9 kB · gzip 37.1 kB · 29.1% of the build |
+| &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts → dist/scene.js + 41 more                                      | `██████████████████░░` 87.8% · 112.2 kB      |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/stack.js + 8 more                                                | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.5 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js                                                          | `░░░░░░░░░░░░░░░░░░░░` 1.0% · 1.3 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                                                         | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 717 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/range.js                                                         | `░░░░░░░░░░░░░░░░░░░░` 0.2% · 223 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 8.6% · 11.0 kB        |
+| **dist/chordDiagram-BG0jW2g9.js**                                                                       | 117.6 kB · gzip 32.4 kB · 26.8% of the build |
+| &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts → components/chord-diagram/index.js + 34 more                        | `██████░░░░░░░░░░░░░░` 30.8% · 36.2 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/arc.js + 25 more                                                 | `█████░░░░░░░░░░░░░░░` 23.1% · 27.2 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;@juggle/resize-observer → lib/algorithms/calculateBoxSize.js + 22 more          | `██░░░░░░░░░░░░░░░░░░` 8.1% · 9.5 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate-path → build/d3-interpolate-path.mjs                             | `█░░░░░░░░░░░░░░░░░░░` 6.1% · 7.2 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/cache → dist/emotion-cache.browser.esm.js                              | `█░░░░░░░░░░░░░░░░░░░` 4.5% · 5.3 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;stylis → src/Parser.js + 5 more                                                 | `█░░░░░░░░░░░░░░░░░░░` 4.4% · 5.2 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-chord → src/ribbon.js + 3 more                                               | `░░░░░░░░░░░░░░░░░░░░` 2.1% · 2.4 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/serialize → dist/emotion-serialize.esm.js                              | `░░░░░░░░░░░░░░░░░░░░` 1.9% · 2.3 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/css → create-instance/dist/emotion-css-create-instance.esm.js + 1 more | `░░░░░░░░░░░░░░░░░░░░` 1.3% · 1.5 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/sheet → dist/emotion-sheet.esm.js                                      | `░░░░░░░░░░░░░░░░░░░░` 1.2% · 1.4 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/partition.js + 2 more                                        | `░░░░░░░░░░░░░░░░░░░░` 0.8% · 1018 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/unitless → dist/emotion-unitless.esm.js                                | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 767 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/hash → dist/emotion-hash.esm.js                                        | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 720 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;throttle-debounce → esm/index.js                                                | `░░░░░░░░░░░░░░░░░░░░` 0.6% · 688 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/pow.js                                                           | `░░░░░░░░░░░░░░░░░░░░` 0.5% · 552 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                                                           | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 494 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/group.js + 1 more                                                | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 487 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/utils → dist/emotion-utils.browser.esm.js                              | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 481 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;@emotion/memoize → dist/emotion-memoize.esm.js                                  | `░░░░░░░░░░░░░░░░░░░░` 0.1% · 119 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 12.0% · 14.2 kB       |
+| **dist/erdDiagram-CHPY-zaP.js**                                                                         | 63.0 kB · gzip 18.2 kB · 14.3% of the build  |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js                                              | `██████████████████░░` 88.3% · 55.6 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → erdDiagram.ts                                                             | `█░░░░░░░░░░░░░░░░░░░` 5.4% · 3.4 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `█░░░░░░░░░░░░░░░░░░░` 6.3% · 4.0 kB         |
+| **dist/networkDiagram-XI0c9kJR.js**                                                                     | 35.8 kB · gzip 10.4 kB · 8.2% of the build   |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom → src/zoom.js + 4 more                                                  | `██████░░░░░░░░░░░░░░` 30.0% · 10.7 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-force → src/simulation.js + 6 more                                           | `███░░░░░░░░░░░░░░░░░` 17.4% · 6.2 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree → src/add.js + 13 more                                              | `███░░░░░░░░░░░░░░░░░` 17.3% · 6.2 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag → src/drag.js + 4 more                                                  | `██░░░░░░░░░░░░░░░░░░` 12.0% · 4.3 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                                         | `██░░░░░░░░░░░░░░░░░░` 8.3% · 3.0 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                                                    | `█░░░░░░░░░░░░░░░░░░░` 2.7% · 1004 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection → src/pointer.js + 1 more                                          | `░░░░░░░░░░░░░░░░░░░░` 1.4% · 514 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 10.8% · 3.9 kB        |
+| **dist/src-Bo8my4B8.js**                                                                                | 21.8 kB · gzip 6.2 kB · 5.0% of the build    |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-transition → src/transition/schedule.js + 26 more                            | `████████████░░░░░░░░` 58.9% · 12.8 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/transform/index.js + 2 more                                | `██░░░░░░░░░░░░░░░░░░` 9.9% · 2.2 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-dispatch → src/dispatch.js                                                   | `██░░░░░░░░░░░░░░░░░░` 8.3% · 1.8 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-timer → src/timer.js + 1 more                                                | `██░░░░░░░░░░░░░░░░░░` 7.6% · 1.7 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-ease → src/cubic.js                                                          | `░░░░░░░░░░░░░░░░░░░░` 0.4% · 82 B           |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `███░░░░░░░░░░░░░░░░░` 15.0% · 3.3 kB        |
+| **dist/select-Bs4oiNEZ.js**                                                                             | 17.8 kB · gzip 4.4 kB · 4.1% of the build    |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-selection → src/selection/data.js + 45 more                                  | `████████████████░░░░` 79.5% · 14.2 kB       |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `████░░░░░░░░░░░░░░░░` 20.5% · 3.7 kB        |
+| **dist/linear-DytAYqu2.js**                                                                             | 17.0 kB · gzip 5.4 kB · 3.9% of the build    |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-format → src/locale.js + 14 more                                             | `███████░░░░░░░░░░░░░` 35.3% · 6.0 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/continuous.js + 6 more                                           | `█████░░░░░░░░░░░░░░░` 22.6% · 3.8 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/ticks.js + 5 more                                                | `███░░░░░░░░░░░░░░░░░` 12.5% · 2.1 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/value.js + 5 more                                          | `██░░░░░░░░░░░░░░░░░░` 7.8% · 1.3 kB         |
+| &nbsp;&nbsp;&nbsp;&nbsp;internmap → src/index.js                                                        | `█░░░░░░░░░░░░░░░░░░░` 4.4% · 768 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `███░░░░░░░░░░░░░░░░░` 17.5% · 3.0 kB        |
+| **dist/sankeyDiagram-w2TGSqb7.js**                                                                      | 10.6 kB · gzip 3.3 kB · 2.4% of the build    |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-sankey → src/sankey.js + 3 more                                              | `███████████░░░░░░░░░` 57.4% · 6.1 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → sankeyDiagram.ts                                                          | `██████░░░░░░░░░░░░░░` 28.1% · 3.0 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/min.js + 1 more                                                  | `█░░░░░░░░░░░░░░░░░░░` 3.7% · 406 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 10.8% · 1.1 kB        |
+| **dist/string-iJh48M7Y.js**                                                                             | 10.5 kB · gzip 3.9 kB · 2.4% of the build    |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-color → src/color.js + 1 more                                                | `████████████████░░░░` 78.4% · 8.3 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/string.js + 4 more                                         | `███░░░░░░░░░░░░░░░░░` 14.2% · 1.5 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `█░░░░░░░░░░░░░░░░░░░` 7.4% · 800 B          |
+| **dist/treeDiagram-C798R8hL.js**                                                                        | 4.9 kB · gzip 2.0 kB · 1.1% of the build     |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/tree.js                                                      | `██████████░░░░░░░░░░` 51.5% · 2.5 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts                                                            | `████████░░░░░░░░░░░░` 39.4% · 1.9 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 9.1% · 455 B          |
+| **dist/hierarchy-CDFAetye.js**                                                                          | 4.0 kB · gzip 1.2 kB · 0.9% of the build     |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-hierarchy → src/hierarchy/index.js + 13 more                                 | `██████████████░░░░░░` 71.4% · 2.8 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██████░░░░░░░░░░░░░░` 28.6% · 1.1 kB        |
+| **dist/point-DSPrfIZi.js**                                                                              | 3.1 kB · gzip 1.2 kB · 0.7% of the build     |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-path → src/path.js                                                           | `████████████████░░░░` 80.0% · 2.5 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/path.js + 1 more                                                 | `██░░░░░░░░░░░░░░░░░░` 9.4% · 301 B          |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██░░░░░░░░░░░░░░░░░░` 10.6% · 341 B         |
+| **dist/link-BfoIl3p5.js**                                                                               | 1.9 kB · gzip 749 B · 0.4% of the build      |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/link.js + 1 more                                                 | `█████████████████░░░` 84.1% · 1.6 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `███░░░░░░░░░░░░░░░░░` 15.9% · 317 B         |
+| **dist/dpuse-tool-d3-visualiser.es.js**                                                                 | 1.6 kB · gzip 448 B · 0.4% of the build      |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                                                  | `█████████████████░░░` 86.9% · 1.4 kB        |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `███░░░░░░░░░░░░░░░░░` 13.1% · 211 B         |
+| **dist/palette-Ca7C6aNE.js**                                                                            | 1.2 kB · gzip 581 B · 0.3% of the build      |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → palette.ts                                                                | `████████████░░░░░░░░` 62.2% · 774 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/max.js                                                           | `████░░░░░░░░░░░░░░░░` 19.4% · 241 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `████░░░░░░░░░░░░░░░░` 18.5% · 230 B         |
+| **dist/array-Cv4-2llb.js**                                                                              | 325 B · gzip 210 B · 0.1% of the build       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/array.js + 1 more                                                | `██████████░░░░░░░░░░` 51.1% · 166 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                                             | `██████████░░░░░░░░░░` 48.9% · 159 B         |
 
 Bars show each row's share of its output file.
 
-(split · n files) = a package whose files are divided across output files; each row lists only the files in that output file, and no file appears in more than one.
+- n more = the row also holds n more files from the same package or folder, each no larger than the one named. A package can appear under several output files, each holding different files, never the same file twice.
 
 (bundler output, whitespace & JSON) = bytes Sonda can't trace to a source file: whitespace (indentation and line breaks), code the bundler generates (region comments, the combined import/export lines, its small runtime helper and wrappers), and imported JSON such as `config.json`, which the bundler doesn't map. The JSON and the generated code are real bytes that ship; the whitespace mostly disappears once compressed.
 
