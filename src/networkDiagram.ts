@@ -32,9 +32,6 @@ export interface NetworkDiagramHandle {
     triggerAutoLayout: () => void;
 }
 
-type LaidOutNode = NetworkDiagramNode & SimulationNodeDatum;
-type LaidOutLink = SimulationLinkDatum<LaidOutNode>;
-
 // ── Constants ────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 const DEFAULT_CHARGE_STRENGTH = -300;
@@ -59,6 +56,9 @@ const COLOR = {
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options: NetworkDiagramOptions = {}): NetworkDiagramHandle {
+    type LaidOutNode = NetworkDiagramNode & SimulationNodeDatum;
+    type LaidOutLink = SimulationLinkDatum<LaidOutNode>;
+
     const width = renderTo.clientWidth || DEFAULT_WIDTH;
     const height = renderTo.clientHeight || DEFAULT_HEIGHT;
 

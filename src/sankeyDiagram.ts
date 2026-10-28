@@ -34,9 +34,6 @@ export interface SankeyDiagramHandle {
     svg: SVGSVGElement;
 }
 
-type LaidOutNode = SankeyDiagramNode & SankeyNodeExtra<SankeyDiagramNode, SankeyDiagramLink>;
-type LaidOutLink = SankeyLinkExtra<SankeyDiagramNode, SankeyDiagramLink>;
-
 // ── Constants ────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 const DEFAULT_NODE_WIDTH = 16;
@@ -85,6 +82,9 @@ export function renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLEleme
     }
 
     function draw(): SVGSVGElement {
+        type LaidOutNode = SankeyDiagramNode & SankeyNodeExtra<SankeyDiagramNode, SankeyDiagramLink>;
+        type LaidOutLink = SankeyLinkExtra<SankeyDiagramNode, SankeyDiagramLink>;
+
         select(renderTo).selectAll('svg').remove();
 
         const width = renderTo.clientWidth || DEFAULT_WIDTH;
