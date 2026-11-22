@@ -243,6 +243,38 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(readAnchor(hubElement) === 'middle').toBe(layoutIsSideways);
         });
 
+        it('moves a label on a diagonal further from its node than one straight out to the side', async () => {
+            // Leaves round a hub, so some labels point straight out sideways and others on a diagonal.
+            const view = await new D3Tool().renderNetworkDiagram(constructStarData(12), document.createElement('div'), { labelPlacementId: 'outside', reservesLabelRoom: true });
+            view.triggerAutoLayout();
+            const hubElement = findNodeElement(view.svg, 'Hub');
+
+            const distances = [...view.svg.querySelectorAll('text')]
+                .filter((text) => text.textContent !== 'Hub' && text.getAttribute('text-anchor') !== 'middle')
+                .map((text) => {
+                    const offsetX = readTranslateX(text.parentElement) - readTranslateX(hubElement);
+                    const offsetY = readTranslateY(text.parentElement) - readTranslateY(hubElement);
+                    return {
+                        labelDistance: Math.abs(Number(text.querySelector('tspan')?.getAttribute('x'))) / Math.abs(offsetX / Math.hypot(offsetX, offsetY)),
+                        slope: Math.abs(offsetY / Math.hypot(offsetX, offsetY))
+                    };
+                })
+                .toSorted((left, right) => left.slope - right.slope);
+
+            expect(distances.length).toBeGreaterThan(1);
+            expect(distances.at(-1)?.labelDistance).toBeGreaterThan(distances[0]?.labelDistance ?? 0);
+        });
+
+        it('draws labels on an outline of the given colour, and leaves ids inside nodes without one', async () => {
+            const haloData: NetworkDiagramData = { links: [], nodes: [{ id: 'a', label: 'Legal' }, { id: 'b' }] };
+            const view = await new D3Tool().renderNetworkDiagram(haloData, document.createElement('div'), { labelHaloColor: 'var(--color-surface)' });
+
+            const [labelText, idText] = [...view.svg.querySelectorAll('text')];
+            expect(labelText?.style.stroke).toBe('var(--color-surface)');
+            expect(labelText?.style.paintOrder).toBe('stroke');
+            expect(idText?.style.stroke).toBe('');
+        });
+
         it('breaks a long label of several words onto two even lines, and leaves short and one-word labels whole', async () => {
             const wrapData: NetworkDiagramData = {
                 links: [],

@@ -25,6 +25,7 @@ export interface NetworkDiagramData {
 export interface NetworkDiagramOptions {
     chargeStrength?: number;
     fitsView?: boolean; // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
+    labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkDistance?: number;
     onNodeClick?: (node: NetworkDiagramNode) => void;
@@ -73,6 +74,7 @@ const MAXIMUM_SCALE = 4;
 const LABEL_FONT_SIZE = 12;
 const LABEL_LINE_HEIGHT = 14;
 const LABEL_CHARACTER_WIDTH = 6.2; // An average, used to estimate a label's width, because text cannot be measured before it is drawn.
+const LABEL_HALO_WIDTH = 4;
 const LABEL_OUTSIDE_GAP = 8; // From the edge of a node to a label beside it.
 const LABEL_SIDE_THRESHOLD = 0.35; // How far sideways a label's direction must lean before the label goes to the side of its node, not above or below.
 const LABEL_WRAP_LENGTH = 14; // A label this long or shorter stays on one line.
@@ -332,6 +334,12 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('y', (node) => (node.label == null ? 4 : getLevelStyle(node).radius + NODE_LABEL_GAP))
             .attr('font-size', (node) => (node.label == null ? null : LABEL_FONT_SIZE))
             .attr('fill', (node) => (node.label == null ? COLOR.nodeText : 'currentColor')) // Explicit, because iOS Safari can default to transparent.
+            // The outline is painted first, under the letters, so it hides the links behind a label without thinning the
+            // letters. Set as styles, so a colour given as a CSS variable follows the page's theme.
+            .style('paint-order', (node) => (node.label == null || options.labelHaloColor == null ? null : 'stroke'))
+            .style('stroke', (node) => (node.label == null ? null : (options.labelHaloColor ?? null)))
+            .style('stroke-linejoin', (node) => (node.label == null || options.labelHaloColor == null ? null : 'round'))
+            .style('stroke-width', (node) => (node.label == null || options.labelHaloColor == null ? null : `${String(LABEL_HALO_WIDTH)}px`))
             .selectAll<SVGTSpanElement, string>('tspan')
             .data((node) => constructLabelLines(node, options.wrapsLabels === true))
             .join('tspan')
@@ -469,8 +477,9 @@ function constructLabelPlacement(
     const extraLinesHeight = (lineCount - 1) * LABEL_LINE_HEIGHT;
     if (Math.abs(directionX) < LABEL_SIDE_THRESHOLD) return directionY > 0 ? below : { anchor: 'middle', x: 0, y: -(radius + LABEL_OUTSIDE_GAP) - extraLinesHeight };
 
-    // Beside the node, with the label's lines centred on the height its direction points to.
-    const offset = radius + LABEL_OUTSIDE_GAP;
+    // Beside the node, with the label's lines centred on the height its direction points to. A label on a diagonal is
+    // moved further out by the part of its height that would otherwise reach back over the node.
+    const offset = radius + LABEL_OUTSIDE_GAP + (Math.abs(directionY) * lineCount * LABEL_LINE_HEIGHT) / 2;
     return { anchor: directionX > 0 ? 'start' : 'end', x: directionX * offset, y: directionY * offset + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
 }
 

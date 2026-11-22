@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-11-22T13:56:30.331Z",
+    "generatedAt": "2026-11-22T15:52:23.445Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -94,7 +94,7 @@
       "uncompressed": 3059,
       "gzip": 347,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "chunk",
@@ -214,10 +214,10 @@
     },
     {
       "kind": "asset",
-      "name": "dist/networkDiagram-LVvHZcSF.js",
+      "name": "dist/networkDiagram-8p48XDwY.js",
       "type": "script",
-      "uncompressed": 42265,
-      "gzip": 12873,
+      "uncompressed": 42659,
+      "gzip": 12951,
       "brotli": 0
     },
     {
@@ -4813,9 +4813,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4394,
-      "gzip": 1333,
+      "gzip": 1334,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -4924,9 +4924,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7809,
-      "gzip": 2210,
+      "gzip": 2211,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6703,10 +6703,10 @@
       "name": "node_modules/d3-interpolate/src/zoom.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1004,
-      "gzip": 390,
+      "uncompressed": 1007,
+      "gzip": 389,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6740,7 +6740,7 @@
       "uncompressed": 1286,
       "gzip": 468,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6757,7 +6757,7 @@
       "uncompressed": 628,
       "gzip": 272,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6774,7 +6774,7 @@
       "uncompressed": 115,
       "gzip": 99,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6791,7 +6791,7 @@
       "uncompressed": 176,
       "gzip": 119,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6808,7 +6808,7 @@
       "uncompressed": 852,
       "gzip": 372,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6832,7 +6832,7 @@
       "uncompressed": 97,
       "gzip": 76,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6849,7 +6849,7 @@
       "uncompressed": 957,
       "gzip": 396,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6866,7 +6866,7 @@
       "uncompressed": 922,
       "gzip": 371,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6883,7 +6883,7 @@
       "uncompressed": 36,
       "gzip": 47,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6900,7 +6900,7 @@
       "uncompressed": 103,
       "gzip": 91,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6917,7 +6917,7 @@
       "uncompressed": 449,
       "gzip": 202,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6934,7 +6934,7 @@
       "uncompressed": 516,
       "gzip": 216,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6951,7 +6951,7 @@
       "uncompressed": 106,
       "gzip": 83,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -6968,7 +6968,7 @@
       "uncompressed": 106,
       "gzip": 83,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -7749,9 +7749,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 10999,
-      "gzip": 2872,
+      "gzip": 2875,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -11487,17 +11487,17 @@
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 16485
+      "uncompressed": 16994
     },
     {
       "kind": "chunk",
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8651,
-      "gzip": 2827,
+      "uncompressed": 9042,
+      "gzip": 2899,
       "brotli": 0,
-      "parent": "dist/networkDiagram-LVvHZcSF.js"
+      "parent": "dist/networkDiagram-8p48XDwY.js"
     },
     {
       "kind": "filesystem",
@@ -11679,7 +11679,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/networkDiagram-LVvHZcSF.js",
+      "source": "dist/networkDiagram-8p48XDwY.js",
       "target": "src/networkDiagram.ts",
       "original": null
     },
