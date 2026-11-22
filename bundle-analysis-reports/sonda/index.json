@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-10-28T13:02:07.889Z",
+    "generatedAt": "2026-11-22T11:19:33.029Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -31,70 +31,70 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 119,
-      "gzip": 72,
+      "uncompressed": 7833,
+      "gzip": 1350,
       "brotli": 0,
-      "parent": "dist/array-CpxKKsZm.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 13103,
-      "gzip": 1631,
+      "uncompressed": 420,
+      "gzip": 131,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/d3-hierarchy-Dtx4jD78.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 4081,
-      "gzip": 212,
+      "uncompressed": 2195,
+      "gzip": 320,
       "brotli": 0,
-      "parent": "dist/erdDiagram-DKsqCN08.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 879,
-      "gzip": 108,
+      "uncompressed": 643,
+      "gzip": 140,
       "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
+      "parent": "dist/d3-selection-CL8c_tE2.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2338,
-      "gzip": 325,
+      "uncompressed": 2181,
+      "gzip": 286,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-shape-gf8U18pS.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 277,
-      "gzip": 142,
+      "uncompressed": 4087,
+      "gzip": 216,
       "brotli": 0,
-      "parent": "dist/link-CAkrxHYd.js"
+      "parent": "dist/erdDiagram-DmYSx8Dh.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 3278,
-      "gzip": 378,
+      "uncompressed": 2703,
+      "gzip": 327,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "chunk",
@@ -111,40 +111,20 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 281,
-      "gzip": 115,
-      "brotli": 0,
-      "parent": "dist/point-_U9MxSuk.js"
-    },
-    {
-      "kind": "chunk",
-      "name": "[unassigned]",
-      "type": "other",
-      "format": "other",
       "uncompressed": 1031,
       "gzip": 226,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2828,
-      "gzip": 210,
+      "uncompressed": 2688,
+      "gzip": 284,
       "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "chunk",
-      "name": "[unassigned]",
-      "type": "other",
-      "format": "other",
-      "uncompressed": 2682,
-      "gzip": 282,
-      "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "chunk",
@@ -161,35 +141,59 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 10145,
-      "gzip": 638,
+      "uncompressed": 9850,
+      "gzip": 605,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 415,
-      "gzip": 182,
+      "uncompressed": 290,
+      "gzip": 164,
       "brotli": 0,
-      "parent": "dist/treeDiagram-fmrYqvXl.js"
+      "parent": "dist/treeDiagram-t0oFwi1c.js"
     },
     {
       "kind": "asset",
-      "name": "dist/array-CpxKKsZm.js",
+      "name": "dist/chordDiagram-Cm91Tmgo.js",
       "type": "script",
-      "uncompressed": 285,
-      "gzip": 196,
+      "uncompressed": 58153,
+      "gzip": 18091,
       "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/chordDiagram-Dbu2uT_s.js",
+      "name": "dist/d3-hierarchy-Dtx4jD78.js",
       "type": "script",
-      "uncompressed": 118999,
-      "gzip": 33100,
+      "uncompressed": 8403,
+      "gzip": 2902,
+      "brotli": 0
+    },
+    {
+      "kind": "asset",
+      "name": "dist/d3-scale-BYykLEPO.js",
+      "type": "script",
+      "uncompressed": 18667,
+      "gzip": 6029,
+      "brotli": 0
+    },
+    {
+      "kind": "asset",
+      "name": "dist/d3-selection-CL8c_tE2.js",
+      "type": "script",
+      "uncompressed": 16045,
+      "gzip": 4599,
+      "brotli": 0
+    },
+    {
+      "kind": "asset",
+      "name": "dist/d3-shape-gf8U18pS.js",
+      "type": "script",
+      "uncompressed": 37770,
+      "gzip": 8079,
       "brotli": 0
     },
     {
@@ -197,47 +201,23 @@
       "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
       "uncompressed": 1591,
-      "gzip": 432,
+      "gzip": 431,
       "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-DKsqCN08.js",
+      "name": "dist/erdDiagram-DmYSx8Dh.js",
       "type": "script",
-      "uncompressed": 64878,
-      "gzip": 18792,
+      "uncompressed": 64884,
+      "gzip": 18796,
       "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/hierarchy-DU9LihDu.js",
+      "name": "dist/networkDiagram-p5z5B_vZ.js",
       "type": "script",
-      "uncompressed": 3768,
-      "gzip": 1235,
-      "brotli": 0
-    },
-    {
-      "kind": "asset",
-      "name": "dist/linear-CNetDix0.js",
-      "type": "script",
-      "uncompressed": 16681,
-      "gzip": 5499,
-      "brotli": 0
-    },
-    {
-      "kind": "asset",
-      "name": "dist/link-CAkrxHYd.js",
-      "type": "script",
-      "uncompressed": 1950,
-      "gzip": 738,
-      "brotli": 0
-    },
-    {
-      "kind": "asset",
-      "name": "dist/networkDiagram-BiCPMNf8.js",
-      "type": "script",
-      "uncompressed": 35968,
-      "gzip": 10629,
+      "uncompressed": 36121,
+      "gzip": 10822,
       "brotli": 0
     },
     {
@@ -250,34 +230,18 @@
     },
     {
       "kind": "asset",
-      "name": "dist/point-_U9MxSuk.js",
-      "type": "script",
-      "uncompressed": 3154,
-      "gzip": 1206,
-      "brotli": 0
-    },
-    {
-      "kind": "asset",
-      "name": "dist/sankeyDiagram-DcI-D1uh.js",
+      "name": "dist/sankeyDiagram-Dbl1-v5p.js",
       "type": "script",
       "uncompressed": 10724,
-      "gzip": 3405,
+      "gzip": 3424,
       "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/select-SZKizDc7.js",
+      "name": "dist/src-YHHReglY.js",
       "type": "script",
-      "uncompressed": 17360,
-      "gzip": 4516,
-      "brotli": 0
-    },
-    {
-      "kind": "asset",
-      "name": "dist/src-DAMkWOaT.js",
-      "type": "script",
-      "uncompressed": 21631,
-      "gzip": 6288,
+      "uncompressed": 21637,
+      "gzip": 6271,
       "brotli": 0
     },
     {
@@ -290,18 +254,18 @@
     },
     {
       "kind": "asset",
-      "name": "dist/tanStackCharts-5HHGfe6p.js",
+      "name": "dist/tanStackCharts-DEINbmRi.js",
       "type": "script",
-      "uncompressed": 130292,
-      "gzip": 38174,
+      "uncompressed": 128398,
+      "gzip": 37589,
       "brotli": 0
     },
     {
       "kind": "asset",
-      "name": "dist/treeDiagram-fmrYqvXl.js",
+      "name": "dist/treeDiagram-t0oFwi1c.js",
       "type": "script",
-      "uncompressed": 4954,
-      "gzip": 2040,
+      "uncompressed": 2259,
+      "gzip": 1067,
       "brotli": 0
     },
     {
@@ -319,565 +283,7 @@
       "uncompressed": 57324,
       "gzip": 17126,
       "brotli": 0,
-      "parent": "dist/erdDiagram-DKsqCN08.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 13539
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 5389,
-      "gzip": 1492,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/css/create-instance/dist/emotion-css-create-instance.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3466
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/css/create-instance/dist/emotion-css-create-instance.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1363,
-      "gzip": 436,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/css/dist/emotion-css.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 710
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/css/dist/emotion-css.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 186,
-      "gzip": 103,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/hash/dist/emotion-hash.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1655
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/hash/dist/emotion-hash.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 720,
-      "gzip": 190,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/memoize/dist/emotion-memoize.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 202
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/memoize/dist/emotion-memoize.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 119,
-      "gzip": 81,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/serialize/dist/emotion-serialize.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 6463
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/serialize/dist/emotion-serialize.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2311,
-      "gzip": 668,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/sheet/dist/emotion-sheet.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3711
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/sheet/dist/emotion-sheet.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1481,
-      "gzip": 441,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/unitless/dist/emotion-unitless.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 936
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/unitless/dist/emotion-unitless.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 767,
-      "gzip": 223,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1759
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 481,
-      "gzip": 186,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@emotion/weak-memoize/dist/emotion-weak-memoize.esm.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 422
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/broadcastActiveObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1351
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/broadcastActiveObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 481,
-      "gzip": 193,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/calculateBoxSize.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4519
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/calculateBoxSize.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1837,
-      "gzip": 584,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/calculateDepthForNode.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 339
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/calculateDepthForNode.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 124,
-      "gzip": 81,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/deliverResizeLoopError.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 474
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/deliverResizeLoopError.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 287,
-      "gzip": 147,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/gatherActiveObservationsAtDepth.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 764
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/gatherActiveObservationsAtDepth.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 291,
-      "gzip": 114,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/hasActiveObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 227
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/hasActiveObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 89,
-      "gzip": 65,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/hasSkippedObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 230
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/algorithms/hasSkippedObservations.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 90,
-      "gzip": 65,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/DOMRectReadOnly.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 951
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/DOMRectReadOnly.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 493,
-      "gzip": 177,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/exports/resize-observer.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 174
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObservation.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1169
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObservation.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 502,
-      "gzip": 186,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserver.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1843
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserver.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1133,
-      "gzip": 250,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverBoxOptions.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 378
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverBoxOptions.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 150,
-      "gzip": 93,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverController.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2256
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverController.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 893,
-      "gzip": 276,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverDetail.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 361
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverDetail.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 173,
-      "gzip": 90,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverEntry.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 597
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverEntry.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 275,
-      "gzip": 108,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverSize.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 308
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/ResizeObserverSize.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 105,
-      "gzip": 71,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/element.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1171
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/element.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 620,
-      "gzip": 240,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/freeze.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 67
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/freeze.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 51,
-      "gzip": 49,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/global.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 65
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/global.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 40,
-      "gzip": 37,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/process.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 772
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/process.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 96,
-      "gzip": 70,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/queueMicroTask.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 582
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/queueMicroTask.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 331,
-      "gzip": 163,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/queueResizeObserver.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 218
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/queueResizeObserver.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 68,
-      "gzip": 51,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/resizeObservers.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 54
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/resizeObservers.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 13,
-      "gzip": 23,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/scheduler.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3078
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@juggle/resize-observer/lib/utils/scheduler.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1558,
-      "gzip": 443,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/erdDiagram-DmYSx8Dh.js"
     },
     {
       "kind": "filesystem",
@@ -899,9 +305,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 108,
-      "gzip": 88,
+      "gzip": 87,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -957,10 +363,10 @@
       "name": "node_modules/@tanstack/charts/dist/bar.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5430,
-      "gzip": 1867,
+      "uncompressed": 5426,
+      "gzip": 1888,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -988,10 +394,10 @@
       "name": "node_modules/@tanstack/charts/dist/configured-scale.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3584,
-      "gzip": 1103,
+      "uncompressed": 3589,
+      "gzip": 1114,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1020,9 +426,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 175,
-      "gzip": 121,
+      "gzip": 122,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1051,9 +457,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 178,
-      "gzip": 124,
+      "gzip": 125,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1089,9 +495,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3015,
-      "gzip": 951,
+      "gzip": 961,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1106,9 +512,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 674,
-      "gzip": 306,
+      "gzip": 312,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1144,9 +550,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 175,
-      "gzip": 121,
+      "gzip": 123,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1161,9 +567,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 71,
-      "gzip": 58,
+      "gzip": 59,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1178,9 +584,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4096,
-      "gzip": 1157,
+      "gzip": 1173,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1209,9 +615,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1127,
-      "gzip": 446,
+      "gzip": 450,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1233,9 +639,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 55,
-      "gzip": 60,
+      "gzip": 61,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1249,10 +655,10 @@
       "name": "node_modules/@tanstack/charts/dist/guide-layout.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3487,
-      "gzip": 1124,
+      "uncompressed": 3478,
+      "gzip": 1133,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1281,9 +687,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2409,
-      "gzip": 737,
+      "gzip": 743,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1347,9 +753,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 220,
-      "gzip": 149,
+      "gzip": 150,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1364,9 +770,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3540,
-      "gzip": 1156,
+      "gzip": 1170,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1387,10 +793,10 @@
       "name": "node_modules/@tanstack/charts/dist/mark.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2548,
-      "gzip": 842,
+      "uncompressed": 2546,
+      "gzip": 849,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1405,9 +811,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 357,
-      "gzip": 188,
+      "gzip": 189,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1422,9 +828,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 100,
-      "gzip": 90,
+      "gzip": 91,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1438,10 +844,10 @@
       "name": "node_modules/@tanstack/charts/dist/nearest.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7739,
-      "gzip": 2037,
+      "uncompressed": 7733,
+      "gzip": 2065,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1463,9 +869,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5068,
-      "gzip": 1527,
+      "gzip": 1541,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1479,10 +885,10 @@
       "name": "node_modules/@tanstack/charts/dist/rect-radius-internal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1795,
-      "gzip": 516,
+      "uncompressed": 1799,
+      "gzip": 522,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1497,9 +903,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 317,
-      "gzip": 165,
+      "gzip": 166,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1527,27 +933,27 @@
       "name": "node_modules/@tanstack/charts/dist/renderer-rect.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1107,
-      "gzip": 405,
+      "uncompressed": 1112,
+      "gzip": 411,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 39415
+      "uncompressed": 40222
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/renderer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 17021,
-      "gzip": 4554,
+      "uncompressed": 17383,
+      "gzip": 4715,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1592,7 +998,7 @@
       "uncompressed": 424,
       "gzip": 196,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1606,10 +1012,10 @@
       "name": "node_modules/@tanstack/charts/dist/scale-input.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2353,
-      "gzip": 727,
+      "uncompressed": 2346,
+      "gzip": 738,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1623,10 +1029,10 @@
       "name": "node_modules/@tanstack/charts/dist/scales.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2963,
-      "gzip": 936,
+      "uncompressed": 2960,
+      "gzip": 946,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1655,9 +1061,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 54,
-      "gzip": 59,
+      "gzip": 60,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1674,7 +1080,7 @@
       "uncompressed": 599,
       "gzip": 226,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1689,9 +1095,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1728,
-      "gzip": 563,
+      "gzip": 575,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1706,26 +1112,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 55,
-      "gzip": 60,
+      "gzip": 61,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@tanstack/charts/dist/scene.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 44627
+      "uncompressed": 44622
     },
     {
       "kind": "chunk",
       "name": "node_modules/@tanstack/charts/dist/scene.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 22898,
-      "gzip": 5863,
+      "uncompressed": 22931,
+      "gzip": 5939,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1739,10 +1145,10 @@
       "name": "node_modules/@tanstack/charts/dist/stack-ends-internal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2807,
-      "gzip": 886,
+      "uncompressed": 2818,
+      "gzip": 896,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1757,9 +1163,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3876,
-      "gzip": 1250,
+      "gzip": 1273,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1781,9 +1187,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 412,
-      "gzip": 205,
+      "gzip": 207,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1798,9 +1204,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1165,
-      "gzip": 429,
+      "gzip": 434,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1815,9 +1221,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2853,
-      "gzip": 949,
+      "gzip": 958,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1834,7 +1240,7 @@
       "uncompressed": 200,
       "gzip": 126,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1849,9 +1255,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 4440,
-      "gzip": 1459,
+      "gzip": 1477,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1866,9 +1272,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 2722,
-      "gzip": 971,
+      "gzip": 983,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -1883,9 +1289,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1374,
-      "gzip": 527,
+      "gzip": 536,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -2047,6 +1453,197 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 10007
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/band.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2653
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/band.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1355,
+      "gzip": 410,
+      "brotli": 0,
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/constant.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 82
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/continuous.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3469
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/diverging.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2908
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/identity.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 654
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1400
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/init.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 642
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/init.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 144,
+      "gzip": 102,
+      "brotli": 0,
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/linear.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1620
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/log.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3460
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/nice.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 345
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/number.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 51
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/ordinal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1088
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/ordinal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 624,
+      "gzip": 260,
+      "brotli": 0,
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/pow.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1183
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/quantile.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1442
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/quantize.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1339
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/radial.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1478
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/sequential.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2786
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/sequentialQuantile.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1078
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/symlog.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 848
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/threshold.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 997
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/tickFormat.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1133
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/time.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2367
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@tanstack/charts/node_modules/d3-scale/src/utcTime.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 477
     },
     {
       "kind": "filesystem",
@@ -2354,7 +1951,7 @@
       "name": "node_modules/@unovis/ts/components.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3082
+      "uncompressed": 3563
     },
     {
       "kind": "filesystem",
@@ -2375,7 +1972,7 @@
       "name": "node_modules/@unovis/ts/components/annotations/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1882
+      "uncompressed": 1878
     },
     {
       "kind": "filesystem",
@@ -2396,14 +1993,14 @@
       "name": "node_modules/@unovis/ts/components/area/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8824
+      "uncompressed": 9791
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/area/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1398
+      "uncompressed": 1394
     },
     {
       "kind": "filesystem",
@@ -2417,14 +2014,14 @@
       "name": "node_modules/@unovis/ts/components/axis/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 23592
+      "uncompressed": 23987
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/axis/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4294
+      "uncompressed": 4290
     },
     {
       "kind": "filesystem",
@@ -2459,7 +2056,7 @@
       "name": "node_modules/@unovis/ts/components/boxplot/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2054
+      "uncompressed": 2050
     },
     {
       "kind": "filesystem",
@@ -2480,7 +2077,7 @@
       "name": "node_modules/@unovis/ts/components/brush/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2394
+      "uncompressed": 2390
     },
     {
       "kind": "filesystem",
@@ -2501,7 +2098,7 @@
       "name": "node_modules/@unovis/ts/components/bullet-legend/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3333
+      "uncompressed": 3355
     },
     {
       "kind": "filesystem",
@@ -2515,7 +2112,7 @@
       "name": "node_modules/@unovis/ts/components/bullet-legend/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2043
+      "uncompressed": 2039
     },
     {
       "kind": "filesystem",
@@ -2536,10 +2133,10 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 407,
-      "gzip": 182,
+      "uncompressed": 403,
+      "gzip": 197,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -2553,10 +2150,10 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5526,
-      "gzip": 1288,
+      "uncompressed": 5520,
+      "gzip": 1414,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -2570,10 +2167,10 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/modules/label.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2052,
-      "gzip": 557,
+      "uncompressed": 2049,
+      "gzip": 609,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -2587,27 +2184,27 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/modules/layout.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1847,
-      "gzip": 576,
+      "uncompressed": 1846,
+      "gzip": 626,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/chord-diagram/modules/link.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2370
+      "uncompressed": 2391
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/components/chord-diagram/modules/link.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1083,
-      "gzip": 361,
+      "uncompressed": 1080,
+      "gzip": 399,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -2621,27 +2218,27 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/modules/node.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 748,
-      "gzip": 271,
+      "uncompressed": 747,
+      "gzip": 297,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/chord-diagram/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2680
+      "uncompressed": 2676
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/components/chord-diagram/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 189,
-      "gzip": 76,
+      "uncompressed": 187,
+      "gzip": 85,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -2655,10 +2252,66 @@
       "name": "node_modules/@unovis/ts/components/chord-diagram/types.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 101,
-      "gzip": 72,
+      "uncompressed": 97,
+      "gzip": 76,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/config.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 639
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/constants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 662
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 7793
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/modules/bar.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2556
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/modules/icon.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2200
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/style.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1976
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/types.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 35
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/circular-bar/utils.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 7407
     },
     {
       "kind": "filesystem",
@@ -2672,21 +2325,21 @@
       "name": "node_modules/@unovis/ts/components/crosshair/constants.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 263
+      "uncompressed": 429
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/crosshair/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 13583
+      "uncompressed": 17460
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/crosshair/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1599
+      "uncompressed": 1595
     },
     {
       "kind": "filesystem",
@@ -2700,21 +2353,21 @@
       "name": "node_modules/@unovis/ts/components/donut/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 714
+      "uncompressed": 750
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/donut/constants.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 524
+      "uncompressed": 826
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/donut/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7039
+      "uncompressed": 8833
     },
     {
       "kind": "filesystem",
@@ -2728,14 +2381,14 @@
       "name": "node_modules/@unovis/ts/components/donut/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2723
+      "uncompressed": 3571
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/donut/utils.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1817
+      "uncompressed": 2335
     },
     {
       "kind": "filesystem",
@@ -2749,14 +2402,14 @@
       "name": "node_modules/@unovis/ts/components/flow-legend/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3232
+      "uncompressed": 3254
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/flow-legend/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3059
+      "uncompressed": 3057
     },
     {
       "kind": "filesystem",
@@ -2784,7 +2437,7 @@
       "name": "node_modules/@unovis/ts/components/free-brush/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1569
+      "uncompressed": 1565
     },
     {
       "kind": "filesystem",
@@ -2798,7 +2451,7 @@
       "name": "node_modules/@unovis/ts/components/graph/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3476
+      "uncompressed": 3497
     },
     {
       "kind": "filesystem",
@@ -2833,14 +2486,14 @@
       "name": "node_modules/@unovis/ts/components/graph/modules/link/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 13502
+      "uncompressed": 14190
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/graph/modules/link/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3494
+      "uncompressed": 3490
     },
     {
       "kind": "filesystem",
@@ -2854,14 +2507,14 @@
       "name": "node_modules/@unovis/ts/components/graph/modules/node/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 15083
+      "uncompressed": 15052
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/graph/modules/node/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 10086
+      "uncompressed": 9926
     },
     {
       "kind": "filesystem",
@@ -2882,7 +2535,7 @@
       "name": "node_modules/@unovis/ts/components/graph/modules/panel/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3968
+      "uncompressed": 3964
     },
     {
       "kind": "filesystem",
@@ -2903,7 +2556,7 @@
       "name": "node_modules/@unovis/ts/components/graph/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1577
+      "uncompressed": 1574
     },
     {
       "kind": "filesystem",
@@ -2924,21 +2577,21 @@
       "name": "node_modules/@unovis/ts/components/grouped-bar/constants.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 151
+      "uncompressed": 162
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/grouped-bar/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 10370
+      "uncompressed": 11115
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/grouped-bar/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1263
+      "uncompressed": 1259
     },
     {
       "kind": "filesystem",
@@ -2959,7 +2612,7 @@
       "name": "node_modules/@unovis/ts/components/heatmap/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2362
+      "uncompressed": 2358
     },
     {
       "kind": "filesystem",
@@ -2987,7 +2640,7 @@
       "name": "node_modules/@unovis/ts/components/leaflet-flow-map/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9274
+      "uncompressed": 9264
     },
     {
       "kind": "filesystem",
@@ -3015,14 +2668,21 @@
       "name": "node_modules/@unovis/ts/components/leaflet-map/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1825
+      "uncompressed": 1856
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/components/leaflet-map/constants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 227
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/leaflet-map/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 26167
+      "uncompressed": 26495
     },
     {
       "kind": "filesystem",
@@ -3050,7 +2710,7 @@
       "name": "node_modules/@unovis/ts/components/leaflet-map/modules/map.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6288
+      "uncompressed": 652948
     },
     {
       "kind": "filesystem",
@@ -3099,7 +2759,7 @@
       "name": "node_modules/@unovis/ts/components/leaflet-map/renderer/mapboxgl-layer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1202
+      "uncompressed": 1198
     },
     {
       "kind": "filesystem",
@@ -3141,7 +2801,7 @@
       "name": "node_modules/@unovis/ts/components/leaflet-map/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5583
+      "uncompressed": 5579
     },
     {
       "kind": "filesystem",
@@ -3162,14 +2822,14 @@
       "name": "node_modules/@unovis/ts/components/line/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7117
+      "uncompressed": 7878
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/line/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1247
+      "uncompressed": 1243
     },
     {
       "kind": "filesystem",
@@ -3183,7 +2843,7 @@
       "name": "node_modules/@unovis/ts/components/nested-donut/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8434
+      "uncompressed": 9911
     },
     {
       "kind": "filesystem",
@@ -3197,14 +2857,14 @@
       "name": "node_modules/@unovis/ts/components/nested-donut/modules/label.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3547
+      "uncompressed": 3585
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/nested-donut/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3147
+      "uncompressed": 3248
     },
     {
       "kind": "filesystem",
@@ -3232,14 +2892,14 @@
       "name": "node_modules/@unovis/ts/components/plotband/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7093
+      "uncompressed": 7794
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/plotband/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1094
+      "uncompressed": 1090
     },
     {
       "kind": "filesystem",
@@ -3267,14 +2927,14 @@
       "name": "node_modules/@unovis/ts/components/plotline/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6348
+      "uncompressed": 7028
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/plotline/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1185
+      "uncompressed": 1181
     },
     {
       "kind": "filesystem",
@@ -3295,7 +2955,7 @@
       "name": "node_modules/@unovis/ts/components/radial-bar/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8544
+      "uncompressed": 9211
     },
     {
       "kind": "filesystem",
@@ -3309,7 +2969,7 @@
       "name": "node_modules/@unovis/ts/components/radial-bar/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2868
+      "uncompressed": 2864
     },
     {
       "kind": "filesystem",
@@ -3337,14 +2997,14 @@
       "name": "node_modules/@unovis/ts/components/rolling-pin-legend/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2187
+      "uncompressed": 2209
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/rolling-pin-legend/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1373
+      "uncompressed": 1369
     },
     {
       "kind": "filesystem",
@@ -3372,7 +3032,7 @@
       "name": "node_modules/@unovis/ts/components/sankey/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 25738
+      "uncompressed": 26372
     },
     {
       "kind": "filesystem",
@@ -3400,7 +3060,7 @@
       "name": "node_modules/@unovis/ts/components/sankey/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5484
+      "uncompressed": 5480
     },
     {
       "kind": "filesystem",
@@ -3414,21 +3074,21 @@
       "name": "node_modules/@unovis/ts/components/scatter/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 712
+      "uncompressed": 730
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/scatter/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8750
+      "uncompressed": 10391
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/scatter/modules/point.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4025
+      "uncompressed": 4464
     },
     {
       "kind": "filesystem",
@@ -3442,7 +3102,7 @@
       "name": "node_modules/@unovis/ts/components/scatter/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1755
+      "uncompressed": 2193
     },
     {
       "kind": "filesystem",
@@ -3463,14 +3123,14 @@
       "name": "node_modules/@unovis/ts/components/stacked-bar/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 11714
+      "uncompressed": 12059
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/stacked-bar/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1263
+      "uncompressed": 1259
     },
     {
       "kind": "filesystem",
@@ -3491,14 +3151,14 @@
       "name": "node_modules/@unovis/ts/components/timeline/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 25997
+      "uncompressed": 26287
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/timeline/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3920
+      "uncompressed": 3917
     },
     {
       "kind": "filesystem",
@@ -3526,14 +3186,14 @@
       "name": "node_modules/@unovis/ts/components/tooltip/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 11856
+      "uncompressed": 11878
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/tooltip/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2367
+      "uncompressed": 2363
     },
     {
       "kind": "filesystem",
@@ -3547,7 +3207,7 @@
       "name": "node_modules/@unovis/ts/components/topojson-map/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 47114
+      "uncompressed": 47675
     },
     {
       "kind": "filesystem",
@@ -3582,7 +3242,7 @@
       "name": "node_modules/@unovis/ts/components/topojson-map/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6321
+      "uncompressed": 6593
     },
     {
       "kind": "filesystem",
@@ -3596,7 +3256,7 @@
       "name": "node_modules/@unovis/ts/components/topojson-map/utils.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 11171
+      "uncompressed": 11131
     },
     {
       "kind": "filesystem",
@@ -3610,14 +3270,14 @@
       "name": "node_modules/@unovis/ts/components/treemap/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9903
+      "uncompressed": 10023
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/treemap/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1887
+      "uncompressed": 1941
     },
     {
       "kind": "filesystem",
@@ -3638,14 +3298,14 @@
       "name": "node_modules/@unovis/ts/components/vis-controls/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1803
+      "uncompressed": 1825
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/vis-controls/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2402
+      "uncompressed": 2398
     },
     {
       "kind": "filesystem",
@@ -3673,14 +3333,14 @@
       "name": "node_modules/@unovis/ts/components/xy-labels/modules/label.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4695
+      "uncompressed": 4706
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/components/xy-labels/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1488
+      "uncompressed": 1484
     },
     {
       "kind": "filesystem",
@@ -3709,26 +3369,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 58,
-      "gzip": 50,
+      "gzip": 55,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/containers/single-container/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4931
+      "uncompressed": 5261
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/containers/single-container/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2786,
-      "gzip": 686,
+      "uncompressed": 2992,
+      "gzip": 819,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3742,7 +3402,7 @@
       "name": "node_modules/@unovis/ts/containers/xy-container/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 13700
+      "uncompressed": 14171
     },
     {
       "kind": "filesystem",
@@ -3757,26 +3417,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 52,
-      "gzip": 47,
+      "gzip": 52,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/core/component/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5107
+      "uncompressed": 5247
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/core/component/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2375,
-      "gzip": 646,
+      "uncompressed": 2409,
+      "gzip": 713,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3797,27 +3457,27 @@
       "name": "node_modules/@unovis/ts/core/container/config.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 233,
-      "gzip": 103,
+      "uncompressed": 237,
+      "gzip": 115,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/core/container/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6097
+      "uncompressed": 6983
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/core/container/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3426,
-      "gzip": 790,
+      "uncompressed": 3927,
+      "gzip": 949,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3831,7 +3491,7 @@
       "name": "node_modules/@unovis/ts/core/xy-component/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2501
+      "uncompressed": 2823
     },
     {
       "kind": "filesystem",
@@ -3846,26 +3506,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 116,
-      "gzip": 67,
+      "gzip": 74,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/data-models/graph.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5052
+      "uncompressed": 5069
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/data-models/graph.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3212,
-      "gzip": 781,
+      "uncompressed": 3250,
+      "gzip": 861,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3879,7 +3539,7 @@
       "name": "node_modules/@unovis/ts/data-models/map-graph.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1617
+      "uncompressed": 1625
     },
     {
       "kind": "filesystem",
@@ -3900,7 +3560,7 @@
       "name": "node_modules/@unovis/ts/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 11887
+      "uncompressed": 12883
     },
     {
       "kind": "filesystem",
@@ -3915,26 +3575,43 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 447,
-      "gzip": 195,
+      "gzip": 213,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/@unovis/ts/styles/emotion.js",
+      "name": "node_modules/@unovis/ts/styles/constants.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 417
+      "uncompressed": 406
     },
     {
       "kind": "chunk",
-      "name": "node_modules/@unovis/ts/styles/emotion.js",
+      "name": "node_modules/@unovis/ts/styles/constants.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 151,
-      "gzip": 106,
+      "uncompressed": 141,
+      "gzip": 103,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/styles/css.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3114
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@unovis/ts/styles/css.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1421,
+      "gzip": 565,
+      "brotli": 0,
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3948,10 +3625,10 @@
       "name": "node_modules/@unovis/ts/styles/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1022,
-      "gzip": 354,
+      "uncompressed": 1013,
+      "gzip": 389,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -3965,24 +3642,24 @@
       "name": "node_modules/@unovis/ts/styles/patterns.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2176,
-      "gzip": 662,
+      "uncompressed": 2174,
+      "gzip": 728,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/styles/sizes.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2983
+      "uncompressed": 2979
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/types.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3688
+      "uncompressed": 3751
     },
     {
       "kind": "filesystem",
@@ -3996,34 +3673,34 @@
       "name": "node_modules/@unovis/ts/types/component.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 469
+      "uncompressed": 649
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/types/component.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 200,
-      "gzip": 107,
+      "uncompressed": 308,
+      "gzip": 157,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/types/curve.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2397
+      "uncompressed": 2532
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/types/curve.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 292,
-      "gzip": 125,
+      "uncompressed": 280,
+      "gzip": 134,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4069,10 +3746,17 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/types/scale-dimension.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 246
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/@unovis/ts/types/scale.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 754
+      "uncompressed": 636
     },
     {
       "kind": "filesystem",
@@ -4122,9 +3806,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 104,
-      "gzip": 75,
+      "gzip": 82,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4146,9 +3830,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 143,
-      "gzip": 95,
+      "gzip": 103,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4162,44 +3846,58 @@
       "name": "node_modules/@unovis/ts/utils/color.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 738,
-      "gzip": 291,
+      "uncompressed": 735,
+      "gzip": 315,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/utils/curves/smooth-step/constants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 154
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/utils/curves/smooth-step/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3298
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/utils/d3.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1395
+      "uncompressed": 1859
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/utils/d3.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 139,
-      "gzip": 89,
+      "uncompressed": 140,
+      "gzip": 98,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/utils/data.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 11795
+      "uncompressed": 12725
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/utils/data.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2179,
-      "gzip": 553,
+      "uncompressed": 1620,
+      "gzip": 492,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4213,7 +3911,41 @@
       "name": "node_modules/@unovis/ts/utils/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4328
+      "uncompressed": 4612
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/utils/interpolate-path/constants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 379
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@unovis/ts/utils/interpolate-path/constants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 230,
+      "gzip": 126,
+      "brotli": 0,
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@unovis/ts/utils/interpolate-path/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4047
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@unovis/ts/utils/interpolate-path/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2362,
+      "gzip": 737,
+      "brotli": 0,
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4234,17 +3966,17 @@
       "name": "node_modules/@unovis/ts/utils/misc.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 603,
-      "gzip": 252,
+      "uncompressed": 600,
+      "gzip": 277,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
       "name": "node_modules/@unovis/ts/utils/path.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7095
+      "uncompressed": 7342
     },
     {
       "kind": "chunk",
@@ -4252,9 +3984,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 137,
-      "gzip": 93,
+      "gzip": 102,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4269,26 +4001,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 179,
-      "gzip": 108,
+      "gzip": 117,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/@unovis/ts/utils/resize-observer.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 235
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/@unovis/ts/utils/resize-observer.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 38,
-      "gzip": 40,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4302,7 +4017,7 @@
       "name": "node_modules/@unovis/ts/utils/style.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1328
+      "uncompressed": 1324
     },
     {
       "kind": "filesystem",
@@ -4316,17 +4031,17 @@
       "name": "node_modules/@unovis/ts/utils/text-measure.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4097
+      "uncompressed": 4119
     },
     {
       "kind": "chunk",
       "name": "node_modules/@unovis/ts/utils/text-measure.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1342,
-      "gzip": 495,
+      "uncompressed": 1362,
+      "gzip": 552,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4347,10 +4062,10 @@
       "name": "node_modules/@unovis/ts/utils/text.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 988,
-      "gzip": 325,
+      "uncompressed": 987,
+      "gzip": 358,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4365,9 +4080,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 98,
-      "gzip": 54,
+      "gzip": 59,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4381,10 +4096,10 @@
       "name": "node_modules/@unovis/ts/utils/to-px.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1856,
-      "gzip": 512,
+      "uncompressed": 1847,
+      "gzip": 564,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4413,9 +4128,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 102,
-      "gzip": 63,
+      "gzip": 68,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4437,9 +4152,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 48,
-      "gzip": 44,
+      "gzip": 48,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4454,9 +4169,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 702,
-      "gzip": 196,
+      "gzip": 211,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4506,9 +4221,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 102,
-      "gzip": 63,
+      "gzip": 68,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4586,9 +4301,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 458,
-      "gzip": 187,
+      "gzip": 203,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4610,9 +4325,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 29,
-      "gzip": 34,
+      "gzip": 37,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -4709,7 +4424,7 @@
       "uncompressed": 241,
       "gzip": 136,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -4745,9 +4460,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 48,
-      "gzip": 44,
+      "gzip": 48,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4790,9 +4505,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 223,
-      "gzip": 145,
+      "gzip": 127,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4865,7 +4580,7 @@
       "uncompressed": 165,
       "gzip": 115,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -4908,9 +4623,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1172,
-      "gzip": 315,
+      "gzip": 338,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -4942,24 +4657,10 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-axis/src/axis.js",
+      "name": "node_modules/d3-axis/dist/d3-axis.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5461
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-axis/src/identity.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 43
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-axis/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 78
+      "uncompressed": 5555
     },
     {
       "kind": "filesystem",
@@ -4998,85 +4699,20 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/array.js",
+      "name": "node_modules/d3-chord/dist/d3-chord.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 42
+      "uncompressed": 8628
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-chord/src/array.js",
+      "name": "node_modules/d3-chord/dist/d3-chord.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 32,
-      "gzip": 36,
+      "uncompressed": 2455,
+      "gzip": 608,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/chord.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4374
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 72
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-chord/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 52,
-      "gzip": 40,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 136
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/math.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 214
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-chord/src/math.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 84,
-      "gzip": 54,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-chord/src/ribbon.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4002
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-chord/src/ribbon.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2305,
-      "gzip": 504,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -5153,9 +4789,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1842,
-      "gzip": 481,
+      "gzip": 479,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -5166,95 +4802,20 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/constant.js",
+      "name": "node_modules/d3-drag/dist/d3-drag.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 29
+      "uncompressed": 7663
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-drag/src/constant.js",
+      "name": "node_modules/d3-drag/dist/d3-drag.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 24,
-      "gzip": 29,
+      "uncompressed": 4390,
+      "gzip": 1292,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/drag.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 5558
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-drag/src/drag.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2837,
-      "gzip": 852,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/event.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 985
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-drag/src/event.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 837,
-      "gzip": 227,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 118
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/nodrag.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 920
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-drag/src/nodrag.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 520,
-      "gzip": 181,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-drag/src/noevent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 396
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-drag/src/noevent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 172,
-      "gzip": 98,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -5292,7 +4853,7 @@
       "uncompressed": 82,
       "gzip": 52,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -5352,157 +4913,20 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-force/src/center.js",
+      "name": "node_modules/d3-force/dist/d3-force.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 798
+      "uncompressed": 17460
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-force/src/center.js",
+      "name": "node_modules/d3-force/dist/d3-force.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 512,
-      "gzip": 180,
+      "uncompressed": 6391,
+      "gzip": 1762,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/collide.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2520
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 72
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 51,
-      "gzip": 42,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 406
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/jiggle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 70
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/jiggle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 44,
-      "gzip": 47,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/lcg.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 245
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/lcg.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 120,
-      "gzip": 92,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/link.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3294
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/link.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1885,
-      "gzip": 545,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/manyBody.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3306
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/manyBody.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1656,
-      "gzip": 512,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/radial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1480
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/simulation.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3869
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-force/src/simulation.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2121,
-      "gzip": 627,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/x.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1033
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-force/src/y.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1033
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -5517,9 +4941,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 147,
-      "gzip": 93,
+      "gzip": 100,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5534,9 +4958,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 61,
-      "gzip": 53,
+      "gzip": 57,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5551,9 +4975,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 344,
-      "gzip": 161,
+      "gzip": 173,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5568,9 +4992,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 284,
-      "gzip": 137,
+      "gzip": 146,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5584,10 +5008,10 @@
       "name": "node_modules/d3-format/src/formatNumerals.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 101,
-      "gzip": 57,
+      "uncompressed": 102,
+      "gzip": 61,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5602,9 +5026,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 367,
-      "gzip": 165,
+      "gzip": 176,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5619,9 +5043,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 234,
-      "gzip": 112,
+      "gzip": 120,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5635,10 +5059,10 @@
       "name": "node_modules/d3-format/src/formatSpecifier.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1147,
-      "gzip": 334,
+      "uncompressed": 1149,
+      "gzip": 358,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5652,10 +5076,10 @@
       "name": "node_modules/d3-format/src/formatTrim.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 267,
-      "gzip": 126,
+      "uncompressed": 268,
+      "gzip": 135,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5670,9 +5094,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 370,
-      "gzip": 131,
+      "gzip": 140,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5687,9 +5111,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 28,
-      "gzip": 31,
+      "gzip": 34,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5710,10 +5134,10 @@
       "name": "node_modules/d3-format/src/locale.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2517,
-      "gzip": 759,
+      "uncompressed": 2519,
+      "gzip": 814,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5728,9 +5152,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 56,
-      "gzip": 47,
+      "gzip": 50,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5745,9 +5169,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 112,
-      "gzip": 70,
+      "gzip": 75,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -5762,9 +5186,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 64,
+      "gzip": 68,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -6937,438 +6361,20 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/accessors.js",
+      "name": "node_modules/d3-hierarchy/dist/d3-hierarchy.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 166
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/array.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 410
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/cluster.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2093
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 120
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/ancestors.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 138
+      "uncompressed": 36223
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/ancestors.js",
+      "name": "node_modules/d3-hierarchy/dist/d3-hierarchy.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 81,
-      "gzip": 49,
+      "uncompressed": 7983,
+      "gzip": 2771,
       "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/count.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 263
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/count.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 170,
-      "gzip": 77,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/descendants.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 57
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/descendants.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 42,
-      "gzip": 32,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/each.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 156
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/each.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 91,
-      "gzip": 49,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/eachAfter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 405
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/eachAfter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 230,
-      "gzip": 92,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/eachBefore.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 334
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/eachBefore.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 185,
-      "gzip": 81,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/find.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 172
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/find.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 92,
-      "gzip": 50,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2219
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 975,
-      "gzip": 265,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/iterator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 367
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/iterator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 192,
-      "gzip": 82,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/leaves.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 164
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/leaves.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 98,
-      "gzip": 55,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/links.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 246
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/links.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 126,
-      "gzip": 64,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/path.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 606
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/path.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 350,
-      "gzip": 107,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/sort.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 151
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/sort.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 93,
-      "gzip": 49,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/sum.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 264
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/hierarchy/sum.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 164,
-      "gzip": 76,
-      "brotli": 0,
-      "parent": "dist/hierarchy-DU9LihDu.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 867
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/lcg.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 245
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/pack/enclose.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3150
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/pack/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2059
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/pack/siblings.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3310
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/partition.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1272
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/partition.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 709,
-      "gzip": 248,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/stratify.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4106
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/tree.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 7063
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/tree.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2570,
-      "gzip": 972,
-      "brotli": 0,
-      "parent": "dist/treeDiagram-fmrYqvXl.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/binary.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1292
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/dice.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 309
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/treemap/dice.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 190,
-      "gzip": 108,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2822
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/resquarify.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1064
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/round.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 166
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-hierarchy/src/treemap/round.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 119,
-      "gzip": 58,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/slice.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 309
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/sliceDice.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 176
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-hierarchy/src/treemap/squarify.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1874
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-interpolate-path/build/d3-interpolate-path.mjs",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 24709
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-interpolate-path/build/d3-interpolate-path.mjs",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 7399,
-      "gzip": 1843,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/d3-hierarchy-Dtx4jD78.js"
     },
     {
       "kind": "filesystem",
@@ -7383,9 +6389,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 263,
-      "gzip": 114,
+      "gzip": 123,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7454,10 +6460,10 @@
       "name": "node_modules/d3-interpolate/src/date.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 139,
-      "gzip": 85,
+      "uncompressed": 140,
+      "gzip": 92,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7530,10 +6536,10 @@
       "name": "node_modules/d3-interpolate/src/numberArray.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 265,
-      "gzip": 132,
+      "uncompressed": 263,
+      "gzip": 142,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7547,10 +6553,10 @@
       "name": "node_modules/d3-interpolate/src/object.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 243,
-      "gzip": 108,
+      "uncompressed": 244,
+      "gzip": 115,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7596,9 +6602,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 102,
-      "gzip": 66,
+      "gzip": 71,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7632,7 +6638,7 @@
       "uncompressed": 480,
       "gzip": 163,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -7647,9 +6653,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1324,
-      "gzip": 338,
+      "gzip": 337,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -7664,9 +6670,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 403,
-      "gzip": 178,
+      "gzip": 177,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -7681,9 +6687,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 332,
-      "gzip": 143,
+      "gzip": 154,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -7698,33 +6704,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1004,
-      "gzip": 342,
+      "gzip": 379,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-path/src/index.js",
+      "name": "node_modules/d3-path/dist/d3-path.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 49
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-path/src/path.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4537
+      "uncompressed": 5387
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-path/src/path.js",
+      "name": "node_modules/d3-path/dist/d3-path.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2572,
-      "gzip": 877,
+      "uncompressed": 3047,
+      "gzip": 1108,
       "brotli": 0,
-      "parent": "dist/point-_U9MxSuk.js"
+      "parent": "dist/d3-shape-gf8U18pS.js"
     },
     {
       "kind": "filesystem",
@@ -7739,9 +6738,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1286,
-      "gzip": 410,
+      "gzip": 455,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7756,9 +6755,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 628,
-      "gzip": 238,
+      "gzip": 265,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7773,9 +6772,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 115,
-      "gzip": 87,
+      "gzip": 96,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7790,9 +6789,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 176,
-      "gzip": 105,
+      "gzip": 116,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7807,9 +6806,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 852,
-      "gzip": 326,
+      "gzip": 362,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7831,9 +6830,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 66,
+      "gzip": 73,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7848,9 +6847,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 957,
-      "gzip": 347,
+      "gzip": 385,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7865,9 +6864,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 922,
-      "gzip": 325,
+      "gzip": 361,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7882,9 +6881,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 36,
-      "gzip": 41,
+      "gzip": 46,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7899,9 +6898,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 103,
-      "gzip": 79,
+      "gzip": 88,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7916,9 +6915,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 449,
-      "gzip": 177,
+      "gzip": 197,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7933,9 +6932,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 516,
-      "gzip": 189,
+      "gzip": 210,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7950,9 +6949,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 73,
+      "gzip": 81,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7967,9 +6966,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 73,
+      "gzip": 81,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -7986,7 +6985,7 @@
       "uncompressed": 68,
       "gzip": 78,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -8003,7 +7002,7 @@
       "uncompressed": 51,
       "gzip": 50,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -8025,9 +7024,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 5971,
-      "gzip": 1584,
+      "gzip": 1585,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -8044,1939 +7043,58 @@
       "uncompressed": 141,
       "gzip": 93,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/band.js",
+      "name": "node_modules/d3-scale/dist/d3-scale.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2653
+      "uncompressed": 30245
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-scale/src/band.js",
+      "name": "node_modules/d3-scale/dist/d3-scale.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1351,
-      "gzip": 404,
+      "uncompressed": 5825,
+      "gzip": 1351,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/constant.js",
+      "name": "node_modules/d3-selection/dist/d3-selection.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 82
+      "uncompressed": 27171
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-scale/src/constant.js",
+      "name": "node_modules/d3-selection/dist/d3-selection.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 52,
-      "gzip": 38,
+      "uncompressed": 15402,
+      "gzip": 4459,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-selection-CL8c_tE2.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/continuous.js",
+      "name": "node_modules/d3-shape/dist/d3-shape.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3469
+      "uncompressed": 56246
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-scale/src/continuous.js",
+      "name": "node_modules/d3-shape/dist/d3-shape.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1839,
-      "gzip": 463,
+      "uncompressed": 32542,
+      "gzip": 6685,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/diverging.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2908
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/identity.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 654
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1400
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/init.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 642
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/init.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 143,
-      "gzip": 81,
-      "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/linear.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1620
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/linear.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 726,
-      "gzip": 240,
-      "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/log.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3460
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/nice.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 345
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/number.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 51
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/number.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 29,
-      "gzip": 32,
-      "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/ordinal.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1088
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/ordinal.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 618,
-      "gzip": 213,
-      "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/pow.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1183
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/pow.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 552,
-      "gzip": 189,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/quantile.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1442
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/quantize.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1339
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/radial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1478
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/sequential.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2786
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/sequentialQuantile.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1078
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/symlog.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 848
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/threshold.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 997
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/tickFormat.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1133
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-scale/src/tickFormat.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 518,
-      "gzip": 163,
-      "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/time.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2367
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-scale/src/utcTime.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 477
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/array.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 568
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/array.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 80,
-      "gzip": 43,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 72
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 52,
-      "gzip": 29,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/create.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 168
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/creator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 668
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/creator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 416,
-      "gzip": 111,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 770
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/local.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 536
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/matcher.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 211
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/matcher.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 128,
-      "gzip": 41,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/namespace.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 351
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/namespace.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 182,
-      "gzip": 80,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/namespaces.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 254
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/namespaces.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 210,
-      "gzip": 61,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/pointer.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 696
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/pointer.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 444,
-      "gzip": 199,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/pointers.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 395
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/select.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 262
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/select.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 133,
-      "gzip": 63,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selectAll.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 300
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/append.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 238
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/append.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 149,
-      "gzip": 66,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/attr.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1463
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/attr.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 895,
-      "gzip": 146,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/call.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 134
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/call.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 99,
-      "gzip": 48,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/classed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1740
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/classed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1164,
-      "gzip": 234,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/clone.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 453
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/clone.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 290,
-      "gzip": 76,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/data.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4191
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/data.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1405,
-      "gzip": 330,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/datum.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 132
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/datum.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 98,
-      "gzip": 52,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/dispatch.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 894
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/dispatch.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 491,
-      "gzip": 129,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/each.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 289
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/each.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 189,
-      "gzip": 78,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/empty.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 53
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/empty.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 38,
-      "gzip": 29,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/enter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 798
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/enter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 567,
-      "gzip": 128,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/exit.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 182
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/exit.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 82,
-      "gzip": 46,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/filter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 552
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/filter.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 288,
-      "gzip": 108,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/html.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 520
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/html.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 339,
-      "gzip": 95,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2805
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 622,
-      "gzip": 197,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/insert.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 474
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/insert.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 274,
-      "gzip": 86,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/iterator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 231
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/iterator.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 159,
-      "gzip": 68,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/join.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 509
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/join.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 272,
-      "gzip": 94,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/lower.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 171
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/lower.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 146,
-      "gzip": 63,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/merge.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 645
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/merge.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 363,
-      "gzip": 118,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/node.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 258
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/node.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 177,
-      "gzip": 71,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/nodes.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 57
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/nodes.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 42,
-      "gzip": 31,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/on.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2027
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/on.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1379,
-      "gzip": 307,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/order.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 380
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/order.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 247,
-      "gzip": 99,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/property.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 617
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/property.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 376,
-      "gzip": 96,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/raise.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 138
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/raise.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 113,
-      "gzip": 55,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/remove.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 153
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/remove.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 109,
-      "gzip": 54,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/select.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 659
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/select.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 350,
-      "gzip": 117,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/selectAll.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 730
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/selectAll.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 352,
-      "gzip": 119,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/selectChild.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 403
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/selectChild.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 244,
-      "gzip": 84,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/selectChildren.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 421
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/selectChildren.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 255,
-      "gzip": 81,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/size.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 134
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/size.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 63,
-      "gzip": 40,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/sort.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 684
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/sort.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 403,
-      "gzip": 133,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/sparse.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 71
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/sparse.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 42,
-      "gzip": 31,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/style.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 971
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/style.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 572,
-      "gzip": 129,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selection/text.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 528
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selection/text.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 347,
-      "gzip": 93,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selector.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 152
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selector.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 103,
-      "gzip": 50,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/selectorAll.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 171
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/selectorAll.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 118,
-      "gzip": 52,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/sourceEvent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 133
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/sourceEvent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 70,
-      "gzip": 63,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-selection/src/window.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 218
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-selection/src/window.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 109,
-      "gzip": 46,
-      "brotli": 0,
-      "parent": "dist/select-SZKizDc7.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/arc.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 8844
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/arc.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 4513,
-      "gzip": 1092,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/area.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3218
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/area.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1942,
-      "gzip": 446,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/areaRadial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 944
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/areaRadial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 660,
-      "gzip": 190,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/array.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 242
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/array.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 115,
-      "gzip": 84,
-      "brotli": 0,
-      "parent": "dist/array-CpxKKsZm.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 81
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/constant.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 51,
-      "gzip": 40,
-      "brotli": 0,
-      "parent": "dist/array-CpxKKsZm.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/basis.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1448
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/basis.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1139,
-      "gzip": 305,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/basisClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1536
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/basisClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1164,
-      "gzip": 287,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/basisOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1078
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/basisOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 847,
-      "gzip": 249,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/bump.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1749
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/bump.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 746,
-      "gzip": 286,
-      "brotli": 0,
-      "parent": "dist/link-CAkrxHYd.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/bundle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1084
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/bundle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 717,
-      "gzip": 245,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/cardinal.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1639
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/cardinal.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1244,
-      "gzip": 332,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/cardinalClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1611
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/cardinalClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1146,
-      "gzip": 287,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/cardinalOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1297
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/cardinalOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 971,
-      "gzip": 268,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/catmullRom.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2649
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/catmullRom.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1981,
-      "gzip": 473,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/catmullRomClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2092
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/catmullRomClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1491,
-      "gzip": 349,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/catmullRomOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1772
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/catmullRomOpen.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1316,
-      "gzip": 330,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/linear.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 744
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/linear.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 594,
-      "gzip": 191,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/linearClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 517
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/linearClosed.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 366,
-      "gzip": 140,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/monotone.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3203
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/monotone.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2072,
-      "gzip": 497,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/natural.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1761
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/natural.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1329,
-      "gzip": 380,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/radial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 658
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/radial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 435,
-      "gzip": 142,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/curve/step.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1373
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/curve/step.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1045,
-      "gzip": 270,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/descending.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 86
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/descending.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 72,
-      "gzip": 56,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/identity.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 43
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/identity.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 29,
-      "gzip": 34,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 3355
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/line.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1733
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/line.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 972,
-      "gzip": 289,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/lineRadial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 402
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/lineRadial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 177,
-      "gzip": 99,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/link.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1835
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/link.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 927,
-      "gzip": 310,
-      "brotli": 0,
-      "parent": "dist/link-CAkrxHYd.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/math.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 492
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/math.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 282,
-      "gzip": 124,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/noop.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 29
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/noop.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 17,
-      "gzip": 26,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/offset/diverging.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 431
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/offset/expand.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 322
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/offset/expand.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 209,
-      "gzip": 121,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/offset/none.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 309
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/offset/none.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 210,
-      "gzip": 124,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/offset/silhouette.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 317
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/offset/silhouette.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 201,
-      "gzip": 125,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/offset/wiggle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 743
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/offset/wiggle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 450,
-      "gzip": 199,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/appearance.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 339
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/order/appearance.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 226,
-      "gzip": 137,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/ascending.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 308
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/order/ascending.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 107,
-      "gzip": 90,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/descending.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 115
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/insideOut.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 518
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/order/insideOut.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 217,
-      "gzip": 137,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/none.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 120
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/order/none.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 86,
-      "gzip": 79,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/order/reverse.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 100
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/path.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 393
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/path.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 239,
-      "gzip": 162,
-      "brotli": 0,
-      "parent": "dist/point-_U9MxSuk.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/pie.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 2396
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/pie.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1351,
-      "gzip": 384,
-      "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/point.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 81
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/point.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 62,
-      "gzip": 52,
-      "brotli": 0,
-      "parent": "dist/point-_U9MxSuk.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/pointRadial.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 101
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/stack.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1428
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-shape/src/stack.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 831,
-      "gzip": 299,
-      "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1839
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/asterisk.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 377
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/circle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 182
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/cross.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 497
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/diamond.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 329
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/diamond2.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 249
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/plus.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 248
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/square.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 160
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/square2.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 250
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/star.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 603
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/times.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 251
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/triangle.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 273
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/triangle2.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 319
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/symbol/wye.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 734
+      "parent": "dist/d3-shape-gf8U18pS.js"
     },
     {
       "kind": "filesystem",
@@ -10126,7 +7244,7 @@
       "uncompressed": 124,
       "gzip": 74,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10141,9 +7259,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1572,
-      "gzip": 442,
+      "gzip": 440,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10174,7 +7292,7 @@
       "uncompressed": 326,
       "gzip": 142,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10191,7 +7309,7 @@
       "uncompressed": 56,
       "gzip": 41,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10208,7 +7326,7 @@
       "uncompressed": 64,
       "gzip": 44,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10223,9 +7341,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 546,
-      "gzip": 213,
+      "gzip": 212,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10240,9 +7358,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1235,
-      "gzip": 221,
+      "gzip": 219,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10257,9 +7375,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 755,
-      "gzip": 188,
+      "gzip": 187,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10276,7 +7394,7 @@
       "uncompressed": 308,
       "gzip": 114,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10291,9 +7409,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 317,
-      "gzip": 116,
+      "gzip": 115,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10310,7 +7428,7 @@
       "uncompressed": 218,
       "gzip": 104,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10327,7 +7445,7 @@
       "uncompressed": 240,
       "gzip": 101,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10342,9 +7460,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 347,
-      "gzip": 135,
+      "gzip": 134,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10359,9 +7477,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 311,
-      "gzip": 140,
+      "gzip": 139,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10376,9 +7494,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 629,
-      "gzip": 217,
+      "gzip": 216,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10395,7 +7513,7 @@
       "uncompressed": 120,
       "gzip": 71,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10412,7 +7530,7 @@
       "uncompressed": 387,
       "gzip": 152,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10429,7 +7547,7 @@
       "uncompressed": 446,
       "gzip": 176,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10444,9 +7562,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 210,
-      "gzip": 99,
+      "gzip": 98,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10461,9 +7579,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1908,
-      "gzip": 464,
+      "gzip": 463,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10478,9 +7596,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 421,
-      "gzip": 164,
+      "gzip": 163,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10497,7 +7615,7 @@
       "uncompressed": 414,
       "gzip": 165,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10512,9 +7630,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 96,
-      "gzip": 65,
+      "gzip": 64,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10529,9 +7647,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1204,
-      "gzip": 289,
+      "gzip": 290,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10546,9 +7664,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 505,
-      "gzip": 169,
+      "gzip": 168,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10563,9 +7681,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 274,
-      "gzip": 101,
+      "gzip": 100,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10580,9 +7698,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 444,
-      "gzip": 150,
+      "gzip": 149,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10599,7 +7717,7 @@
       "uncompressed": 350,
       "gzip": 142,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
@@ -10614,101 +7732,26 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 991,
-      "gzip": 296,
+      "gzip": 295,
       "brotli": 0,
-      "parent": "dist/src-DAMkWOaT.js"
+      "parent": "dist/src-YHHReglY.js"
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/constant.js",
+      "name": "node_modules/d3-zoom/dist/d3-zoom.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 29
+      "uncompressed": 17634
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-zoom/src/constant.js",
+      "name": "node_modules/d3-zoom/dist/d3-zoom.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 24,
-      "gzip": 29,
+      "uncompressed": 10994,
+      "gzip": 2811,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/event.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 443
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-zoom/src/event.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 359,
-      "gzip": 133,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/index.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 154
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/noevent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 175
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-zoom/src/noevent.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 116,
-      "gzip": 68,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/transform.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1395
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-zoom/src/transform.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 1131,
-      "gzip": 309,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
-    },
-    {
-      "kind": "filesystem",
-      "name": "node_modules/d3-zoom/src/zoom.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 15672
-    },
-    {
-      "kind": "chunk",
-      "name": "node_modules/d3-zoom/src/zoom.js",
-      "type": "script",
-      "format": "esm",
-      "uncompressed": 9369,
-      "gzip": 2193,
-      "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -10730,9 +7773,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 768,
-      "gzip": 229,
+      "gzip": 246,
       "brotli": 0,
-      "parent": "dist/linear-CNetDix0.js"
+      "parent": "dist/d3-scale-BYykLEPO.js"
     },
     {
       "kind": "filesystem",
@@ -12706,10 +9749,10 @@
       "name": "node_modules/stylis/src/Enum.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 127,
-      "gzip": 76,
+      "uncompressed": 89,
+      "gzip": 67,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -12723,10 +9766,10 @@
       "name": "node_modules/stylis/src/Middleware.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 219,
-      "gzip": 107,
+      "uncompressed": 142,
+      "gzip": 93,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -12740,10 +9783,10 @@
       "name": "node_modules/stylis/src/Parser.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2198,
-      "gzip": 681,
+      "uncompressed": 2209,
+      "gzip": 752,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -12764,10 +9807,10 @@
       "name": "node_modules/stylis/src/Serializer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 450,
-      "gzip": 179,
+      "uncompressed": 453,
+      "gzip": 197,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -12781,10 +9824,10 @@
       "name": "node_modules/stylis/src/Tokenizer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1741,
-      "gzip": 491,
+      "uncompressed": 1627,
+      "gzip": 511,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -12798,10 +9841,10 @@
       "name": "node_modules/stylis/src/Utility.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 618,
-      "gzip": 190,
+      "uncompressed": 378,
+      "gzip": 139,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -14293,9 +11336,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 688,
-      "gzip": 253,
+      "gzip": 277,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -14393,7 +11436,7 @@
       "name": "src/chordDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1014
+      "uncompressed": 1019
     },
     {
       "kind": "chunk",
@@ -14401,9 +11444,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 494,
-      "gzip": 221,
+      "gzip": 246,
       "brotli": 0,
-      "parent": "dist/chordDiagram-Dbu2uT_s.js"
+      "parent": "dist/chordDiagram-Cm91Tmgo.js"
     },
     {
       "kind": "filesystem",
@@ -14420,7 +11463,7 @@
       "uncompressed": 3473,
       "gzip": 1453,
       "brotli": 0,
-      "parent": "dist/erdDiagram-DKsqCN08.js"
+      "parent": "dist/erdDiagram-DmYSx8Dh.js"
     },
     {
       "kind": "filesystem",
@@ -14435,7 +11478,7 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1400,
-      "gzip": 374,
+      "gzip": 373,
       "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
@@ -14444,17 +11487,17 @@
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5386
+      "uncompressed": 7729
     },
     {
       "kind": "chunk",
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3045,
-      "gzip": 945,
+      "uncompressed": 4290,
+      "gzip": 1437,
       "brotli": 0,
-      "parent": "dist/networkDiagram-BiCPMNf8.js"
+      "parent": "dist/networkDiagram-p5z5B_vZ.js"
     },
     {
       "kind": "filesystem",
@@ -14486,9 +11529,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 3056,
-      "gzip": 1123,
+      "gzip": 1140,
       "brotli": 0,
-      "parent": "dist/sankeyDiagram-DcI-D1uh.js"
+      "parent": "dist/sankeyDiagram-Dbl1-v5p.js"
     },
     {
       "kind": "filesystem",
@@ -14503,9 +11546,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 717,
-      "gzip": 353,
+      "gzip": 359,
       "brotli": 0,
-      "parent": "dist/tanStackCharts-5HHGfe6p.js"
+      "parent": "dist/tanStackCharts-DEINbmRi.js"
     },
     {
       "kind": "filesystem",
@@ -14520,9 +11563,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1969,
-      "gzip": 886,
+      "gzip": 903,
       "brotli": 0,
-      "parent": "dist/treeDiagram-fmrYqvXl.js"
+      "parent": "dist/treeDiagram-t0oFwi1c.js"
     }
   ],
   "connections": [
@@ -14577,7 +11620,7 @@
     {
       "kind": "dynamic-import",
       "source": "node_modules/@unovis/ts/components/graph/modules/layout.js",
-      "target": "node_modules/d3-force/src/index.js",
+      "target": "node_modules/d3-force/dist/d3-force.mjs",
       "original": null
     },
     {
@@ -14624,37 +11667,37 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/chordDiagram-Dbu2uT_s.js",
+      "source": "dist/chordDiagram-Cm91Tmgo.js",
       "target": "src/chordDiagram.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-DKsqCN08.js",
+      "source": "dist/erdDiagram-DmYSx8Dh.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/networkDiagram-BiCPMNf8.js",
+      "source": "dist/networkDiagram-p5z5B_vZ.js",
       "target": "src/networkDiagram.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/sankeyDiagram-DcI-D1uh.js",
+      "source": "dist/sankeyDiagram-Dbl1-v5p.js",
       "target": "src/sankeyDiagram.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/tanStackCharts-5HHGfe6p.js",
+      "source": "dist/tanStackCharts-DEINbmRi.js",
       "target": "src/tanStackCharts.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/treeDiagram-fmrYqvXl.js",
+      "source": "dist/treeDiagram-t0oFwi1c.js",
       "target": "src/treeDiagram.ts",
       "original": null
     }
@@ -14664,66 +11707,6 @@
       "name": "@dagrejs/dagre",
       "paths": [
         "node_modules/@dagrejs/dagre"
-      ]
-    },
-    {
-      "name": "@emotion/cache",
-      "paths": [
-        "node_modules/@emotion/cache"
-      ]
-    },
-    {
-      "name": "@emotion/css",
-      "paths": [
-        "node_modules/@emotion/css"
-      ]
-    },
-    {
-      "name": "@emotion/hash",
-      "paths": [
-        "node_modules/@emotion/hash"
-      ]
-    },
-    {
-      "name": "@emotion/memoize",
-      "paths": [
-        "node_modules/@emotion/memoize"
-      ]
-    },
-    {
-      "name": "@emotion/serialize",
-      "paths": [
-        "node_modules/@emotion/serialize"
-      ]
-    },
-    {
-      "name": "@emotion/sheet",
-      "paths": [
-        "node_modules/@emotion/sheet"
-      ]
-    },
-    {
-      "name": "@emotion/unitless",
-      "paths": [
-        "node_modules/@emotion/unitless"
-      ]
-    },
-    {
-      "name": "@emotion/utils",
-      "paths": [
-        "node_modules/@emotion/utils"
-      ]
-    },
-    {
-      "name": "@emotion/weak-memoize",
-      "paths": [
-        "node_modules/@emotion/weak-memoize"
-      ]
-    },
-    {
-      "name": "@juggle/resize-observer",
-      "paths": [
-        "node_modules/@juggle/resize-observer"
       ]
     },
     {
@@ -14835,12 +11818,6 @@
       ]
     },
     {
-      "name": "d3-interpolate-path",
-      "paths": [
-        "node_modules/d3-interpolate-path"
-      ]
-    },
-    {
       "name": "d3-path",
       "paths": [
         "node_modules/d3-path"
@@ -14861,7 +11838,8 @@
     {
       "name": "d3-scale",
       "paths": [
-        "node_modules/d3-scale"
+        "node_modules/d3-scale",
+        "node_modules/@tanstack/charts/node_modules/d3-scale"
       ]
     },
     {
@@ -14979,6 +11957,19 @@
       ]
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "type": "duplicated-dependency",
+      "severity": "warning",
+      "message": "Dependency \"d3-scale\" appears to be bundled from multiple paths.",
+      "data": {
+        "name": "d3-scale",
+        "paths": [
+          "node_modules/d3-scale",
+          "node_modules/@tanstack/charts/node_modules/d3-scale"
+        ]
+      }
+    }
+  ],
   "sourcemaps": []
 }

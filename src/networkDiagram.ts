@@ -1,13 +1,15 @@
 // ── External Dependencies & Registrations
 import { select } from 'd3-selection';
 import { type D3DragEvent, drag } from 'd3-drag';
-import { type D3ZoomEvent, zoom } from 'd3-zoom';
+import { type D3ZoomEvent, zoom, zoomIdentity } from 'd3-zoom';
 import { forceCenter, forceLink, forceManyBody, forceSimulation, type Simulation, type SimulationLinkDatum, type SimulationNodeDatum } from 'd3-force';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export interface NetworkDiagramNode {
     id: string;
+    label?: string; // Shown below the node. Without one, the id is shown inside the node.
+    level?: number; // The node's depth in a hierarchy, from 0 at the top. Sets its size and colour. Without one, 1.
 }
 
 export interface NetworkDiagramLink {
@@ -22,7 +24,9 @@ export interface NetworkDiagramData {
 
 export interface NetworkDiagramOptions {
     chargeStrength?: number;
+    fitsView?: boolean; // After an auto-layout, zooms out and centres so that every node and label is in view.
     linkDistance?: number;
+    onNodeClick?: (node: NetworkDiagramNode) => void;
 }
 
 export interface NetworkDiagramHandle {
@@ -39,19 +43,27 @@ const DEFAULT_LINK_DISTANCE = 100;
 const DEFAULT_WIDTH = 640;
 const DEFAULT_HEIGHT = 480;
 const AUTO_LAYOUT_TICKS = 180;
-const NODE_RADIUS = 20;
-const NODE_RADIUS_ACTIVE = 22;
+const DEFAULT_LEVEL = 1; // A node with no level looks as every node did before levels were added.
+const NODE_RADIUS_ACTIVE_GROWTH = 2;
+const NODE_LABEL_GAP = 14; // From the bottom of a node to the baseline of the label below it.
+const FIT_PADDING = 70; // Room around the outermost nodes for their labels, which are wider than the nodes.
+const MINIMUM_SCALE = 0.25;
+const MAXIMUM_SCALE = 4;
 
 const COLOR = {
     linkStroke: '#9ca3af',
-    nodeFill: '#2563eb',
-    nodeFillHovered: '#3b82f6',
     nodeFillSelected: '#f59e0b',
-    nodeStroke: '#1e40af',
-    nodeStrokeHovered: '#1d4ed8',
     nodeStrokeSelected: '#b45309',
     nodeText: '#ffffff'
 };
+
+// One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
+const LEVEL_STYLES = [
+    { fill: '#475569', fillHovered: '#64748b', radius: 26, stroke: '#1e293b', strokeHovered: '#334155' },
+    { fill: '#2563eb', fillHovered: '#3b82f6', radius: 20, stroke: '#1e40af', strokeHovered: '#1d4ed8' },
+    { fill: '#0d9488', fillHovered: '#14b8a6', radius: 14, stroke: '#115e59', strokeHovered: '#0f766e' },
+    { fill: '#7c3aed', fillHovered: '#8b5cf6', radius: 10, stroke: '#5b21b6', strokeHovered: '#6d28d9' }
+] as const;
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -94,12 +106,19 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     const link = viewport.selectAll<SVGLineElement, LaidOutLink>('line').data(links).join('line').attr('stroke', COLOR.linkStroke).attr('stroke-width', 2);
 
     const node = viewport.selectAll<SVGGElement, LaidOutNode>('g').data(nodes).join('g').style('cursor', 'pointer');
-    node.append('circle').attr('r', NODE_RADIUS).attr('fill', COLOR.nodeFill).attr('stroke', COLOR.nodeStroke).attr('stroke-width', 2);
+    node.append('circle')
+        .attr('r', (laidOutNode) => getLevelStyle(laidOutNode).radius)
+        .attr('fill', (laidOutNode) => getLevelStyle(laidOutNode).fill)
+        .attr('stroke', (laidOutNode) => getLevelStyle(laidOutNode).stroke)
+        .attr('stroke-width', 2);
+    // A label is usually wider than its node, so it goes below the node in the page's text colour, which follows the
+    // light or dark theme. An id is short, so it stays inside the node.
     node.append('text')
-        .text((laidOutNode) => laidOutNode.id)
+        .text((laidOutNode) => laidOutNode.label ?? laidOutNode.id)
         .attr('text-anchor', 'middle')
-        .attr('dy', 4)
-        .attr('fill', COLOR.nodeText); // explicit - iOS Safari can default to transparent
+        .attr('dy', (laidOutNode) => (laidOutNode.label == null ? 4 : getLevelStyle(laidOutNode).radius + NODE_LABEL_GAP))
+        .attr('font-size', (laidOutNode) => (laidOutNode.label == null ? null : 12))
+        .attr('fill', (laidOutNode) => (laidOutNode.label == null ? COLOR.nodeText : 'currentColor')); // Explicit, because iOS Safari can default to transparent.
 
     let selectedNodeId: string | null = null;
     let hoveredNodeId: string | null = null;
@@ -108,14 +127,17 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         node.selectAll<SVGCircleElement, LaidOutNode>('circle')
             .attr('fill', (laidOutNode) => {
                 if (laidOutNode.id === selectedNodeId) return COLOR.nodeFillSelected;
-                return laidOutNode.id === hoveredNodeId ? COLOR.nodeFillHovered : COLOR.nodeFill;
+                return laidOutNode.id === hoveredNodeId ? getLevelStyle(laidOutNode).fillHovered : getLevelStyle(laidOutNode).fill;
             })
             .attr('stroke', (laidOutNode) => {
                 if (laidOutNode.id === selectedNodeId) return COLOR.nodeStrokeSelected;
-                return laidOutNode.id === hoveredNodeId ? COLOR.nodeStrokeHovered : COLOR.nodeStroke;
+                return laidOutNode.id === hoveredNodeId ? getLevelStyle(laidOutNode).strokeHovered : getLevelStyle(laidOutNode).stroke;
             })
             .attr('stroke-width', (laidOutNode) => (laidOutNode.id === selectedNodeId ? 3 : 2))
-            .attr('r', (laidOutNode) => (laidOutNode.id === selectedNodeId || laidOutNode.id === hoveredNodeId ? NODE_RADIUS_ACTIVE : NODE_RADIUS));
+            .attr('r', (laidOutNode) => {
+                const isActive = laidOutNode.id === selectedNodeId || laidOutNode.id === hoveredNodeId;
+                return getLevelStyle(laidOutNode).radius + (isActive ? NODE_RADIUS_ACTIVE_GROWTH : 0);
+            });
     };
 
     node.on('mouseenter', (_event, laidOutNode) => {
@@ -130,6 +152,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             event.stopPropagation();
             selectedNodeId = selectedNodeId === laidOutNode.id ? null : laidOutNode.id;
             updateNodeStyles();
+            options.onNodeClick?.(assertDefined(data.nodes.find((dataNode) => dataNode.id === laidOutNode.id))); // The caller's own node, without the layout's positions.
         });
 
     svgSelection.on('click', () => {
@@ -138,7 +161,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     });
 
     const zoomBehavior = zoom<SVGSVGElement, unknown>()
-        .scaleExtent([0.5, 4])
+        .scaleExtent([MINIMUM_SCALE, MAXIMUM_SCALE])
         .on('zoom', (event: D3ZoomEvent<SVGSVGElement, unknown>) => {
             viewport.attr('transform', event.transform.toString());
         });
@@ -155,6 +178,24 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('x2', (laidOutLink) => getNodePosition(laidOutLink.target, 'x'))
             .attr('y2', (laidOutLink) => getNodePosition(laidOutLink.target, 'y'));
         node.attr('transform', (laidOutNode) => `translate(${String(laidOutNode.x ?? 0)},${String(laidOutNode.y ?? 0)})`);
+    };
+
+    // Never zooms in past full size, so a small graph is centred rather than enlarged.
+    const fitView = (): void => {
+        if (nodes.length === 0) return;
+        const xPositions = nodes.map((laidOutNode) => laidOutNode.x ?? 0);
+        const yPositions = nodes.map((laidOutNode) => laidOutNode.y ?? 0);
+        const [left, right, top, bottom] = [Math.min(...xPositions), Math.max(...xPositions), Math.min(...yPositions), Math.max(...yPositions)];
+        const viewWidth = renderTo.clientWidth || DEFAULT_WIDTH;
+        const viewHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
+        const scale = Math.max(MINIMUM_SCALE, Math.min(1, viewWidth / (right - left + FIT_PADDING * 2), viewHeight / (bottom - top + FIT_PADDING * 2)));
+        const transform = zoomIdentity
+            .translate(viewWidth / 2, viewHeight / 2)
+            .scale(scale)
+            .translate(-(left + right) / 2, -(top + bottom) / 2);
+        svgSelection.call((selection) => {
+            zoomBehavior.transform(selection, transform);
+        });
     };
 
     // Keep force simulation idle by default; run it only on explicit request.
@@ -207,6 +248,19 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             for (let step = 0; step < AUTO_LAYOUT_TICKS; step += 1) simulation.tick();
             simulation.stop();
             renderGraph();
+            if (options.fitsView === true) fitView();
         }
     };
+}
+
+// ── Helpers ──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+function getLevelStyle(node: NetworkDiagramNode): (typeof LEVEL_STYLES)[number] {
+    const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
+    return assertDefined(LEVEL_STYLES[level]);
+}
+
+function assertDefined<T>(value: T | undefined): T {
+    if (value === undefined) throw new Error('Expected a value in the network diagram.');
+    return value;
 }

@@ -58,7 +58,7 @@ export function renderChordDiagram(data: ChordDiagramData, renderTo: HTMLElement
 
     return {
         resize: () => {
-            container.render();
+            void container.render();
         },
         get svg() {
             return container.element;

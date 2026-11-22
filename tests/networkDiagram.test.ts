@@ -66,4 +66,61 @@ describe('D3Tool.renderNetworkDiagram', () => {
 
         expect(renderTo.querySelectorAll('svg')).toHaveLength(0);
     });
+
+    it('shows a node’s label in place of its id, and sizes each node by its level', async () => {
+        const renderTo = document.createElement('div');
+        const levelData: NetworkDiagramData = {
+            links: [{ source: 'context', target: 'hr' }],
+            nodes: [
+                { id: 'context', label: 'Context', level: 0 },
+                { id: 'hr', label: 'Human Resource', level: 1 }
+            ]
+        };
+
+        const view = await new D3Tool().renderNetworkDiagram(levelData, renderTo);
+
+        expect(Array.from(view.svg.querySelectorAll('text'), (node) => node.textContent)).toEqual(['Context', 'Human Resource']);
+        const radii = Array.from(view.svg.querySelectorAll('circle'), (circle) => Number(circle.getAttribute('r')));
+        expect(radii[0]).toBeGreaterThan(radii[1] ?? 0);
+    });
+
+    it('draws a node with no level as it draws a level 1 node', async () => {
+        const renderTo = document.createElement('div');
+        const mixedData: NetworkDiagramData = { links: [], nodes: [{ id: 'A' }, { id: 'B', level: 1 }] };
+
+        const view = await new D3Tool().renderNetworkDiagram(mixedData, renderTo);
+
+        const [first, second] = [...view.svg.querySelectorAll('circle')];
+        expect(first?.getAttribute('r')).toBe(second?.getAttribute('r'));
+        expect(first?.getAttribute('fill')).toBe(second?.getAttribute('fill'));
+    });
+
+    it('passes the clicked node, as the caller gave it, to onNodeClick', async () => {
+        const renderTo = document.createElement('div');
+        const clickedNodes: unknown[] = [];
+
+        const view = await new D3Tool().renderNetworkDiagram(data, renderTo, {
+            onNodeClick: (node) => {
+                clickedNodes.push(node);
+            }
+        });
+        view.svg.querySelectorAll('circle')[1]?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+
+        expect(clickedNodes).toStrictEqual([{ id: 'B' }]);
+    });
+
+    it('zooms out after an auto-layout to bring every node into view, only when asked to', async () => {
+        const starData: NetworkDiagramData = {
+            links: Array.from({ length: 30 }, (_value, index) => ({ source: 'hub', target: `node${String(index)}` })),
+            nodes: [{ id: 'hub' }, ...Array.from({ length: 30 }, (_value, index) => ({ id: `node${String(index)}` }))]
+        };
+        const fitted = await new D3Tool().renderNetworkDiagram(starData, document.createElement('div'), { fitsView: true });
+        const unfitted = await new D3Tool().renderNetworkDiagram(starData, document.createElement('div'));
+
+        fitted.triggerAutoLayout();
+        unfitted.triggerAutoLayout();
+
+        expect(fitted.svg.querySelector('g')?.getAttribute('transform')).toContain('scale(');
+        expect(unfitted.svg.querySelector('g')?.getAttribute('transform')).toBeNull();
+    });
 });
