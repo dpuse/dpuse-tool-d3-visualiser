@@ -62,7 +62,8 @@ const LEVEL_STYLES = [
     { fill: '#475569', fillHovered: '#64748b', radius: 26, stroke: '#1e293b', strokeHovered: '#334155' },
     { fill: '#2563eb', fillHovered: '#3b82f6', radius: 20, stroke: '#1e40af', strokeHovered: '#1d4ed8' },
     { fill: '#0d9488', fillHovered: '#14b8a6', radius: 14, stroke: '#115e59', strokeHovered: '#0f766e' },
-    { fill: '#7c3aed', fillHovered: '#8b5cf6', radius: 10, stroke: '#5b21b6', strokeHovered: '#6d28d9' }
+    { fill: '#7c3aed', fillHovered: '#8b5cf6', radius: 10, stroke: '#5b21b6', strokeHovered: '#6d28d9' },
+    { fill: '#db2777', fillHovered: '#ec4899', radius: 8, stroke: '#9d174d', strokeHovered: '#be185d' }
 ] as const;
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
