@@ -243,6 +243,25 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(readAnchor(hubElement) === 'middle').toBe(layoutIsSideways);
         });
 
+        it('lengthens the links round a node far enough for the node’s own label to fit inside the ring', async () => {
+            const hubLabel = 'Telecommunications'; // One long word, so it cannot wrap.
+            const hubData: NetworkDiagramData = {
+                links: ['a', 'b', 'c'].map((leafId) => ({ source: 'hub', target: leafId })),
+                nodes: [{ id: 'hub', label: hubLabel }, { id: 'a' }, { id: 'b' }, { id: 'c' }]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(hubData, document.createElement('div'), {
+                chargeStrength: 0,
+                labelPlacementId: 'outside',
+                linkDistance: 30,
+                reservesLabelRoom: true
+            });
+            view.triggerAutoLayout();
+
+            const line = view.svg.querySelector('line');
+            const linkLength = Math.hypot(Number(line?.getAttribute('x2')) - Number(line?.getAttribute('x1')), Number(line?.getAttribute('y2')) - Number(line?.getAttribute('y1')));
+            expect(linkLength).toBeGreaterThan(hubLabel.length * 6);
+        });
+
         it('moves a label on a diagonal further from its node than one straight out to the side', async () => {
             // Leaves round a hub, so some labels point straight out sideways and others on a diagonal.
             const view = await new D3Tool().renderNetworkDiagram(constructStarData(12), document.createElement('div'), { labelPlacementId: 'outside', reservesLabelRoom: true });

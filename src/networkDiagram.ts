@@ -77,7 +77,8 @@ const LABEL_CHARACTER_WIDTH = 6.2; // An average, used to estimate a label's wid
 const LABEL_HALO_WIDTH = 4;
 const LABEL_OUTSIDE_GAP = 8; // From the edge of a node to a label beside it.
 const LABEL_SIDE_THRESHOLD = 0.35; // How far sideways a label's direction must lean before the label goes to the side of its node, not above or below.
-const LABEL_WRAP_LENGTH = 14; // A label this long or shorter stays on one line.
+const LABEL_WEDGE_ANGLE = Math.PI * 0.75; // A gap between two links narrower than this is a wedge a label could cross the sides of.
+const LABEL_WRAP_LENGTH = 10; // A label this long or shorter stays on one line.
 const LABEL_ARC_RATIO = 0.6; // The share of a label's width counted as room round a ring, because only the labels above and below a node lie along the ring.
 const NODE_ARC_GAP = 16; // The clear space kept between two neighbours round a ring.
 const NODE_COLLISION_GAP = 10;
@@ -146,18 +147,26 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     let nodeSelection: Selection<SVGGElement, LaidOutNode, SVGGElement, unknown> = nodeLayer.selectAll<SVGGElement, LaidOutNode>('g');
 
     // The radius of the ring a node's neighbours sit on, when room is kept for labels: long enough round for every
-    // neighbour and its label. 0 for a node with too few neighbours to crowd one another.
+    // neighbour and its label, and wide enough for the node's own label to fit between the node and the ring, because
+    // that label points out into a gap between the links. 0 for a node with too few neighbours to crowd one another.
     const constructRingRadius = (nodeId: string, nodesById: Map<string, LaidOutNode>): number => {
         const neighbourIds = neighbourIdsById.get(nodeId) ?? [];
         if (neighbourIds.length < RING_MINIMUM_NEIGHBOUR_COUNT) return 0;
         let arcLength = 0;
+        let widestNeighbourRadius = 0;
         for (const neighbourId of neighbourIds) {
             const neighbour = nodesById.get(neighbourId);
             if (!neighbour) continue;
             const labelArc = neighbour.label == null ? 0 : estimateLabelWidth(constructLabelLines(neighbour, options.wrapsLabels === true)) * LABEL_ARC_RATIO;
             arcLength += Math.max(getLevelStyle(neighbour).radius * 2, labelArc) + NODE_ARC_GAP;
+            widestNeighbourRadius = Math.max(widestNeighbourRadius, getLevelStyle(neighbour).radius);
         }
-        return arcLength / (Math.PI * 2);
+
+        const arcRadius = arcLength / (Math.PI * 2);
+        const node = nodesById.get(nodeId);
+        if (labelPlacementId === 'below' || node?.label == null) return arcRadius; // A label below its node does not point out towards the ring.
+        const ownLabelWidth = estimateLabelWidth(constructLabelLines(node, options.wrapsLabels === true));
+        return Math.max(arcRadius, getLevelStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
     };
 
     // A link is as long as asked for, or as long as the ring at either of its ends needs, whichever is longer.
@@ -209,8 +218,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         nodeSelection.each((node, index, elements) => {
             if (node.label == null) return; // An id stays in the middle of its node, where it was drawn.
             const neighbours = (neighbourIdsById.get(node.id) ?? []).map((neighbourId) => nodesById.get(neighbourId)).filter((neighbour) => neighbour !== undefined);
-            const lineCount = constructLabelLines(node, options.wrapsLabels === true).length;
-            const placement = constructLabelPlacement(node, neighbours, labelPlacementId, lineCount);
+            const placement = constructLabelPlacement(node, neighbours, labelPlacementId, constructLabelLines(node, options.wrapsLabels === true));
             const text = select(assertDefined(elements[index])).select<SVGTextElement>('text').attr('text-anchor', placement.anchor).attr('y', placement.y);
             text.selectAll<SVGTSpanElement, string>('tspan').attr('x', placement.x);
         });
@@ -449,12 +457,14 @@ function estimateLabelWidth(lines: string[]): number {
 // Where a label goes relative to the middle of its node. 'outside' points the label into the widest gap between the
 // node's links, where it is least likely to cross one. For a node with one link that is the side facing away from its
 // neighbour, so the labels of a star fan outwards. The label goes to the left or right when that direction leans
-// sideways, otherwise above or below. A node with no links has no such direction, so its label goes below.
+// sideways, otherwise above or below. A node with no links has no such direction, so its label goes below. A node
+// whose widest gap is a narrow wedge between two links has its label centred further out along the middle of the
+// wedge, where the wedge is wide enough to hold it.
 function constructLabelPlacement(
     node: LaidOutNode,
     neighbours: LaidOutNode[],
     labelPlacementId: NetworkDiagramLabelPlacementId,
-    lineCount: number
+    lines: string[]
 ): { anchor: 'end' | 'middle' | 'start'; x: number; y: number } {
     const { radius } = getLevelStyle(node);
     const below = { anchor: 'middle' as const, x: 0, y: radius + NODE_LABEL_GAP };
@@ -474,12 +484,26 @@ function constructLabelPlacement(
 
     const directionX = Math.cos(labelAngle);
     const directionY = Math.sin(labelAngle);
-    const extraLinesHeight = (lineCount - 1) * LABEL_LINE_HEIGHT;
+    const extraLinesHeight = (lines.length - 1) * LABEL_LINE_HEIGHT;
+
+    // In a wedge, the label is as near the node as it can be without either link crossing it, but never further out
+    // than its own width, because a wedge among many links never gets wide enough.
+    if (widestGap < LABEL_WEDGE_ANGLE) {
+        const labelWidth = estimateLabelWidth(lines);
+        const labelHeight = lines.length * LABEL_LINE_HEIGHT;
+        const halfAlong = (Math.abs(directionX) * labelWidth + Math.abs(directionY) * labelHeight) / 2; // Half the label's extent along the wedge.
+        const halfAcross = (Math.abs(directionX) * labelHeight + Math.abs(directionY) * labelWidth) / 2; // Half its extent across the wedge.
+        const nearestDistance = radius + LABEL_OUTSIDE_GAP + halfAlong;
+        const clearDistance = halfAcross / Math.tan(widestGap / 2) + halfAlong;
+        const distance = Math.min(Math.max(nearestDistance, clearDistance), nearestDistance + labelWidth);
+        return { anchor: 'middle', x: directionX * distance, y: directionY * distance + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
+    }
+
     if (Math.abs(directionX) < LABEL_SIDE_THRESHOLD) return directionY > 0 ? below : { anchor: 'middle', x: 0, y: -(radius + LABEL_OUTSIDE_GAP) - extraLinesHeight };
 
     // Beside the node, with the label's lines centred on the height its direction points to. A label on a diagonal is
     // moved further out by the part of its height that would otherwise reach back over the node.
-    const offset = radius + LABEL_OUTSIDE_GAP + (Math.abs(directionY) * lineCount * LABEL_LINE_HEIGHT) / 2;
+    const offset = radius + LABEL_OUTSIDE_GAP + (Math.abs(directionY) * lines.length * LABEL_LINE_HEIGHT) / 2;
     return { anchor: directionX > 0 ? 'start' : 'end', x: directionX * offset, y: directionY * offset + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
 }
 

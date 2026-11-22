@@ -1,5 +1,5 @@
 {
-  "version": "1.0.124",
+  "version": "1.0.125",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -15,8 +15,8 @@
       }
     },
     "@dpuse/dpuse-development": {
-      "version": "1.1.104",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-1.1.104.tgz",
+      "version": "1.1.105",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-development/-/dpuse-development-1.1.105.tgz",
       "overridden": false,
       "dependencies": {
         "@cyclonedx/cyclonedx-npm": {
