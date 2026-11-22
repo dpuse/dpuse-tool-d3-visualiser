@@ -16,7 +16,7 @@ import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 export type { BarChartData, BarChartSeries } from '@/tanStackCharts';
 export type { ChordDiagramData, ChordDiagramLink, ChordDiagramNode, ChordDiagramOptions } from '@/chordDiagram';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
-export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
+export type { NetworkDiagramData, NetworkDiagramLabelPlacementId, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from '@/sankeyDiagram';
 export type { TreeDiagramNode, TreeDiagramNodeRoleId, TreeDiagramOptions } from '@/treeDiagram';
 
@@ -27,6 +27,7 @@ export interface D3View extends PresentationView {
 export interface D3NetworkView extends D3View {
     destroy: () => void;
     triggerAutoLayout: () => void;
+    update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place, moving and fading what differs.
 }
 
 export interface D3TanStackChartsView extends D3View {
@@ -95,6 +96,7 @@ export class Tool {
                 return handle.svg;
             },
             triggerAutoLayout: handle.triggerAutoLayout,
+            update: handle.update,
             vendorId: D3_ID
         };
     }

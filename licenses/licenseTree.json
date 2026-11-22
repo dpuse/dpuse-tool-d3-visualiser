@@ -1,5 +1,5 @@
 {
-  "version": "1.0.121",
+  "version": "1.0.122",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -137,7 +137,7 @@
           }
         },
         "@dpuse/dpuse-shared": {
-          "version": "1.0.251"
+          "version": "1.0.252"
         },
         "npm-check-updates": {
           "version": "23.1.1",
@@ -213,8 +213,8 @@
       }
     },
     "@dpuse/dpuse-shared": {
-      "version": "1.0.251",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.251.tgz",
+      "version": "1.0.252",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-1.0.252.tgz",
       "overridden": false,
       "dependencies": {
         "file-type": {

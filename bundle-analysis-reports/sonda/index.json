@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-11-22T11:45:23.732Z",
+    "generatedAt": "2026-11-22T13:56:30.331Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -21,7 +21,7 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 191,
+      "uncompressed": 194,
       "gzip": 58,
       "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
@@ -91,10 +91,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2715,
-      "gzip": 327,
+      "uncompressed": 3059,
+      "gzip": 347,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "chunk",
@@ -200,8 +200,8 @@
       "kind": "asset",
       "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
-      "uncompressed": 1591,
-      "gzip": 429,
+      "uncompressed": 1612,
+      "gzip": 439,
       "brotli": 0
     },
     {
@@ -214,10 +214,10 @@
     },
     {
       "kind": "asset",
-      "name": "dist/networkDiagram-UdFs1ySs.js",
+      "name": "dist/networkDiagram-LVvHZcSF.js",
       "type": "script",
-      "uncompressed": 36234,
-      "gzip": 10858,
+      "uncompressed": 42265,
+      "gzip": 12873,
       "brotli": 0
     },
     {
@@ -4812,10 +4812,10 @@
       "name": "node_modules/d3-drag/dist/d3-drag.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4390,
-      "gzip": 1293,
+      "uncompressed": 4394,
+      "gzip": 1333,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -4923,10 +4923,10 @@
       "name": "node_modules/d3-force/dist/d3-force.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6391,
-      "gzip": 1763,
+      "uncompressed": 7809,
+      "gzip": 2210,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6704,9 +6704,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1004,
-      "gzip": 379,
+      "gzip": 390,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6738,9 +6738,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1286,
-      "gzip": 455,
+      "gzip": 468,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6755,9 +6755,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 628,
-      "gzip": 265,
+      "gzip": 272,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6772,9 +6772,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 115,
-      "gzip": 96,
+      "gzip": 99,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6789,9 +6789,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 176,
-      "gzip": 116,
+      "gzip": 119,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6806,9 +6806,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 852,
-      "gzip": 362,
+      "gzip": 372,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6830,9 +6830,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 74,
+      "gzip": 76,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6847,9 +6847,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 957,
-      "gzip": 385,
+      "gzip": 396,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6864,9 +6864,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 922,
-      "gzip": 361,
+      "gzip": 371,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6881,9 +6881,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 36,
-      "gzip": 46,
+      "gzip": 47,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6898,9 +6898,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 103,
-      "gzip": 88,
+      "gzip": 91,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6915,9 +6915,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 449,
-      "gzip": 197,
+      "gzip": 202,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6932,9 +6932,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 516,
-      "gzip": 210,
+      "gzip": 216,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6949,9 +6949,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 81,
+      "gzip": 83,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -6966,9 +6966,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 106,
-      "gzip": 81,
+      "gzip": 83,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -7748,10 +7748,10 @@
       "name": "node_modules/d3-zoom/dist/d3-zoom.mjs",
       "type": "script",
       "format": "esm",
-      "uncompressed": 10994,
-      "gzip": 2813,
+      "uncompressed": 10999,
+      "gzip": 2872,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -11470,15 +11470,15 @@
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2035
+      "uncompressed": 2061
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1400,
-      "gzip": 371,
+      "uncompressed": 1418,
+      "gzip": 381,
       "brotli": 0,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
@@ -11487,17 +11487,17 @@
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7842
+      "uncompressed": 16485
     },
     {
       "kind": "chunk",
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4391,
-      "gzip": 1466,
+      "uncompressed": 8651,
+      "gzip": 2827,
       "brotli": 0,
-      "parent": "dist/networkDiagram-UdFs1ySs.js"
+      "parent": "dist/networkDiagram-LVvHZcSF.js"
     },
     {
       "kind": "filesystem",
@@ -11679,7 +11679,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/networkDiagram-UdFs1ySs.js",
+      "source": "dist/networkDiagram-LVvHZcSF.js",
       "target": "src/networkDiagram.ts",
       "original": null
     },
