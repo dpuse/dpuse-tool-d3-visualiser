@@ -408,6 +408,50 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(Number(iconCircle?.getAttribute('r'))).toBeGreaterThan(Number(plainCircle?.getAttribute('r')));
         });
 
+        it('draws a node in its own colour, in place of its level’s, and every ring as wide as asked', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const colourData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'store', color: 'var(--brand)', icon, label: 'Store' },
+                    { id: 'plain', color: 'var(--brand)', label: 'Plain' },
+                    { id: 'level', label: 'Level' }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(colourData, document.createElement('div'), { nodeBorderWidth: 1 });
+            const [iconCircle, plainCircle, levelCircle] = [...view.svg.querySelectorAll('circle')];
+
+            expect(iconCircle?.style.stroke).toBe('var(--brand)');
+            expect(iconCircle?.style.fill).toBe('#ffffff');
+            expect(plainCircle?.style.fill).toBe('var(--brand)');
+            expect(plainCircle?.style.stroke).toBe('var(--brand)');
+            expect(levelCircle?.style.fill).toBe('');
+            expect([iconCircle, plainCircle, levelCircle].map((circle) => circle?.getAttribute('stroke-width'))).toStrictEqual(['1', '1', '1']);
+        });
+
+        it('shows a selected node with an icon in its disc, keeping its own thin ring, when given a colour for the disc', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const selectionData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'store', color: 'var(--brand)', icon, isSelected: true, label: 'Store' },
+                    { id: 'plain', color: 'var(--brand)', isSelected: true, label: 'Plain' }
+                ]
+            };
+            const options = { nodeBorderWidth: 1, selectedIconNodeColor: 'var(--selected)', selectsOnClick: false };
+            const view = await new D3Tool().renderNetworkDiagram(selectionData, document.createElement('div'), options);
+            const [iconCircle, plainCircle] = [...view.svg.querySelectorAll('circle')];
+
+            expect(iconCircle?.style.fill).toBe('var(--selected)');
+            expect(iconCircle?.style.stroke).toBe('var(--brand)');
+            expect(iconCircle?.getAttribute('stroke-width')).toBe('1');
+
+            // A node without an icon has no disc, so it shows as selected in its fill and a wider ring.
+            expect(plainCircle?.getAttribute('fill')).toBe('#f59e0b');
+            expect(plainCircle?.style.fill).toBe('');
+            expect(plainCircle?.getAttribute('stroke-width')).toBe('2');
+        });
+
         it('shows the caller’s selected node, and selects nothing on a click, when the caller keeps the selection', async () => {
             const selectionData: NetworkDiagramData = {
                 links: [{ source: 'a', target: 'b' }],

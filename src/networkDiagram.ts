@@ -8,6 +8,7 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
+    color?: string; // The node's colour, in place of its level's: its ring when it has an icon, or else the whole node. Any CSS colour.
     icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. It must declare 'xmlns', because it is shown as an image.
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
     isSelected?: boolean; // Draws the node as the selected one, when the caller keeps the selection ('selectsOnClick' is false).
@@ -34,8 +35,10 @@ export interface NetworkDiagramOptions {
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkDistance?: number;
+    nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
+    selectedIconNodeColor?: string; // The disc behind the icon of the selected node, which then keeps its own ring. Any CSS colour. Without one, a selected node with an icon shows in its ring, as any other does.
     selectsOnClick?: boolean; // A click marks its node as selected, and a second click clears it. Without one, true. False leaves the selection to the caller, who marks nodes with 'isSelected'.
     transitionDuration?: number; // How long an update takes to move and fade, in milliseconds. Without one, 400. 0 changes at once.
     wrapsLabels?: boolean; // Breaks a long label of several words onto two lines, so it takes less room sideways.
@@ -65,6 +68,7 @@ interface Point {
 
 const DEFAULT_CHARGE_STRENGTH = -300;
 const DEFAULT_LINK_DISTANCE = 100;
+const DEFAULT_NODE_BORDER_WIDTH = 2;
 const DEFAULT_TRANSITION_DURATION = 400;
 const DEFAULT_WIDTH = 640;
 const DEFAULT_HEIGHT = 480;
@@ -201,22 +205,34 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     const isSelectedOnClick = options.selectsOnClick !== false;
     const isShownSelected = (node: LaidOutNode): boolean => node.isAction !== true && (isSelectedOnClick ? node.id === selectedNodeId : node.isSelected === true);
 
-    // An icon keeps its plain disc when its node is selected or hovered, so the icon stays readable, and shows either
-    // in its ring. The disc is set as a style, so a colour given as a CSS variable follows the page's theme.
+    // A selected node shows in its ring, which takes the selected colour and widens, and a node without an icon fills
+    // with that colour too. A selected node with an icon shows in its disc when the caller gives a colour for one,
+    // and then keeps its own ring, so a thin ring stays thin.
+    const nodeBorderWidth = options.nodeBorderWidth ?? DEFAULT_NODE_BORDER_WIDTH;
+    const isSelectedByDisc = (node: LaidOutNode): boolean => isShownSelected(node) && node.icon != null && options.selectedIconNodeColor != null;
+    const isSelectedByRing = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByDisc(node);
+
+    // An icon keeps a plain disc, so the icon stays readable. A colour from the caller, such as a node's own colour or
+    // the disc, is set as a style, so one given as a CSS variable follows the page's theme. The diagram's own colours
+    // are set as attributes, which a style overrides.
     const updateNodeStyles = (): void => {
         nodeSelection
             .select<SVGCircleElement>('circle')
             .attr('fill', (node) => {
                 if (node.icon != null) return null;
-                if (isShownSelected(node)) return COLOR.nodeFillSelected;
+                if (isSelectedByRing(node)) return COLOR.nodeFillSelected;
                 return node.id === hoveredNodeId ? getNodeStyle(node).fillHovered : getNodeStyle(node).fill;
             })
-            .style('fill', (node) => (node.icon == null ? null : (options.iconNodeColor ?? ICON_NODE_COLOR)))
+            .style('fill', (node) => {
+                if (node.icon != null) return (isSelectedByDisc(node) ? options.selectedIconNodeColor : options.iconNodeColor) ?? ICON_NODE_COLOR;
+                return isSelectedByRing(node) ? null : (node.color ?? null);
+            })
             .attr('stroke', (node) => {
-                if (isShownSelected(node)) return COLOR.nodeStrokeSelected;
+                if (isSelectedByRing(node)) return COLOR.nodeStrokeSelected;
                 return node.id === hoveredNodeId ? getNodeStyle(node).strokeHovered : getNodeStyle(node).stroke;
             })
-            .attr('stroke-width', (node) => (isShownSelected(node) ? 3 : 2))
+            .style('stroke', (node) => (isSelectedByRing(node) || node.isAction === true ? null : (node.color ?? null)))
+            .attr('stroke-width', (node) => (isSelectedByRing(node) ? nodeBorderWidth + 1 : nodeBorderWidth))
             .attr('r', (node) => getNodeStyle(node).radius + (isShownSelected(node) || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
     };
 
@@ -325,7 +341,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         type DragEvent = D3DragEvent<SVGGElement, LaidOutNode, LaidOutNode>;
         const enteringNodes = joinedNodes.enter().append('g').style('cursor', 'pointer');
         enteringNodes.append('title');
-        enteringNodes.append('circle').attr('stroke-width', 2);
+        enteringNodes.append('circle');
         enteringNodes.append('text');
         enteringNodes
             .on('mouseenter', (_event, node) => {
