@@ -429,9 +429,13 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(readFills()[0]).toBe('var(--selected)');
         });
 
-        it('draws the lines between nodes as wide as asked, or 2 wide', async () => {
-            const thin = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'), { linkWidth: 1.5 });
+        it('draws the lines between nodes in the colour and width asked for, or mid grey and 2 wide', async () => {
+            const thin = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'), { linkColor: 'var(--line)', linkWidth: 1.5 });
             const plain = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'));
+
+            expect(thin.svg.querySelector('line')?.style.stroke).toBe('var(--line)');
+            expect(plain.svg.querySelector('line')?.style.stroke).toBe('');
+            expect(plain.svg.querySelector('line')?.getAttribute('stroke')).toBe('#9ca3af');
 
             expect(thin.svg.querySelector('line')?.getAttribute('stroke-width')).toBe('1.5');
             expect(plain.svg.querySelector('line')?.getAttribute('stroke-width')).toBe('2');

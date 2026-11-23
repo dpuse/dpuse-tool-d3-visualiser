@@ -38,6 +38,7 @@ export interface NetworkDiagramOptions {
     iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
+    linkColor?: string; // The colour of the lines between nodes. Any CSS colour. Without one, a mid grey.
     linkDistance?: number;
     linkWidth?: number; // The width of the lines between nodes. Without one, 2.
     nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
@@ -377,6 +378,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .enter()
             .append('line')
             .attr('stroke', COLOR.linkStroke)
+            .style('stroke', () => options.linkColor ?? null) // A style, so a colour given as a CSS variable follows the page's theme.
             .attr('stroke-width', options.linkWidth ?? DEFAULT_LINK_WIDTH)
             .merge(joinedLinks);
 
