@@ -345,7 +345,7 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const view = await new D3Tool().renderNetworkDiagram(symbolData, document.createElement('div'));
 
             const [symbolElement, plainElement] = [...view.svg.querySelectorAll('circle')].map((circle) => circle.parentElement);
-            expect(symbolElement?.querySelector('path.symbol')?.getAttribute('d')).toBe('M-6,0H6M0,-6V6'); // As far left as right, and as far up as down, of the node's centre.
+            expect(symbolElement?.querySelector('path.symbol')?.getAttribute('d')).toBe('M-5.83,0H5.83M0,-5.83V5.83'); // As far left as right, and as far up as down, of the node's centre.
             expect(symbolElement?.querySelector('text.symbol')).toBeNull();
             expect(symbolElement?.querySelector('text')?.textContent).toBe('');
             expect(symbolElement?.querySelector('title')?.textContent).toBe('Add');
@@ -383,6 +383,54 @@ describe('D3Tool.renderNetworkDiagram', () => {
 
             itemCircle?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
             expect(itemCircle?.getAttribute('fill')).toBe('#f59e0b');
+        });
+
+        it('keeps the selected node and the one under the pointer their own size, and shows the pointer in the disc, when asked to', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const sizeData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'selected', icon, isSelected: true, label: 'Selected' },
+                    { id: 'other', icon, label: 'Other' }
+                ]
+            };
+            const options = { growsActiveNodes: false, hoveredIconNodeColor: 'var(--hover)', selectedIconNodeColor: 'var(--selected)', selectsOnClick: false };
+            const view = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), options);
+            const [selectedCircle, otherCircle] = [...view.svg.querySelectorAll('circle')];
+
+            expect(selectedCircle?.getAttribute('r')).toBe(otherCircle?.getAttribute('r'));
+
+            otherCircle?.parentElement?.dispatchEvent(new MouseEvent('mouseenter'));
+            expect(otherCircle?.getAttribute('r')).toBe(selectedCircle?.getAttribute('r'));
+            expect(otherCircle?.style.fill).toBe('var(--hover)');
+
+            otherCircle?.parentElement?.dispatchEvent(new MouseEvent('mouseleave'));
+            expect(otherCircle?.style.fill).toBe('#ffffff');
+        });
+
+        it('draws the lines between nodes as wide as asked, or 2 wide', async () => {
+            const thin = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'), { linkWidth: 1.5 });
+            const plain = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'));
+
+            expect(thin.svg.querySelector('line')?.getAttribute('stroke-width')).toBe('1.5');
+            expect(plain.svg.querySelector('line')?.getAttribute('stroke-width')).toBe('2');
+        });
+
+        it('draws an action node in the caller’s colours, with a plus the size and weight of a 20px icon’s', async () => {
+            const actionData: NetworkDiagramData = { links: [], nodes: [{ id: 'add', isAction: true, symbol: '+' }] };
+            const actionNodeColors = { border: 'var(--border)', fill: 'var(--fill)', fillHovered: 'var(--hover)', symbol: 'var(--text)' };
+            const view = await new D3Tool().renderNetworkDiagram(actionData, document.createElement('div'), { actionNodeColors, nodeBorderWidth: 1 });
+            const circle = view.svg.querySelector('circle');
+            const plus = view.svg.querySelector<SVGPathElement>('path.symbol');
+
+            expect(circle?.style.fill).toBe('var(--fill)');
+            expect(circle?.style.stroke).toBe('var(--border)');
+            expect(circle?.getAttribute('stroke-width')).toBe('1');
+            expect(plus?.style.stroke).toBe('var(--text)');
+            expect(plus?.getAttribute('stroke-width')).toBe('1.04');
+
+            circle?.parentElement?.dispatchEvent(new MouseEvent('mouseenter'));
+            expect(circle?.style.fill).toBe('var(--hover)');
         });
 
         it('draws a node’s icon as an image on a plain disc, large enough to make out, ringed in its level’s colour', async () => {

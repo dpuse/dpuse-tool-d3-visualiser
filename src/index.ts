@@ -16,7 +16,8 @@ import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 export type { BarChartData, BarChartSeries } from '@/tanStackCharts';
 export type { ChordDiagramData, ChordDiagramLink, ChordDiagramNode, ChordDiagramOptions } from '@/chordDiagram';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
-export type { NetworkDiagramData, NetworkDiagramLabelPlacementId, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
+export type { NetworkDiagramActionNodeColors, NetworkDiagramData, NetworkDiagramLabelPlacementId } from '@/networkDiagram';
+export type { NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from '@/sankeyDiagram';
 export type { TreeDiagramNode, TreeDiagramNodeRoleId, TreeDiagramOptions } from '@/treeDiagram';
 

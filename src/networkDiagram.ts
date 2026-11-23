@@ -29,12 +29,16 @@ export interface NetworkDiagramData {
 }
 
 export interface NetworkDiagramOptions {
+    actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
     chargeStrength?: number;
     fitsView?: boolean; // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
+    growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
+    hoveredIconNodeColor?: string; // The disc behind the icon of the node under the pointer. Any CSS colour. Without one, the disc does not change.
     iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkDistance?: number;
+    linkWidth?: number; // The width of the lines between nodes. Without one, 2.
     nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
@@ -42,6 +46,14 @@ export interface NetworkDiagramOptions {
     selectsOnClick?: boolean; // A click marks its node as selected, and a second click clears it. Without one, true. False leaves the selection to the caller, who marks nodes with 'isSelected'.
     transitionDuration?: number; // How long an update takes to move and fade, in milliseconds. Without one, 400. 0 changes at once.
     wrapsLabels?: boolean; // Breaks a long label of several words onto two lines, so it takes less room sideways.
+}
+
+// The colours of an action node. Any CSS colours.
+export interface NetworkDiagramActionNodeColors {
+    border: string;
+    fill: string;
+    fillHovered?: string; // Without one, the fill does not change under the pointer.
+    symbol: string;
 }
 
 // 'below' centres every label under its node. 'outside' puts each label in the widest gap between its node's links, so
@@ -68,6 +80,7 @@ interface Point {
 
 const DEFAULT_CHARGE_STRENGTH = -300;
 const DEFAULT_LINK_DISTANCE = 100;
+const DEFAULT_LINK_WIDTH = 2;
 const DEFAULT_NODE_BORDER_WIDTH = 2;
 const DEFAULT_TRANSITION_DURATION = 400;
 const DEFAULT_WIDTH = 640;
@@ -112,8 +125,10 @@ const ICON_NODE_RADIUS = 16; // One size at every level, so the same icon is the
 const ICON_SIZE = 20;
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
-const SYMBOL_PLUS_ARM_LENGTH = 6; // From the centre of a plus to the end of each arm.
-const SYMBOL_STROKE_WIDTH = 2.5;
+// A plus is drawn as the plus of a 24-unit outline icon set is at an icon's size: arms 7 units long and a line 1.25
+// units wide. It is then the size and weight of the plus on a button beside the diagram.
+const SYMBOL_PLUS_ARM_LENGTH = Math.round(((ICON_SIZE * 7) / 24) * 100) / 100; // From the centre of a plus to the end of each arm.
+const SYMBOL_STROKE_WIDTH = Math.round(((ICON_SIZE * 1.25) / 24) * 100) / 100;
 
 // One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
 const LEVEL_STYLES = [
@@ -212,6 +227,20 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     const isSelectedByDisc = (node: LaidOutNode): boolean => isShownSelected(node) && node.icon != null && options.selectedIconNodeColor != null;
     const isSelectedByRing = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByDisc(node);
 
+    // An action node in the caller's colours, or none of them to keep the diagram's own.
+    const constructActionFill = (node: LaidOutNode): string | null => {
+        const colors = options.actionNodeColors;
+        if (colors == null) return null;
+        return node.id === hoveredNodeId ? (colors.fillHovered ?? colors.fill) : colors.fill;
+    };
+
+    // The disc behind an icon: the caller's colour for the node under the pointer, then for the selected node, or else
+    // the plain disc.
+    const constructIconDiscColor = (node: LaidOutNode): string => {
+        if (node.id === hoveredNodeId && options.hoveredIconNodeColor != null) return options.hoveredIconNodeColor;
+        return (isSelectedByDisc(node) ? options.selectedIconNodeColor : options.iconNodeColor) ?? ICON_NODE_COLOR;
+    };
+
     // An icon keeps a plain disc, so the icon stays readable. A colour from the caller, such as a node's own colour or
     // the disc, is set as a style, so one given as a CSS variable follows the page's theme. The diagram's own colours
     // are set as attributes, which a style overrides.
@@ -224,16 +253,23 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                 return node.id === hoveredNodeId ? getNodeStyle(node).fillHovered : getNodeStyle(node).fill;
             })
             .style('fill', (node) => {
-                if (node.icon != null) return (isSelectedByDisc(node) ? options.selectedIconNodeColor : options.iconNodeColor) ?? ICON_NODE_COLOR;
+                if (node.isAction === true) return constructActionFill(node);
+                if (node.icon != null) return constructIconDiscColor(node);
                 return isSelectedByRing(node) ? null : (node.color ?? null);
             })
             .attr('stroke', (node) => {
                 if (isSelectedByRing(node)) return COLOR.nodeStrokeSelected;
                 return node.id === hoveredNodeId ? getNodeStyle(node).strokeHovered : getNodeStyle(node).stroke;
             })
-            .style('stroke', (node) => (isSelectedByRing(node) || node.isAction === true ? null : (node.color ?? null)))
+            .style('stroke', (node) => {
+                if (node.isAction === true) return options.actionNodeColors?.border ?? null;
+                return isSelectedByRing(node) ? null : (node.color ?? null);
+            })
             .attr('stroke-width', (node) => (isSelectedByRing(node) ? nodeBorderWidth + 1 : nodeBorderWidth))
-            .attr('r', (node) => getNodeStyle(node).radius + (isShownSelected(node) || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
+            .attr('r', (node) => {
+                const isActive = isShownSelected(node) || node.id === hoveredNodeId;
+                return getNodeStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
+            });
     };
 
     svgSelection.on('click', () => {
@@ -334,7 +370,12 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 
         const joinedLinks = linkSelection.data(links, constructLinkKey);
         const exitingLinks = joinedLinks.exit<LaidOutLink>();
-        linkSelection = joinedLinks.enter().append('line').attr('stroke', COLOR.linkStroke).attr('stroke-width', 2).merge(joinedLinks);
+        linkSelection = joinedLinks
+            .enter()
+            .append('line')
+            .attr('stroke', COLOR.linkStroke)
+            .attr('stroke-width', options.linkWidth ?? DEFAULT_LINK_WIDTH)
+            .merge(joinedLinks);
 
         const joinedNodes = nodeSelection.data(nodes, (node) => node.id);
         const exitingNodes = joinedNodes.exit<LaidOutNode>().style('pointer-events', 'none'); // A node on its way out takes no more clicks.
@@ -424,6 +465,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('d', (node) => constructSymbolPath(node) ?? '')
             .attr('fill', 'none')
             .attr('stroke', constructSymbolColor)
+            .style('stroke', (node) => (node.isAction === true ? (options.actionNodeColors?.symbol ?? null) : null))
             .attr('stroke-linecap', 'round')
             .attr('stroke-width', SYMBOL_STROKE_WIDTH)
             .style('pointer-events', 'none');
