@@ -8,7 +8,9 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
+    icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. It must declare 'xmlns', because it is shown as an image.
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
+    isSelected?: boolean; // Draws the node as the selected one, when the caller keeps the selection ('selectsOnClick' is false).
     label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has a symbol.
     level?: number; // The node's depth in a hierarchy, from 0 at the top. Sets its size and colour. Without one, 1.
     symbol?: string; // Drawn inside the node. '+' is drawn as a plus centred exactly. Any other is drawn as text, a character or two.
@@ -28,11 +30,13 @@ export interface NetworkDiagramData {
 export interface NetworkDiagramOptions {
     chargeStrength?: number;
     fitsView?: boolean; // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
+    iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkDistance?: number;
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
+    selectsOnClick?: boolean; // A click marks its node as selected, and a second click clears it. Without one, true. False leaves the selection to the caller, who marks nodes with 'isSelected'.
     transitionDuration?: number; // How long an update takes to move and fade, in milliseconds. Without one, 400. 0 changes at once.
     wrapsLabels?: boolean; // Breaks a long label of several words onto two lines, so it takes less room sideways.
 }
@@ -46,7 +50,7 @@ export interface NetworkDiagramHandle {
     resize: () => void;
     svg: SVGSVGElement;
     triggerAutoLayout: () => void;
-    update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place: nodes that stay move to their new places, new ones fade in and old ones fade out.
+    update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place: nodes that stay move to their new places, new ones fade in and old ones fade out. Data with the same nodes, labels and links only restyles the nodes, which stay where they are.
 }
 
 type LaidOutNode = NetworkDiagramNode & SimulationNodeDatum;
@@ -98,6 +102,10 @@ const COLOR = {
 // An action node. Pale with a strong ring and symbol, as the app's own add buttons are, so it stands apart from the
 // solid level colours.
 const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 16, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
+const ICON_CLASS_NAME = 'icon';
+const ICON_NODE_COLOR = '#ffffff';
+const ICON_NODE_MINIMUM_RADIUS = 16; // An icon in a smaller node could not be made out.
+const ICON_SIZE_RATIO = 1.2; // An icon's side as a share of its node's radius, which keeps its corners inside the disc.
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
 const SYMBOL_PLUS_ARM_LENGTH = 6; // From the centre of a plus to the end of each arm.
@@ -188,22 +196,28 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         return Math.max(linkDistance, constructRingRadius(getNodeId(link.source), nodesById), constructRingRadius(getNodeId(link.target), nodesById));
     });
 
-    // An action is something to do, so it never shows as the selected node.
-    const isShownSelected = (node: LaidOutNode): boolean => node.id === selectedNodeId && node.isAction !== true;
+    // An action is something to do, so it never shows as the selected node. The selected node is the caller's, when
+    // the caller keeps the selection, or else the last node clicked.
+    const isSelectedOnClick = options.selectsOnClick !== false;
+    const isShownSelected = (node: LaidOutNode): boolean => node.isAction !== true && (isSelectedOnClick ? node.id === selectedNodeId : node.isSelected === true);
 
+    // An icon keeps its plain disc when its node is selected or hovered, so the icon stays readable, and shows either
+    // in its ring. The disc is set as a style, so a colour given as a CSS variable follows the page's theme.
     const updateNodeStyles = (): void => {
         nodeSelection
             .select<SVGCircleElement>('circle')
             .attr('fill', (node) => {
+                if (node.icon != null) return null;
                 if (isShownSelected(node)) return COLOR.nodeFillSelected;
                 return node.id === hoveredNodeId ? getNodeStyle(node).fillHovered : getNodeStyle(node).fill;
             })
+            .style('fill', (node) => (node.icon == null ? null : (options.iconNodeColor ?? ICON_NODE_COLOR)))
             .attr('stroke', (node) => {
                 if (isShownSelected(node)) return COLOR.nodeStrokeSelected;
                 return node.id === hoveredNodeId ? getNodeStyle(node).strokeHovered : getNodeStyle(node).stroke;
             })
             .attr('stroke-width', (node) => (isShownSelected(node) ? 3 : 2))
-            .attr('r', (node) => getNodeStyle(node).radius + (node.id === selectedNodeId || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
+            .attr('r', (node) => getNodeStyle(node).radius + (isShownSelected(node) || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
     };
 
     svgSelection.on('click', () => {
@@ -324,7 +338,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             })
             .on('click', (event: MouseEvent, node) => {
                 event.stopPropagation();
-                selectedNodeId = selectedNodeId === node.id ? null : node.id;
+                if (isSelectedOnClick) selectedNodeId = selectedNodeId === node.id ? null : node.id;
                 updateNodeStyles();
                 options.onNodeClick?.(assertDefined(currentData.nodes.find((dataNode) => dataNode.id === node.id))); // The caller's own node, without the layout's positions.
             })
@@ -369,6 +383,19 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('x', 0)
             .attr('dy', (_line, lineIndex) => (lineIndex === 0 ? 0 : LABEL_LINE_HEIGHT))
             .text((line) => line);
+        // An icon is drawn as an image, which is its own document, so ids inside one icon cannot clash with another's
+        // and any script in the markup never runs. Set on nodes that stay too, because an update may change the icon.
+        nodeSelection
+            .selectAll<SVGImageElement, LaidOutNode>(`image.${ICON_CLASS_NAME}`)
+            .data((node) => (node.icon == null ? [] : [node]))
+            .join('image')
+            .attr('class', ICON_CLASS_NAME)
+            .attr('href', (node) => `data:image/svg+xml,${encodeURIComponent(node.icon ?? '')}`)
+            .attr('x', (node) => -constructIconSize(node) / 2)
+            .attr('y', (node) => -constructIconSize(node) / 2)
+            .attr('width', constructIconSize)
+            .attr('height', constructIconSize)
+            .style('pointer-events', 'none');
         // Set on nodes that stay too, because an update may change either. A symbol sits in the middle of its node, in the
         // action's own colour or else white, as an id is. A symbol the diagram knows is drawn as lines measured from
         // the node's centre, so it is centred exactly. Any other is drawn as text, which a font places only roughly.
@@ -417,6 +444,12 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                 .attr('height', newHeight)
                 .attr('viewBox', `0 0 ${String(newWidth)} ${String(newHeight)}`);
             simulation.force('center', forceCenter(newWidth / 2, newHeight / 2));
+
+            // A fitted diagram stays in the middle of its container at its new size. Left alone while a change is being
+            // drawn, because the nodes are then between places. The change fits the diagram itself when it ends.
+            if (animationFrameId !== undefined || options.fitsView !== true) return;
+            const fitTransform = constructFitTransform();
+            if (fitTransform) applyTransform(fitTransform);
         },
         svg: svgNode,
         triggerAutoLayout: () => {
@@ -427,6 +460,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             if (fitTransform) applyTransform(fitTransform);
         },
         update: (newData) => {
+            // Data that differs only in how its nodes look, such as which one is selected, changes nothing about where
+            // they are. The nodes are drawn again where they stand, and a change already being drawn carries on.
+            if (constructStructureKey(newData) === constructStructureKey(currentData)) {
+                applyData(newData);
+                if (animationFrameId === undefined) renderGraph();
+                return;
+            }
+
             cancelAnimation();
             const { enteringNodes, exitingLinks, exitingNodes } = applyData(newData);
             const startPositions = new Map(nodes.map((node) => [node.id, { x: node.x ?? 0, y: node.y ?? 0 }]));
@@ -453,6 +494,9 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                         .scale(interpolate(startTransform.k, targetTransform.k, progress))
                 );
                 if (progress < 1) return;
+                // Fitted again at the end, because the container may have been resized while the change was drawn.
+                const endTransform = options.fitsView === true ? constructFitTransform() : undefined;
+                if (endTransform) applyTransform(endTransform);
                 enteringNodes.style('opacity', null);
                 exitingNodes.remove();
                 exitingLinks.remove();
@@ -563,7 +607,18 @@ function constructSymbolColor(node: NetworkDiagramNode): string {
     return node.isAction === true ? ACTION_STYLE.symbol : COLOR.nodeText;
 }
 
+// ── Icons
+
+function constructIconSize(node: NetworkDiagramNode): number {
+    return Math.round(getNodeStyle(node).radius * ICON_SIZE_RATIO);
+}
+
 // ── Data
+
+// Everything about data that decides where its nodes go: the nodes, their labels, which take room, and the links.
+function constructStructureKey(data: NetworkDiagramData): string {
+    return JSON.stringify([data.nodes.map((node) => [node.id, node.label, node.level, node.isAction, node.icon != null]), data.links.map((link) => [link.source, link.target])]);
+}
 
 function constructNeighbourIds(data: NetworkDiagramData): Map<string, string[]> {
     const neighbourIdsById = new Map<string, string[]>();
@@ -588,11 +643,15 @@ function getNodePosition(value: LaidOutNode | string | number, axis: 'x' | 'y'):
     return typeof value === 'object' ? (value[axis] ?? 0) : 0;
 }
 
-// How a node is drawn: as an action, or else by its level.
+// How a node is drawn: as an action, or else by its level. A node with an icon is ringed in its level's colour, and
+// is never too small for the icon to be made out.
 function getNodeStyle(node: NetworkDiagramNode): { fill: string; fillHovered: string; radius: number; stroke: string; strokeHovered: string } {
     if (node.isAction === true) return ACTION_STYLE;
     const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
-    return assertDefined(LEVEL_STYLES[level]);
+    const levelStyle = assertDefined(LEVEL_STYLES[level]);
+    return node.icon == null
+        ? levelStyle
+        : { ...levelStyle, radius: Math.max(levelStyle.radius, ICON_NODE_MINIMUM_RADIUS), stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };
 }
 
 // ── Animation

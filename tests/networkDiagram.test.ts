@@ -124,6 +124,24 @@ describe('D3Tool.renderNetworkDiagram', () => {
         expect(unfitted.svg.querySelector('g')?.getAttribute('transform')).toBeNull();
     });
 
+    it('keeps a fitted diagram in the middle of its container when the container is resized, and leaves an unfitted one where it is', async () => {
+        const fittedContainer = constructSizedContainer();
+        const unfittedContainer = constructSizedContainer();
+        const fitted = await new D3Tool().renderNetworkDiagram(data, fittedContainer.element, { fitsView: true });
+        const unfitted = await new D3Tool().renderNetworkDiagram(data, unfittedContainer.element);
+        fitted.triggerAutoLayout();
+        unfitted.triggerAutoLayout();
+        const fittedStart = readTranslateX(fitted.svg.querySelector('g'));
+
+        fittedContainer.setWidth(400);
+        unfittedContainer.setWidth(400);
+        fitted.resize();
+        unfitted.resize();
+
+        expect(readTranslateX(fitted.svg.querySelector('g'))).toBeCloseTo(fittedStart - 200);
+        expect(unfitted.svg.querySelector('g')?.getAttribute('transform')).toBeNull();
+    });
+
     describe('update', () => {
         const areaData: NetworkDiagramData = {
             links: [
@@ -147,6 +165,18 @@ describe('D3Tool.renderNetworkDiagram', () => {
                 { id: 'workforce', label: 'Workforce', level: 2 }
             ]
         };
+
+        it('leaves every node where it is when new data differs only in which node is selected', async () => {
+            const view = await new D3Tool().renderNetworkDiagram(areaData, document.createElement('div'), { selectsOnClick: false, transitionDuration: 0 });
+            view.triggerAutoLayout();
+            const readTransforms = (): (string | null)[] => [...view.svg.querySelectorAll('circle')].map((circle) => circle.parentElement?.getAttribute('transform') ?? null);
+            const transforms = readTransforms();
+
+            view.update({ ...areaData, nodes: areaData.nodes.map((node) => ({ ...node, isSelected: node.id === 'hr' })) });
+
+            expect(readTransforms()).toStrictEqual(transforms);
+            expect(findNodeElement(view.svg, 'Human Resource')?.querySelector('circle')?.getAttribute('fill')).toBe('#f59e0b');
+        });
 
         it('keeps the elements of nodes that stay, adds the new nodes and removes the old ones', async () => {
             const view = await new D3Tool().renderNetworkDiagram(areaData, document.createElement('div'), { transitionDuration: 0 });
@@ -355,6 +385,49 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(itemCircle?.getAttribute('fill')).toBe('#f59e0b');
         });
 
+        it('draws a node’s icon as an image on a plain disc, large enough to make out, ringed in its level’s colour', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>';
+            const iconData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'store', icon, label: 'Store', level: 3 },
+                    { id: 'plain', label: 'Plain', level: 3 }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(iconData, document.createElement('div'), { iconNodeColor: 'var(--surface)' });
+            const [iconCircle, plainCircle] = [...view.svg.querySelectorAll('circle')];
+            const images = [...view.svg.querySelectorAll('image')];
+
+            expect(images).toHaveLength(1);
+            expect(images[0]?.getAttribute('href')).toBe(`data:image/svg+xml,${encodeURIComponent(icon)}`);
+            expect(Number(images[0]?.getAttribute('x'))).toBe(-Number(images[0]?.getAttribute('width')) / 2);
+            expect(Number(images[0]?.getAttribute('y'))).toBe(-Number(images[0]?.getAttribute('height')) / 2);
+            expect(iconCircle?.style.fill).toBe('var(--surface)');
+            expect(iconCircle?.getAttribute('fill')).toBeNull();
+            expect(iconCircle?.getAttribute('stroke')).toBe(plainCircle?.getAttribute('fill'));
+            expect(Number(iconCircle?.getAttribute('r'))).toBeGreaterThan(Number(plainCircle?.getAttribute('r')));
+        });
+
+        it('shows the caller’s selected node, and selects nothing on a click, when the caller keeps the selection', async () => {
+            const selectionData: NetworkDiagramData = {
+                links: [{ source: 'a', target: 'b' }],
+                nodes: [
+                    { id: 'a', isSelected: true, label: 'A' },
+                    { id: 'b', label: 'B' }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(selectionData, document.createElement('div'), { selectsOnClick: false });
+            const [firstCircle, secondCircle] = [...view.svg.querySelectorAll('circle')];
+
+            expect(firstCircle?.getAttribute('fill')).toBe('#f59e0b');
+            expect(secondCircle?.getAttribute('fill')).not.toBe('#f59e0b');
+
+            secondCircle?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+
+            expect(firstCircle?.getAttribute('fill')).toBe('#f59e0b');
+            expect(secondCircle?.getAttribute('fill')).not.toBe('#f59e0b');
+        });
+
         it('breaks a long label of several words onto two even lines, and leaves short and one-word labels whole', async () => {
             const wrapData: NetworkDiagramData = {
                 links: [],
@@ -398,6 +471,19 @@ async function measureLinkLength(leafCount: number, isRoomReserved: boolean): Pr
     view.triggerAutoLayout();
     const line = view.svg.querySelector('line');
     return Math.hypot(Number(line?.getAttribute('x2')) - Number(line?.getAttribute('x1')), Number(line?.getAttribute('y2')) - Number(line?.getAttribute('y1')));
+}
+
+// jsdom lays nothing out, so a container's width is whatever the test says it is. It starts 800 wide.
+function constructSizedContainer(): { element: HTMLDivElement; setWidth: (newWidth: number) => void } {
+    const element = document.createElement('div');
+    let currentWidth = 800;
+    Object.defineProperty(element, 'clientWidth', { get: () => currentWidth });
+    return {
+        element,
+        setWidth: (newWidth) => {
+            currentWidth = newWidth;
+        }
+    };
 }
 
 function readLabels(svg: SVGSVGElement): (string | null)[] {
