@@ -304,7 +304,7 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(idText?.style.stroke).toBe('');
         });
 
-        it('draws a symbol inside a node that has one, with no label or id beside it, and a tooltip saying what it is', async () => {
+        it('draws a plus as lines of equal length through the middle of its node, with no label or id beside it, and a tooltip saying what it is', async () => {
             const symbolData: NetworkDiagramData = {
                 links: [],
                 nodes: [
@@ -315,10 +315,22 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const view = await new D3Tool().renderNetworkDiagram(symbolData, document.createElement('div'));
 
             const [symbolElement, plainElement] = [...view.svg.querySelectorAll('circle')].map((circle) => circle.parentElement);
-            expect(symbolElement?.querySelector('text.symbol')?.textContent).toBe('+');
-            expect(symbolElement?.querySelector('text:not(.symbol)')?.textContent).toBe('');
+            expect(symbolElement?.querySelector('path.symbol')?.getAttribute('d')).toBe('M-6,0H6M0,-6V6'); // As far left as right, and as far up as down, of the node's centre.
+            expect(symbolElement?.querySelector('text.symbol')).toBeNull();
+            expect(symbolElement?.querySelector('text')?.textContent).toBe('');
             expect(symbolElement?.querySelector('title')?.textContent).toBe('Add');
-            expect(plainElement?.querySelector('text.symbol')).toBeNull();
+            expect(plainElement?.querySelector('.symbol')).toBeNull();
+        });
+
+        it('draws any other symbol as text centred on the middle of its node', async () => {
+            const symbolData: NetworkDiagramData = { links: [], nodes: [{ id: 'count', symbol: '12' }] };
+            const view = await new D3Tool().renderNetworkDiagram(symbolData, document.createElement('div'));
+
+            const symbolText = view.svg.querySelector('text.symbol');
+            expect(symbolText?.textContent).toBe('12');
+            expect(symbolText?.getAttribute('text-anchor')).toBe('middle');
+            expect(symbolText?.getAttribute('dominant-baseline')).toBe('central');
+            expect(view.svg.querySelector('path.symbol')).toBeNull();
         });
 
         it('draws an action node unlike any level, and never as the selected node', async () => {

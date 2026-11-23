@@ -11,7 +11,7 @@ export interface NetworkDiagramNode {
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
     label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has a symbol.
     level?: number; // The node's depth in a hierarchy, from 0 at the top. Sets its size and colour. Without one, 1.
-    symbol?: string; // A character or two drawn inside the node, such as '+'.
+    symbol?: string; // Drawn inside the node. '+' is drawn as a plus centred exactly. Any other is drawn as text, a character or two.
     title?: string; // Shown as a tooltip, for a node whose symbol alone does not say what it is.
 }
 
@@ -100,6 +100,8 @@ const COLOR = {
 const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 16, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
+const SYMBOL_PLUS_ARM_LENGTH = 6; // From the centre of a plus to the end of each arm.
+const SYMBOL_STROKE_WIDTH = 2.5;
 
 // One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
 const LEVEL_STYLES = [
@@ -368,18 +370,30 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('dy', (_line, lineIndex) => (lineIndex === 0 ? 0 : LABEL_LINE_HEIGHT))
             .text((line) => line);
         // Set on nodes that stay too, because an update may change either. A symbol sits in the middle of its node, in the
-        // action's own colour or else white, as an id is.
+        // action's own colour or else white, as an id is. A symbol the diagram knows is drawn as lines measured from
+        // the node's centre, so it is centred exactly. Any other is drawn as text, which a font places only roughly.
         nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? '');
         nodeSelection
+            .selectAll<SVGPathElement, LaidOutNode>(`path.${SYMBOL_CLASS_NAME}`)
+            .data((node) => (constructSymbolPath(node) == null ? [] : [node])) // Only a node with such a symbol has an element for one.
+            .join('path')
+            .attr('class', SYMBOL_CLASS_NAME)
+            .attr('d', (node) => constructSymbolPath(node) ?? '')
+            .attr('fill', 'none')
+            .attr('stroke', constructSymbolColor)
+            .attr('stroke-linecap', 'round')
+            .attr('stroke-width', SYMBOL_STROKE_WIDTH)
+            .style('pointer-events', 'none');
+        nodeSelection
             .selectAll<SVGTextElement, LaidOutNode>(`text.${SYMBOL_CLASS_NAME}`)
-            .data((node) => (node.symbol == null ? [] : [node])) // Only a node with a symbol has an element for one.
+            .data((node) => (node.symbol == null || constructSymbolPath(node) != null ? [] : [node]))
             .join('text')
             .attr('class', SYMBOL_CLASS_NAME)
             .attr('text-anchor', 'middle')
-            .attr('dy', '0.35em')
+            .attr('dominant-baseline', 'central')
             .attr('font-size', SYMBOL_FONT_SIZE)
             .attr('font-weight', 600)
-            .attr('fill', (node) => (node.isAction === true ? ACTION_STYLE.symbol : COLOR.nodeText))
+            .attr('fill', constructSymbolColor)
             .style('pointer-events', 'none')
             .text((node) => node.symbol ?? '');
         updateNodeStyles();
@@ -534,6 +548,19 @@ function constructLabelPlacement(
     // moved further out by the part of its height that would otherwise reach back over the node.
     const offset = radius + LABEL_OUTSIDE_GAP + (Math.abs(directionY) * lines.length * LABEL_LINE_HEIGHT) / 2;
     return { anchor: directionX > 0 ? 'start' : 'end', x: directionX * offset, y: directionY * offset + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
+}
+
+// ── Symbols
+
+// The lines of a symbol the diagram draws itself, measured from the node's centre. Undefined for a node with no symbol,
+// or with one drawn as text.
+function constructSymbolPath(node: NetworkDiagramNode): string | undefined {
+    const arm = SYMBOL_PLUS_ARM_LENGTH;
+    return node.symbol === '+' ? `M${String(-arm)},0H${String(arm)}M0,${String(-arm)}V${String(arm)}` : undefined;
+}
+
+function constructSymbolColor(node: NetworkDiagramNode): string {
+    return node.isAction === true ? ACTION_STYLE.symbol : COLOR.nodeText;
 }
 
 // ── Data
