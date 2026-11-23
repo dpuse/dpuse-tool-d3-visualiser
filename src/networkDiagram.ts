@@ -8,6 +8,7 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
+    discColor?: string; // The disc behind this node's icon, in place of the diagram's, to set one node apart, such as the top one. Any CSS colour. The selected and pointer colours still replace it.
     color?: string; // The node's colour, in place of its level's: its ring when it has an icon, or else the whole node. Any CSS colour.
     icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. Every icon and its disc are one size, whatever the level. It must declare 'xmlns', because it is shown as an image.
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
@@ -118,17 +119,18 @@ const COLOR = {
 
 // An action node. Pale with a strong ring and symbol, as the app's own add buttons are, so it stands apart from the
 // solid level colours.
-const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 16, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
+const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 20, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
 const ICON_CLASS_NAME = 'icon';
 const ICON_NODE_COLOR = '#ffffff';
-const ICON_NODE_RADIUS = 16; // One size at every level, so the same icon is the same size wherever it is. Wide enough to keep the icon's corners inside the disc.
-const ICON_SIZE = 20;
+const ICON_NODE_RADIUS = 20; // One size at every level, so the same icon is the same size wherever it is. Wide enough to keep the icon's corners inside the disc.
+const ICON_SIZE = 24;
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
-// A plus is drawn as the plus of a 24-unit outline icon set is at an icon's size: arms 7 units long and a line 1.25
-// units wide. It is then the size and weight of the plus on a button beside the diagram.
-const SYMBOL_PLUS_ARM_LENGTH = Math.round(((ICON_SIZE * 7) / 24) * 100) / 100; // From the centre of a plus to the end of each arm.
-const SYMBOL_STROKE_WIDTH = Math.round(((ICON_SIZE * 1.25) / 24) * 100) / 100;
+// A plus is drawn as the plus of a 24-unit outline icon set is at 20px: arms 7 units long and a line 1.25 units wide.
+// It is then the size and weight of the plus on a button beside the diagram.
+const SYMBOL_ICON_SIZE = 20;
+const SYMBOL_PLUS_ARM_LENGTH = Math.round(((SYMBOL_ICON_SIZE * 7) / 24) * 100) / 100; // From the centre of a plus to the end of each arm.
+const SYMBOL_STROKE_WIDTH = Math.round(((SYMBOL_ICON_SIZE * 1.25) / 24) * 100) / 100;
 
 // One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
 const LEVEL_STYLES = [
@@ -234,11 +236,12 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         return node.id === hoveredNodeId ? (colors.fillHovered ?? colors.fill) : colors.fill;
     };
 
-    // The disc behind an icon: the caller's colour for the node under the pointer, then for the selected node, or else
-    // the plain disc.
+    // The disc behind an icon: the caller's colour for the node under the pointer, then for the selected node, then
+    // the node's own, or else the plain disc.
     const constructIconDiscColor = (node: LaidOutNode): string => {
         if (node.id === hoveredNodeId && options.hoveredIconNodeColor != null) return options.hoveredIconNodeColor;
-        return (isSelectedByDisc(node) ? options.selectedIconNodeColor : options.iconNodeColor) ?? ICON_NODE_COLOR;
+        if (isSelectedByDisc(node) && options.selectedIconNodeColor != null) return options.selectedIconNodeColor;
+        return node.discColor ?? options.iconNodeColor ?? ICON_NODE_COLOR;
     };
 
     // An icon keeps a plain disc, so the icon stays readable. A colour from the caller, such as a node's own colour or

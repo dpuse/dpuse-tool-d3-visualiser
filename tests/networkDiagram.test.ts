@@ -408,6 +408,27 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(otherCircle?.style.fill).toBe('#ffffff');
         });
 
+        it('draws one node’s disc in its own colour, which the selected colour still replaces', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const discData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'top', discColor: 'var(--top)', icon, label: 'Top' },
+                    { id: 'other', icon, label: 'Other' },
+                    { id: 'add', isAction: true, symbol: '+' }
+                ]
+            };
+            const options = { iconNodeColor: 'var(--surface)', selectedIconNodeColor: 'var(--selected)', selectsOnClick: false };
+            const view = await new D3Tool().renderNetworkDiagram(discData, document.createElement('div'), options);
+            const readFills = (): (string | undefined)[] => [...view.svg.querySelectorAll('circle')].map((circle) => circle.style.fill);
+
+            expect(readFills().slice(0, 2)).toStrictEqual(['var(--top)', 'var(--surface)']);
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['20'])); // An action node is the size of the others.
+
+            view.update({ ...discData, nodes: discData.nodes.map((node) => ({ ...node, isSelected: node.id === 'top' })) });
+            expect(readFills()[0]).toBe('var(--selected)');
+        });
+
         it('draws the lines between nodes as wide as asked, or 2 wide', async () => {
             const thin = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'), { linkWidth: 1.5 });
             const plain = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'));
@@ -461,9 +482,9 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const levelData: NetworkDiagramData = { links: [], nodes: [0, 1, 2, 3].map((level) => ({ id: `level${String(level)}`, icon, label: 'Node', level })) };
             const view = await new D3Tool().renderNetworkDiagram(levelData, document.createElement('div'));
 
-            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['20']));
-            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['20']));
-            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['16']));
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['24']));
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['24']));
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['20']));
         });
 
         it('draws a node in its own colour, in place of its level’s, and every ring as wide as asked', async () => {
