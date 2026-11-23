@@ -262,6 +262,16 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(linkLength).toBeGreaterThan(hubLabel.length * 6);
         });
 
+        it('centres the label of a node with many links out in the wedge between two of them, clear of the node', async () => {
+            const view = await new D3Tool().renderNetworkDiagram(constructStarData(6), document.createElement('div'), { labelPlacementId: 'outside', reservesLabelRoom: true });
+            view.triggerAutoLayout();
+
+            const hubText = findNodeElement(view.svg, 'Hub')?.querySelector('text');
+            const distance = Math.hypot(Number(hubText?.querySelector('tspan')?.getAttribute('x')), Number(hubText?.getAttribute('y')));
+            expect(hubText?.getAttribute('text-anchor')).toBe('middle');
+            expect(distance).toBeGreaterThan(20 + 8); // Past the node's own radius and the gap kept beside it.
+        });
+
         it('moves a label on a diagonal further from its node than one straight out to the side', async () => {
             // Leaves round a hub, so some labels point straight out sideways and others on a diagonal.
             const view = await new D3Tool().renderNetworkDiagram(constructStarData(12), document.createElement('div'), { labelPlacementId: 'outside', reservesLabelRoom: true });
@@ -292,6 +302,45 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(labelText?.style.stroke).toBe('var(--color-surface)');
             expect(labelText?.style.paintOrder).toBe('stroke');
             expect(idText?.style.stroke).toBe('');
+        });
+
+        it('draws a symbol inside a node that has one, with no label or id beside it, and a tooltip saying what it is', async () => {
+            const symbolData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'add', symbol: '+', title: 'Add' },
+                    { id: 'plain', label: 'Plain' }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(symbolData, document.createElement('div'));
+
+            const [symbolElement, plainElement] = [...view.svg.querySelectorAll('circle')].map((circle) => circle.parentElement);
+            expect(symbolElement?.querySelector('text.symbol')?.textContent).toBe('+');
+            expect(symbolElement?.querySelector('text:not(.symbol)')?.textContent).toBe('');
+            expect(symbolElement?.querySelector('title')?.textContent).toBe('Add');
+            expect(plainElement?.querySelector('text.symbol')).toBeNull();
+        });
+
+        it('draws an action node unlike any level, and never as the selected node', async () => {
+            const actionData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'add', isAction: true, level: 3, symbol: '+' },
+                    { id: 'item', label: 'Item', level: 3 }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(actionData, document.createElement('div'));
+            const [actionCircle, itemCircle] = [...view.svg.querySelectorAll('circle')];
+            const actionFill = actionCircle?.getAttribute('fill');
+
+            expect(actionFill).not.toBe(itemCircle?.getAttribute('fill'));
+            expect(Number(actionCircle?.getAttribute('r'))).toBeGreaterThan(Number(itemCircle?.getAttribute('r')));
+
+            actionCircle?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+            expect(actionCircle?.getAttribute('fill')).toBe(actionFill);
+
+            itemCircle?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+            expect(itemCircle?.getAttribute('fill')).toBe('#f59e0b');
         });
 
         it('breaks a long label of several words onto two even lines, and leaves short and one-word labels whole', async () => {

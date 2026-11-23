@@ -8,8 +8,11 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
-    label?: string; // Shown beside the node. Without one, the id is shown inside the node.
+    isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
+    label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has a symbol.
     level?: number; // The node's depth in a hierarchy, from 0 at the top. Sets its size and colour. Without one, 1.
+    symbol?: string; // A character or two drawn inside the node, such as '+'.
+    title?: string; // Shown as a tooltip, for a node whose symbol alone does not say what it is.
 }
 
 export interface NetworkDiagramLink {
@@ -92,6 +95,12 @@ const COLOR = {
     nodeText: '#ffffff'
 };
 
+// An action node. Pale with a strong ring and symbol, as the app's own add buttons are, so it stands apart from the
+// solid level colours.
+const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 16, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
+const SYMBOL_CLASS_NAME = 'symbol';
+const SYMBOL_FONT_SIZE = 20;
+
 // One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
 const LEVEL_STYLES = [
     { fill: '#475569', fillHovered: '#64748b', radius: 26, stroke: '#1e293b', strokeHovered: '#334155' },
@@ -118,7 +127,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     if (options.reservesLabelRoom === true)
         simulation.force(
             'collide',
-            forceCollide<LaidOutNode>((node) => getLevelStyle(node).radius + NODE_COLLISION_GAP)
+            forceCollide<LaidOutNode>((node) => getNodeStyle(node).radius + NODE_COLLISION_GAP)
         );
     simulation.stop(); // The simulation only ever runs a set number of steps on request, never by itself.
 
@@ -158,15 +167,15 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             const neighbour = nodesById.get(neighbourId);
             if (!neighbour) continue;
             const labelArc = neighbour.label == null ? 0 : estimateLabelWidth(constructLabelLines(neighbour, options.wrapsLabels === true)) * LABEL_ARC_RATIO;
-            arcLength += Math.max(getLevelStyle(neighbour).radius * 2, labelArc) + NODE_ARC_GAP;
-            widestNeighbourRadius = Math.max(widestNeighbourRadius, getLevelStyle(neighbour).radius);
+            arcLength += Math.max(getNodeStyle(neighbour).radius * 2, labelArc) + NODE_ARC_GAP;
+            widestNeighbourRadius = Math.max(widestNeighbourRadius, getNodeStyle(neighbour).radius);
         }
 
         const arcRadius = arcLength / (Math.PI * 2);
         const node = nodesById.get(nodeId);
         if (labelPlacementId === 'below' || node?.label == null) return arcRadius; // A label below its node does not point out towards the ring.
         const ownLabelWidth = estimateLabelWidth(constructLabelLines(node, options.wrapsLabels === true));
-        return Math.max(arcRadius, getLevelStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
+        return Math.max(arcRadius, getNodeStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
     };
 
     // A link is as long as asked for, or as long as the ring at either of its ends needs, whichever is longer.
@@ -177,19 +186,22 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         return Math.max(linkDistance, constructRingRadius(getNodeId(link.source), nodesById), constructRingRadius(getNodeId(link.target), nodesById));
     });
 
+    // An action is something to do, so it never shows as the selected node.
+    const isShownSelected = (node: LaidOutNode): boolean => node.id === selectedNodeId && node.isAction !== true;
+
     const updateNodeStyles = (): void => {
         nodeSelection
             .select<SVGCircleElement>('circle')
             .attr('fill', (node) => {
-                if (node.id === selectedNodeId) return COLOR.nodeFillSelected;
-                return node.id === hoveredNodeId ? getLevelStyle(node).fillHovered : getLevelStyle(node).fill;
+                if (isShownSelected(node)) return COLOR.nodeFillSelected;
+                return node.id === hoveredNodeId ? getNodeStyle(node).fillHovered : getNodeStyle(node).fill;
             })
             .attr('stroke', (node) => {
-                if (node.id === selectedNodeId) return COLOR.nodeStrokeSelected;
-                return node.id === hoveredNodeId ? getLevelStyle(node).strokeHovered : getLevelStyle(node).stroke;
+                if (isShownSelected(node)) return COLOR.nodeStrokeSelected;
+                return node.id === hoveredNodeId ? getNodeStyle(node).strokeHovered : getNodeStyle(node).stroke;
             })
-            .attr('stroke-width', (node) => (node.id === selectedNodeId ? 3 : 2))
-            .attr('r', (node) => getLevelStyle(node).radius + (node.id === selectedNodeId || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
+            .attr('stroke-width', (node) => (isShownSelected(node) ? 3 : 2))
+            .attr('r', (node) => getNodeStyle(node).radius + (node.id === selectedNodeId || node.id === hoveredNodeId ? NODE_RADIUS_ACTIVE_GROWTH : 0));
     };
 
     svgSelection.on('click', () => {
@@ -296,6 +308,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         const exitingNodes = joinedNodes.exit<LaidOutNode>().style('pointer-events', 'none'); // A node on its way out takes no more clicks.
         type DragEvent = D3DragEvent<SVGGElement, LaidOutNode, LaidOutNode>;
         const enteringNodes = joinedNodes.enter().append('g').style('cursor', 'pointer');
+        enteringNodes.append('title');
         enteringNodes.append('circle').attr('stroke-width', 2);
         enteringNodes.append('text');
         enteringNodes
@@ -339,7 +352,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         nodeSelection
             .select<SVGTextElement>('text')
             .attr('text-anchor', 'middle')
-            .attr('y', (node) => (node.label == null ? 4 : getLevelStyle(node).radius + NODE_LABEL_GAP))
+            .attr('y', (node) => (node.label == null ? 4 : getNodeStyle(node).radius + NODE_LABEL_GAP))
             .attr('font-size', (node) => (node.label == null ? null : LABEL_FONT_SIZE))
             .attr('fill', (node) => (node.label == null ? COLOR.nodeText : 'currentColor')) // Explicit, because iOS Safari can default to transparent.
             // The outline is painted first, under the letters, so it hides the links behind a label without thinning the
@@ -354,6 +367,21 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('x', 0)
             .attr('dy', (_line, lineIndex) => (lineIndex === 0 ? 0 : LABEL_LINE_HEIGHT))
             .text((line) => line);
+        // Set on nodes that stay too, because an update may change either. A symbol sits in the middle of its node, in the
+        // action's own colour or else white, as an id is.
+        nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? '');
+        nodeSelection
+            .selectAll<SVGTextElement, LaidOutNode>(`text.${SYMBOL_CLASS_NAME}`)
+            .data((node) => (node.symbol == null ? [] : [node])) // Only a node with a symbol has an element for one.
+            .join('text')
+            .attr('class', SYMBOL_CLASS_NAME)
+            .attr('text-anchor', 'middle')
+            .attr('dy', '0.35em')
+            .attr('font-size', SYMBOL_FONT_SIZE)
+            .attr('font-weight', 600)
+            .attr('fill', (node) => (node.isAction === true ? ACTION_STYLE.symbol : COLOR.nodeText))
+            .style('pointer-events', 'none')
+            .text((node) => node.symbol ?? '');
         updateNodeStyles();
         return { enteringNodes, exitingLinks, exitingNodes };
     };
@@ -436,9 +464,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 
 // ── Labels
 
-// A node's label as the lines it is drawn on. A long label of several words breaks at the space nearest its middle, so
+// A node's label as the lines it is drawn on, which is none for a node that shows only a symbol. A long label of several words breaks at the space nearest its middle, so
 // its two lines are as even as they can be. A node with no label shows its id.
 function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean): string[] {
+    if (node.label == null && node.symbol != null) return []; // The symbol is all such a node shows.
     const label = node.label ?? node.id;
     if (!isWrapped || node.label == null || label.length <= LABEL_WRAP_LENGTH) return [label];
 
@@ -451,7 +480,7 @@ function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean): stri
 }
 
 function estimateLabelWidth(lines: string[]): number {
-    return Math.max(...lines.map((line) => line.length)) * LABEL_CHARACTER_WIDTH;
+    return lines.length === 0 ? 0 : Math.max(...lines.map((line) => line.length)) * LABEL_CHARACTER_WIDTH;
 }
 
 // Where a label goes relative to the middle of its node. 'outside' points the label into the widest gap between the
@@ -466,7 +495,7 @@ function constructLabelPlacement(
     labelPlacementId: NetworkDiagramLabelPlacementId,
     lines: string[]
 ): { anchor: 'end' | 'middle' | 'start'; x: number; y: number } {
-    const { radius } = getLevelStyle(node);
+    const { radius } = getNodeStyle(node);
     const below = { anchor: 'middle' as const, x: 0, y: radius + NODE_LABEL_GAP };
     if (labelPlacementId === 'below' || neighbours.length === 0) return below;
 
@@ -532,7 +561,9 @@ function getNodePosition(value: LaidOutNode | string | number, axis: 'x' | 'y'):
     return typeof value === 'object' ? (value[axis] ?? 0) : 0;
 }
 
-function getLevelStyle(node: NetworkDiagramNode): (typeof LEVEL_STYLES)[number] {
+// How a node is drawn: as an action, or else by its level.
+function getNodeStyle(node: NetworkDiagramNode): { fill: string; fillHovered: string; radius: number; stroke: string; strokeHovered: string } {
+    if (node.isAction === true) return ACTION_STYLE;
     const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
     return assertDefined(LEVEL_STYLES[level]);
 }
