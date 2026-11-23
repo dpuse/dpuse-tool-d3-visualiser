@@ -32,7 +32,8 @@ export interface NetworkDiagramData {
 export interface NetworkDiagramOptions {
     actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
     chargeStrength?: number;
-    fitsView?: boolean; // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
+    fitsView?: boolean;
+    focusRingColor?: string; // The ring round the node that has keyboard focus. Any CSS colour. Without one, blue. // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
     growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
     hoveredIconNodeColor?: string; // The disc behind the icon of the node under the pointer. Any CSS colour. Without one, the disc does not change.
     iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
@@ -44,6 +45,7 @@ export interface NetworkDiagramOptions {
     nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
+    selectedRingColor?: string; // Draws a ring round the selected node, a little apart from it, and nothing else: the node keeps its own colours. Any CSS colour. Without one, a selected node shows in its own ring or disc.
     selectedIconNodeColor?: string; // The disc behind the icon of the selected node, which then keeps its own ring. Any CSS colour. Without one, a selected node with an icon shows in its ring, as any other does.
     selectsOnClick?: boolean; // A click marks its node as selected, and a second click clears it. Without one, true. False leaves the selection to the caller, who marks nodes with 'isSelected'.
     transitionDuration?: number; // How long an update takes to move and fade, in milliseconds. Without one, 400. 0 changes at once.
@@ -90,6 +92,11 @@ const DEFAULT_HEIGHT = 480;
 const AUTO_LAYOUT_TICKS = 180;
 const DEFAULT_LEVEL = 1; // A node with no level looks as every node did before levels were added.
 const NODE_RADIUS_ACTIVE_GROWTH = 2;
+const FOCUS_RING_CLASS_NAME = 'focus-ring';
+const FOCUS_RING_COLOR = '#2563eb';
+const OUTER_RING_GAP = 2; // The clear space between a node and a ring round it, and between two such rings.
+const OUTER_RING_WIDTH = 2;
+const SELECTED_RING_CLASS_NAME = 'selected-ring';
 const NODE_LABEL_GAP = 14; // From the bottom of a node to the baseline of the label below it.
 const FIT_PADDING = 70; // Room around the outermost nodes for the labels below them.
 const FIT_PADDING_OUTSIDE = 130; // More room when labels sit beside the nodes, because a label then reaches a whole label's width past its node.
@@ -104,6 +111,7 @@ const LABEL_HALO_WIDTH = 4;
 const LABEL_OUTSIDE_GAP = 8; // From the edge of a node to a label beside it.
 const LABEL_SIDE_THRESHOLD = 0.35; // How far sideways a label's direction must lean before the label goes to the side of its node, not above or below.
 const LABEL_WEDGE_ANGLE = Math.PI * 0.75; // A gap between two links narrower than this is a wedge a label could cross the sides of.
+const LABEL_WEDGE_HALO_RATIO = 0.5; // The share of a haloed label's width that must clear the links of a wedge.
 const LABEL_WRAP_LENGTH = 10; // A label this long or shorter stays on one line.
 const LABEL_ARC_RATIO = 0.6; // The share of a label's width counted as room round a ring, because only the labels above and below a node lie along the ring.
 const NODE_ARC_GAP = 16; // The clear space kept between two neighbours round a ring.
@@ -185,6 +193,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     let animationFrameId: number | undefined;
     let selectedNodeId: string | null = null;
     let hoveredNodeId: string | null = null;
+    let focusedNodeId: string | null = null; // The node with keyboard focus. A node focused by a click is not shown as focused.
     let linkSelection: Selection<SVGLineElement, LaidOutLink, SVGGElement, unknown> = linkLayer.selectAll<SVGLineElement, LaidOutLink>('line');
     let nodeSelection: Selection<SVGGElement, LaidOutNode, SVGGElement, unknown> = nodeLayer.selectAll<SVGGElement, LaidOutNode>('g');
 
@@ -228,8 +237,32 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     // with that colour too. A selected node with an icon shows in its disc when the caller gives a colour for one,
     // and then keeps its own ring, so a thin ring stays thin.
     const nodeBorderWidth = options.nodeBorderWidth ?? DEFAULT_NODE_BORDER_WIDTH;
-    const isSelectedByDisc = (node: LaidOutNode): boolean => isShownSelected(node) && node.icon != null && options.selectedIconNodeColor != null;
-    const isSelectedByRing = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByDisc(node);
+    // With a colour for a ring round the selected node, that ring is all that shows the selection.
+    const isSelectedByOuterRing = (node: LaidOutNode): boolean => isShownSelected(node) && options.selectedRingColor != null;
+    const isSelectedByDisc = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByOuterRing(node) && node.icon != null && options.selectedIconNodeColor != null;
+    const isSelectedByRing = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByOuterRing(node) && !isSelectedByDisc(node);
+
+    // A node's radius as drawn: a little larger for the selected node and the one under the pointer, unless the caller
+    // keeps every node its own size.
+    const constructDrawnRadius = (node: LaidOutNode): number => {
+        const isActive = isShownSelected(node) || node.id === hoveredNodeId;
+        return getNodeStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
+    };
+
+    // A ring round a node, a little apart from it, for the nodes it applies to. Drawn after the node's own circle, which
+    // stays the first circle in the node's group.
+    const drawOuterRings = (className: string, color: string, isRinged: (node: LaidOutNode) => boolean, constructGap: (node: LaidOutNode) => number): void => {
+        nodeSelection
+            .selectAll<SVGCircleElement, LaidOutNode>(`circle.${className}`)
+            .data((node) => (isRinged(node) ? [node] : []))
+            .join('circle')
+            .attr('class', className)
+            .attr('fill', 'none')
+            .attr('stroke-width', OUTER_RING_WIDTH)
+            .attr('r', (node) => constructDrawnRadius(node) + constructGap(node) + OUTER_RING_WIDTH / 2)
+            .style('stroke', color)
+            .style('pointer-events', 'none');
+    };
 
     // An action node in the caller's colours, or none of them to keep the diagram's own.
     const constructActionFill = (node: LaidOutNode): string | null => {
@@ -273,10 +306,19 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             })
             .attr('stroke-width', (node) => (isSelectedByRing(node) ? nodeBorderWidth + 1 : nodeBorderWidth))
             .style('filter', (node) => (node.discColor != null && node.id === hoveredNodeId ? DISC_HOVER_FILTER : null))
-            .attr('r', (node) => {
-                const isActive = isShownSelected(node) || node.id === hoveredNodeId;
-                return getNodeStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
-            });
+            .attr('r', constructDrawnRadius);
+
+        // The selected node's ring, and outside it the ring of the node with keyboard focus, so a node that is both
+        // shows both. Screen readers are told which node is the selected one.
+        const selectedRingGap = OUTER_RING_GAP;
+        drawOuterRings(SELECTED_RING_CLASS_NAME, options.selectedRingColor ?? '', isSelectedByOuterRing, () => selectedRingGap);
+        drawOuterRings(
+            FOCUS_RING_CLASS_NAME,
+            options.focusRingColor ?? FOCUS_RING_COLOR,
+            (node) => node.id === focusedNodeId,
+            (node) => (isSelectedByOuterRing(node) ? selectedRingGap + OUTER_RING_WIDTH + OUTER_RING_GAP : OUTER_RING_GAP)
+        );
+        nodeSelection.attr('aria-current', (node) => (isShownSelected(node) ? 'true' : null));
     };
 
     svgSelection.on('click', () => {
@@ -305,7 +347,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         nodeSelection.each((node, index, elements) => {
             if (node.label == null) return; // An id stays in the middle of its node, where it was drawn.
             const neighbours = (neighbourIdsById.get(node.id) ?? []).map((neighbourId) => nodesById.get(neighbourId)).filter((neighbour) => neighbour !== undefined);
-            const placement = constructLabelPlacement(node, neighbours, labelPlacementId, constructLabelLines(node, options.wrapsLabels === true));
+            const placement = constructLabelPlacement(
+                node,
+                neighbours,
+                labelPlacementId,
+                constructLabelLines(node, options.wrapsLabels === true),
+                options.labelHaloColor != null,
+                options.selectedRingColor == null ? 0 : OUTER_RING_GAP + OUTER_RING_WIDTH
+            );
             const text = select(assertDefined(elements[index])).select<SVGTextElement>('text').attr('text-anchor', placement.anchor).attr('y', placement.y);
             text.selectAll<SVGTSpanElement, string>('tspan').attr('x', placement.x);
         });
@@ -343,6 +392,13 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     const cancelAnimation = (): void => {
         if (animationFrameId !== undefined) cancelAnimationFrame(animationFrameId);
         animationFrameId = undefined;
+    };
+
+    // What a click on a node does, and Enter or Space on the node with focus.
+    const activateNode = (node: LaidOutNode): void => {
+        if (isSelectedOnClick) selectedNodeId = selectedNodeId === node.id ? null : node.id;
+        updateNodeStyles();
+        options.onNodeClick?.(assertDefined(currentData.nodes.find((dataNode) => dataNode.id === node.id))); // The caller's own node, without the layout's positions.
     };
 
     // Replaces what is drawn with new data. Nodes are matched by id, so one that stays keeps its element and its place.
@@ -386,9 +442,11 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .merge(joinedLinks);
 
         const joinedNodes = nodeSelection.data(nodes, (node) => node.id);
-        const exitingNodes = joinedNodes.exit<LaidOutNode>().style('pointer-events', 'none'); // A node on its way out takes no more clicks.
+        const exitingNodes = joinedNodes.exit<LaidOutNode>().style('pointer-events', 'none').attr('tabindex', null); // A node on its way out takes no more clicks or key presses.
         type DragEvent = D3DragEvent<SVGGElement, LaidOutNode, LaidOutNode>;
-        const enteringNodes = joinedNodes.enter().append('g').style('cursor', 'pointer');
+        // A node is a button: it takes keyboard focus, and Enter or Space does what a click does. Its own ring shows
+        // focus, so the browser's outline, which would be a box round the node and its label, is switched off.
+        const enteringNodes = joinedNodes.enter().append('g').attr('role', 'button').attr('tabindex', 0).style('cursor', 'pointer').style('outline', 'none');
         enteringNodes.append('title');
         enteringNodes.append('circle');
         enteringNodes.append('text');
@@ -403,9 +461,20 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             })
             .on('click', (event: MouseEvent, node) => {
                 event.stopPropagation();
-                if (isSelectedOnClick) selectedNodeId = selectedNodeId === node.id ? null : node.id;
+                activateNode(node);
+            })
+            .on('keydown', (event: KeyboardEvent, node) => {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                event.preventDefault(); // Space would otherwise scroll the page.
+                activateNode(node);
+            })
+            .on('focus', (event: FocusEvent, node) => {
+                focusedNodeId = isFocusVisible(event.currentTarget) ? node.id : null;
                 updateNodeStyles();
-                options.onNodeClick?.(assertDefined(currentData.nodes.find((dataNode) => dataNode.id === node.id))); // The caller's own node, without the layout's positions.
+            })
+            .on('blur', (_event, node) => {
+                if (focusedNodeId === node.id) focusedNodeId = null;
+                updateNodeStyles();
             })
             .call(
                 drag<SVGGElement, LaidOutNode>()
@@ -465,6 +534,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         // action's own colour or else white, as an id is. A symbol the diagram knows is drawn as lines measured from
         // the node's centre, so it is centred exactly. Any other is drawn as text, which a font places only roughly.
         nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? '');
+        nodeSelection.attr('aria-label', (node) => node.label ?? node.title ?? node.id); // A screen reader names the node as a sighted user reads it.
         nodeSelection
             .selectAll<SVGPathElement, LaidOutNode>(`path.${SYMBOL_CLASS_NAME}`)
             .data((node) => (constructSymbolPath(node) == null ? [] : [node])) // Only a node with such a symbol has an element for one.
@@ -617,9 +687,11 @@ function constructLabelPlacement(
     node: LaidOutNode,
     neighbours: LaidOutNode[],
     labelPlacementId: NetworkDiagramLabelPlacementId,
-    lines: string[]
+    lines: string[],
+    hasHalo: boolean,
+    ringAllowance: number
 ): { anchor: 'end' | 'middle' | 'start'; x: number; y: number } {
-    const { radius } = getNodeStyle(node);
+    const radius = getNodeStyle(node).radius + ringAllowance; // A label keeps clear of a ring that may be drawn round its node.
     const below = { anchor: 'middle' as const, x: 0, y: radius + NODE_LABEL_GAP };
     if (labelPlacementId === 'below' || neighbours.length === 0) return below;
 
@@ -640,14 +712,15 @@ function constructLabelPlacement(
     const extraLinesHeight = (lines.length - 1) * LABEL_LINE_HEIGHT;
 
     // In a wedge, the label is as near the node as it can be without either link crossing it, but never further out
-    // than its own width, because a wedge among many links never gets wide enough.
+    // than its own width, because a wedge among many links never gets wide enough. A label with a halo hides a link
+    // behind it, so only its middle has to clear the links, and it stays nearer its node.
     if (widestGap < LABEL_WEDGE_ANGLE) {
         const labelWidth = estimateLabelWidth(lines);
         const labelHeight = lines.length * LABEL_LINE_HEIGHT;
         const halfAlong = (Math.abs(directionX) * labelWidth + Math.abs(directionY) * labelHeight) / 2; // Half the label's extent along the wedge.
         const halfAcross = (Math.abs(directionX) * labelHeight + Math.abs(directionY) * labelWidth) / 2; // Half its extent across the wedge.
         const nearestDistance = radius + LABEL_OUTSIDE_GAP + halfAlong;
-        const clearDistance = halfAcross / Math.tan(widestGap / 2) + halfAlong;
+        const clearDistance = (halfAcross * (hasHalo ? LABEL_WEDGE_HALO_RATIO : 1)) / Math.tan(widestGap / 2) + halfAlong;
         const distance = Math.min(Math.max(nearestDistance, clearDistance), nearestDistance + labelWidth);
         return { anchor: 'middle', x: directionX * distance, y: directionY * distance + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
     }
@@ -658,6 +731,18 @@ function constructLabelPlacement(
     // moved further out by the part of its height that would otherwise reach back over the node.
     const offset = radius + LABEL_OUTSIDE_GAP + (Math.abs(directionY) * lines.length * LABEL_LINE_HEIGHT) / 2;
     return { anchor: directionX > 0 ? 'start' : 'end', x: directionX * offset, y: directionY * offset + LABEL_FONT_SIZE / 3 - extraLinesHeight / 2 };
+}
+
+// ── Focus
+
+// Whether an element's focus came from the keyboard. True where the browser cannot say, so focus is never hidden.
+function isFocusVisible(target: EventTarget | null): boolean {
+    if (!(target instanceof Element)) return false;
+    try {
+        return target.matches(':focus-visible');
+    } catch {
+        return true;
+    }
 }
 
 // ── Symbols

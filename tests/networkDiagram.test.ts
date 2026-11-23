@@ -446,6 +446,66 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(circle?.style.filter).toBe('');
         });
 
+        it('shows the selected node by a ring a little apart from it, and nothing else, when given a colour for the ring', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const ringData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'selected', icon, isSelected: true, label: 'Selected' },
+                    { id: 'other', icon, label: 'Other' }
+                ]
+            };
+            const options = { iconNodeColor: 'var(--surface)', selectedIconNodeColor: 'var(--disc)', selectedRingColor: 'var(--ring)', selectsOnClick: false };
+            const view = await new D3Tool().renderNetworkDiagram(ringData, document.createElement('div'), options);
+            const [selectedElement, otherElement] = [findNodeElement(view.svg, 'Selected'), findNodeElement(view.svg, 'Other')];
+            const ring = selectedElement?.querySelector<SVGCircleElement>('circle.selected-ring');
+            const disc = selectedElement?.querySelector('circle');
+
+            expect(ring?.style.stroke).toBe('var(--ring)');
+            expect(Number(ring?.getAttribute('r'))).toBe(Number(disc?.getAttribute('r')) + 3); // A 2px gap, then a ring 2px wide.
+            expect(disc?.style.fill).toBe('var(--surface)');
+            expect(selectedElement?.getAttribute('aria-current')).toBe('true');
+            expect(otherElement?.querySelector('circle.selected-ring')).toBeNull();
+            expect(otherElement?.hasAttribute('aria-current')).toBe(false);
+        });
+
+        it('makes every node a button that the keyboard can reach and press', async () => {
+            const keyboardData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'a', label: 'Sales' },
+                    { id: 'add', isAction: true, symbol: '+', title: 'Add' }
+                ]
+            };
+            const clickedIds: string[] = [];
+            const renderTo = document.createElement('div');
+            document.body.append(renderTo); // Focus only moves between elements in the document.
+            const view = await new D3Tool().renderNetworkDiagram(keyboardData, renderTo, {
+                onNodeClick: (node) => {
+                    clickedIds.push(node.id);
+                }
+            });
+            const [salesElement, actionElement] = [...view.svg.querySelectorAll<SVGGElement>('g[role="button"]')];
+
+            expect([salesElement, actionElement].map((element) => element?.getAttribute('tabindex'))).toStrictEqual(['0', '0']);
+            expect([salesElement, actionElement].map((element) => element?.getAttribute('aria-label'))).toStrictEqual(['Sales', 'Add']);
+
+            salesElement?.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));
+            actionElement?.dispatchEvent(new KeyboardEvent('keydown', { key: ' ' }));
+            salesElement?.dispatchEvent(new KeyboardEvent('keydown', { key: 'a' }));
+            expect(clickedIds).toStrictEqual(['a', 'add']);
+
+            salesElement?.focus();
+            expect(salesElement?.querySelector('circle.focus-ring')).not.toBeNull();
+            salesElement?.blur();
+            expect(salesElement?.querySelector('circle.focus-ring')).toBeNull();
+            renderTo.remove();
+        });
+
+        it('keeps a haloed label nearer its node in a wedge between links, because the halo hides a link behind it', async () => {
+            expect(await measureLabelDistance('#ffffff')).toBeLessThan(await measureLabelDistance());
+        });
+
         it('draws the lines between nodes in the colour and width asked for, or mid grey and 2 wide', async () => {
             const thin = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'), { linkColor: 'var(--line)', linkWidth: 1.5 });
             const plain = await new D3Tool().renderNetworkDiagram(data, document.createElement('div'));
@@ -606,6 +666,22 @@ function constructStarData(leafCount: number): NetworkDiagramData {
 }
 
 // The length of a link of a star laid out with no push between nodes, so only the links set how far apart they sit.
+// How far a hub's label sits from the middle of its node, with twelve links round it, so each gap between them is a
+// wedge too narrow for the two-line label to sit beside the node.
+async function measureLabelDistance(labelHaloColor?: string): Promise<number> {
+    const leafIds = Array.from({ length: 12 }, (_value, index) => `leaf${String(index)}`);
+    const wedgeData: NetworkDiagramData = {
+        links: leafIds.map((target) => ({ source: 'hub', target })),
+        nodes: [{ id: 'hub', label: 'Hub Label Here' }, ...leafIds.map((id) => ({ id, label: id }))]
+    };
+    const placement = { labelPlacementId: 'outside' as const, wrapsLabels: true };
+    const options = labelHaloColor == null ? placement : { ...placement, labelHaloColor };
+    const view = await new D3Tool().renderNetworkDiagram(wedgeData, document.createElement('div'), options);
+    view.triggerAutoLayout();
+    const text = findNodeElement(view.svg, 'Hub LabelHere')?.querySelector('text'); // The label's two lines, read as one text.
+    return Math.hypot(Number(text?.querySelector('tspan')?.getAttribute('x')), Number(text?.getAttribute('y')));
+}
+
 async function measureLinkLength(leafCount: number, isRoomReserved: boolean): Promise<number> {
     const view = await new D3Tool().renderNetworkDiagram(constructStarData(leafCount), document.createElement('div'), {
         chargeStrength: 0,
