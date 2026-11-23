@@ -8,12 +8,12 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
-    discColor?: string; // The disc behind this node's icon, in place of the diagram's, to set one node apart, such as the top one. Any CSS colour. The selected and pointer colours still replace it.
+    discColor?: string; // The disc behind this node's icon, in place of the diagram's, to set one node apart, such as the top one. Any CSS colour. It dims a little under the pointer, and the selected colour still replaces it.
     color?: string; // The node's colour, in place of its level's: its ring when it has an icon, or else the whole node. Any CSS colour.
     icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. Every icon and its disc are one size, whatever the level. It must declare 'xmlns', because it is shown as an image.
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
     isSelected?: boolean; // Draws the node as the selected one, when the caller keeps the selection ('selectsOnClick' is false).
-    label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has a symbol.
+    label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has an icon or a symbol, which is then all it shows.
     level?: number; // The node's depth in a hierarchy, from 0 at the top. Sets its size and colour. Without one, 1.
     symbol?: string; // Drawn inside the node. '+' is drawn as a plus centred exactly. Any other is drawn as text, a character or two.
     title?: string; // Shown as a tooltip, for a node whose symbol alone does not say what it is.
@@ -120,11 +120,12 @@ const COLOR = {
 
 // An action node. Pale with a strong ring and symbol, as the app's own add buttons are, so it stands apart from the
 // solid level colours.
-const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 20, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
+const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 22, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
+const DISC_HOVER_FILTER = 'brightness(0.92)';
 const ICON_CLASS_NAME = 'icon';
 const ICON_NODE_COLOR = '#ffffff';
-const ICON_NODE_RADIUS = 20; // One size at every level, so the same icon is the same size wherever it is. Wide enough to keep the icon's corners inside the disc.
-const ICON_SIZE = 24;
+const ICON_NODE_RADIUS = 22; // One size at every level, so the same icon is the same size wherever it is. Wide enough to keep the icon's corners inside the disc.
+const ICON_SIZE = 28;
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
 // A plus is drawn as the plus of a 24-unit outline icon set is at 20px: arms 7 units long and a line 1.25 units wide.
@@ -238,9 +239,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     };
 
     // The disc behind an icon: the caller's colour for the node under the pointer, then for the selected node, then
-    // the node's own, or else the plain disc.
+    // the node's own, or else the plain disc. A node with a disc of its own keeps it under the pointer, because its
+    // icon is drawn to be seen on that colour, and dims a little there.
     const constructIconDiscColor = (node: LaidOutNode): string => {
-        if (node.id === hoveredNodeId && options.hoveredIconNodeColor != null) return options.hoveredIconNodeColor;
+        if (node.id === hoveredNodeId && options.hoveredIconNodeColor != null && node.discColor == null) return options.hoveredIconNodeColor;
         if (isSelectedByDisc(node) && options.selectedIconNodeColor != null) return options.selectedIconNodeColor;
         return node.discColor ?? options.iconNodeColor ?? ICON_NODE_COLOR;
     };
@@ -270,6 +272,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                 return isSelectedByRing(node) ? null : (node.color ?? null);
             })
             .attr('stroke-width', (node) => (isSelectedByRing(node) ? nodeBorderWidth + 1 : nodeBorderWidth))
+            .style('filter', (node) => (node.discColor != null && node.id === hoveredNodeId ? DISC_HOVER_FILTER : null))
             .attr('r', (node) => {
                 const isActive = isShownSelected(node) || node.id === hoveredNodeId;
                 return getNodeStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
@@ -588,7 +591,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 // A node's label as the lines it is drawn on, which is none for a node that shows only a symbol. A long label of several words breaks at the space nearest its middle, so
 // its two lines are as even as they can be. A node with no label shows its id.
 function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean): string[] {
-    if (node.label == null && node.symbol != null) return []; // The symbol is all such a node shows.
+    if (node.label == null && (node.symbol != null || node.icon != null)) return []; // The symbol or icon is all such a node shows.
     const label = node.label ?? node.id;
     if (!isWrapped || node.label == null || label.length <= LABEL_WRAP_LENGTH) return [label];
 

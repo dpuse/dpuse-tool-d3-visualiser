@@ -423,10 +423,27 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const readFills = (): (string | undefined)[] => [...view.svg.querySelectorAll('circle')].map((circle) => circle.style.fill);
 
             expect(readFills().slice(0, 2)).toStrictEqual(['var(--top)', 'var(--surface)']);
-            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['20'])); // An action node is the size of the others.
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['22'])); // An action node is the size of the others.
 
             view.update({ ...discData, nodes: discData.nodes.map((node) => ({ ...node, isSelected: node.id === 'top' })) });
             expect(readFills()[0]).toBe('var(--selected)');
+        });
+
+        it('keeps a node’s own disc under the pointer, dimmed a little, and shows no id inside a node that has an icon but no label', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const topData: NetworkDiagramData = { links: [], nodes: [{ id: 'top', discColor: 'var(--top)', icon, title: 'Top' }] };
+            const view = await new D3Tool().renderNetworkDiagram(topData, document.createElement('div'), { hoveredIconNodeColor: 'var(--hover)' });
+            const circle = view.svg.querySelector('circle');
+
+            expect(view.svg.querySelectorAll('tspan')).toHaveLength(0);
+            expect(view.svg.querySelector('title')?.textContent).toBe('Top');
+
+            circle?.parentElement?.dispatchEvent(new MouseEvent('mouseenter'));
+            expect(circle?.style.fill).toBe('var(--top)');
+            expect(circle?.style.filter).toBe('brightness(0.92)');
+
+            circle?.parentElement?.dispatchEvent(new MouseEvent('mouseleave'));
+            expect(circle?.style.filter).toBe('');
         });
 
         it('draws the lines between nodes in the colour and width asked for, or mid grey and 2 wide', async () => {
@@ -486,9 +503,9 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const levelData: NetworkDiagramData = { links: [], nodes: [0, 1, 2, 3].map((level) => ({ id: `level${String(level)}`, icon, label: 'Node', level })) };
             const view = await new D3Tool().renderNetworkDiagram(levelData, document.createElement('div'));
 
-            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['24']));
-            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['24']));
-            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['20']));
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['28']));
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['28']));
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['22']));
         });
 
         it('draws a node in its own colour, in place of its level’s, and every ring as wide as asked', async () => {
