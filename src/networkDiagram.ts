@@ -9,7 +9,7 @@ import { select, type Selection } from 'd3-selection';
 export interface NetworkDiagramNode {
     id: string;
     color?: string; // The node's colour, in place of its level's: its ring when it has an icon, or else the whole node. Any CSS colour.
-    icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. It must declare 'xmlns', because it is shown as an image.
+    icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. Every icon and its disc are one size, whatever the level. It must declare 'xmlns', because it is shown as an image.
     isAction?: boolean; // Draws the node as something to do, not a thing: a pale disc with a coloured ring, unlike any level, that never shows as selected.
     isSelected?: boolean; // Draws the node as the selected one, when the caller keeps the selection ('selectsOnClick' is false).
     label?: string; // Shown beside the node. Without one, the id is shown inside the node, unless the node has a symbol.
@@ -108,8 +108,8 @@ const COLOR = {
 const ACTION_STYLE = { fill: '#dbeafe', fillHovered: '#bfdbfe', radius: 16, stroke: '#2563eb', strokeHovered: '#1d4ed8', symbol: '#1d4ed8' };
 const ICON_CLASS_NAME = 'icon';
 const ICON_NODE_COLOR = '#ffffff';
-const ICON_NODE_MINIMUM_RADIUS = 16; // An icon in a smaller node could not be made out.
-const ICON_SIZE_RATIO = 1.2; // An icon's side as a share of its node's radius, which keeps its corners inside the disc.
+const ICON_NODE_RADIUS = 16; // One size at every level, so the same icon is the same size wherever it is. Wide enough to keep the icon's corners inside the disc.
+const ICON_SIZE = 20;
 const SYMBOL_CLASS_NAME = 'symbol';
 const SYMBOL_FONT_SIZE = 20;
 const SYMBOL_PLUS_ARM_LENGTH = 6; // From the centre of a plus to the end of each arm.
@@ -407,10 +407,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .join('image')
             .attr('class', ICON_CLASS_NAME)
             .attr('href', (node) => `data:image/svg+xml,${encodeURIComponent(node.icon ?? '')}`)
-            .attr('x', (node) => -constructIconSize(node) / 2)
-            .attr('y', (node) => -constructIconSize(node) / 2)
-            .attr('width', constructIconSize)
-            .attr('height', constructIconSize)
+            .attr('x', -ICON_SIZE / 2)
+            .attr('y', -ICON_SIZE / 2)
+            .attr('width', ICON_SIZE)
+            .attr('height', ICON_SIZE)
             .style('pointer-events', 'none');
         // Set on nodes that stay too, because an update may change either. A symbol sits in the middle of its node, in the
         // action's own colour or else white, as an id is. A symbol the diagram knows is drawn as lines measured from
@@ -623,12 +623,6 @@ function constructSymbolColor(node: NetworkDiagramNode): string {
     return node.isAction === true ? ACTION_STYLE.symbol : COLOR.nodeText;
 }
 
-// ── Icons
-
-function constructIconSize(node: NetworkDiagramNode): number {
-    return Math.round(getNodeStyle(node).radius * ICON_SIZE_RATIO);
-}
-
 // ── Data
 
 // Everything about data that decides where its nodes go: the nodes, their labels, which take room, and the links.
@@ -660,14 +654,12 @@ function getNodePosition(value: LaidOutNode | string | number, axis: 'x' | 'y'):
 }
 
 // How a node is drawn: as an action, or else by its level. A node with an icon is ringed in its level's colour, and
-// is never too small for the icon to be made out.
+// is one size at every level.
 function getNodeStyle(node: NetworkDiagramNode): { fill: string; fillHovered: string; radius: number; stroke: string; strokeHovered: string } {
     if (node.isAction === true) return ACTION_STYLE;
     const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
     const levelStyle = assertDefined(LEVEL_STYLES[level]);
-    return node.icon == null
-        ? levelStyle
-        : { ...levelStyle, radius: Math.max(levelStyle.radius, ICON_NODE_MINIMUM_RADIUS), stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };
+    return node.icon == null ? levelStyle : { ...levelStyle, radius: ICON_NODE_RADIUS, stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };
 }
 
 // ── Animation

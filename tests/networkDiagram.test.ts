@@ -408,6 +408,16 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(Number(iconCircle?.getAttribute('r'))).toBeGreaterThan(Number(plainCircle?.getAttribute('r')));
         });
 
+        it('draws every icon and its disc at one size, whatever the node’s level', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const levelData: NetworkDiagramData = { links: [], nodes: [0, 1, 2, 3].map((level) => ({ id: `level${String(level)}`, icon, label: 'Node', level })) };
+            const view = await new D3Tool().renderNetworkDiagram(levelData, document.createElement('div'));
+
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['20']));
+            expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['20']));
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['16']));
+        });
+
         it('draws a node in its own colour, in place of its level’s, and every ring as wide as asked', async () => {
             const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
             const colourData: NetworkDiagramData = {
