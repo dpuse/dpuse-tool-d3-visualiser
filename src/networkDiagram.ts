@@ -33,6 +33,7 @@ export interface NetworkDiagramOptions {
     actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
     chargeStrength?: number;
     compactWidth?: number; // A container narrower than this has every label below its node, whatever 'labelPlacementId' says, because labels beside the nodes take more room sideways.
+    fitAlignmentId?: NetworkDiagramFitAlignmentId; // Without one, 'middle'.
     fitsView?: boolean;
     focusRingColor?: string; // The ring round the node that has keyboard focus. Any CSS colour. Without one, blue. // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
     growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
@@ -62,6 +63,10 @@ export interface NetworkDiagramActionNodeColors {
     fillHovered?: string; // Without one, the fill does not change under the pointer.
     symbol: string;
 }
+
+// Where a fitted diagram sits when it is shorter than its container: 'middle' centres it, and 'top' keeps it at the top,
+// near the page's headings, rather than leaving empty space above it. Either way it is centred from side to side.
+export type NetworkDiagramFitAlignmentId = 'middle' | 'top';
 
 // 'below' centres every label under its node. 'outside' puts each label in the widest gap between its node's links, so
 // the labels of a star fan outwards rather than running into one another.
@@ -407,10 +412,11 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         const widthScale = viewWidth / (bounds.right - bounds.left + FIT_MARGIN * 2);
         const heightScale = viewHeight / (bounds.bottom - bounds.top + FIT_MARGIN * 2);
         const scale = Math.max(MINIMUM_SCALE, Math.min(options.maximumFitScale ?? 1, widthScale, heightScale));
+        const isTopAligned = options.fitAlignmentId === 'top';
         return zoomIdentity
-            .translate(viewWidth / 2, viewHeight / 2)
+            .translate(viewWidth / 2, isTopAligned ? FIT_MARGIN : viewHeight / 2)
             .scale(scale)
-            .translate(-(bounds.left + bounds.right) / 2, -(bounds.top + bounds.bottom) / 2);
+            .translate(-(bounds.left + bounds.right) / 2, isTopAligned ? -bounds.top : -(bounds.top + bounds.bottom) / 2);
     };
 
     const applyTransform = (transform: ReturnType<typeof zoomIdentity.translate>): void => {

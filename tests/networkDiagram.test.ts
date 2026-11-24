@@ -256,6 +256,19 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(readScale(fullSize.svg.querySelector('g'))).toBe(1);
         });
 
+        it('keeps a short fitted diagram at the top of its container when asked, and in the middle otherwise', async () => {
+            const top = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitAlignmentId: 'top', fitsView: true });
+            const middle = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitsView: true });
+            top.triggerAutoLayout();
+            middle.triggerAutoLayout();
+            const topGroup = top.svg.querySelector('g');
+            const middleGroup = middle.svg.querySelector('g');
+
+            expect(readTranslateY(topGroup)).toBeLessThan(readTranslateY(middleGroup));
+            expect(readTranslateX(topGroup)).toBe(readTranslateX(middleGroup));
+            expect(readScale(topGroup)).toBe(readScale(middleGroup));
+        });
+
         it('makes a fitted diagram only as small as its labels need', async () => {
             const longLabel = 'A label that reaches a long way out from its node';
             const longData = { ...labelledData, nodes: labelledData.nodes.map((node) => (node.id === 'hub' ? node : { ...node, label: longLabel })) };
