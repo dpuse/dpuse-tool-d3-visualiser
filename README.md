@@ -238,7 +238,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 | Chunk/Module/File                                                                | Composition                                                                                    |
 | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **All 14 files**                                                                 | 421.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;124.3&nbsp;kB                                              |
+| **All 14 files**                                                                 | 421.3&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;124.3&nbsp;kB                                              |
 | **dist/tanStackCharts-DEINbmRi.js**                                              | 125.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;36.7&nbsp;kB&nbsp;·&nbsp;29.8%&nbsp;of&nbsp;the&nbsp;build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts → dist/scene.js + 41 more               | `██████████████████░░`&nbsp;90.1%&nbsp;·&nbsp;113.0&nbsp;kB                                    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js + 2 more                          | `░░░░░░░░░░░░░░░░░░░░`&nbsp;1.7%&nbsp;·&nbsp;2.1&nbsp;kB                                       |
@@ -256,13 +256,13 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                                    | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;494&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/group.js + 1 more                         | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;487&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `███░░░░░░░░░░░░░░░░░`&nbsp;13.5%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
-| **dist/networkDiagram-pZGtX00x.js**                                              | 49.7&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;15.1&nbsp;kB&nbsp;·&nbsp;11.8%&nbsp;of&nbsp;the&nbsp;build  |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `███████░░░░░░░░░░░░░`&nbsp;33.4%&nbsp;·&nbsp;16.6&nbsp;kB                                     |
+| **dist/networkDiagram-Cj3H4kj7.js**                                              | 49.7&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;15.1&nbsp;kB&nbsp;·&nbsp;11.8%&nbsp;of&nbsp;the&nbsp;build  |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `███████░░░░░░░░░░░░░`&nbsp;33.5%&nbsp;·&nbsp;16.7&nbsp;kB                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom → dist/d3-zoom.mjs                               | `████░░░░░░░░░░░░░░░░`&nbsp;21.6%&nbsp;·&nbsp;10.7&nbsp;kB                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-force → dist/d3-force.mjs                             | `███░░░░░░░░░░░░░░░░░`&nbsp;15.3%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree → src/add.js + 13 more                       | `██░░░░░░░░░░░░░░░░░░`&nbsp;12.5%&nbsp;·&nbsp;6.2&nbsp;kB                                      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag → dist/d3-drag.mjs                               | `██░░░░░░░░░░░░░░░░░░`&nbsp;8.7%&nbsp;·&nbsp;4.3&nbsp;kB                                       |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                             | `░░░░░░░░░░░░░░░░░░░░`&nbsp;2.0%&nbsp;·&nbsp;1002&nbsp;B                                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag → dist/d3-drag.mjs                               | `██░░░░░░░░░░░░░░░░░░`&nbsp;8.6%&nbsp;·&nbsp;4.3&nbsp;kB                                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                             | `░░░░░░░░░░░░░░░░░░░░`&nbsp;2.0%&nbsp;·&nbsp;1000&nbsp;B                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `█░░░░░░░░░░░░░░░░░░░`&nbsp;6.5%&nbsp;·&nbsp;3.2&nbsp;kB                                       |
 | **dist/d3-shape-gf8U18pS.js**                                                    | 36.9&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;7.9&nbsp;kB&nbsp;·&nbsp;8.8%&nbsp;of&nbsp;the&nbsp;build    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → dist/d3-shape.mjs                             | `█████████████████░░░`&nbsp;86.2%&nbsp;·&nbsp;31.8&nbsp;kB                                     |
@@ -300,7 +300,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | **dist/treeDiagram-t0oFwi1c.js**                                                 | 2.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;1.0&nbsp;kB&nbsp;·&nbsp;0.5%&nbsp;of&nbsp;the&nbsp;build     |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts                                     | `█████████████████░░░`&nbsp;87.2%&nbsp;·&nbsp;1.9&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `███░░░░░░░░░░░░░░░░░`&nbsp;12.8%&nbsp;·&nbsp;290&nbsp;B                                       |
-| **dist/dpuse-tool-d3-visualiser.es.js**                                          | 1.6&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;460&nbsp;B&nbsp;·&nbsp;0.4%&nbsp;of&nbsp;the&nbsp;build      |
+| **dist/dpuse-tool-d3-visualiser.es.js**                                          | 1.6&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;461&nbsp;B&nbsp;·&nbsp;0.4%&nbsp;of&nbsp;the&nbsp;build      |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                           | `██████████████████░░`&nbsp;87.9%&nbsp;·&nbsp;1.4&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `██░░░░░░░░░░░░░░░░░░`&nbsp;12.1%&nbsp;·&nbsp;200&nbsp;B                                       |
 | **dist/palette-D5DTPmuA.js**                                                     | 1.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;567&nbsp;B&nbsp;·&nbsp;0.3%&nbsp;of&nbsp;the&nbsp;build      |

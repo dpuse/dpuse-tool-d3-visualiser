@@ -33,6 +33,7 @@ export interface NetworkDiagramData {
 
 export interface NetworkDiagramOptions {
     actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
+    actionNodeSize?: number; // How wide every action node is drawn, ring included, in the diagram's own units, such as 40 to match a page's 40px buttons. Without one, 44 plus the ring.
     chargeStrength?: number;
     compactWidth?: number; // A container narrower than this has every label below its node, whatever 'labelPlacementId' says, because labels beside the nodes take more room sideways.
     disablesNodeDrag?: boolean; // Stops the user dragging a node to a new place. A drag that starts on a node then pans the diagram, as one on the background does.
@@ -43,7 +44,7 @@ export interface NetworkDiagramOptions {
     growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
     hoveredIconNodeColor?: string; // The disc behind the icon of the node under the pointer. Any CSS colour. Without one, the disc does not change.
     iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
-    iconNodeSize?: number; // How wide every node with an icon, and every action node, is drawn, ring included, in the diagram's own units, such as 40 to match a page's 40px buttons. Without one, 44 plus the ring.
+    iconNodeSize?: number; // How wide every node with an icon is drawn, ring included, in the diagram's own units. Without one, 44 plus the ring.
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkColor?: string; // The colour of the lines between nodes. Any CSS colour. Without one, a mid grey.
@@ -216,8 +217,9 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     // A size from the caller takes in the ring, which is drawn centred on the node's edge, so half the ring's width lies
     // outside the radius.
     const nodeBorderWidth = options.nodeBorderWidth ?? DEFAULT_NODE_BORDER_WIDTH;
+    const actionNodeRadius = options.actionNodeSize == null ? ACTION_STYLE.radius : options.actionNodeSize / 2 - nodeBorderWidth / 2;
     const iconNodeRadius = options.iconNodeSize == null ? ICON_NODE_RADIUS : options.iconNodeSize / 2 - nodeBorderWidth / 2;
-    const getStyle = (node: NetworkDiagramNode): NodeStyle => getNodeStyle(node, iconNodeRadius);
+    const getStyle = (node: NetworkDiagramNode): NodeStyle => getNodeStyle(node, actionNodeRadius, iconNodeRadius);
     // Labels go below their nodes in a narrow container. Worked out each time, because the container can be resized.
     const getLabelPlacementId = (): NetworkDiagramLabelPlacementId => {
         const isCompact = options.compactWidth != null && (renderTo.clientWidth || DEFAULT_WIDTH) < options.compactWidth;
@@ -991,10 +993,10 @@ function getNodePosition(value: LaidOutNode | string | number, axis: 'x' | 'y'):
     return typeof value === 'object' ? (value[axis] ?? 0) : 0;
 }
 
-// How a node is drawn: as an action, or else by its level. An action and a node with an icon are one size at every
-// level, and a node with an icon is ringed in its level's colour.
-function getNodeStyle(node: NetworkDiagramNode, iconNodeRadius: number): NodeStyle {
-    if (node.isAction === true) return { ...ACTION_STYLE, radius: iconNodeRadius };
+// How a node is drawn: as an action, or else by its level. An action and a node with an icon are each one size at
+// every level, and a node with an icon is ringed in its level's colour.
+function getNodeStyle(node: NetworkDiagramNode, actionNodeRadius: number, iconNodeRadius: number): NodeStyle {
+    if (node.isAction === true) return { ...ACTION_STYLE, radius: actionNodeRadius };
     const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
     const levelStyle = assertDefined(LEVEL_STYLES[level]);
     return node.icon == null ? levelStyle : { ...levelStyle, radius: iconNodeRadius, stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };

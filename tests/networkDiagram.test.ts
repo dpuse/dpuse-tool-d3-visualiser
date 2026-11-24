@@ -489,7 +489,7 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(view.svg.querySelector('path.symbol')).toBeNull();
         });
 
-        it('draws every node with an icon, and every action node, as wide as asked, ring included, and leaves other nodes their size', async () => {
+        it('draws action nodes and nodes with an icon each as wide as asked, ring included, and leaves other nodes their size', async () => {
             const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
             const sizeData: NetworkDiagramData = {
                 links: [],
@@ -499,10 +499,13 @@ describe('D3Tool.renderNetworkDiagram', () => {
                     { id: 'plain', label: 'Plain', level: 3 }
                 ]
             };
-            const sized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { iconNodeSize: 40, nodeBorderWidth: 1 });
+            const actionSized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { actionNodeSize: 40, nodeBorderWidth: 1 });
+            const iconSized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { iconNodeSize: 36, nodeBorderWidth: 1 });
             const unsized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { nodeBorderWidth: 1 });
+            const plainRadius = readNodeRadii(unsized.svg)[2];
 
-            expect(readNodeRadii(sized.svg)).toStrictEqual([19.5, 19.5, readNodeRadii(unsized.svg)[2]]); // 40 across, with half the 1-wide ring outside the radius.
+            expect(readNodeRadii(actionSized.svg)).toStrictEqual([22, 19.5, plainRadius]); // 40 across, with half the 1-wide ring outside the radius.
+            expect(readNodeRadii(iconSized.svg)).toStrictEqual([17.5, 22, plainRadius]);
             expect(readNodeRadii(unsized.svg).slice(0, 2)).toStrictEqual([22, 22]);
         });
 
