@@ -233,6 +233,68 @@ describe('D3Tool.renderNetworkDiagram', () => {
         });
     });
 
+    describe('fitting and zooming', () => {
+        const labelledData: NetworkDiagramData = {
+            links: [
+                { source: 'hub', target: 'left' },
+                { source: 'hub', target: 'right' }
+            ],
+            nodes: [
+                { id: 'hub', label: 'Hub' },
+                { id: 'left', label: 'Left' },
+                { id: 'right', label: 'Right' }
+            ]
+        };
+
+        it('enlarges a small fitted diagram as far as allowed, and leaves it at full size otherwise', async () => {
+            const enlarged = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitsView: true, maximumFitScale: 1.5 });
+            const fullSize = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitsView: true });
+            enlarged.triggerAutoLayout();
+            fullSize.triggerAutoLayout();
+
+            expect(readScale(enlarged.svg.querySelector('g'))).toBe(1.5);
+            expect(readScale(fullSize.svg.querySelector('g'))).toBe(1);
+        });
+
+        it('makes a fitted diagram only as small as its labels need', async () => {
+            const longLabel = 'A label that reaches a long way out from its node';
+            const longData = { ...labelledData, nodes: labelledData.nodes.map((node) => (node.id === 'hub' ? node : { ...node, label: longLabel })) };
+
+            expect(await measureFitScale(longData)).toBeLessThan(await measureFitScale(labelledData));
+            expect(await measureFitScale(labelledData)).toBeGreaterThan(0.75); // Short labels leave nearly all of a narrow container to the nodes.
+        });
+
+        it('puts every label below its node in a narrow container, and beside it again once the container is wide', async () => {
+            const container = constructSizedContainer();
+            container.setWidth(400);
+            const view = await new D3Tool().renderNetworkDiagram(labelledData, container.element, { compactWidth: 480, fitsView: true, labelPlacementId: 'outside' });
+            view.triggerAutoLayout();
+            const readAnchors = (): (string | null)[] => [...view.svg.querySelectorAll('text')].map((text) => text.getAttribute('text-anchor'));
+
+            expect(readAnchors()).toStrictEqual(['middle', 'middle', 'middle']);
+
+            container.setWidth(800);
+            view.resize();
+
+            expect(readAnchors().toSorted((left, right) => (left ?? '').localeCompare(right ?? ''))).toStrictEqual(['end', 'middle', 'start']);
+        });
+
+        it('zooms in and out about the middle of the container, and fits the diagram again when asked', async () => {
+            const view = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitsView: true });
+            view.triggerAutoLayout();
+            const fittedTransform = view.svg.querySelector('g')?.getAttribute('transform');
+
+            view.zoomBy(2);
+            expect(readScale(view.svg.querySelector('g'))).toBe(2);
+            view.zoomBy(0.5);
+            view.zoomBy(0.5);
+            expect(readScale(view.svg.querySelector('g'))).toBe(0.5);
+
+            view.fitView();
+            expect(view.svg.querySelector('g')?.getAttribute('transform')).toBe(fittedTransform);
+        });
+    });
+
     describe('labels', () => {
         const starData: NetworkDiagramData = {
             links: [
@@ -647,6 +709,28 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(lines).toStrictEqual([['Governance, Risk', '& Compliance'], ['Legal'], ['Telecommunications']]);
         });
 
+        it('cuts a line of a label that is too long short, and shows the whole label as the node’s tooltip', async () => {
+            const cutData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'a', label: '57db7-5238-43f7-a48f-692787635228' },
+                    { id: 'b', label: 'Governance, Risk & Compliance' },
+                    { id: 'c', label: 'Legal' },
+                    { id: 'd', label: 'A label that is far too long', title: 'Its own tooltip' }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(cutData, document.createElement('div'), { maximumLabelLength: 12, wrapsLabels: true });
+
+            const lines = [...view.svg.querySelectorAll('text')].map((text) => [...text.querySelectorAll('tspan')].map((line) => line.textContent));
+            expect(lines).toStrictEqual([['57db7-5238-…'], ['Governance,…', '& Compliance'], ['Legal'], ['A label tha…', 'far too long']]);
+            expect([...view.svg.querySelectorAll('title')].map((title) => title.textContent)).toStrictEqual([
+                '57db7-5238-43f7-a48f-692787635228',
+                'Governance, Risk & Compliance',
+                '',
+                'Its own tooltip'
+            ]);
+        });
+
         it('lengthens the links round a node with many neighbours when room is reserved for labels, and leaves a pair alone', async () => {
             expect(await measureLinkLength(12, false)).toBeLessThan(45);
             expect(await measureLinkLength(12, true)).toBeGreaterThan(100);
@@ -680,6 +764,15 @@ async function measureLabelDistance(labelHaloColor?: string): Promise<number> {
     view.triggerAutoLayout();
     const text = findNodeElement(view.svg, 'Hub LabelHere')?.querySelector('text'); // The label's two lines, read as one text.
     return Math.hypot(Number(text?.querySelector('tspan')?.getAttribute('x')), Number(text?.getAttribute('y')));
+}
+
+// How far a diagram with labels beside its nodes is scaled to fit a container 300 wide.
+async function measureFitScale(fittedData: NetworkDiagramData): Promise<number> {
+    const container = constructSizedContainer();
+    container.setWidth(300);
+    const view = await new D3Tool().renderNetworkDiagram(fittedData, container.element, { fitsView: true, labelPlacementId: 'outside' });
+    view.triggerAutoLayout();
+    return readScale(view.svg.querySelector('g'));
 }
 
 async function measureLinkLength(leafCount: number, isRoomReserved: boolean): Promise<number> {
@@ -717,6 +810,10 @@ function findNodeElement(svg: SVGSVGElement, label: string): SVGGElement | undef
 
 function readAnchor(element: Element | undefined): string | null | undefined {
     return element?.querySelector('text')?.getAttribute('text-anchor');
+}
+
+function readScale(element: Element | null | undefined): number {
+    return Number(/scale\(([^)]+)\)/.exec(element?.getAttribute('transform') ?? '')?.[1]);
 }
 
 function readTranslateX(element: Element | null | undefined): number {

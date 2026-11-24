@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "1.0.137",
+    "version": "1.0.138",
     "private": false,
     "description": "A TypeScript wrapper for D3, TanStack Charts, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (TanStack Charts) renderers.",
     "license": "MIT",
@@ -48,7 +48,7 @@
         "fsevents@2.3.3": true,
         "unrs-resolver@1.12.2": true,
         "esbuild@0.28.2": true,
-        "workerd@1.20261119.1": true
+        "workerd@1.20261123.1": true
     },
     "scripts": {
         "audit": "node -e \"import('@dpuse/dpuse-development').then(m => m.auditDependencies())\"",
@@ -97,7 +97,7 @@
         "vite": "^8.3.8",
         "vite-plugin-dts": "^5.1.2",
         "vitest": "^5.1.1",
-        "wrangler": "^4.166.0"
+        "wrangler": "^4.167.0"
     },
     "overrides": {
         "d3-array": "^3.2.4",

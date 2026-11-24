@@ -27,8 +27,10 @@ export interface D3View extends PresentationView {
 
 export interface D3NetworkView extends D3View {
     destroy: () => void;
+    fitView: () => void; // Zooms and centres so that every node and label is in view.
     triggerAutoLayout: () => void;
     update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place, moving and fading what differs.
+    zoomBy: (factor: number) => void; // Zooms about the middle of the container: in for a factor above 1, out for one below.
 }
 
 export interface D3TanStackChartsView extends D3View {
@@ -92,13 +94,15 @@ export class Tool {
         callback?.();
         return {
             destroy: handle.destroy,
+            fitView: handle.fitView,
             resize: handle.resize,
             get svg() {
                 return handle.svg;
             },
             triggerAutoLayout: handle.triggerAutoLayout,
             update: handle.update,
-            vendorId: D3_ID
+            vendorId: D3_ID,
+            zoomBy: handle.zoomBy
         };
     }
 

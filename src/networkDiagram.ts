@@ -32,6 +32,7 @@ export interface NetworkDiagramData {
 export interface NetworkDiagramOptions {
     actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
     chargeStrength?: number;
+    compactWidth?: number; // A container narrower than this has every label below its node, whatever 'labelPlacementId' says, because labels beside the nodes take more room sideways.
     fitsView?: boolean;
     focusRingColor?: string; // The ring round the node that has keyboard focus. Any CSS colour. Without one, blue. // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
     growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
@@ -42,6 +43,8 @@ export interface NetworkDiagramOptions {
     linkColor?: string; // The colour of the lines between nodes. Any CSS colour. Without one, a mid grey.
     linkDistance?: number;
     linkWidth?: number; // The width of the lines between nodes. Without one, 2.
+    maximumFitScale?: number; // How far a fitted diagram may be enlarged to fill its container. Without one, 1, so a small diagram is centred at full size.
+    maximumLabelLength?: number; // Cuts a line of a label longer than this many characters short and ends it with '…'. The whole label is then the node's tooltip, unless the node has a 'title'.
     nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
@@ -66,9 +69,11 @@ export type NetworkDiagramLabelPlacementId = 'below' | 'outside';
 
 export interface NetworkDiagramHandle {
     destroy: () => void;
+    fitView: () => void; // Zooms and centres so that every node and label is in view, as a fitted diagram is first drawn.
     resize: () => void;
     svg: SVGSVGElement;
     triggerAutoLayout: () => void;
+    zoomBy: (factor: number) => void; // Zooms about the middle of the container: in for a factor above 1, out for one below.
     update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place: nodes that stay move to their new places, new ones fade in and old ones fade out. Data with the same nodes, labels and links only restyles the nodes, which stay where they are.
 }
 
@@ -76,6 +81,14 @@ type LaidOutNode = NetworkDiagramNode & SimulationNodeDatum;
 type LaidOutLink = SimulationLinkDatum<LaidOutNode>;
 
 interface Point {
+    x: number;
+    y: number;
+}
+
+// Where a label is drawn, measured from the middle of its node: the baseline of its first line, and which end of the
+// line 'x' marks.
+interface LabelPlacement {
+    anchor: 'end' | 'middle' | 'start';
     x: number;
     y: number;
 }
@@ -98,13 +111,15 @@ const OUTER_RING_GAP = 2; // The clear space between a node and a ring round it,
 const OUTER_RING_WIDTH = 2;
 const SELECTED_RING_CLASS_NAME = 'selected-ring';
 const NODE_LABEL_GAP = 14; // From the bottom of a node to the baseline of the label below it.
-const FIT_PADDING = 70; // Room around the outermost nodes for the labels below them.
-const FIT_PADDING_OUTSIDE = 130; // More room when labels sit beside the nodes, because a label then reaches a whole label's width past its node.
+const FIT_MARGIN = 16; // The clear space kept between a fitted diagram and the edges of its container.
+const FIT_NODE_ALLOWANCE = (OUTER_RING_GAP + OUTER_RING_WIDTH) * 2; // Room round every node for the selected and focus rings, so a fitted diagram does not move when either is drawn.
 const MINIMUM_SCALE = 0.25;
 const MAXIMUM_SCALE = 4;
 
 // ── Labels
 const LABEL_FONT_SIZE = 12;
+const LABEL_DESCENT = 4; // How far the tails of letters reach below a line of a label.
+const LABEL_ELLIPSIS = '…';
 const LABEL_LINE_HEIGHT = 14;
 const LABEL_CHARACTER_WIDTH = 6.2; // An average, used to estimate a label's width, because text cannot be measured before it is drawn.
 const LABEL_HALO_WIDTH = 4;
@@ -154,7 +169,13 @@ const LEVEL_STYLES = [
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options: NetworkDiagramOptions = {}): NetworkDiagramHandle {
-    const labelPlacementId = options.labelPlacementId ?? 'below';
+    const getLabelLines = (node: NetworkDiagramNode): string[] => constructLabelLines(node, options.wrapsLabels === true, options.maximumLabelLength);
+    // Labels go below their nodes in a narrow container. Worked out each time, because the container can be resized.
+    const getLabelPlacementId = (): NetworkDiagramLabelPlacementId => {
+        const isCompact = options.compactWidth != null && (renderTo.clientWidth || DEFAULT_WIDTH) < options.compactWidth;
+        return isCompact ? 'below' : (options.labelPlacementId ?? 'below');
+    };
+    let laidOutLabelPlacementId = getLabelPlacementId(); // The placement the nodes were last laid out for, because the links are longer for labels beside the nodes.
     const transitionDuration = options.transitionDuration ?? DEFAULT_TRANSITION_DURATION;
     const width = renderTo.clientWidth || DEFAULT_WIDTH;
     const height = renderTo.clientHeight || DEFAULT_HEIGHT;
@@ -205,18 +226,23 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         if (neighbourIds.length < RING_MINIMUM_NEIGHBOUR_COUNT) return 0;
         let arcLength = 0;
         let widestNeighbourRadius = 0;
+        const isBelow = getLabelPlacementId() === 'below';
         for (const neighbourId of neighbourIds) {
             const neighbour = nodesById.get(neighbourId);
             if (!neighbour) continue;
-            const labelArc = neighbour.label == null ? 0 : estimateLabelWidth(constructLabelLines(neighbour, options.wrapsLabels === true)) * LABEL_ARC_RATIO;
-            arcLength += Math.max(getNodeStyle(neighbour).radius * 2, labelArc) + NODE_ARC_GAP;
+            const lines = neighbour.label == null ? [] : getLabelLines(neighbour);
+            const labelArc = estimateLabelWidth(lines) * LABEL_ARC_RATIO;
+            // A label below its node points along the ring at the ring's sides, so a neighbour there needs room for its
+            // node and its label one above the other, or the label would lie over the next neighbour.
+            const stackedArc = isBelow && lines.length > 0 ? NODE_LABEL_GAP + (lines.length - 1) * LABEL_LINE_HEIGHT + LABEL_DESCENT : 0;
+            arcLength += Math.max(getNodeStyle(neighbour).radius * 2 + stackedArc, labelArc) + NODE_ARC_GAP;
             widestNeighbourRadius = Math.max(widestNeighbourRadius, getNodeStyle(neighbour).radius);
         }
 
         const arcRadius = arcLength / (Math.PI * 2);
         const node = nodesById.get(nodeId);
-        if (labelPlacementId === 'below' || node?.label == null) return arcRadius; // A label below its node does not point out towards the ring.
-        const ownLabelWidth = estimateLabelWidth(constructLabelLines(node, options.wrapsLabels === true));
+        if (getLabelPlacementId() === 'below' || node?.label == null) return arcRadius; // A label below its node does not point out towards the ring.
+        const ownLabelWidth = estimateLabelWidth(getLabelLines(node));
         return Math.max(arcRadius, getNodeStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
     };
 
@@ -333,6 +359,13 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         });
     svgSelection.call(zoomBehavior).on('dblclick.zoom', null);
 
+    // Where a node's label goes, given where its neighbours now are.
+    const constructNodeLabelPlacement = (node: LaidOutNode, nodesById: Map<string, LaidOutNode>): LabelPlacement => {
+        const neighbours = (neighbourIdsById.get(node.id) ?? []).map((neighbourId) => nodesById.get(neighbourId)).filter((neighbour) => neighbour !== undefined);
+        const ringAllowance = options.selectedRingColor == null ? 0 : OUTER_RING_GAP + OUTER_RING_WIDTH;
+        return constructLabelPlacement(node, neighbours, getLabelPlacementId(), getLabelLines(node), options.labelHaloColor != null, ringAllowance);
+    };
+
     // Moves every link, node and label to where its node now is. A label's place depends on where its node's
     // neighbours are, so the labels are placed again each time.
     const renderGraph = (): void => {
@@ -346,35 +379,38 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         const nodesById = new Map(nodes.map((node) => [node.id, node]));
         nodeSelection.each((node, index, elements) => {
             if (node.label == null) return; // An id stays in the middle of its node, where it was drawn.
-            const neighbours = (neighbourIdsById.get(node.id) ?? []).map((neighbourId) => nodesById.get(neighbourId)).filter((neighbour) => neighbour !== undefined);
-            const placement = constructLabelPlacement(
-                node,
-                neighbours,
-                labelPlacementId,
-                constructLabelLines(node, options.wrapsLabels === true),
-                options.labelHaloColor != null,
-                options.selectedRingColor == null ? 0 : OUTER_RING_GAP + OUTER_RING_WIDTH
-            );
+            const placement = constructNodeLabelPlacement(node, nodesById);
             const text = select(assertDefined(elements[index])).select<SVGTextElement>('text').attr('text-anchor', placement.anchor).attr('y', placement.y);
             text.selectAll<SVGTSpanElement, string>('tspan').attr('x', placement.x);
         });
     };
 
-    // The view that shows every node with its label. Never zooms in past full size, so a small graph is centred rather
-    // than enlarged.
+    // The view that shows every node with its label, with a little clear space round them. The room each label takes is
+    // worked out from where it is placed, so a diagram with short labels, or labels below its nodes, is not made smaller
+    // than it needs to be. A small diagram is enlarged only as far as the caller allows.
     const constructFitTransform = (): ReturnType<typeof zoomIdentity.translate> | undefined => {
         if (nodes.length === 0) return undefined;
-        const xPositions = nodes.map((node) => node.x ?? 0);
-        const yPositions = nodes.map((node) => node.y ?? 0);
-        const [left, right, top, bottom] = [Math.min(...xPositions), Math.max(...xPositions), Math.min(...yPositions), Math.max(...yPositions)];
+        const nodesById = new Map(nodes.map((node) => [node.id, node]));
+        const bounds = { left: Infinity, right: -Infinity, top: Infinity, bottom: -Infinity };
+        for (const node of nodes) {
+            const [x, y] = [node.x ?? 0, node.y ?? 0];
+            const radius = getNodeStyle(node).radius + FIT_NODE_ALLOWANCE;
+            const lines = node.label == null ? [] : getLabelLines(node); // An id is inside its node.
+            const labelBox = lines.length === 0 ? undefined : constructLabelBox(constructNodeLabelPlacement(node, nodesById), lines);
+            bounds.left = Math.min(bounds.left, x - radius, x + (labelBox?.left ?? 0));
+            bounds.right = Math.max(bounds.right, x + radius, x + (labelBox?.right ?? 0));
+            bounds.top = Math.min(bounds.top, y - radius, y + (labelBox?.top ?? 0));
+            bounds.bottom = Math.max(bounds.bottom, y + radius, y + (labelBox?.bottom ?? 0));
+        }
         const viewWidth = renderTo.clientWidth || DEFAULT_WIDTH;
         const viewHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
-        const padding = labelPlacementId === 'outside' ? FIT_PADDING_OUTSIDE : FIT_PADDING;
-        const scale = Math.max(MINIMUM_SCALE, Math.min(1, viewWidth / (right - left + padding * 2), viewHeight / (bottom - top + padding * 2)));
+        const widthScale = viewWidth / (bounds.right - bounds.left + FIT_MARGIN * 2);
+        const heightScale = viewHeight / (bounds.bottom - bounds.top + FIT_MARGIN * 2);
+        const scale = Math.max(MINIMUM_SCALE, Math.min(options.maximumFitScale ?? 1, widthScale, heightScale));
         return zoomIdentity
             .translate(viewWidth / 2, viewHeight / 2)
             .scale(scale)
-            .translate(-(left + right) / 2, -(top + bottom) / 2);
+            .translate(-(bounds.left + bounds.right) / 2, -(bounds.top + bounds.bottom) / 2);
     };
 
     const applyTransform = (transform: ReturnType<typeof zoomIdentity.translate>): void => {
@@ -384,6 +420,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     };
 
     const runLayout = (): void => {
+        laidOutLabelPlacementId = getLabelPlacementId();
         simulation.alpha(1);
         for (let step = 0; step < AUTO_LAYOUT_TICKS; step += 1) simulation.tick();
         simulation.stop();
@@ -512,7 +549,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .style('stroke-linejoin', (node) => (node.label == null || options.labelHaloColor == null ? null : 'round'))
             .style('stroke-width', (node) => (node.label == null || options.labelHaloColor == null ? null : `${String(LABEL_HALO_WIDTH)}px`))
             .selectAll<SVGTSpanElement, string>('tspan')
-            .data((node) => constructLabelLines(node, options.wrapsLabels === true))
+            .data(getLabelLines)
             .join('tspan')
             .attr('x', 0)
             .attr('dy', (_line, lineIndex) => (lineIndex === 0 ? 0 : LABEL_LINE_HEIGHT))
@@ -533,7 +570,8 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         // Set on nodes that stay too, because an update may change either. A symbol sits in the middle of its node, in the
         // action's own colour or else white, as an id is. A symbol the diagram knows is drawn as lines measured from
         // the node's centre, so it is centred exactly. Any other is drawn as text, which a font places only roughly.
-        nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? '');
+        // A label that has been cut short is the node's tooltip, so the whole of it can still be read.
+        nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? (isLabelCut(node, options.maximumLabelLength) ? (node.label ?? '') : ''));
         nodeSelection.attr('aria-label', (node) => node.label ?? node.title ?? node.id); // A screen reader names the node as a sighted user reads it.
         nodeSelection
             .selectAll<SVGPathElement, LaidOutNode>(`path.${SYMBOL_CLASS_NAME}`)
@@ -572,6 +610,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             simulation.stop();
             svgSelection.remove();
         },
+        fitView: () => {
+            const fitTransform = constructFitTransform();
+            if (fitTransform) applyTransform(fitTransform);
+        },
         resize: () => {
             const newWidth = renderTo.clientWidth || DEFAULT_WIDTH;
             const newHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
@@ -583,7 +625,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 
             // A fitted diagram stays in the middle of its container at its new size. Left alone while a change is being
             // drawn, because the nodes are then between places. The change fits the diagram itself when it ends.
-            if (animationFrameId !== undefined || options.fitsView !== true) return;
+            if (animationFrameId !== undefined) return;
+            // A container that has become narrow, or stopped being narrow, has its labels placed differently, which
+            // needs links of another length.
+            if (getLabelPlacementId() !== laidOutLabelPlacementId) {
+                runLayout();
+                renderGraph();
+            }
+            if (options.fitsView !== true) return;
             const fitTransform = constructFitTransform();
             if (fitTransform) applyTransform(fitTransform);
         },
@@ -650,6 +699,11 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                 animationFrameId = elapsedRatio < 1 ? requestAnimationFrame(renderFrame) : undefined;
             };
             animationFrameId = requestAnimationFrame(renderFrame);
+        },
+        zoomBy: (factor) => {
+            svgSelection.call((selection) => {
+                zoomBehavior.scaleBy(selection, factor);
+            });
         }
     };
 }
@@ -660,10 +714,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 
 // A node's label as the lines it is drawn on, which is none for a node that shows only a symbol. A long label of several words breaks at the space nearest its middle, so
 // its two lines are as even as they can be. A node with no label shows its id.
-function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean): string[] {
+function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean, maximumLength: number | undefined): string[] {
     if (node.label == null && (node.symbol != null || node.icon != null)) return []; // The symbol or icon is all such a node shows.
-    const label = node.label ?? node.id;
-    if (!isWrapped || node.label == null || label.length <= LABEL_WRAP_LENGTH) return [label];
+    if (node.label == null) return [node.id];
+    return wrapLabel(node.label, isWrapped).map((line) => cutLabelLine(line, maximumLength));
+}
+
+function wrapLabel(label: string, isWrapped: boolean): string[] {
+    if (!isWrapped || label.length <= LABEL_WRAP_LENGTH) return [label];
 
     const middle = label.length / 2;
     let breakIndex = -1;
@@ -671,6 +729,23 @@ function constructLabelLines(node: NetworkDiagramNode, isWrapped: boolean): stri
         if (breakIndex === -1 || Math.abs(spaceIndex - middle) < Math.abs(breakIndex - middle)) breakIndex = spaceIndex;
     }
     return breakIndex === -1 ? [label] : [label.slice(0, breakIndex), label.slice(breakIndex + 1)];
+}
+
+// A line longer than the most allowed keeps that many characters, the last of them an ellipsis.
+function cutLabelLine(line: string, maximumLength: number | undefined): string {
+    const isShortEnough = maximumLength == null || line.length <= maximumLength;
+    return isShortEnough ? line : `${line.slice(0, Math.max(0, maximumLength - 1)).trimEnd()}${LABEL_ELLIPSIS}`;
+}
+
+function isLabelCut(node: NetworkDiagramNode, maximumLength: number | undefined): boolean {
+    return node.label != null && constructLabelLines(node, true, maximumLength).join(' ') !== constructLabelLines(node, true, undefined).join(' ');
+}
+
+// The room a placed label takes, measured from the middle of its node.
+function constructLabelBox(placement: LabelPlacement, lines: string[]): { bottom: number; left: number; right: number; top: number } {
+    const width = estimateLabelWidth(lines);
+    const left = placement.anchor === 'start' ? placement.x : placement.x - (placement.anchor === 'end' ? width : width / 2);
+    return { bottom: placement.y + (lines.length - 1) * LABEL_LINE_HEIGHT + LABEL_DESCENT, left, right: left + width, top: placement.y - LABEL_FONT_SIZE };
 }
 
 function estimateLabelWidth(lines: string[]): number {
@@ -690,7 +765,7 @@ function constructLabelPlacement(
     lines: string[],
     hasHalo: boolean,
     ringAllowance: number
-): { anchor: 'end' | 'middle' | 'start'; x: number; y: number } {
+): LabelPlacement {
     const radius = getNodeStyle(node).radius + ringAllowance; // A label keeps clear of a ring that may be drawn round its node.
     const below = { anchor: 'middle' as const, x: 0, y: radius + NODE_LABEL_GAP };
     if (labelPlacementId === 'below' || neighbours.length === 0) return below;
