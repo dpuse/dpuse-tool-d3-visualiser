@@ -64,8 +64,9 @@ export interface NetworkDiagramActionNodeColors {
     symbol: string;
 }
 
-// Where a fitted diagram sits when it is shorter than its container: 'middle' centres it, and 'top' keeps it at the top,
-// near the page's headings, rather than leaving empty space above it. Either way it is centred from side to side.
+// Where a diagram sits when it is shorter than its container, after a fit or a zoom button: 'middle' centres it, and
+// 'top' keeps it near the top, near the page's headings, with a gap above it of 5% of the container's height. Either
+// way it is centred from side to side.
 export type NetworkDiagramFitAlignmentId = 'middle' | 'top';
 
 // 'below' centres every label under its node. 'outside' puts each label in the widest gap between its node's links, so
@@ -78,12 +79,20 @@ export interface NetworkDiagramHandle {
     resize: () => void;
     svg: SVGSVGElement;
     triggerAutoLayout: () => void;
-    zoomBy: (factor: number) => void; // Zooms about the middle of the container: in for a factor above 1, out for one below.
+    zoomBy: (factor: number) => void; // Zooms in for a factor above 1, out for one below. The whole diagram stays in view while it fits, placed as a fitted one is; a larger one zooms about the middle of the container.
     update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place: nodes that stay move to their new places, new ones fade in and old ones fade out. Data with the same nodes, labels and links only restyles the nodes, which stay where they are.
 }
 
 type LaidOutNode = NetworkDiagramNode & SimulationNodeDatum;
 type LaidOutLink = SimulationLinkDatum<LaidOutNode>;
+
+// The box round a whole diagram, in the diagram's own units.
+interface DiagramBounds {
+    bottom: number;
+    left: number;
+    right: number;
+    top: number;
+}
 
 interface Point {
     x: number;
@@ -117,6 +126,7 @@ const OUTER_RING_WIDTH = 2;
 const SELECTED_RING_CLASS_NAME = 'selected-ring';
 const NODE_LABEL_GAP = 14; // From the bottom of a node to the baseline of the label below it.
 const FIT_MARGIN = 16; // The clear space kept between a fitted diagram and the edges of its container.
+const TOP_ALIGNED_GAP_SHARE = 0.05; // The space above a diagram kept near the top, as a share of the container's height, so it grows with the pane but stays small.
 const FIT_NODE_ALLOWANCE = (OUTER_RING_GAP + OUTER_RING_WIDTH) * 2; // Room round every node for the selected and focus rings, so a fitted diagram does not move when either is drawn.
 const MINIMUM_SCALE = 0.25;
 const MAXIMUM_SCALE = 4;
@@ -390,10 +400,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         });
     };
 
-    // The view that shows every node with its label, with a little clear space round them. The room each label takes is
-    // worked out from where it is placed, so a diagram with short labels, or labels below its nodes, is not made smaller
-    // than it needs to be. A small diagram is enlarged only as far as the caller allows.
-    const constructFitTransform = (): ReturnType<typeof zoomIdentity.translate> | undefined => {
+    // The box round every node with its label, in the diagram's own units. The room each label takes is worked out from
+    // where it is placed, so a diagram with short labels, or labels below its nodes, is not made smaller than it needs
+    // to be.
+    const measureDiagramBounds = (): DiagramBounds | undefined => {
         if (nodes.length === 0) return undefined;
         const nodesById = new Map(nodes.map((node) => [node.id, node]));
         const bounds = { left: Infinity, right: -Infinity, top: Infinity, bottom: -Infinity };
@@ -407,16 +417,46 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             bounds.top = Math.min(bounds.top, y - radius, y + (labelBox?.top ?? 0));
             bounds.bottom = Math.max(bounds.bottom, y + radius, y + (labelBox?.bottom ?? 0));
         }
+        return bounds;
+    };
+
+    // The diagram at a scale, moved so that as much of it as can be is in view. Along a side where it fits, it is placed
+    // as a fitted diagram is: centred across, and centred or near the top down. Along a side where it does not fit, it
+    // keeps the point at the middle of the container where it was, as a zoom does, but is moved back so no empty space
+    // opens at one edge while the diagram runs past the other.
+    const constructPlacedTransform = (bounds: DiagramBounds, scale: number, current = zoomTransform(svgNode)): ReturnType<typeof zoomIdentity.translate> => {
+        const viewWidth = renderTo.clientWidth || DEFAULT_WIDTH;
+        const viewHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
+        const placeAlongSide = (start: number, end: number, viewLength: number, currentOffset: number, isNearStart: boolean): number => {
+            const length = (end - start) * scale;
+            const spareLength = viewLength - length - FIT_MARGIN * 2;
+            if (spareLength >= 0) {
+                const startGap = isNearStart ? Math.min(Math.max(viewLength * TOP_ALIGNED_GAP_SHARE, FIT_MARGIN), FIT_MARGIN + spareLength) : FIT_MARGIN + spareLength / 2;
+                return startGap - start * scale;
+            }
+            const zoomedOffset = viewLength / 2 - ((viewLength / 2 - currentOffset) * scale) / current.k;
+            return Math.min(Math.max(zoomedOffset, viewLength - FIT_MARGIN - end * scale), FIT_MARGIN - start * scale);
+        };
+        const x = placeAlongSide(bounds.left, bounds.right, viewWidth, current.x, false);
+        const y = placeAlongSide(bounds.top, bounds.bottom, viewHeight, current.y, options.fitAlignmentId === 'top');
+        return zoomIdentity.translate(x, y).scale(scale);
+    };
+
+    // The view that shows the whole diagram. A small diagram is enlarged only as far as the caller allows.
+    const constructFitTransform = (): ReturnType<typeof zoomIdentity.translate> | undefined => {
+        const bounds = measureDiagramBounds();
+        if (bounds == null) return undefined;
         const viewWidth = renderTo.clientWidth || DEFAULT_WIDTH;
         const viewHeight = renderTo.clientHeight || DEFAULT_HEIGHT;
         const widthScale = viewWidth / (bounds.right - bounds.left + FIT_MARGIN * 2);
         const heightScale = viewHeight / (bounds.bottom - bounds.top + FIT_MARGIN * 2);
         const scale = Math.max(MINIMUM_SCALE, Math.min(options.maximumFitScale ?? 1, widthScale, heightScale));
-        const isTopAligned = options.fitAlignmentId === 'top';
-        return zoomIdentity
-            .translate(viewWidth / 2, isTopAligned ? FIT_MARGIN : viewHeight / 2)
+        // A diagram too large to fit even at the smallest scale is centred, so it runs past both edges evenly.
+        const centred = zoomIdentity
+            .translate(viewWidth / 2, viewHeight / 2)
             .scale(scale)
-            .translate(-(bounds.left + bounds.right) / 2, isTopAligned ? -bounds.top : -(bounds.top + bounds.bottom) / 2);
+            .translate(-(bounds.left + bounds.right) / 2, -(bounds.top + bounds.bottom) / 2);
+        return constructPlacedTransform(bounds, scale, centred);
     };
 
     const applyTransform = (transform: ReturnType<typeof zoomIdentity.translate>): void => {
@@ -706,10 +746,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             };
             animationFrameId = requestAnimationFrame(renderFrame);
         },
+        // A zoom button keeps as much of the diagram in view as it can, so zooming in on a small diagram grows it into the
+        // free space rather than pushing it past an edge. A wheel or pinch still zooms about the pointer.
         zoomBy: (factor) => {
-            svgSelection.call((selection) => {
-                zoomBehavior.scaleBy(selection, factor);
-            });
+            const current = zoomTransform(svgNode);
+            const scale = Math.min(Math.max(current.k * factor, MINIMUM_SCALE), MAXIMUM_SCALE);
+            const bounds = measureDiagramBounds();
+            if (bounds == null) return;
+            applyTransform(constructPlacedTransform(bounds, scale, current));
         }
     };
 }

@@ -269,6 +269,33 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(readScale(topGroup)).toBe(readScale(middleGroup));
         });
 
+        it('leaves a gap above a diagram kept near the top that grows with the container, at 5% of its height', async () => {
+            const container = constructSizedContainer();
+            container.setHeight(480);
+            const view = await new D3Tool().renderNetworkDiagram(labelledData, container.element, { fitAlignmentId: 'top', fitsView: true });
+            view.triggerAutoLayout();
+            const shortOffset = readTranslateY(view.svg.querySelector('g'));
+            container.setHeight(960);
+            view.fitView();
+
+            expect(readTranslateY(view.svg.querySelector('g')) - shortOffset).toBeCloseTo(24); // 5% of 960 less 5% of 480.
+        });
+
+        it('grows a diagram kept near the top into the space below it from the zoom buttons, and keeps its top in view', async () => {
+            const view = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { fitAlignmentId: 'top', fitsView: true });
+            view.triggerAutoLayout();
+            const group = view.svg.querySelector('g');
+            const boundsTop = (24 - readTranslateY(group)) / readScale(group); // The diagram's top edge, in its own units, from the 24 gap above it once fitted.
+
+            view.zoomBy(1.25);
+            expect(readScale(group)).toBe(1.25);
+            expect(readTranslateY(group) + boundsTop * readScale(group)).toBeCloseTo(24); // Still fits, so it is still placed as fitted.
+
+            view.zoomBy(4);
+            expect(readScale(group)).toBe(4);
+            expect(readTranslateY(group) + boundsTop * readScale(group)).toBeLessThanOrEqual(16); // Too tall to fit, so no empty space opens above it.
+        });
+
         it('makes a fitted diagram only as small as its labels need', async () => {
             const longLabel = 'A label that reaches a long way out from its node';
             const longData = { ...labelledData, nodes: labelledData.nodes.map((node) => (node.id === 'hub' ? node : { ...node, label: longLabel })) };
@@ -799,13 +826,18 @@ async function measureLinkLength(leafCount: number, isRoomReserved: boolean): Pr
     return Math.hypot(Number(line?.getAttribute('x2')) - Number(line?.getAttribute('x1')), Number(line?.getAttribute('y2')) - Number(line?.getAttribute('y1')));
 }
 
-// jsdom lays nothing out, so a container's width is whatever the test says it is. It starts 800 wide.
-function constructSizedContainer(): { element: HTMLDivElement; setWidth: (newWidth: number) => void } {
+// jsdom lays nothing out, so a container's size is whatever the test says it is. It starts 800 wide, and with no height
+// the diagram takes its default height of 480.
+function constructSizedContainer(): { element: HTMLDivElement; setHeight: (newHeight: number) => void; setWidth: (newWidth: number) => void } {
     const element = document.createElement('div');
     let currentWidth = 800;
-    Object.defineProperty(element, 'clientWidth', { get: () => currentWidth });
+    let currentHeight = 0;
+    Object.defineProperties(element, { clientHeight: { get: () => currentHeight }, clientWidth: { get: () => currentWidth } });
     return {
         element,
+        setHeight: (newHeight) => {
+            currentHeight = newHeight;
+        },
         setWidth: (newWidth) => {
             currentWidth = newWidth;
         }

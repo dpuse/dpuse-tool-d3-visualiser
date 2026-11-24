@@ -30,7 +30,7 @@ export interface D3NetworkView extends D3View {
     fitView: () => void; // Zooms and centres so that every node and label is in view.
     triggerAutoLayout: () => void;
     update: (data: NetworkDiagramData) => void; // Changes the diagram to new data in place, moving and fading what differs.
-    zoomBy: (factor: number) => void; // Zooms about the middle of the container: in for a factor above 1, out for one below.
+    zoomBy: (factor: number) => void; // Zooms in for a factor above 1, out for one below. The whole diagram stays in view while it fits, placed as a fitted one is; a larger one zooms about the middle of the container.
 }
 
 export interface D3TanStackChartsView extends D3View {
