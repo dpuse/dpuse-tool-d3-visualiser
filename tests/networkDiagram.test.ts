@@ -504,9 +504,9 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const unsized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { nodeBorderWidth: 1 });
             const plainRadius = readNodeRadii(unsized.svg)[2];
 
-            expect(readNodeRadii(actionSized.svg)).toStrictEqual([22, 19.5, plainRadius]); // 40 across, with half the 1-wide ring outside the radius.
-            expect(readNodeRadii(iconSized.svg)).toStrictEqual([17.5, 22, plainRadius]);
-            expect(readNodeRadii(unsized.svg).slice(0, 2)).toStrictEqual([22, 22]);
+            expect(readNodeRadii(actionSized.svg)).toStrictEqual([21.5, 19.5, plainRadius]); // 40 across, with half the 1-wide ring outside the radius.
+            expect(readNodeRadii(iconSized.svg)).toStrictEqual([17.5, 21.5, plainRadius]);
+            expect(readNodeRadii(unsized.svg).slice(0, 2)).toStrictEqual([21.5, 21.5]); // 44 across, ring included, without a size.
         });
 
         it('draws an action node unlike any level, and never as the selected node', async () => {
@@ -569,7 +569,7 @@ describe('D3Tool.renderNetworkDiagram', () => {
             const readFills = (): (string | undefined)[] => [...view.svg.querySelectorAll('circle')].map((circle) => circle.style.fill);
 
             expect(readFills().slice(0, 2)).toStrictEqual(['var(--top)', 'var(--surface)']);
-            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['22'])); // An action node is the size of the others.
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['21'])); // An action node is the size of the others: 44 across, with half the 2-wide ring outside the radius.
 
             view.update({ ...discData, nodes: discData.nodes.map((node) => ({ ...node, isSelected: node.id === 'top' })) });
             expect(readFills()[0]).toBe('var(--selected)');
@@ -711,7 +711,7 @@ describe('D3Tool.renderNetworkDiagram', () => {
 
             expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('width')))).toStrictEqual(new Set(['28']));
             expect(new Set([...view.svg.querySelectorAll('image')].map((image) => image.getAttribute('height')))).toStrictEqual(new Set(['28']));
-            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['22']));
+            expect(new Set([...view.svg.querySelectorAll('circle')].map((circle) => circle.getAttribute('r')))).toStrictEqual(new Set(['21'])); // 44 across, with half the 2-wide ring outside the radius.
         });
 
         it('draws a node in its own colour, in place of its level’s, and every ring as wide as asked', async () => {
