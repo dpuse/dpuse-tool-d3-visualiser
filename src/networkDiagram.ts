@@ -43,6 +43,7 @@ export interface NetworkDiagramOptions {
     growsActiveNodes?: boolean; // Draws the selected node, and the one under the pointer, a little larger. Without one, true. False keeps every node its own size, for a caller that shows both states by colour.
     hoveredIconNodeColor?: string; // The disc behind the icon of the node under the pointer. Any CSS colour. Without one, the disc does not change.
     iconNodeColor?: string; // The disc behind a node's icon. Any CSS colour, such as the page's background. Without one, white.
+    iconNodeSize?: number; // How wide every node with an icon, and every action node, is drawn, ring included, in the diagram's own units, such as 40 to match a page's 40px buttons. Without one, 44 plus the ring.
     labelHaloColor?: string; // Draws each label on an outline of this colour, so a label that lies over a link can still be read. Any CSS colour, such as the page's background.
     labelPlacementId?: NetworkDiagramLabelPlacementId; // Without one, 'below'.
     linkColor?: string; // The colour of the lines between nodes. Any CSS colour. Without one, a mid grey.
@@ -104,6 +105,14 @@ interface DiagramBounds {
 interface Point {
     x: number;
     y: number;
+}
+
+interface NodeStyle {
+    fill: string;
+    fillHovered: string;
+    radius: number;
+    stroke: string;
+    strokeHovered: string;
 }
 
 // Where a label is drawn, measured from the middle of its node: the baseline of its first line, and which end of the
@@ -204,6 +213,11 @@ const LEVEL_STYLES = [
 
 export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options: NetworkDiagramOptions = {}): NetworkDiagramHandle {
     const getLabelLines = (node: NetworkDiagramNode): string[] => constructLabelLines(node, options.wrapsLabels === true, options.maximumLabelLength);
+    // A size from the caller takes in the ring, which is drawn centred on the node's edge, so half the ring's width lies
+    // outside the radius.
+    const nodeBorderWidth = options.nodeBorderWidth ?? DEFAULT_NODE_BORDER_WIDTH;
+    const iconNodeRadius = options.iconNodeSize == null ? ICON_NODE_RADIUS : options.iconNodeSize / 2 - nodeBorderWidth / 2;
+    const getStyle = (node: NetworkDiagramNode): NodeStyle => getNodeStyle(node, iconNodeRadius);
     // Labels go below their nodes in a narrow container. Worked out each time, because the container can be resized.
     const getLabelPlacementId = (): NetworkDiagramLabelPlacementId => {
         const isCompact = options.compactWidth != null && (renderTo.clientWidth || DEFAULT_WIDTH) < options.compactWidth;
@@ -223,7 +237,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     if (options.reservesLabelRoom === true)
         simulation.force(
             'collide',
-            forceCollide<LaidOutNode>((node) => getNodeStyle(node).radius + NODE_COLLISION_GAP)
+            forceCollide<LaidOutNode>((node) => getStyle(node).radius + NODE_COLLISION_GAP)
         );
     simulation.stop(); // The simulation only ever runs a set number of steps on request, never by itself.
 
@@ -269,15 +283,15 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             // A label below its node points along the ring at the ring's sides, so a neighbour there needs room for its
             // node and its label one above the other, or the label would lie over the next neighbour.
             const stackedArc = isBelow && lines.length > 0 ? NODE_LABEL_GAP + (lines.length - 1) * LABEL_LINE_HEIGHT + LABEL_DESCENT : 0;
-            arcLength += Math.max(getNodeStyle(neighbour).radius * 2 + stackedArc, labelArc) + NODE_ARC_GAP;
-            widestNeighbourRadius = Math.max(widestNeighbourRadius, getNodeStyle(neighbour).radius);
+            arcLength += Math.max(getStyle(neighbour).radius * 2 + stackedArc, labelArc) + NODE_ARC_GAP;
+            widestNeighbourRadius = Math.max(widestNeighbourRadius, getStyle(neighbour).radius);
         }
 
         const arcRadius = arcLength / (Math.PI * 2);
         const node = nodesById.get(nodeId);
         if (getLabelPlacementId() === 'below' || node?.label == null) return arcRadius; // A label below its node does not point out towards the ring.
         const ownLabelWidth = estimateLabelWidth(getLabelLines(node));
-        return Math.max(arcRadius, getNodeStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
+        return Math.max(arcRadius, getStyle(node).radius + LABEL_OUTSIDE_GAP * 2 + ownLabelWidth + widestNeighbourRadius);
     };
 
     // A link is as long as asked for, or as long as the ring at either of its ends needs, whichever is longer.
@@ -296,7 +310,6 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     // A selected node shows in its ring, which takes the selected colour and widens, and a node without an icon fills
     // with that colour too. A selected node with an icon shows in its disc when the caller gives a colour for one,
     // and then keeps its own ring, so a thin ring stays thin.
-    const nodeBorderWidth = options.nodeBorderWidth ?? DEFAULT_NODE_BORDER_WIDTH;
     // With a colour for a ring round the selected node, that ring is all that shows the selection.
     const isSelectedByOuterRing = (node: LaidOutNode): boolean => isShownSelected(node) && options.selectedRingColor != null;
     const isSelectedByDisc = (node: LaidOutNode): boolean => isShownSelected(node) && !isSelectedByOuterRing(node) && node.icon != null && options.selectedIconNodeColor != null;
@@ -306,7 +319,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     // keeps every node its own size.
     const constructDrawnRadius = (node: LaidOutNode): number => {
         const isActive = isShownSelected(node) || node.id === hoveredNodeId;
-        return getNodeStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
+        return getStyle(node).radius + (isActive && options.growsActiveNodes !== false ? NODE_RADIUS_ACTIVE_GROWTH : 0);
     };
 
     // A ring round a node, a little apart from it, for the nodes it applies to. Drawn after the node's own circle, which
@@ -349,7 +362,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .attr('fill', (node) => {
                 if (node.icon != null) return null;
                 if (isSelectedByRing(node)) return COLOR.nodeFillSelected;
-                return node.id === hoveredNodeId ? getNodeStyle(node).fillHovered : getNodeStyle(node).fill;
+                return node.id === hoveredNodeId ? getStyle(node).fillHovered : getStyle(node).fill;
             })
             .style('fill', (node) => {
                 if (node.isAction === true) return constructActionFill(node);
@@ -358,7 +371,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             })
             .attr('stroke', (node) => {
                 if (isSelectedByRing(node)) return COLOR.nodeStrokeSelected;
-                return node.id === hoveredNodeId ? getNodeStyle(node).strokeHovered : getNodeStyle(node).stroke;
+                return node.id === hoveredNodeId ? getStyle(node).strokeHovered : getStyle(node).stroke;
             })
             .style('stroke', (node) => {
                 if (node.isAction === true) return options.actionNodeColors?.border ?? null;
@@ -441,7 +454,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
     const constructNodeLabelPlacement = (node: LaidOutNode, nodesById: Map<string, LaidOutNode>): LabelPlacement => {
         const neighbours = (neighbourIdsById.get(node.id) ?? []).map((neighbourId) => nodesById.get(neighbourId)).filter((neighbour) => neighbour !== undefined);
         const ringAllowance = options.selectedRingColor == null ? 0 : OUTER_RING_GAP + OUTER_RING_WIDTH;
-        return constructLabelPlacement(node, neighbours, getLabelPlacementId(), getLabelLines(node), options.labelHaloColor != null, ringAllowance);
+        return constructLabelPlacement(node, neighbours, getLabelPlacementId(), getLabelLines(node), options.labelHaloColor != null, getStyle(node).radius + ringAllowance);
     };
 
     // Moves every link, node and label to where its node now is. A label's place depends on where its node's
@@ -472,8 +485,8 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         const bounds = { left: Infinity, right: -Infinity, top: Infinity, bottom: -Infinity };
         for (const node of nodes) {
             const [x, y] = [node.x ?? 0, node.y ?? 0];
-            const badgeReach = node.badge == null ? 0 : (getNodeStyle(node).radius + NODE_RADIUS_ACTIVE_GROWTH) * Math.SQRT1_2 + BADGE_RADIUS + BADGE_BORDER_WIDTH / 2; // Out to the badge's far edge, on each axis.
-            const radius = Math.max(getNodeStyle(node).radius + FIT_NODE_ALLOWANCE, badgeReach);
+            const badgeReach = node.badge == null ? 0 : (getStyle(node).radius + NODE_RADIUS_ACTIVE_GROWTH) * Math.SQRT1_2 + BADGE_RADIUS + BADGE_BORDER_WIDTH / 2; // Out to the badge's far edge, on each axis.
+            const radius = Math.max(getStyle(node).radius + FIT_NODE_ALLOWANCE, badgeReach);
             const lines = node.label == null ? [] : getLabelLines(node); // An id is inside its node.
             const labelBox = lines.length === 0 ? undefined : constructLabelBox(constructNodeLabelPlacement(node, nodesById), lines);
             bounds.left = Math.min(bounds.left, x - radius, x + (labelBox?.left ?? 0));
@@ -651,7 +664,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         nodeSelection
             .select<SVGTextElement>('text')
             .attr('text-anchor', 'middle')
-            .attr('y', (node) => (node.label == null ? 4 : getNodeStyle(node).radius + NODE_LABEL_GAP))
+            .attr('y', (node) => (node.label == null ? 4 : getStyle(node).radius + NODE_LABEL_GAP))
             .attr('font-size', (node) => (node.label == null ? null : LABEL_FONT_SIZE))
             .attr('fill', (node) => (node.label == null ? COLOR.nodeText : 'currentColor')) // Explicit, because iOS Safari can default to transparent.
             // The outline is painted first, under the letters, so it hides the links behind a label without thinning the
@@ -880,9 +893,8 @@ function constructLabelPlacement(
     labelPlacementId: NetworkDiagramLabelPlacementId,
     lines: string[],
     hasHalo: boolean,
-    ringAllowance: number
+    radius: number // The node's radius and any ring that may be drawn round it, which a label keeps clear of.
 ): LabelPlacement {
-    const radius = getNodeStyle(node).radius + ringAllowance; // A label keeps clear of a ring that may be drawn round its node.
     const below = { anchor: 'middle' as const, x: 0, y: radius + NODE_LABEL_GAP };
     if (labelPlacementId === 'below' || neighbours.length === 0) return below;
 
@@ -979,13 +991,13 @@ function getNodePosition(value: LaidOutNode | string | number, axis: 'x' | 'y'):
     return typeof value === 'object' ? (value[axis] ?? 0) : 0;
 }
 
-// How a node is drawn: as an action, or else by its level. A node with an icon is ringed in its level's colour, and
-// is one size at every level.
-function getNodeStyle(node: NetworkDiagramNode): { fill: string; fillHovered: string; radius: number; stroke: string; strokeHovered: string } {
-    if (node.isAction === true) return ACTION_STYLE;
+// How a node is drawn: as an action, or else by its level. An action and a node with an icon are one size at every
+// level, and a node with an icon is ringed in its level's colour.
+function getNodeStyle(node: NetworkDiagramNode, iconNodeRadius: number): NodeStyle {
+    if (node.isAction === true) return { ...ACTION_STYLE, radius: iconNodeRadius };
     const level = Math.max(0, Math.min(node.level ?? DEFAULT_LEVEL, LEVEL_STYLES.length - 1));
     const levelStyle = assertDefined(LEVEL_STYLES[level]);
-    return node.icon == null ? levelStyle : { ...levelStyle, radius: ICON_NODE_RADIUS, stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };
+    return node.icon == null ? levelStyle : { ...levelStyle, radius: iconNodeRadius, stroke: levelStyle.fill, strokeHovered: levelStyle.stroke };
 }
 
 // ── Animation

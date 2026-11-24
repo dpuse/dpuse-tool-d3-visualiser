@@ -489,6 +489,23 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(view.svg.querySelector('path.symbol')).toBeNull();
         });
 
+        it('draws every node with an icon, and every action node, as wide as asked, ring included, and leaves other nodes their size', async () => {
+            const icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>';
+            const sizeData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'icon', icon, label: 'Icon', level: 3 },
+                    { id: 'add', isAction: true, symbol: '+' },
+                    { id: 'plain', label: 'Plain', level: 3 }
+                ]
+            };
+            const sized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { iconNodeSize: 40, nodeBorderWidth: 1 });
+            const unsized = await new D3Tool().renderNetworkDiagram(sizeData, document.createElement('div'), { nodeBorderWidth: 1 });
+
+            expect(readNodeRadii(sized.svg)).toStrictEqual([19.5, 19.5, readNodeRadii(unsized.svg)[2]]); // 40 across, with half the 1-wide ring outside the radius.
+            expect(readNodeRadii(unsized.svg).slice(0, 2)).toStrictEqual([22, 22]);
+        });
+
         it('draws an action node unlike any level, and never as the selected node', async () => {
             const actionData: NetworkDiagramData = {
                 links: [],
@@ -971,6 +988,11 @@ function isNodeMovedByDrag(svg: SVGSVGElement): boolean {
 // element's box instead, which happy-dom has.
 function preparePointer(svg: SVGSVGElement): void {
     Object.defineProperty(svg, 'createSVGPoint', { value: undefined });
+}
+
+// Each node's own circle, which is the first in its group, before any ring round it.
+function readNodeRadii(svg: SVGSVGElement): number[] {
+    return [...svg.querySelectorAll(':scope g[role="button"] > circle:first-of-type')].map((circle) => Number(circle.getAttribute('r')));
 }
 
 function readLabels(svg: SVGSVGElement): (string | null)[] {
