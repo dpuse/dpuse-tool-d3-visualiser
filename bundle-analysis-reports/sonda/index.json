@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-11-24T13:35:16.206Z",
+    "generatedAt": "2026-11-24T14:57:26.855Z",
     "integration": "vite",
     "sources": false,
     "gzip": true,
@@ -91,10 +91,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 3261,
+      "uncompressed": 3266,
       "gzip": 358,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "chunk",
@@ -214,10 +214,10 @@
     },
     {
       "kind": "asset",
-      "name": "dist/networkDiagram-CWHkKN1h.js",
+      "name": "dist/networkDiagram-D-MPyRsd.js",
       "type": "script",
-      "uncompressed": 49433,
-      "gzip": 15086,
+      "uncompressed": 49689,
+      "gzip": 15162,
       "brotli": 0
     },
     {
@@ -4815,7 +4815,7 @@
       "uncompressed": 4396,
       "gzip": 1365,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -4924,9 +4924,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 7805,
-      "gzip": 2269,
+      "gzip": 2268,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6706,7 +6706,7 @@
       "uncompressed": 1002,
       "gzip": 401,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6740,7 +6740,7 @@
       "uncompressed": 1286,
       "gzip": 480,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6757,7 +6757,7 @@
       "uncompressed": 628,
       "gzip": 279,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6774,7 +6774,7 @@
       "uncompressed": 115,
       "gzip": 102,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6791,7 +6791,7 @@
       "uncompressed": 176,
       "gzip": 122,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6806,9 +6806,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 852,
-      "gzip": 382,
+      "gzip": 381,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6830,9 +6830,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 97,
-      "gzip": 78,
+      "gzip": 77,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6849,7 +6849,7 @@
       "uncompressed": 957,
       "gzip": 406,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6866,7 +6866,7 @@
       "uncompressed": 922,
       "gzip": 381,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6883,7 +6883,7 @@
       "uncompressed": 36,
       "gzip": 48,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6900,7 +6900,7 @@
       "uncompressed": 103,
       "gzip": 93,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6915,9 +6915,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 449,
-      "gzip": 208,
+      "gzip": 207,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6934,7 +6934,7 @@
       "uncompressed": 516,
       "gzip": 221,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6951,7 +6951,7 @@
       "uncompressed": 106,
       "gzip": 85,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -6968,7 +6968,7 @@
       "uncompressed": 106,
       "gzip": 85,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -7749,9 +7749,9 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 11007,
-      "gzip": 2947,
+      "gzip": 2945,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -11487,17 +11487,17 @@
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 29860
+      "uncompressed": 30270
     },
     {
       "kind": "chunk",
       "name": "src/networkDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 15613,
-      "gzip": 4777,
+      "uncompressed": 15864,
+      "gzip": 4857,
       "brotli": 0,
-      "parent": "dist/networkDiagram-CWHkKN1h.js"
+      "parent": "dist/networkDiagram-D-MPyRsd.js"
     },
     {
       "kind": "filesystem",
@@ -11679,7 +11679,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/networkDiagram-CWHkKN1h.js",
+      "source": "dist/networkDiagram-D-MPyRsd.js",
       "target": "src/networkDiagram.ts",
       "original": null
     },

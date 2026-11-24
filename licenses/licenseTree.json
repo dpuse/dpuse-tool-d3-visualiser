@@ -1,5 +1,5 @@
 {
-  "version": "1.0.139",
+  "version": "1.0.140",
   "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -3361,8 +3361,8 @@
       }
     },
     "wrangler": {
-      "version": "4.167.0",
-      "resolved": "https://registry.npmjs.org/wrangler/-/wrangler-4.167.0.tgz",
+      "version": "4.168.0",
+      "resolved": "https://registry.npmjs.org/wrangler/-/wrangler-4.168.0.tgz",
       "overridden": false,
       "dependencies": {
         "@cloudflare/kv-asset-handler": {
@@ -3717,8 +3717,8 @@
           "version": "2.3.3"
         },
         "miniflare": {
-          "version": "5.20261123.0-beta",
-          "resolved": "https://registry.npmjs.org/miniflare/-/miniflare-5.20261123.0-beta.tgz",
+          "version": "5.20261123.1-beta",
+          "resolved": "https://registry.npmjs.org/miniflare/-/miniflare-5.20261123.1-beta.tgz",
           "overridden": false,
           "dependencies": {
             "@cspotcode/source-map-support": {

@@ -238,8 +238,8 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 | Chunk/Module/File                                                                | Composition                                                                                    |
 | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **All 14 files**                                                                 | 419.8&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;123.9&nbsp;kB                                              |
-| **dist/tanStackCharts-DEINbmRi.js**                                              | 125.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;36.7&nbsp;kB&nbsp;·&nbsp;29.9%&nbsp;of&nbsp;the&nbsp;build |
+| **All 14 files**                                                                 | 420.1&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;124.0&nbsp;kB                                              |
+| **dist/tanStackCharts-DEINbmRi.js**                                              | 125.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;36.7&nbsp;kB&nbsp;·&nbsp;29.8%&nbsp;of&nbsp;the&nbsp;build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts → dist/scene.js + 41 more               | `██████████████████░░`&nbsp;90.1%&nbsp;·&nbsp;113.0&nbsp;kB                                    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js + 2 more                          | `░░░░░░░░░░░░░░░░░░░░`&nbsp;1.7%&nbsp;·&nbsp;2.1&nbsp;kB                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                                  | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.6%&nbsp;·&nbsp;717&nbsp;B                                        |
@@ -256,12 +256,12 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                                    | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;494&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/group.js + 1 more                         | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;487&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `███░░░░░░░░░░░░░░░░░`&nbsp;13.5%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
-| **dist/networkDiagram-CWHkKN1h.js**                                              | 48.3&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;14.7&nbsp;kB&nbsp;·&nbsp;11.5%&nbsp;of&nbsp;the&nbsp;build  |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `██████░░░░░░░░░░░░░░`&nbsp;31.6%&nbsp;·&nbsp;15.2&nbsp;kB                                     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom → dist/d3-zoom.mjs                               | `████░░░░░░░░░░░░░░░░`&nbsp;22.3%&nbsp;·&nbsp;10.7&nbsp;kB                                     |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-force → dist/d3-force.mjs                             | `███░░░░░░░░░░░░░░░░░`&nbsp;15.8%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
+| **dist/networkDiagram-D-MPyRsd.js**                                              | 48.5&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;14.8&nbsp;kB&nbsp;·&nbsp;11.6%&nbsp;of&nbsp;the&nbsp;build  |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `██████░░░░░░░░░░░░░░`&nbsp;31.9%&nbsp;·&nbsp;15.5&nbsp;kB                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom → dist/d3-zoom.mjs                               | `████░░░░░░░░░░░░░░░░`&nbsp;22.2%&nbsp;·&nbsp;10.7&nbsp;kB                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-force → dist/d3-force.mjs                             | `███░░░░░░░░░░░░░░░░░`&nbsp;15.7%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree → src/add.js + 13 more                       | `███░░░░░░░░░░░░░░░░░`&nbsp;12.8%&nbsp;·&nbsp;6.2&nbsp;kB                                      |
-| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag → dist/d3-drag.mjs                               | `██░░░░░░░░░░░░░░░░░░`&nbsp;8.9%&nbsp;·&nbsp;4.3&nbsp;kB                                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;d3-drag → dist/d3-drag.mjs                               | `██░░░░░░░░░░░░░░░░░░`&nbsp;8.8%&nbsp;·&nbsp;4.3&nbsp;kB                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-interpolate → src/zoom.js                             | `░░░░░░░░░░░░░░░░░░░░`&nbsp;2.0%&nbsp;·&nbsp;1002&nbsp;B                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `█░░░░░░░░░░░░░░░░░░░`&nbsp;6.6%&nbsp;·&nbsp;3.2&nbsp;kB                                       |
 | **dist/d3-shape-gf8U18pS.js**                                                    | 36.9&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;7.9&nbsp;kB&nbsp;·&nbsp;8.8%&nbsp;of&nbsp;the&nbsp;build    |

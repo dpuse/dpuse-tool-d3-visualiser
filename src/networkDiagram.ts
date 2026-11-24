@@ -33,6 +33,8 @@ export interface NetworkDiagramOptions {
     actionNodeColors?: NetworkDiagramActionNodeColors; // Draws an action node in the colours of the page's own action buttons. Without them, a pale blue disc with a blue ring and symbol.
     chargeStrength?: number;
     compactWidth?: number; // A container narrower than this has every label below its node, whatever 'labelPlacementId' says, because labels beside the nodes take more room sideways.
+    disablesNodeDrag?: boolean; // Stops the user dragging a node to a new place. A drag that starts on a node then pans the diagram, as one on the background does.
+    disablesPointerZoom?: boolean; // Stops the wheel, a trackpad and a pinch zooming the diagram, so the wheel scrolls the page past it. Dragging still pans, and 'zoomBy' and 'fitView' still zoom.
     fitAlignmentId?: NetworkDiagramFitAlignmentId; // Without one, 'middle'.
     fitsView?: boolean;
     focusRingColor?: string; // The ring round the node that has keyboard focus. Any CSS colour. Without one, blue. // After an auto-layout or an update, zooms out and centres so that every node and label is in view.
@@ -367,7 +369,14 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         updateNodeStyles();
     });
 
+    // The filter keeps d3's own default, which ignores a right-click and a Ctrl-drag. A second finger is ignored rather
+    // than the whole touch, so a one-finger drag still pans.
     const zoomBehavior = zoom<SVGSVGElement, unknown>()
+        .filter((event: MouseEvent | TouchEvent | WheelEvent) => {
+            const isDefaultZoomEvent = (!event.ctrlKey || event.type === 'wheel') && (!('button' in event) || event.button === 0);
+            const isPointerZoom = event.type === 'wheel' || ('touches' in event && event.touches.length > 1);
+            return isDefaultZoomEvent && !(isPointerZoom && options.disablesPointerZoom === true);
+        })
         .scaleExtent([MINIMUM_SCALE, MAXIMUM_SCALE])
         .on('zoom', (event: D3ZoomEvent<SVGSVGElement, unknown>) => {
             viewport.attr('transform', event.transform.toString());
@@ -526,7 +535,6 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
 
         const joinedNodes = nodeSelection.data(nodes, (node) => node.id);
         const exitingNodes = joinedNodes.exit<LaidOutNode>().style('pointer-events', 'none').attr('tabindex', null); // A node on its way out takes no more clicks or key presses.
-        type DragEvent = D3DragEvent<SVGGElement, LaidOutNode, LaidOutNode>;
         // A node is a button: it takes keyboard focus, and Enter or Space does what a click does. Its own ring shows
         // focus, so the browser's outline, which would be a box round the node and its label, is switched off.
         const enteringNodes = joinedNodes.enter().append('g').attr('role', 'button').attr('tabindex', 0).style('cursor', 'pointer').style('outline', 'none');
@@ -558,8 +566,10 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             .on('blur', (_event, node) => {
                 if (focusedNodeId === node.id) focusedNodeId = null;
                 updateNodeStyles();
-            })
-            .call(
+            });
+        if (options.disablesNodeDrag !== true) {
+            type DragEvent = D3DragEvent<SVGGElement, LaidOutNode, LaidOutNode>;
+            enteringNodes.call(
                 drag<SVGGElement, LaidOutNode>()
                     .on('start', (event: DragEvent, node) => {
                         (event.sourceEvent as MouseEvent | TouchEvent | undefined)?.stopPropagation();
@@ -578,6 +588,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
                         node.fy = null;
                     })
             );
+        }
         nodeSelection = enteringNodes.merge(joinedNodes);
 
         // The text is set on nodes that stay too, because an update may give a node a new label. A label goes beside its

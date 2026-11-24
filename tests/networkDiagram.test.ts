@@ -109,6 +109,14 @@ describe('D3Tool.renderNetworkDiagram', () => {
         expect(clickedNodes).toStrictEqual([{ id: 'B' }]);
     });
 
+    it('moves a dragged node unless node drag is switched off', async () => {
+        const draggable = await new D3Tool().renderNetworkDiagram(data, constructSizedContainer().element);
+        const fixed = await new D3Tool().renderNetworkDiagram(data, constructSizedContainer().element, { disablesNodeDrag: true });
+
+        expect(isNodeMovedByDrag(draggable.svg)).toBe(true);
+        expect(isNodeMovedByDrag(fixed.svg)).toBe(false);
+    });
+
     it('zooms out after an auto-layout to bring every node into view, only when asked to', async () => {
         const starData: NetworkDiagramData = {
             links: Array.from({ length: 30 }, (_value, index) => ({ source: 'hub', target: `node${String(index)}` })),
@@ -317,6 +325,22 @@ describe('D3Tool.renderNetworkDiagram', () => {
             view.resize();
 
             expect(readAnchors().toSorted((left, right) => (left ?? '').localeCompare(right ?? ''))).toStrictEqual(['end', 'middle', 'start']);
+        });
+
+        it('zooms on the wheel unless pointer zoom is switched off, and still zooms from the zoom buttons then', async () => {
+            const zoomable = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element);
+            const fixed = await new D3Tool().renderNetworkDiagram(labelledData, constructSizedContainer().element, { disablesPointerZoom: true });
+
+            preparePointer(zoomable.svg);
+            preparePointer(fixed.svg);
+            zoomable.svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -100 }));
+            fixed.svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -100 }));
+
+            expect(readScale(zoomable.svg.querySelector('g'))).toBeGreaterThan(1);
+            expect(fixed.svg.querySelector('g')?.getAttribute('transform')).toBeNull();
+
+            fixed.zoomBy(2);
+            expect(readScale(fixed.svg.querySelector('g'))).toBe(2);
         });
 
         it('zooms in and out about the middle of the container, and fits the diagram again when asked', async () => {
@@ -842,6 +866,26 @@ function constructSizedContainer(): { element: HTMLDivElement; setHeight: (newHe
             currentWidth = newWidth;
         }
     };
+}
+
+// Drags the first node 200 to the right and reports whether it moved.
+function isNodeMovedByDrag(svg: SVGSVGElement): boolean {
+    preparePointer(svg);
+    document.body.append(svg);
+    const nodeElement = svg.querySelector('g[role="button"]');
+    const startTransform = nodeElement?.getAttribute('transform');
+    nodeElement?.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true, clientX: 100, clientY: 100, view: globalThis as unknown as Window }));
+    globalThis.dispatchEvent(new MouseEvent('mousemove', { bubbles: true, cancelable: true, clientX: 300, clientY: 100, view: globalThis as unknown as Window }));
+    globalThis.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true, clientX: 300, clientY: 100, view: globalThis as unknown as Window }));
+    const endTransform = nodeElement?.getAttribute('transform');
+    svg.remove();
+    return endTransform !== startTransform;
+}
+
+// d3 finds the pointer with SVG point maths that happy-dom lacks. Without 'createSVGPoint' it measures from the
+// element's box instead, which happy-dom has.
+function preparePointer(svg: SVGSVGElement): void {
+    Object.defineProperty(svg, 'createSVGPoint', { value: undefined });
 }
 
 function readLabels(svg: SVGSVGElement): (string | null)[] {
