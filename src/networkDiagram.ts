@@ -8,6 +8,8 @@ import { select, type Selection } from 'd3-selection';
 
 export interface NetworkDiagramNode {
     id: string;
+    accessibleLabel?: string; // What screen readers call the node, in place of its label, such as 'Open Sales' for a node a click opens.
+    badge?: NetworkDiagramBadgeId; // A small disc on the node's upper right, in the action colours, that shows what a click does. It is part of the node, so a click on it is a click on the node.
     discColor?: string; // The disc behind this node's icon, in place of the diagram's, to set one node apart, such as the top one. Any CSS colour. It dims a little under the pointer, and the selected colour still replaces it.
     color?: string; // The node's colour, in place of its level's: its ring when it has an icon, or else the whole node. Any CSS colour.
     icon?: string; // SVG markup drawn inside the node, on a plain disc ringed in its level's colour. Every icon and its disc are one size, whatever the level. It must declare 'xmlns', because it is shown as an image.
@@ -65,6 +67,9 @@ export interface NetworkDiagramActionNodeColors {
     fillHovered?: string; // Without one, the fill does not change under the pointer.
     symbol: string;
 }
+
+// The symbol a badge shows. 'arrowRight' is an arrow pointing right, as an outline icon set draws one.
+export type NetworkDiagramBadgeId = 'arrowRight';
 
 // Where a diagram sits when it is shorter than its container, after a fit or a zoom button: 'middle' centres it, and
 // 'top' keeps it near the top, near the page's headings, with a gap above it of 5% of the container's height. Either
@@ -173,6 +178,18 @@ const SYMBOL_FONT_SIZE = 20;
 const SYMBOL_ICON_SIZE = 20;
 const SYMBOL_PLUS_ARM_LENGTH = Math.round(((SYMBOL_ICON_SIZE * 7) / 24) * 100) / 100; // From the centre of a plus to the end of each arm.
 const SYMBOL_STROKE_WIDTH = Math.round(((SYMBOL_ICON_SIZE * 1.25) / 24) * 100) / 100;
+
+// ── Badges ─ A badge's arrow is drawn as the arrow of a 24-unit outline icon set is at 12px, with a line heavy enough to
+// read at that size.
+const BADGE_BORDER_WIDTH = 1.25;
+const BADGE_CLASS_NAME = 'badge';
+const BADGE_ICON_SIZE = 12;
+const BADGE_RADIUS = 9;
+const BADGE_STROKE_WIDTH = 1.5;
+const BADGE_ARM_LENGTH = (BADGE_ICON_SIZE * 7) / 24; // From the centre of an arrow to its tip, and to the ends of its head.
+const BADGE_PATHS: Record<NetworkDiagramBadgeId, string> = {
+    arrowRight: `M${String(-BADGE_ARM_LENGTH)},0H${String(BADGE_ARM_LENGTH)}M0,${String(-BADGE_ARM_LENGTH)}L${String(BADGE_ARM_LENGTH)},0L0,${String(BADGE_ARM_LENGTH)}`
+};
 
 // One entry for each level, from the top of the hierarchy down. A deeper level uses the last entry.
 const LEVEL_STYLES = [
@@ -362,6 +379,43 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             (node) => (isSelectedByOuterRing(node) ? selectedRingGap + OUTER_RING_WIDTH + OUTER_RING_GAP : OUTER_RING_GAP)
         );
         nodeSelection.attr('aria-current', (node) => (isShownSelected(node) ? 'true' : null));
+
+        // A badge sits on the node's edge at the upper right, so it moves out as the node grows. It is raised above the
+        // rings, so a focus ring drawn later never covers it. It takes clicks, so a click on the part of it that lies
+        // outside the node still reaches the node rather than the background, which would clear the selection.
+        nodeSelection
+            .selectAll<SVGGElement, LaidOutNode>(`g.${BADGE_CLASS_NAME}`)
+            .data((node) => (node.badge == null ? [] : [node]))
+            .join((enter) => {
+                const badge = enter.append('g').attr('class', BADGE_CLASS_NAME);
+                badge.append('circle');
+                badge.append('path');
+                return badge;
+            })
+            .attr('transform', (node) => {
+                const distance = constructDrawnRadius(node) * Math.SQRT1_2;
+                return `translate(${String(distance)},${String(-distance)})`;
+            })
+            .raise()
+            .call((badge) => {
+                badge
+                    .select<SVGCircleElement>('circle')
+                    .attr('r', BADGE_RADIUS)
+                    .attr('fill', ACTION_STYLE.fill)
+                    .style('fill', () => options.actionNodeColors?.fill ?? null)
+                    .attr('stroke', ACTION_STYLE.stroke)
+                    .style('stroke', () => options.actionNodeColors?.border ?? null)
+                    .attr('stroke-width', BADGE_BORDER_WIDTH);
+                badge
+                    .select<SVGPathElement>('path')
+                    .attr('d', (node) => (node.badge == null ? '' : BADGE_PATHS[node.badge]))
+                    .attr('fill', 'none')
+                    .attr('stroke', ACTION_STYLE.symbol)
+                    .style('stroke', () => options.actionNodeColors?.symbol ?? null)
+                    .attr('stroke-linecap', 'round')
+                    .attr('stroke-linejoin', 'round')
+                    .attr('stroke-width', BADGE_STROKE_WIDTH);
+            });
     };
 
     svgSelection.on('click', () => {
@@ -418,7 +472,8 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         const bounds = { left: Infinity, right: -Infinity, top: Infinity, bottom: -Infinity };
         for (const node of nodes) {
             const [x, y] = [node.x ?? 0, node.y ?? 0];
-            const radius = getNodeStyle(node).radius + FIT_NODE_ALLOWANCE;
+            const badgeReach = node.badge == null ? 0 : (getNodeStyle(node).radius + NODE_RADIUS_ACTIVE_GROWTH) * Math.SQRT1_2 + BADGE_RADIUS + BADGE_BORDER_WIDTH / 2; // Out to the badge's far edge, on each axis.
+            const radius = Math.max(getNodeStyle(node).radius + FIT_NODE_ALLOWANCE, badgeReach);
             const lines = node.label == null ? [] : getLabelLines(node); // An id is inside its node.
             const labelBox = lines.length === 0 ? undefined : constructLabelBox(constructNodeLabelPlacement(node, nodesById), lines);
             bounds.left = Math.min(bounds.left, x - radius, x + (labelBox?.left ?? 0));
@@ -629,7 +684,7 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
         // the node's centre, so it is centred exactly. Any other is drawn as text, which a font places only roughly.
         // A label that has been cut short is the node's tooltip, so the whole of it can still be read.
         nodeSelection.select<SVGTitleElement>('title').text((node) => node.title ?? (isLabelCut(node, options.maximumLabelLength) ? (node.label ?? '') : ''));
-        nodeSelection.attr('aria-label', (node) => node.label ?? node.title ?? node.id); // A screen reader names the node as a sighted user reads it.
+        nodeSelection.attr('aria-label', (node) => node.accessibleLabel ?? node.label ?? node.title ?? node.id); // A screen reader names the node as a sighted user reads it, unless the caller names it.
         nodeSelection
             .selectAll<SVGPathElement, LaidOutNode>(`path.${SYMBOL_CLASS_NAME}`)
             .data((node) => (constructSymbolPath(node) == null ? [] : [node])) // Only a node with such a symbol has an element for one.

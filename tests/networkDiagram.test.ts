@@ -801,6 +801,91 @@ describe('D3Tool.renderNetworkDiagram', () => {
             expect(await measureLinkLength(1, true)).toBeLessThan(65); // Only as far apart as keeps the two nodes from touching.
         });
     });
+
+    describe('badges', () => {
+        const actionNodeColors = { border: 'var(--border)', fill: 'var(--fill)', symbol: 'var(--symbol)' };
+
+        it('draws a badge on the upper right of its node, in the action colours, with an arrow, and none on other nodes', async () => {
+            const badgeData: NetworkDiagramData = {
+                links: [],
+                nodes: [
+                    { id: 'sales', badge: 'arrowRight', label: 'Sales' },
+                    { id: 'stock', label: 'Stock' }
+                ]
+            };
+            const view = await new D3Tool().renderNetworkDiagram(badgeData, document.createElement('div'), { actionNodeColors });
+            const salesElement = findNodeElement(view.svg, 'Sales');
+            const badge = salesElement?.querySelector('g.badge');
+
+            expect(readTranslateX(badge)).toBeGreaterThan(0);
+            expect(readTranslateY(badge)).toBeLessThan(0);
+            expect(readTranslateX(badge)).toBeCloseTo(-readTranslateY(badge)); // Halfway between the top and the right.
+            expect(badge?.querySelector('circle')?.style.fill).toBe('var(--fill)');
+            expect(badge?.querySelector('circle')?.style.stroke).toBe('var(--border)');
+            expect(badge?.querySelector('path')?.getAttribute('d')).toBe('M-3.5,0H3.5M0,-3.5L3.5,0L0,3.5'); // A line through the middle, ending in a head.
+            expect(badge?.querySelector('path')?.style.stroke).toBe('var(--symbol)');
+            expect(findNodeElement(view.svg, 'Stock')?.querySelector('g.badge')).toBeNull();
+        });
+
+        it('moves the badge out as its node grows under the pointer', async () => {
+            const view = await new D3Tool().renderNetworkDiagram({ links: [], nodes: [{ id: 'sales', badge: 'arrowRight', label: 'Sales' }] }, document.createElement('div'));
+            const salesElement = findNodeElement(view.svg, 'Sales');
+            const restingX = readTranslateX(salesElement?.querySelector('g.badge'));
+
+            salesElement?.dispatchEvent(new MouseEvent('mouseenter'));
+
+            expect(readTranslateX(salesElement?.querySelector('g.badge'))).toBeGreaterThan(restingX);
+        });
+
+        it('counts a click on the badge as a click on its node, and keeps the node selected', async () => {
+            const clickedIds: string[] = [];
+            const badgeData: NetworkDiagramData = { links: [], nodes: [{ id: 'sales', badge: 'arrowRight', isSelected: true, label: 'Sales' }] };
+            const view = await new D3Tool().renderNetworkDiagram(badgeData, document.createElement('div'), {
+                onNodeClick: (node) => {
+                    clickedIds.push(node.id);
+                },
+                selectsOnClick: false
+            });
+            const salesElement = findNodeElement(view.svg, 'Sales');
+
+            salesElement?.querySelector(':scope g.badge circle')?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+
+            expect(clickedIds).toStrictEqual(['sales']);
+            expect(salesElement?.getAttribute('aria-current')).toBe('true');
+        });
+
+        it('keeps the badge above the focus ring', async () => {
+            const renderTo = document.createElement('div');
+            document.body.append(renderTo); // Focus only moves between elements in the document.
+            const view = await new D3Tool().renderNetworkDiagram({ links: [], nodes: [{ id: 'sales', badge: 'arrowRight', label: 'Sales' }] }, renderTo);
+            const salesElement = findNodeElement(view.svg, 'Sales');
+
+            salesElement?.focus();
+
+            expect(salesElement?.querySelector('circle.focus-ring')).not.toBeNull();
+            expect(salesElement?.lastElementChild?.getAttribute('class')).toBe('badge');
+            renderTo.remove();
+        });
+
+        it('adds and removes a badge on an update that changes nothing else', async () => {
+            const view = await new D3Tool().renderNetworkDiagram({ links: [], nodes: [{ id: 'sales', label: 'Sales' }] }, document.createElement('div'));
+
+            view.update({ links: [], nodes: [{ id: 'sales', badge: 'arrowRight', label: 'Sales' }] });
+            expect(view.svg.querySelectorAll('g.badge')).toHaveLength(1);
+
+            view.update({ links: [], nodes: [{ id: 'sales', label: 'Sales' }] });
+            expect(view.svg.querySelectorAll('g.badge')).toHaveLength(0);
+        });
+
+        it('names a node for screen readers by its accessible label, in place of its label', async () => {
+            const view = await new D3Tool().renderNetworkDiagram(
+                { links: [], nodes: [{ id: 'sales', accessibleLabel: 'Open Sales', badge: 'arrowRight', label: 'Sales' }] },
+                document.createElement('div')
+            );
+
+            expect(findNodeElement(view.svg, 'Sales')?.getAttribute('aria-label')).toBe('Open Sales');
+        });
+    });
 });
 
 // ── Helpers ──────────────────────────────────────────────────────────────────────────────────────────────────────────
