@@ -109,6 +109,24 @@ describe('D3Tool.renderNetworkDiagram', () => {
         expect(clickedNodes).toStrictEqual([{ id: 'B' }]);
     });
 
+    it('calls onBackgroundClick for a click away from every node, and not for a click on a node', async () => {
+        const renderTo = document.createElement('div');
+        const calls: string[] = [];
+
+        const view = await new D3Tool().renderNetworkDiagram(data, renderTo, {
+            onBackgroundClick: () => {
+                calls.push('background');
+            },
+            onNodeClick: (node) => {
+                calls.push(node.id);
+            }
+        });
+        view.svg.querySelectorAll('circle')[1]?.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+        view.svg.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+
+        expect(calls).toStrictEqual(['B', 'background']);
+    });
+
     it('moves a dragged node unless node drag is switched off', async () => {
         const draggable = await new D3Tool().renderNetworkDiagram(data, constructSizedContainer().element);
         const fixed = await new D3Tool().renderNetworkDiagram(data, constructSizedContainer().element, { disablesNodeDrag: true });

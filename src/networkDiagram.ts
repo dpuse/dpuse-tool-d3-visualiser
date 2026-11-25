@@ -53,6 +53,7 @@ export interface NetworkDiagramOptions {
     maximumFitScale?: number; // How far a fitted diagram may be enlarged to fill its container. Without one, 1, so a small diagram is centred at full size.
     maximumLabelLength?: number; // Cuts a line of a label longer than this many characters short and ends it with '…'. The whole label is then the node's tooltip, unless the node has a 'title'.
     nodeBorderWidth?: number; // The width of the ring round every node. Without one, 2.
+    onBackgroundClick?: () => void; // A click on the diagram away from every node, such as to clear the caller's selection. The click that ends a pan is not one.
     onNodeClick?: (node: NetworkDiagramNode) => void;
     reservesLabelRoom?: boolean; // Lengthens the links round a node with many neighbours, so the neighbours and their labels all fit round it.
     selectedRingColor?: string; // Draws a ring round the selected node, a little apart from it, and nothing else: the node keeps its own colours. Any CSS colour. Without one, a selected node shows in its own ring or disc.
@@ -434,9 +435,11 @@ export function renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLEle
             });
     };
 
+    // A click on a node stops at the node, so a click that reaches the diagram itself is away from every node.
     svgSelection.on('click', () => {
         selectedNodeId = null;
         updateNodeStyles();
+        options.onBackgroundClick?.();
     });
 
     // The filter keeps d3's own default, which ignores a right-click and a Ctrl-drag. A second finger is ignored rather

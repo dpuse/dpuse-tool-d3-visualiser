@@ -126,7 +126,7 @@ License data is updated each time `npm run document` is run, using [CycloneDX](h
 
 | Dependency                                                      | Version | License(s)   | Document                                                          |
 | :-------------------------------------------------------------- | :-----: | :----------- | :---------------------------------------------------------------- |
-| [@dagrejs/dagre](https://github.com/dagrejs/dagre)              |  3.1.3  | MIT          | [LICENSE](licenses/downloads/@dagrejs/dagre@3.1.3-LICENSE.txt)    |
+| [@dagrejs/dagre](https://github.com/dagrejs/dagre)              |  3.1.4  | MIT          | [LICENSE](licenses/downloads/@dagrejs/dagre@3.1.4-LICENSE.txt)    |
 | [@tanstack/charts](https://github.com/TanStack/charts)          |  1.5.0  | MIT          | [LICENSE](licenses/downloads/@tanstack/charts@1.5.0-LICENSE.txt)  |
 | [@unovis/ts](https://github.com/f5/unovis)                      |  1.8.1  | Apache-2.0   | [LICENSE](licenses/downloads/@unovis/ts@1.8.1-LICENSE.txt)        |
 | [d3-array](https://github.com/d3/d3-array)                      |  3.2.4  | ISC          | [LICENSE](licenses/downloads/d3-array@3.2.4-LICENSE.txt)          |
@@ -157,7 +157,7 @@ License data is updated each time `npm run document` is run, using [CycloneDX](h
 
 The dependency tree below shows how each package in the table above is reached — direct and transitive — along with its installed version, release date, and update status. A package that does not ship itself, such as one whose parts are bundled separately, is left out and what ships beneath it is shown in its place. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are mature and stable (have limited or no dependencies), so they require no active development.
 
-- **[@dagrejs/dagre](https://github.com/dagrejs/dagre)** 3.1.3 — 1 mth ago: 2026-10-24
+- **[@dagrejs/dagre](https://github.com/dagrejs/dagre)** 3.1.4 — this month: 2026-11-24
 - **[@tanstack/charts](https://github.com/TanStack/charts)** 1.5.0 — this month: 2026-11-07
     - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — 41 mths ago: 2023-05-30 ⚠️ → latest: 3.2.5 — this month: 2026-11-03 ❗
         - **[internmap](https://github.com/mbostock/internmap)** 2.0.3 — 62 mths ago: 2021-09-20 ⚠️
@@ -238,15 +238,15 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 | Chunk/Module/File                                                                | Composition                                                                                    |
 | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **All 14 files**                                                                 | 421.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;124.3&nbsp;kB                                              |
+| **All 14 files**                                                                 | 421.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;124.4&nbsp;kB                                              |
 | **dist/tanStackCharts-DEINbmRi.js**                                              | 125.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;36.7&nbsp;kB&nbsp;·&nbsp;29.8%&nbsp;of&nbsp;the&nbsp;build |
 | &nbsp;&nbsp;&nbsp;&nbsp;@tanstack/charts → dist/scene.js + 41 more               | `██████████████████░░`&nbsp;90.1%&nbsp;·&nbsp;113.0&nbsp;kB                                    |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-scale → src/band.js + 2 more                          | `░░░░░░░░░░░░░░░░░░░░`&nbsp;1.7%&nbsp;·&nbsp;2.1&nbsp;kB                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → tanStackCharts.ts                                  | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.6%&nbsp;·&nbsp;717&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `██░░░░░░░░░░░░░░░░░░`&nbsp;7.7%&nbsp;·&nbsp;9.6&nbsp;kB                                       |
-| **dist/erdDiagram-DmYSx8Dh.js**                                                  | 63.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;18.4&nbsp;kB&nbsp;·&nbsp;15.0%&nbsp;of&nbsp;the&nbsp;build  |
-| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js                       | `██████████████████░░`&nbsp;88.3%&nbsp;·&nbsp;56.0&nbsp;kB                                     |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → erdDiagram.ts                                      | `█░░░░░░░░░░░░░░░░░░░`&nbsp;5.4%&nbsp;·&nbsp;3.4&nbsp;kB                                       |
+| **dist/erdDiagram-COuXQmsG.js**                                                  | 63.4&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;18.4&nbsp;kB&nbsp;·&nbsp;15.1%&nbsp;of&nbsp;the&nbsp;build  |
+| &nbsp;&nbsp;&nbsp;&nbsp;@dagrejs/dagre → dist/dagre.esm.js                       | `██████████████████░░`&nbsp;88.3%&nbsp;·&nbsp;56.1&nbsp;kB                                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → erdDiagram.ts                                      | `█░░░░░░░░░░░░░░░░░░░`&nbsp;5.3%&nbsp;·&nbsp;3.4&nbsp;kB                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `█░░░░░░░░░░░░░░░░░░░`&nbsp;6.3%&nbsp;·&nbsp;4.0&nbsp;kB                                       |
 | **dist/chordDiagram-Cm91Tmgo.js**                                                | 56.8&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;17.7&nbsp;kB&nbsp;·&nbsp;13.5%&nbsp;of&nbsp;the&nbsp;build  |
 | &nbsp;&nbsp;&nbsp;&nbsp;@unovis/ts → components/chord-diagram/index.js + 36 more | `██████████████░░░░░░`&nbsp;71.0%&nbsp;·&nbsp;40.3&nbsp;kB                                     |
@@ -256,8 +256,8 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;src → chordDiagram.ts                                    | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;494&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-array → src/group.js + 1 more                         | `░░░░░░░░░░░░░░░░░░░░`&nbsp;0.8%&nbsp;·&nbsp;487&nbsp;B                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `███░░░░░░░░░░░░░░░░░`&nbsp;13.5%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
-| **dist/networkDiagram-BOfL-znW.js**                                              | 49.7&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;15.1&nbsp;kB&nbsp;·&nbsp;11.8%&nbsp;of&nbsp;the&nbsp;build  |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `███████░░░░░░░░░░░░░`&nbsp;33.5%&nbsp;·&nbsp;16.6&nbsp;kB                                     |
+| **dist/networkDiagram-DFqoEwp7.js**                                              | 49.7&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;15.1&nbsp;kB&nbsp;·&nbsp;11.8%&nbsp;of&nbsp;the&nbsp;build  |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → networkDiagram.ts                                  | `███████░░░░░░░░░░░░░`&nbsp;33.5%&nbsp;·&nbsp;16.7&nbsp;kB                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-zoom → dist/d3-zoom.mjs                               | `████░░░░░░░░░░░░░░░░`&nbsp;21.6%&nbsp;·&nbsp;10.7&nbsp;kB                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-force → dist/d3-force.mjs                             | `███░░░░░░░░░░░░░░░░░`&nbsp;15.3%&nbsp;·&nbsp;7.6&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-quadtree → src/add.js + 13 more                       | `██░░░░░░░░░░░░░░░░░░`&nbsp;12.5%&nbsp;·&nbsp;6.2&nbsp;kB                                      |
@@ -300,7 +300,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | **dist/treeDiagram-t0oFwi1c.js**                                                 | 2.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;1.0&nbsp;kB&nbsp;·&nbsp;0.5%&nbsp;of&nbsp;the&nbsp;build     |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → treeDiagram.ts                                     | `█████████████████░░░`&nbsp;87.2%&nbsp;·&nbsp;1.9&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `███░░░░░░░░░░░░░░░░░`&nbsp;12.8%&nbsp;·&nbsp;290&nbsp;B                                       |
-| **dist/dpuse-tool-d3-visualiser.es.js**                                          | 1.6&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;460&nbsp;B&nbsp;·&nbsp;0.4%&nbsp;of&nbsp;the&nbsp;build      |
+| **dist/dpuse-tool-d3-visualiser.es.js**                                          | 1.6&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;459&nbsp;B&nbsp;·&nbsp;0.4%&nbsp;of&nbsp;the&nbsp;build      |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                           | `██████████████████░░`&nbsp;87.9%&nbsp;·&nbsp;1.4&nbsp;kB                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;(bundler output, whitespace & JSON)                      | `██░░░░░░░░░░░░░░░░░░`&nbsp;12.1%&nbsp;·&nbsp;200&nbsp;B                                       |
 | **dist/palette-D5DTPmuA.js**                                                     | 1.2&nbsp;kB&nbsp;·&nbsp;gzip&nbsp;567&nbsp;B&nbsp;·&nbsp;0.3%&nbsp;of&nbsp;the&nbsp;build      |
